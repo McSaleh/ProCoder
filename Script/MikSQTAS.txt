@@ -1,0 +1,28 @@
+/ip firewall mangle
+add action=mark-packet chain=prerouting dst-address=!10.0.0.1 new-packet-mark=Pro-down passthrough=no
+/queue type
+add kind=pcq name=Pro-down pcq-burst-time=30s pcq-classifier=dst-address 
+add kind=pcq name=Pro-up pcq-burst-time=30s pcq-classifier=src-address
+/system script
+add name=ProLimitSpeed owner=admin policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive source="{\r\
+\n:local i;\
+\n\r\
+\n:local c 1212;\r\
+\n\
+\n:set i [ :len [/ip hotspot active find] ];\
+\n\r\
+\n:if (\$i=0) do={:set i 1;}\r\
+\n\
+\n:local j (\$c*2000000);\r\
+\n:local x (\$j/\$i);\r\
+\n:local up (\$x/4);\r\
+\n\
+\n:local y (\$x+200000);\r\
+\n/queue type set [find name=Pro-down] pcq-rate=\$x pcq-burst-rate=\$y;\r\
+\n/queue type set [find name=Pro-up] pcq-rate=\$up}\r\
+\n:foreach i in=[/queue simple find where dynamic] do={/queue simple remove \$i ;}"
+/queue tree
+add name=Pro-down packet-mark=Pro-down parent=global queue=Pro-down
+add name=Pro-up packet-mark=Pro-up parent=global queue=Pro-up
+/ip hotspot user profile
+set [ find default=yes ] on-login="/system script run ProLimitSpeed;" on-logout="/system script run ProLimitSpeed;"

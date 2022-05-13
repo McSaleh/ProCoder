@@ -1,0 +1,9 @@
+/ip firewall layer7-protocol
+add name=FREEDOM regexp="^.+(b3q.be|7q3.be|89u.uk|g55.be|3g5.de|5t2.be|9l4.de|v6k.be|1yf.de|2yf.de|53r.de|93.ye|YF.de|8u6.de|f.de|fer.net|freedom.net|your-freedom|your-freedom.net|freedom.de|63z.de|49o.de|q1y.be)"
+/ip firewall filter
+add action=drop chain=input layer7-protocol=FREEDOM
+add action=drop chain=output layer7-protocol=FREEDOM
+/ip firewall raw
+add action=add-src-to-address-list address-list=FREEDOM address-list-timeout=5m chain=prerouting content=freedom in-interface=oin
+add action=add-src-to-address-list address-list=FREEDOM address-list-timeout=5m chain=prerouting content=freedom in-interface=all-vlan
+add action=drop chain=prerouting src-address-list=FREEDOM
