@@ -207,6 +207,27 @@ namespace LBMS_Pro
             Script= string.Concat(res);
             return Script;
         }
+        public string SecSLGDuobleMac(string time)
+        {
+            string Script;
+            string s  = Properties.Resources.SecLGDmac;
+            String[] rows = Regex.Split(s, "\r\n");
+            for (int i = 0; i < rows.Length; i++)
+            {
+                if (rows[i].Contains("2m"))
+                {
+                    rows[i] = rows[i].Replace("2m", time);
+                    break;
+                }
+            }
+            String[] res=new string[rows.Length];
+            for (int i = 0; i < rows.Length; i++)
+            {
+                res[i] = rows[i] + "\r\n";
+            }
+            Script= string.Concat(res);
+            return Script;
+        }
 
         private void replaceString(String filename, String search, String replace)
         {

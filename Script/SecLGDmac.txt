@@ -1,0 +1,18 @@
+/system scheduler
+add interval=2m name=LG on-event="if ( [/file get [/file find name=duplicate-m\
+    ac.txt] size] > 0 ) do={ \r\
+    \n:local allmac [/file get [/file find name=\"duplicate-mac.txt\"] content\
+    s] ;\r\
+    \n:local allmaclen [ :len \$allmac ] ;\r\
+    \n:local linenum ((\$allmaclen -1)/18);\r\
+    \n:local n 0;\r\
+    \n:for i from=1 to=\$linenum do={\r\
+    \n:local lgmac [:pick \$allmac \$n (\$n+17)] ;\r\
+    \n:set n (\$i*19);\r\
+    \n/ip hotspot cookie remove [find where mac-address=\$lgmac];\r\
+    \n/ip dhcp-server lease remove [find where active-mac-address=\$lgmac];\r\
+    \n}\r\
+    \n}\r\
+    \n" policy=\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
+    start-time=startup

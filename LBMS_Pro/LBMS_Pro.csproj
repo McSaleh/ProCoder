@@ -95,6 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="processor.ico" />
+    <None Include="Resources\automation.png" />
+    <None Include="Resources\multitask.png" />
+    <None Include="Resources\SecLGDmac.txt" />
+    <None Include="Resources\duplicate-mac.txt" />
     <None Include="Resources\logout.png" />
     <None Include="Resources\add.png" />
     <None Include="Resources\create.png" />

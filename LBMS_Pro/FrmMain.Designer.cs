@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PL_Up = new System.Windows.Forms.Panel();
             this.BT_info = new System.Windows.Forms.Button();
             this.BT_Exit = new System.Windows.Forms.Button();
@@ -85,6 +85,18 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.TP_SecScr = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.DTP_LG = new System.Windows.Forms.MaskedTextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.BT_SecSLGDuobleMac = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label32 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.MTB_OUTinf = new System.Windows.Forms.MaskedTextBox();
@@ -130,8 +142,10 @@
             this.PL_Down = new System.Windows.Forms.Panel();
             this.TB_Result = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BT_InfoPage = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.BT_MultiTask = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.BT_SecScr = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -140,6 +154,12 @@
             this.BT_BALANCE = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.TP_MultiTask = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label36 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.PL_Up.SuspendLayout();
             this.PL_Main.SuspendLayout();
             this.TC_Main.SuspendLayout();
@@ -154,6 +174,9 @@
             this.GB_QueueTree.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NU_SpeedNetQT)).BeginInit();
             this.TP_SecScr.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TBlouk)).BeginInit();
             this.TP_Info.SuspendLayout();
@@ -171,6 +194,8 @@
             this.PL_Down.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // PL_Up
@@ -318,6 +343,7 @@
             this.TC_Main.Controls.Add(this.TP_LBS);
             this.TC_Main.Controls.Add(this.TP_MikScr);
             this.TC_Main.Controls.Add(this.TP_SecScr);
+            this.TC_Main.Controls.Add(this.TP_MultiTask);
             this.TC_Main.Controls.Add(this.TP_Info);
             this.TC_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TC_Main.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -343,24 +369,24 @@
             // DGV_Main
             // 
             this.DGV_Main.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DGV_Main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_Main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.DGV_Main.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
             this.DGV_Main.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGV_Main.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.YellowGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.YellowGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DGV_Main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Main.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.C_interface,
@@ -376,36 +402,36 @@
             this.C_WlanNetIP,
             this.C_WlanIPGetway,
             this.C_index});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.BlueViolet;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Main.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.BlueViolet;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Main.DefaultCellStyle = dataGridViewCellStyle10;
             this.DGV_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Main.EnableHeadersVisualStyles = false;
             this.DGV_Main.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DGV_Main.Location = new System.Drawing.Point(3, 3);
             this.DGV_Main.Name = "DGV_Main";
             this.DGV_Main.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.DGV_Main.RowHeadersWidth = 24;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DGV_Main.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_Main.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.DGV_Main.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.DGV_Main.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DGV_Main.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -519,8 +545,8 @@
             // 
             // C_index
             // 
-            dataGridViewCellStyle3.NullValue = "0";
-            this.C_index.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.NullValue = "0";
+            this.C_index.DefaultCellStyle = dataGridViewCellStyle9;
             this.C_index.HeaderText = "index";
             this.C_index.Name = "C_index";
             this.C_index.Visible = false;
@@ -554,7 +580,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(566, 72);
+            this.label4.Location = new System.Drawing.Point(566, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 22);
             this.label4.TabIndex = 11;
@@ -564,7 +590,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(362, 72);
+            this.label3.Location = new System.Drawing.Point(362, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 22);
             this.label3.TabIndex = 10;
@@ -574,7 +600,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(188, 72);
+            this.label2.Location = new System.Drawing.Point(180, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 22);
             this.label2.TabIndex = 9;
@@ -586,7 +612,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(6, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 46);
+            this.label1.Size = new System.Drawing.Size(127, 28);
             this.label1.TabIndex = 8;
             this.label1.Text = "عدد الطلبات لكل خط";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -597,7 +623,7 @@
             this.NUP_NRQ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NUP_NRQ.Font = new System.Drawing.Font("Janna LT", 9F);
             this.NUP_NRQ.ForeColor = System.Drawing.Color.White;
-            this.NUP_NRQ.Location = new System.Drawing.Point(6, 68);
+            this.NUP_NRQ.Location = new System.Drawing.Point(6, 58);
             this.NUP_NRQ.Name = "NUP_NRQ";
             this.NUP_NRQ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.NUP_NRQ.Size = new System.Drawing.Size(67, 30);
@@ -615,7 +641,7 @@
             this.TB_IPout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_IPout.Font = new System.Drawing.Font("Janna LT", 9F);
             this.TB_IPout.ForeColor = System.Drawing.Color.White;
-            this.TB_IPout.Location = new System.Drawing.Point(261, 68);
+            this.TB_IPout.Location = new System.Drawing.Point(261, 58);
             this.TB_IPout.Name = "TB_IPout";
             this.TB_IPout.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TB_IPout.Size = new System.Drawing.Size(97, 30);
@@ -628,7 +654,7 @@
             this.OUT_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.OUT_Name.Font = new System.Drawing.Font("Janna LT", 9F);
             this.OUT_Name.ForeColor = System.Drawing.Color.White;
-            this.OUT_Name.Location = new System.Drawing.Point(465, 68);
+            this.OUT_Name.Location = new System.Drawing.Point(465, 58);
             this.OUT_Name.Name = "OUT_Name";
             this.OUT_Name.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.OUT_Name.Size = new System.Drawing.Size(97, 30);
@@ -642,7 +668,7 @@
             this.TB_OUTSub.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_OUTSub.Font = new System.Drawing.Font("Janna LT", 9F);
             this.TB_OUTSub.ForeColor = System.Drawing.Color.White;
-            this.TB_OUTSub.Location = new System.Drawing.Point(87, 68);
+            this.TB_OUTSub.Location = new System.Drawing.Point(79, 58);
             this.TB_OUTSub.Name = "TB_OUTSub";
             this.TB_OUTSub.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TB_OUTSub.Size = new System.Drawing.Size(97, 30);
@@ -663,6 +689,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.groupBox5);
             this.panel2.Controls.Add(this.GB_SimpleQueue);
             this.panel2.Controls.Add(this.GB_QueueTree);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -921,6 +948,8 @@
             // 
             // TP_SecScr
             // 
+            this.TP_SecScr.Controls.Add(this.groupBox4);
+            this.TP_SecScr.Controls.Add(this.groupBox3);
             this.TP_SecScr.Controls.Add(this.groupBox2);
             this.TP_SecScr.Location = new System.Drawing.Point(4, 4);
             this.TP_SecScr.Name = "TP_SecScr";
@@ -928,6 +957,194 @@
             this.TP_SecScr.TabIndex = 2;
             this.TP_SecScr.Text = "إسكربتات حماية";
             this.TP_SecScr.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.DTP_LG);
+            this.groupBox4.Controls.Add(this.label34);
+            this.groupBox4.Controls.Add(this.label35);
+            this.groupBox4.Controls.Add(this.BT_SecSLGDuobleMac);
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox4.Location = new System.Drawing.Point(282, 7);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Size = new System.Drawing.Size(192, 132);
+            this.groupBox4.TabIndex = 20;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "LG Duplicate Mac";
+            // 
+            // DTP_LG
+            // 
+            this.DTP_LG.Location = new System.Drawing.Point(100, 64);
+            this.DTP_LG.Mask = "##:##:##";
+            this.DTP_LG.Name = "DTP_LG";
+            this.DTP_LG.Size = new System.Drawing.Size(87, 30);
+            this.DTP_LG.TabIndex = 21;
+            this.DTP_LG.Text = "000500";
+            this.DTP_LG.ValidatingType = typeof(System.DateTime);
+            // 
+            // label34
+            // 
+            this.label34.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label34.Location = new System.Drawing.Point(4, 62);
+            this.label34.Margin = new System.Windows.Forms.Padding(2);
+            this.label34.Name = "label34";
+            this.label34.Padding = new System.Windows.Forms.Padding(1);
+            this.label34.Size = new System.Drawing.Size(91, 30);
+            this.label34.TabIndex = 15;
+            this.label34.Text = "التشغيل كل";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label35.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label35.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label35.Location = new System.Drawing.Point(2, 25);
+            this.label35.Name = "label35";
+            this.label35.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label35.Size = new System.Drawing.Size(188, 35);
+            this.label35.TabIndex = 17;
+            this.label35.Text = "حل مشكلة الماكات المتكررة في اجهزة LG";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BT_SecSLGDuobleMac
+            // 
+            this.BT_SecSLGDuobleMac.BackColor = System.Drawing.Color.Goldenrod;
+            this.BT_SecSLGDuobleMac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_SecSLGDuobleMac.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_SecSLGDuobleMac.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BT_SecSLGDuobleMac.FlatAppearance.BorderSize = 0;
+            this.BT_SecSLGDuobleMac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_SecSLGDuobleMac.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.BT_SecSLGDuobleMac.Location = new System.Drawing.Point(2, 98);
+            this.BT_SecSLGDuobleMac.Margin = new System.Windows.Forms.Padding(1);
+            this.BT_SecSLGDuobleMac.Name = "BT_SecSLGDuobleMac";
+            this.BT_SecSLGDuobleMac.Padding = new System.Windows.Forms.Padding(2);
+            this.BT_SecSLGDuobleMac.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BT_SecSLGDuobleMac.Size = new System.Drawing.Size(188, 32);
+            this.BT_SecSLGDuobleMac.TabIndex = 14;
+            this.BT_SecSLGDuobleMac.Text = "إنشاء الإسكربت";
+            this.BT_SecSLGDuobleMac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_SecSLGDuobleMac.UseVisualStyleBackColor = false;
+            this.BT_SecSLGDuobleMac.Click += new System.EventHandler(this.BT_SecSLGDuobleMac_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.maskedTextBox1);
+            this.groupBox3.Controls.Add(this.label31);
+            this.groupBox3.Controls.Add(this.numericUpDown1);
+            this.groupBox3.Controls.Add(this.label32);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox3.Location = new System.Drawing.Point(473, 159);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(192, 148);
+            this.groupBox3.TabIndex = 19;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "BlockFreedomUsers";
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label16.Location = new System.Drawing.Point(2, 87);
+            this.label16.Margin = new System.Windows.Forms.Padding(2);
+            this.label16.Name = "label16";
+            this.label16.Padding = new System.Windows.Forms.Padding(1);
+            this.label16.Size = new System.Drawing.Size(110, 30);
+            this.label16.TabIndex = 18;
+            this.label16.Text = "إسم كرت الخروج";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox1.ForeColor = System.Drawing.Color.White;
+            this.maskedTextBox1.Location = new System.Drawing.Point(112, 87);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.PromptChar = ' ';
+            this.maskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.maskedTextBox1.Size = new System.Drawing.Size(78, 30);
+            this.maskedTextBox1.TabIndex = 14;
+            this.maskedTextBox1.Text = "out";
+            this.maskedTextBox1.ValidatingType = typeof(System.Net.IPAddress);
+            // 
+            // label31
+            // 
+            this.label31.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label31.Location = new System.Drawing.Point(2, 55);
+            this.label31.Margin = new System.Windows.Forms.Padding(2);
+            this.label31.Name = "label31";
+            this.label31.Padding = new System.Windows.Forms.Padding(1);
+            this.label31.Size = new System.Drawing.Size(110, 30);
+            this.label31.TabIndex = 15;
+            this.label31.Text = "مدة الحظر بالدقيقة";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDown1.ForeColor = System.Drawing.Color.White;
+            this.numericUpDown1.Location = new System.Drawing.Point(112, 55);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.numericUpDown1.Size = new System.Drawing.Size(78, 30);
+            this.numericUpDown1.TabIndex = 14;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label32.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label32.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label32.Location = new System.Drawing.Point(2, 25);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(188, 26);
+            this.label32.TabIndex = 17;
+            this.label32.Text = "حظر مستخدم برنامج الفريدوم";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Goldenrod;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button1.Location = new System.Drawing.Point(2, 120);
+            this.button1.Margin = new System.Windows.Forms.Padding(1);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(2);
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button1.Size = new System.Drawing.Size(188, 26);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "إنشاء الإسكربت";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
@@ -1533,8 +1750,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.BT_InfoPage);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.BT_MultiTask);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.BT_SecScr);
             this.panel1.Controls.Add(this.panel4);
@@ -1551,18 +1770,6 @@
             this.panel1.Size = new System.Drawing.Size(217, 670);
             this.panel1.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox1.Image = global::LBMS_Pro.Properties.Resources.small_logo;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 603);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // BT_InfoPage
             // 
             this.BT_InfoPage.BackColor = System.Drawing.Color.YellowGreen;
@@ -1575,7 +1782,7 @@
             this.BT_InfoPage.ForeColor = System.Drawing.Color.White;
             this.BT_InfoPage.Image = global::LBMS_Pro.Properties.Resources.info;
             this.BT_InfoPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BT_InfoPage.Location = new System.Drawing.Point(0, 325);
+            this.BT_InfoPage.Location = new System.Drawing.Point(0, 400);
             this.BT_InfoPage.Name = "BT_InfoPage";
             this.BT_InfoPage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BT_InfoPage.Size = new System.Drawing.Size(217, 70);
@@ -1584,6 +1791,48 @@
             this.BT_InfoPage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BT_InfoPage.UseVisualStyleBackColor = false;
             this.BT_InfoPage.Click += new System.EventHandler(this.BT_InfoPage_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 395);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(217, 5);
+            this.panel7.TabIndex = 21;
+            // 
+            // BT_MultiTask
+            // 
+            this.BT_MultiTask.BackColor = System.Drawing.Color.YellowGreen;
+            this.BT_MultiTask.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_MultiTask.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_MultiTask.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BT_MultiTask.FlatAppearance.BorderSize = 0;
+            this.BT_MultiTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_MultiTask.Font = new System.Drawing.Font("Janna LT", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.BT_MultiTask.ForeColor = System.Drawing.Color.White;
+            this.BT_MultiTask.Image = global::LBMS_Pro.Properties.Resources.multitask;
+            this.BT_MultiTask.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_MultiTask.Location = new System.Drawing.Point(0, 325);
+            this.BT_MultiTask.Name = "BT_MultiTask";
+            this.BT_MultiTask.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.BT_MultiTask.Size = new System.Drawing.Size(217, 70);
+            this.BT_MultiTask.TabIndex = 20;
+            this.BT_MultiTask.Text = "المهام المتعددة";
+            this.BT_MultiTask.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_MultiTask.UseVisualStyleBackColor = false;
+            this.BT_MultiTask.Click += new System.EventHandler(this.BT_MultiTask_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox1.Image = global::LBMS_Pro.Properties.Resources.small_logo;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 603);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel6
             // 
@@ -1700,6 +1949,102 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "المبرمج المحترف";
             // 
+            // TP_MultiTask
+            // 
+            this.TP_MultiTask.Location = new System.Drawing.Point(4, 4);
+            this.TP_MultiTask.Name = "TP_MultiTask";
+            this.TP_MultiTask.Size = new System.Drawing.Size(675, 435);
+            this.TP_MultiTask.TabIndex = 4;
+            this.TP_MultiTask.Text = "المهام المتعددة";
+            this.TP_MultiTask.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label33);
+            this.groupBox5.Controls.Add(this.numericUpDown2);
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.button2);
+            this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox5.Location = new System.Drawing.Point(223, 13);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Size = new System.Drawing.Size(194, 115);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Simple Queue";
+            // 
+            // label33
+            // 
+            this.label33.Location = new System.Drawing.Point(2, 55);
+            this.label33.Margin = new System.Windows.Forms.Padding(2);
+            this.label33.Name = "label33";
+            this.label33.Padding = new System.Windows.Forms.Padding(1);
+            this.label33.Size = new System.Drawing.Size(92, 30);
+            this.label33.TabIndex = 15;
+            this.label33.Text = "سرعة الانترنت";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDown2.ForeColor = System.Drawing.Color.White;
+            this.numericUpDown2.Location = new System.Drawing.Point(94, 55);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.numericUpDown2.Size = new System.Drawing.Size(98, 30);
+            this.numericUpDown2.TabIndex = 14;
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label36
+            // 
+            this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label36.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label36.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label36.Location = new System.Drawing.Point(2, 25);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(190, 26);
+            this.label36.TabIndex = 17;
+            this.label36.Text = "تقسيم السرعة حسب الاكتف";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Goldenrod;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button2.Location = new System.Drawing.Point(2, 87);
+            this.button2.Margin = new System.Windows.Forms.Padding(1);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(2);
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button2.Size = new System.Drawing.Size(190, 26);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "إنشاء الإسكربت";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1731,6 +2076,11 @@
             this.GB_QueueTree.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NU_SpeedNetQT)).EndInit();
             this.TP_SecScr.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TBlouk)).EndInit();
@@ -1751,6 +2101,8 @@
             this.PL_Down.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1863,6 +2215,26 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Button BT_SecSLGDuobleMac;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MaskedTextBox DTP_LG;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button BT_MultiTask;
+        private System.Windows.Forms.TabPage TP_MultiTask;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button button2;
     }
 }
 

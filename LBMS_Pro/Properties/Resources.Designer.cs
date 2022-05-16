@@ -73,6 +73,16 @@ namespace LBMS_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap automation {
+            get {
+                object obj = ResourceManager.GetObject("automation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap create {
             get {
                 object obj = ResourceManager.GetObject("create", resourceCulture);
@@ -87,6 +97,17 @@ namespace LBMS_Pro.Properties {
             get {
                 object obj = ResourceManager.GetObject("CW_Logo@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 00:90:4C:C5:12:38
+        ///78:44:76:B1:93:E0
+        ///44:6D:57:D0:24:AA.
+        /// </summary>
+        internal static string duplicate_mac {
+            get {
+                return ResourceManager.GetString("duplicate_mac", resourceCulture);
             }
         }
         
@@ -194,6 +215,16 @@ namespace LBMS_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap multitask {
+            get {
+                object obj = ResourceManager.GetObject("multitask", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap N14 {
             get {
                 object obj = ResourceManager.GetObject("N14", resourceCulture);
@@ -238,6 +269,26 @@ namespace LBMS_Pro.Properties {
             get {
                 object obj = ResourceManager.GetObject("router", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /system scheduler
+        ///add interval=2m name=LG on-event=&quot;if ( [/file get [/file find name=duplicate-m\
+        ///    ac.txt] size] &gt; 0 ) do={ \r\
+        ///    \n:local allmac [/file get [/file find name=\&quot;duplicate-mac.txt\&quot;] content\
+        ///    s] ;\r\
+        ///    \n:local allmaclen [ :len \$allmac ] ;\r\
+        ///    \n:local linenum ((\$allmaclen -1)/18);\r\
+        ///    \n:local n 0;\r\
+        ///    \n:for i from=1 to=\$linenum do={\r\
+        ///    \n:local lgmac [:pick \$allmac \$n (\$n+17)] ;\r\
+        ///    \n:set n (\$i*19);\r\
+        ///    \n/ip hotspot cookie remove [find where [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SecLGDmac {
+            get {
+                return ResourceManager.GetString("SecLGDmac", resourceCulture);
             }
         }
         

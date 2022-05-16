@@ -671,7 +671,7 @@ namespace LBMS_Pro
             if (TC_Main.SelectedTab != TC_Main.TabPages["TP_Info"])
             {
                 TC_Main.SelectedTab = TC_Main.TabPages["TP_Info"];
-            }
+            }  
         }
 
         private void BT_info_Click(object sender, EventArgs e)
@@ -679,6 +679,19 @@ namespace LBMS_Pro
             if (TC_Main.SelectedTab != TC_Main.TabPages["TP_Info"])
             {
                 TC_Main.SelectedTab = TC_Main.TabPages["TP_Info"];
+            }
+        }
+
+        private void BT_SecSLGDuobleMac_Click(object sender, EventArgs e)
+        {
+            TB_Result.Text = _cms.SecSFreedomBU(MTB_OUTinf.Text, (TBlouk.Value.ToString()) + "m");
+        }
+
+        private void BT_MultiTask_Click(object sender, EventArgs e)
+        {
+            if (TC_Main.SelectedTab != TC_Main.TabPages["TP_MultiTask"])
+            {
+                TC_Main.SelectedTab = TC_Main.TabPages["TP_MultiTask"];
             }
         }
     }
