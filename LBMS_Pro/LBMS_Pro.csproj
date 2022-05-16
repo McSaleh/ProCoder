@@ -95,6 +95,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="processor.ico" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\create.png" />
+    <None Include="Resources\info %281%29.png" />
+    <None Include="Resources\info %282%29.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\instagram %281%29.png" />
+    <None Include="Resources\facebook.png" />
+    <None Include="Resources\whatsapp %281%29.png" />
+    <None Include="Resources\tiktok.png" />
+    <None Include="Resources\twitter.png" />
+    <None Include="Resources\youtube.png" />
+    <None Include="Resources\vex0.png" />
+    <None Include="Resources\CW_Logo%402x.png" />
+    <None Include="Resources\Pro.png" />
     <None Include="Resources\SecSFrDoBU.txt" />
     <None Include="Resources\MikSQTAS.txt" />
     <None Include="Resources\shield.png" />

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Net;
+using System.Reflection;
+
 
 namespace LBMS_Pro
 {
@@ -35,6 +37,31 @@ namespace LBMS_Pro
             Mangle = "";
             Routs = "";
             _cms = new C_MikrotikScripts();
+            LA_Version.Text = ProductVersion;
+            RendomLink();
+        }
+        private void RendomLink()
+        {
+            Random rnd = new Random();
+            int link = rnd.Next(1, 4);
+            switch (link)
+            {
+                case 1:
+                    System.Diagnostics.Process.Start(Lin_Face.Text);
+                    break;
+                case 2:
+                    System.Diagnostics.Process.Start(Lin_Tik.Text);
+                    break;
+                case 3:
+                    System.Diagnostics.Process.Start(Lin_Twi.Text);
+                    break;
+                case 4:
+                    System.Diagnostics.Process.Start(Lin_You.Text);
+                    break;
+                default:
+                    System.Diagnostics.Process.Start(Lin_Tik.Text);
+                    break;
+            }
         }
         private void CheckData()
         {
@@ -626,6 +653,33 @@ namespace LBMS_Pro
         private void BT_SecFBU_Click(object sender, EventArgs e)
         {
             TB_Result.Text = _cms.SecSFreedomBU(MTB_OUTinf.Text,(TBlouk.Value.ToString())+"m");
+        }
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PL_DeveloperInfo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BT_InfoPage_Click(object sender, EventArgs e)
+        {
+
+            if (TC_Main.SelectedTab != TC_Main.TabPages["TP_Info"])
+            {
+                TC_Main.SelectedTab = TC_Main.TabPages["TP_Info"];
+            }
+        }
+
+        private void BT_info_Click(object sender, EventArgs e)
+        {
+            if (TC_Main.SelectedTab != TC_Main.TabPages["TP_Info"])
+            {
+                TC_Main.SelectedTab = TC_Main.TabPages["TP_Info"];
+            }
         }
     }
     public enum Mode
