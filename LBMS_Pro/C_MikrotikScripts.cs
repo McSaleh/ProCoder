@@ -10,6 +10,7 @@ namespace LBMS_Pro
 {
     class C_MikrotikScripts
     {
+        #region MikS
         public string QDAutoSpeed(string netspeed)
         {
             return string.Concat(new string[]
@@ -179,6 +180,64 @@ namespace LBMS_Pro
             }
             return Script;
         }
+        public string MikSMBackUpRSC(string namescheduler,string nfile,string startdate,string starttime,string interval,bool can_interval)
+        {
+            if (can_interval)
+            {
+                return string.Concat(new string[]
+                    {
+                   "/system scheduler"
+                   ,"\r\n"
+                   ,@"add interval="
+                   ,interval
+                   ," name="
+                   ,namescheduler
+                   ,@" on-event=\"
+                   ,"\r\n"
+                   ,@"""delay 10;\r\"
+                   ,"\r\n"
+                   ,@"\nexport file="
+                   ,nfile,@".rsc\r\"
+                   ,"\r\n"
+                   ,@"\n"" policy=\"
+                   ,"\r\n"
+                   ,@"ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \"
+                   ,"\r\n"
+                   ,@"start-date="
+                   ,startdate
+                   ," start-time="
+                   ,starttime
+                    });
+            }
+            else
+            {
+                return string.Concat(new string[]
+                    {
+                   "/system scheduler"
+                   ,"\r\n"
+                   ,"add name="
+                   ,namescheduler
+                   ,@" on-event=\"
+                   ,"\r\n"
+                   ,@"""delay 10;\r\"
+                   ,"\r\n"
+                   ,@"\nexport file="
+                   ,nfile,@".rsc\r\"
+                   ,"\r\n"
+                   ,@"\n"" policy=\"
+                   ,"\r\n"
+                   ,@"ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \"
+                   ,"\r\n"
+                   ,@"start-date="
+                   ,startdate
+                   ," start-time="
+                   ,starttime
+                    });
+            }
+             
+        }
+        #endregion
+        #region SecS
         public string SecSFreedomBU(string outinf ,string time)
         {
             string Script;
@@ -228,6 +287,7 @@ namespace LBMS_Pro
             Script= string.Concat(res);
             return Script;
         }
+        #endregion
 
         private void replaceString(String filename, String search, String replace)
         {

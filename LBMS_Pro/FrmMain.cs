@@ -694,6 +694,16 @@ namespace LBMS_Pro
                 TC_Main.SelectedTab = TC_Main.TabPages["TP_MultiTask"];
             }
         }
+
+        private void GB_QueueTree_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
     public enum Mode
     {
