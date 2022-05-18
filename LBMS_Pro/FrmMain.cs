@@ -844,6 +844,13 @@ namespace LBMS_Pro
             LinkLabel link = sender as LinkLabel;
             System.Diagnostics.Process.Start(link.Text);
         }
+
+        private void BT_MikSRUWS_Click(object sender, EventArgs e)
+        {
+            DateTime _date = MikSUMB_StartDate.Value;
+            DateTime date = new DateTime(_date.Year, _date.Month, _date.Day);
+            TB_Result.Text = _cms.MikSUMBackUp(MikSUMB_Schname.Text, MikSUMB_Filename.Text, date.ToString("MMM/dd/yyyy", System.Globalization.CultureInfo.InvariantCulture), MikSUMB_StartTime.Value.ToString("HH:mm:ss"), MikSUMB_Interval.Value.ToString() + "d", MikSUMB_CanInterval.Checked, MikSUMB_overwrite.Checked);
+        }
     }
     public enum Mode
     {
