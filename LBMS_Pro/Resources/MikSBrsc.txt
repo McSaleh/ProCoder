@@ -1,0 +1,15 @@
+/system scheduler
+add interval=1d name=SNA on-event=":local fname \"FNA\";\r\
+    \n:local date [/system clock get date];\r\
+    \n:local months {\"jan\"=\"01\";\"feb\"=\"02\";\"mar\"=\"03\";\"apr\"=\"04\
+    \";\"may\"=\"05\";\"jun\"=\"06\";\"jul\"=\"07\";\"aug\"=\"08\";\"sep\"=\"0\
+    9\";\"oct\"=10;\"nov\"=11;\"dec\"=12};\r\
+    \n:local day [:tonum [:pick \$date 4 6]];\r\
+    \n:local year [:tonum [:pick \$date 7 11]];\r\
+    \n:local month [:pick \$date 0 3];\r\
+    \n:local mm (:\$months->\$month);\r\
+    \n:local newdate \"\$fname-\$year-\$mm-\$day\";\r\
+    \ndelay 5;\r\
+    \nexport file=\$newdate" policy=\
+    ftp,reboot,read,write,test,password,sniff,sensitive,romon start-date=\
+    SSD start-time=SST

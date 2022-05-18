@@ -67,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMain.en.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +111,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="processor.ico" />
+    <None Include="Resources\MikSBrsc.txt" />
+    <None Include="Resources\MikSMBU.txt" />
     <None Include="Resources\automation.png" />
     <None Include="Resources\multitask.png" />
     <None Include="Resources\SecLGDmac.txt" />

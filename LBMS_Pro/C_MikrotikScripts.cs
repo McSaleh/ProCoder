@@ -180,21 +180,97 @@ namespace LBMS_Pro
             }
             return Script;
         }
-        public string MikSMBackUpRSC(string namescheduler,string nfile,string startdate,string starttime,string interval,bool can_interval)
+        public string MikSMBackUpRSC(string namescheduler,string nfile,string startdate,string starttime,string interval,bool can_interval,bool overwrite)
         {
-            if (can_interval)
+            string Script;
+            string s;
+            if (overwrite)
             {
-                return string.Concat(new string[]
+                s = Properties.Resources.MikSBrsc;
+                String[] rows = Regex.Split(s, "\r\n");
+                if (can_interval)
+                {
+                    for (int i = 0; i < rows.Length; i++)
                     {
+                        if (rows[i].Contains("1d"))
+                        {
+                            rows[i] = rows[i].Replace("1d", interval);
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < rows.Length; i++)
+                    {
+                        if (rows[i].Contains(" interval=1d"))
+                        {
+                            rows[i] = rows[i].Replace(" interval=1d", "");
+                            break;
+                        }
+                    }
+                }
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    if (rows[i].Contains("SNA"))
+                    {
+                        rows[i] = rows[i].Replace("SNA", namescheduler);
+                        break;
+                    }
+                }
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    if (rows[i].Contains("FNA"))
+                    {
+                        rows[i] = rows[i].Replace("FNA", nfile);
+                        break;
+                    }
+                }
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    if (rows[i].Contains("SSD"))
+                    {
+                        rows[i] = rows[i].Replace("SSD", startdate);
+                        break;
+                    }
+                }
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    if (rows[i].Contains("SST"))
+                    {
+                        rows[i] = rows[i].Replace("SST", starttime);
+                        break;
+                    }
+                }
+                String[] res = new string[rows.Length];
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    res[i] = rows[i] + "\r\n";
+                }
+                Script = string.Concat(res);
+            }
+            else
+            {
+                string inter;
+                if (can_interval)
+                {
+                    inter = " interval=" + interval;
+                }
+                else
+                {
+                    inter = "";
+                }
+                Script = string.Concat(new string[]
+                   {
                    "/system scheduler"
                    ,"\r\n"
-                   ,@"add interval="
-                   ,interval
+                   ,@"add"
+                   ,inter
                    ," name="
                    ,namescheduler
                    ,@" on-event=\"
                    ,"\r\n"
-                   ,@"""delay 10;\r\"
+                   ,@"""delay 5;\r\"
                    ,"\r\n"
                    ,@"\nexport file="
                    ,nfile,@".rsc\r\"
@@ -207,34 +283,235 @@ namespace LBMS_Pro
                    ,startdate
                    ," start-time="
                    ,starttime
-                    });
+                   });
+            }
+            return Script;
+        }
+        public string MikSMBackUp(string namescheduler,string nfile,string startdate,string starttime,string interval,bool can_interval,bool overwrite,bool dontencrypt)
+        {
+            string Script;
+            string s;
+            if (overwrite)
+            {
+                s = Properties.Resources.MikSMBU;
+                String[] rows = Regex.Split(s, "\r\n");
+                if (can_interval)
+                {
+                    for (int i = 0; i < rows.Length; i++)
+                    {
+                        if (rows[i].Contains("1d"))
+                        {
+                            rows[i] = rows[i].Replace("1d", interval);
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < rows.Length; i++)
+                    {
+                        if (rows[i].Contains(" interval=1d"))
+                        {
+                            rows[i] = rows[i].Replace(" interval=1d", "");
+                            break;
+                        }
+                    }
+                }
+                if (dontencrypt)
+                {
+                    for (int i = 0; i < rows.Length; i++)
+                    {
+                        if (rows[i].Contains("dont-encrypt=no"))
+                        {
+                            rows[i] = rows[i].Replace("dont-encrypt=no", "dont-encrypt=yes");
+                            break;
+                        }
+                    }
+                }
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    if (rows[i].Contains("SNA"))
+                    {
+                        rows[i] = rows[i].Replace("SNA", namescheduler);
+                        break;
+                    }
+                }
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    if (rows[i].Contains("FNA"))
+                    {
+                        rows[i] = rows[i].Replace("FNA", nfile);
+                        break;
+                    }
+                }
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    if (rows[i].Contains("SSD"))
+                    {
+                        rows[i] = rows[i].Replace("SSD", startdate);
+                        break;
+                    }
+                }
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    if (rows[i].Contains("SST"))
+                    {
+                        rows[i] = rows[i].Replace("SST", starttime);
+                        break;
+                    }
+                }
+                String[] res = new string[rows.Length];
+                for (int i = 0; i < rows.Length; i++)
+                {
+                    res[i] = rows[i] + "\r\n";
+                }
+                Script = string.Concat(res);
             }
             else
             {
-                return string.Concat(new string[]
-                    {
-                   "/system scheduler"
-                   ,"\r\n"
-                   ,"add name="
-                   ,namescheduler
-                   ,@" on-event=\"
-                   ,"\r\n"
-                   ,@"""delay 10;\r\"
-                   ,"\r\n"
-                   ,@"\nexport file="
-                   ,nfile,@".rsc\r\"
-                   ,"\r\n"
-                   ,@"\n"" policy=\"
-                   ,"\r\n"
-                   ,@"ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \"
-                   ,"\r\n"
-                   ,@"start-date="
-                   ,startdate
-                   ," start-time="
-                   ,starttime
-                    });
+                string inter;
+                string delay = @"""delay 5;\r\";
+                string encrypt;
+                if (dontencrypt)
+                {
+                    encrypt = "yes";
+                }
+                else
+                {
+                    encrypt = "no";
+                }
+                if (can_interval)
+                {
+                    inter = " interval=" + interval;
+                }
+                else
+                {
+                    inter = "";
+                }
+                Script= string.Concat(new string[]
+                       {
+                       "/system scheduler"
+                       ,"\r\n"
+                       ,@"add"
+                       ,inter
+                       ," name="
+                       ,namescheduler
+                       ,@" on-event=\"
+                       ,"\r\n"
+                       ,delay
+                       ,"\r\n"
+                       ,@"\nsystem backup save name="
+                       ,nfile," dont-encrypt=",encrypt,@"\r\"
+                       ,"\r\n"
+                       ,@"\n"" policy=\"
+                       ,"\r\n"
+                       ,@"ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \"
+                       ,"\r\n"
+                       ,@"start-date="
+                       ,startdate
+                       ," start-time="
+                       ,starttime
+                       });
             }
-             
+            return Script;
+            //string inter;
+            //string delay = @"""delay 5;\r\";
+            //string _name;
+            //string encrypt = "no";
+            //if (dontencrypt)
+            //{
+            //    encrypt = "yes";
+            //}
+            //else
+            //{
+            //    encrypt = "no";
+            //}
+            //if (can_interval)
+            //{
+            //    inter = " interval=" + interval;
+            //}
+            //else
+            //{
+            //    inter = "";
+            //    //return string.Concat(new string[]
+            //    //    {
+            //    //   "/system scheduler"
+            //    //   ,"\r\n"
+            //    //   ,"add name="
+            //    //   ,namescheduler
+            //    //   ,@" on-event=\"
+            //    //   ,"\r\n"
+            //    //   ,@"""delay 5;\r\"
+            //    //   ,"\r\n"
+            //    //   ,@"\nexport file="
+            //    //   ,nfile,@".rsc\r\"
+            //    //   ,"\r\n"
+            //    //   ,@"\n"" policy=\"
+            //    //   ,"\r\n"
+            //    //   ,@"ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \"
+            //    //   ,"\r\n"
+            //    //   ,@"start-date="
+            //    //   ,startdate
+            //    //   ," start-time="
+            //    //   ,starttime
+            //    //    });
+            //}
+            //if (overwrite)
+            //{
+            //    delay = string.Concat(new string[]
+            //   {
+            //         @""":local fname \""",nfile,@"\",@""";\r\"
+            //        ,"\r\n"
+            //        ,@"\n:local date [/system clock get date];\r\"
+            //        ,"\r\n"
+            //        ,@"\n:local months {\""jan\""=\""01\"";",@"\""feb\""=\""02\"";\""mar\""=\""03\"";\""apr\""=\""04\"
+            //        ,@"\"";\""may\""=\""05\"";\""jun\""=\""06\"";\""jul\""=\""07\"";\""aug\""=\""08\"";\""sep\""=\""0\"
+            //        ,"\r\n"
+            //        ,@"9\"";\""oct\""=10;\""nov\""=11;\""dec\""=12};\r\"
+            //        ,"\r\n"
+            //        ,@"\n:local day [:tonum [:pick \$date 4 6]];\r\"
+            //        ,"\r\n"
+            //        ,@"\n:local year [:tonum [:pick \$date 7 11]];\r\"
+            //        ,"\r\n"
+            //        ,@"\n:local month [:pick \$date 0 3];\r\"
+            //        ,"\r\n"
+            //        ,@"\n:local mm (:\$months->\$month);\r\"
+            //        ,"\r\n"
+            //        ,@"\n:local newdate \""\$fname-\$year-\$mm-\$day\"";\r\"
+            //        ,"\r\n"
+            //        ,@"\ndelay 5;\r\"
+            //   });
+            //    _name = @"\$newdate";
+            //}
+            //else
+            //{
+            //    delay = @"""delay 5;\r\";
+            //    _name = nfile;
+            //}
+            //return string.Concat(new string[]
+            //       {
+            //       "/system scheduler"
+            //       ,"\r\n"
+            //       ,@"add"
+            //       ,inter
+            //       ," name="
+            //       ,namescheduler
+            //       ,@" on-event=\"
+            //       ,"\r\n"
+            //       ,delay
+            //       ,"\r\n"
+            //       ,@"\nsystem backup save name="
+            //       ,_name," dont-encrypt=",encrypt,@"\r\"
+            //       ,"\r\n"
+            //       ,@"\n"" policy=\"
+            //       ,"\r\n"
+            //       ,@"ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \"
+            //       ,"\r\n"
+            //       ,@"start-date="
+            //       ,startdate
+            //       ," start-time="
+            //       ,starttime
+            //       });
         }
         #endregion
         #region SecS

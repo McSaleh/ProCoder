@@ -14,6 +14,7 @@ namespace LBMS_Pro
 {
     public partial class FrmMain : Form
     {
+
         private Mode mode;
         private int NUQ = 2;
         private string Pppoe;
@@ -704,6 +705,111 @@ namespace LBMS_Pro
         {
 
         }
+        private bool vaildataMikS(Mode mod)
+        {
+            bool res = false;
+            switch (mod)
+            {
+                case Mode.MikSMBackUp:
+                    res = false;
+                    break;
+                case Mode.MikSMBackupToEmail:
+                    res = false;
+                    break;
+                case Mode.MikSMBackUpRSC:
+                    if (MikSBRSC_ScaName.Text.Length > 0)
+                    {
+                        CheckText(MikSBRSC_ScaName);
+                        if (MikSBRSC_FileName.Text.Length > 0)
+                        {
+                            CheckText(MikSBRSC_FileName);
+                            res = true;
+                        }
+                        else
+                        {
+                            MessageBox.Show("لا يمكن ان يكون إسم الملف فارغا");
+                            MikSBRSC_FileName.Focus();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("لا يمكن ان يكون إسم المهمة فارغا");
+                        MikSBRSC_ScaName.Focus();
+                    }
+                    break;
+                case Mode.MikSMBackupRSCToEmail:
+                    res = false;
+                    break;
+                case Mode.MikSMLogBackup:
+                    res = false;
+                    break;
+                case Mode.MikSMLogBackupToEmail:
+                    res = false;
+                    break;
+                case Mode.MikSQDAutoSpeed:
+                    res = false;
+                    break;
+                case Mode.MikSQTAutoSpeed:
+                    res = false;
+                    break;
+                case Mode.MikSUMBackUp:
+                    res = false;
+                    break;
+                case Mode.MikSUMBackupToEmail:
+                    res = false;
+                    break;
+            }
+            return res;
+        }
+        private void BT_MikSBRSC_Click(object sender, EventArgs e)
+        {
+            if (vaildataMikS(Mode.MikSMBackUpRSC))
+            {
+                DateTime _date = MikSBRSC_StartDate.Value;
+                DateTime date = new DateTime(_date.Year, _date.Month, _date.Day);
+                TB_Result.Text = _cms.MikSMBackUpRSC(MikSBRSC_ScaName.Text, MikSBRSC_FileName.Text, date.ToString("MMM/dd/yyyy", System.Globalization.CultureInfo.InvariantCulture), MikSBRSC_StartTime.Value.ToString("HH:mm:ss"), MikSBRSC_interval.Value.ToString() + "d", MikSBRSC_CanInterval.Checked,CB_MikSBRSC_overwrite.Checked);
+            }   
+        }
+
+        private void MikSBRSC_ScaName_Validated(object sender, EventArgs e)
+        {
+            CheckText(sender);
+        }
+
+        private void MikSBRSC_FileName_Validated(object sender, EventArgs e)
+        {
+            CheckText(sender);
+        }
+        private void CheckText(object sender)
+        {
+            TextBox tb = sender as TextBox;
+                string s = tb.Text;
+                s.Replace(" ", "");
+                s.Replace(".", "");
+                s.Replace(",", "");
+                s.Replace(">", "");
+                s.Replace("<", "");
+                s.Replace("}", "");
+                s.Replace("{", "");
+                s.Replace("]", "");
+                s.Replace("[", "");
+                s.Replace("/", "");
+                s.Replace(@"\", "");
+                tb.Text = s;
+        }
+
+        private void BT_MikSBlockPornSites_Click(object sender, EventArgs e)
+        {
+            TB_Result.Text = "/ip dns set servers=1.1.1.3,1.0.0.3";
+        }
+
+        private void BT_MikSB_Click(object sender, EventArgs e)
+        {
+
+            DateTime _date = MikSB_StartDate.Value;
+            DateTime date = new DateTime(_date.Year, _date.Month, _date.Day);
+            TB_Result.Text = _cms.MikSMBackUp(MikSB_ScName.Text,MikSB_fileName.Text, date.ToString("MMM/dd/yyyy", System.Globalization.CultureInfo.InvariantCulture), MikSB_StartTime.Value.ToString("HH:mm:ss"), MikSB_interval.Value.ToString() + "d", CB_MikSB_Caninterval.Checked, CB_MikSB_overwrite.Checked,CB_MikSB_DontEncrypt.Checked);
+        }
     }
     public enum Mode
     {
@@ -722,6 +828,7 @@ namespace LBMS_Pro
        , MikSMLogBackupToEmail
        , MikSUMRemoveSection
        , MikSUMRebuildDataBase
+       , MikSBlockPornSites
        , SecSFreedom
        , SecSFreedom1
        , SecSNetCut
