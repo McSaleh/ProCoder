@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="processor.ico" />
+    <None Include="Resources\MikSUMBU.txt" />
     <None Include="Resources\MikSBrsc.txt" />
     <None Include="Resources\MikSMBU.txt" />
     <None Include="Resources\automation.png" />

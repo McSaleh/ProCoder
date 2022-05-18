@@ -194,7 +194,6 @@ namespace LBMS_Pro.Properties {
         /// <summary>
         ///   Looks up a localized string similar to /system scheduler
         ///add interval=1d name=SNA on-event=&quot;:local fname \&quot;FNA\&quot;;\r\
-        ///    \n:local typ &quot;.rsc&quot;;\r\
         ///    \n:local date [/system clock get date];\r\
         ///    \n:local months {\&quot;jan\&quot;=\&quot;01\&quot;;\&quot;feb\&quot;=\&quot;02\&quot;;\&quot;mar\&quot;=\&quot;03\&quot;;\&quot;apr\&quot;=\&quot;04\
         ///    \&quot;;\&quot;may\&quot;=\&quot;05\&quot;;\&quot;jun\&quot;=\&quot;06\&quot;;\&quot;jul\&quot;=\&quot;07\&quot;;\&quot;aug\&quot;=\&quot;08\&quot;;\&quot;sep\&quot;=\&quot;0\
@@ -202,7 +201,7 @@ namespace LBMS_Pro.Properties {
         ///    \n:local day [:tonum [:pick \$date 4 6]];\r\
         ///    \n:local year [:tonum [:pick \$date 7 11]];\r\
         ///    \n:local month [:pick \$date 0 3];\r\
-        ///  [rest of string was truncated]&quot;;.
+        ///    \n:local mm (:\$months-&gt;\$ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string MikSBrsc {
             get {
@@ -246,6 +245,24 @@ namespace LBMS_Pro.Properties {
         internal static string MikSQTAS {
             get {
                 return ResourceManager.GetString("MikSQTAS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to /system scheduler
+        ///add interval=1d name=SNA on-event=&quot;:local fname \&quot;FNA\&quot;;\r\
+        ///    \n:local date [/system clock get date];\r\
+        ///    \n:local months {\&quot;jan\&quot;=\&quot;01\&quot;;\&quot;feb\&quot;=\&quot;02\&quot;;\&quot;mar\&quot;=\&quot;03\&quot;;\&quot;apr\&quot;=\&quot;04\
+        ///    \&quot;;\&quot;may\&quot;=\&quot;05\&quot;;\&quot;jun\&quot;=\&quot;06\&quot;;\&quot;jul\&quot;=\&quot;07\&quot;;\&quot;aug\&quot;=\&quot;08\&quot;;\&quot;sep\&quot;=\&quot;0\
+        ///    9\&quot;;\&quot;oct\&quot;=10;\&quot;nov\&quot;=11;\&quot;dec\&quot;=12};\r\
+        ///    \n:local day [:tonum [:pick \$date 4 6]];\r\
+        ///    \n:local year [:tonum [:pick \$date 7 11]];\r\
+        ///    \n:local month [:pick \$date 0 3];\r\
+        ///    \n:local mm (:\$months-&gt;\$ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MikSUMBU {
+            get {
+                return ResourceManager.GetString("MikSUMBU", resourceCulture);
             }
         }
         

@@ -626,7 +626,10 @@ namespace LBMS_Pro
 
         private void BT_Exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("هل تريد الخروج من البرنامج","سيتم إغلاق البرنامج", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Close();
+            }           
         }
         private void BT_SecScr_Click(object sender, EventArgs e)
         {
@@ -809,6 +812,37 @@ namespace LBMS_Pro
             DateTime _date = MikSB_StartDate.Value;
             DateTime date = new DateTime(_date.Year, _date.Month, _date.Day);
             TB_Result.Text = _cms.MikSMBackUp(MikSB_ScName.Text,MikSB_fileName.Text, date.ToString("MMM/dd/yyyy", System.Globalization.CultureInfo.InvariantCulture), MikSB_StartTime.Value.ToString("HH:mm:ss"), MikSB_interval.Value.ToString() + "d", CB_MikSB_Caninterval.Checked, CB_MikSB_overwrite.Checked,CB_MikSB_DontEncrypt.Checked);
+        }
+
+        private void BT_MikSUMBackUp_Click(object sender, EventArgs e)
+        {
+            DateTime _date = MikSUMB_StartDate.Value;
+            DateTime date = new DateTime(_date.Year, _date.Month, _date.Day);
+            TB_Result.Text = _cms.MikSUMBackUp(MikSUMB_Schname.Text, MikSUMB_Filename.Text, date.ToString("MMM/dd/yyyy", System.Globalization.CultureInfo.InvariantCulture), MikSUMB_StartTime.Value.ToString("HH:mm:ss"), MikSUMB_Interval.Value.ToString() + "d", MikSUMB_CanInterval.Checked, MikSUMB_overwrite.Checked);
+        }
+
+        private void Lin_Face_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LinkLabel link = sender as LinkLabel;
+            System.Diagnostics.Process.Start(link.Text);
+        }
+
+        private void Lin_Tik_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LinkLabel link = sender as LinkLabel;
+            System.Diagnostics.Process.Start(link.Text);
+        }
+
+        private void Lin_Twi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LinkLabel link = sender as LinkLabel;
+            System.Diagnostics.Process.Start(link.Text);
+        }
+
+        private void Lin_You_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LinkLabel link = sender as LinkLabel;
+            System.Diagnostics.Process.Start(link.Text);
         }
     }
     public enum Mode

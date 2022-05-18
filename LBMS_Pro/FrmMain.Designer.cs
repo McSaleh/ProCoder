@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PL_Up = new System.Windows.Forms.Panel();
             this.BT_info = new System.Windows.Forms.Button();
             this.BT_Exit = new System.Windows.Forms.Button();
@@ -70,11 +70,46 @@
             this.TB_OUTSub = new System.Windows.Forms.TextBox();
             this.TP_MikScr = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.MikSUMB_overwrite = new System.Windows.Forms.CheckBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.MikSUMB_StartDate = new System.Windows.Forms.DateTimePicker();
+            this.label56 = new System.Windows.Forms.Label();
+            this.MikSUMB_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.MikSUMB_Interval = new System.Windows.Forms.NumericUpDown();
+            this.MikSUMB_Filename = new System.Windows.Forms.TextBox();
+            this.MikSUMB_CanInterval = new System.Windows.Forms.CheckBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.BT_MikSUMBackUp = new System.Windows.Forms.Button();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.MikSUMB_Schname = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.BT_MikSBlockPornSites = new System.Windows.Forms.Button();
+            this.label55 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.CB_MikSB_overwrite = new System.Windows.Forms.CheckBox();
+            this.CB_MikSB_DontEncrypt = new System.Windows.Forms.CheckBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.MikSB_StartDate = new System.Windows.Forms.DateTimePicker();
+            this.label46 = new System.Windows.Forms.Label();
+            this.MikSB_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.MikSB_interval = new System.Windows.Forms.NumericUpDown();
+            this.MikSB_fileName = new System.Windows.Forms.TextBox();
+            this.CB_MikSB_Caninterval = new System.Windows.Forms.CheckBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.BT_MikSB = new System.Windows.Forms.Button();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.MikSB_ScName = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label48 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.CB_MikSBRSC_overwrite = new System.Windows.Forms.CheckBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.MikSBRSC_StartDate = new System.Windows.Forms.DateTimePicker();
@@ -88,19 +123,6 @@
             this.label45 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.MikSBRSC_ScaName = new System.Windows.Forms.TextBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.label42 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label36 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.GB_SimpleQueue = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.NU_SpeedNet = new System.Windows.Forms.NumericUpDown();
@@ -185,26 +207,21 @@
             this.BT_BALANCE = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.MikSB_StartDate = new System.Windows.Forms.DateTimePicker();
-            this.label46 = new System.Windows.Forms.Label();
-            this.MikSB_StartTime = new System.Windows.Forms.DateTimePicker();
-            this.MikSB_interval = new System.Windows.Forms.NumericUpDown();
-            this.MikSB_fileName = new System.Windows.Forms.TextBox();
-            this.CB_MikSB_Caninterval = new System.Windows.Forms.CheckBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.BT_MikSB = new System.Windows.Forms.Button();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.MikSB_ScName = new System.Windows.Forms.TextBox();
-            this.CB_MikSB_DontEncrypt = new System.Windows.Forms.CheckBox();
-            this.CB_MikSB_overwrite = new System.Windows.Forms.CheckBox();
-            this.CB_MikSBRSC_overwrite = new System.Windows.Forms.CheckBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.BT_MikSBlockPornSites = new System.Windows.Forms.Button();
-            this.label55 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label40 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
             this.PL_Up.SuspendLayout();
             this.PL_Main.SuspendLayout();
             this.TC_Main.SuspendLayout();
@@ -214,13 +231,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUP_NRQ)).BeginInit();
             this.TP_MikScr.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MikSUMB_Interval)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MikSB_interval)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MikSBRSC_interval)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.GB_SimpleQueue.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NU_SpeedNet)).BeginInit();
             this.GB_QueueTree.SuspendLayout();
@@ -246,9 +264,8 @@
             this.PL_Down.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MikSB_interval)).BeginInit();
-            this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // PL_Up
@@ -270,8 +287,6 @@
             this.BT_info.BackgroundImage = global::LBMS_Pro.Properties.Resources.info__2_;
             this.BT_info.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BT_info.FlatAppearance.BorderSize = 0;
-            this.BT_info.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
-            this.BT_info.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BT_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_info.Font = new System.Drawing.Font("Janna LT", 9F);
             this.BT_info.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -288,8 +303,6 @@
             this.BT_Exit.BackgroundImage = global::LBMS_Pro.Properties.Resources.logout;
             this.BT_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BT_Exit.FlatAppearance.BorderSize = 0;
-            this.BT_Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
-            this.BT_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BT_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Exit.Font = new System.Drawing.Font("Janna LT", 9F);
             this.BT_Exit.ForeColor = System.Drawing.SystemColors.Window;
@@ -310,7 +323,7 @@
             this.BT_CS.ForeColor = System.Drawing.SystemColors.Window;
             this.BT_CS.Image = global::LBMS_Pro.Properties.Resources.create;
             this.BT_CS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BT_CS.Location = new System.Drawing.Point(484, 6);
+            this.BT_CS.Location = new System.Drawing.Point(590, 3);
             this.BT_CS.Name = "BT_CS";
             this.BT_CS.Size = new System.Drawing.Size(190, 38);
             this.BT_CS.TabIndex = 0;
@@ -415,31 +428,31 @@
             this.TP_LBS.Location = new System.Drawing.Point(4, 4);
             this.TP_LBS.Name = "TP_LBS";
             this.TP_LBS.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_LBS.Size = new System.Drawing.Size(675, 465);
+            this.TP_LBS.Size = new System.Drawing.Size(775, 465);
             this.TP_LBS.TabIndex = 0;
             this.TP_LBS.Text = "دمج";
             // 
             // DGV_Main
             // 
             this.DGV_Main.AllowUserToAddRows = false;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DGV_Main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_Main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
             this.DGV_Main.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
             this.DGV_Main.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGV_Main.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.YellowGreen;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.YellowGreen;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.DGV_Main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Main.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.C_interface,
@@ -455,43 +468,43 @@
             this.C_WlanNetIP,
             this.C_WlanIPGetway,
             this.C_index});
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.BlueViolet;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Main.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.BlueViolet;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Main.DefaultCellStyle = dataGridViewCellStyle28;
             this.DGV_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Main.EnableHeadersVisualStyles = false;
             this.DGV_Main.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DGV_Main.Location = new System.Drawing.Point(3, 3);
             this.DGV_Main.Name = "DGV_Main";
             this.DGV_Main.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.DGV_Main.RowHeadersWidth = 24;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DGV_Main.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_Main.RowsDefaultCellStyle = dataGridViewCellStyle30;
             this.DGV_Main.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.DGV_Main.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DGV_Main.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DGV_Main.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DGV_Main.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.DGV_Main.RowTemplate.ReadOnly = true;
-            this.DGV_Main.Size = new System.Drawing.Size(669, 365);
+            this.DGV_Main.Size = new System.Drawing.Size(769, 365);
             this.DGV_Main.TabIndex = 0;
             this.DGV_Main.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Main_CellContentClick);
             this.DGV_Main.CellValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Main_CellValidated);
@@ -598,8 +611,8 @@
             // 
             // C_index
             // 
-            dataGridViewCellStyle15.NullValue = "0";
-            this.C_index.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle27.NullValue = "0";
+            this.C_index.DefaultCellStyle = dataGridViewCellStyle27;
             this.C_index.HeaderText = "index";
             this.C_index.Name = "C_index";
             this.C_index.Visible = false;
@@ -624,7 +637,7 @@
             this.groupBox1.Location = new System.Drawing.Point(3, 368);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(669, 94);
+            this.groupBox1.Size = new System.Drawing.Size(769, 94);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "معاومات كرت الخروج";
@@ -742,12 +755,12 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.groupBox5);
+            this.panel2.Controls.Add(this.groupBox11);
             this.panel2.Controls.Add(this.groupBox6);
             this.panel2.Controls.Add(this.groupBox10);
             this.panel2.Controls.Add(this.groupBox9);
             this.panel2.Controls.Add(this.groupBox8);
-            this.panel2.Controls.Add(this.groupBox7);
-            this.panel2.Controls.Add(this.groupBox5);
             this.panel2.Controls.Add(this.GB_SimpleQueue);
             this.panel2.Controls.Add(this.GB_QueueTree);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -757,6 +770,496 @@
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
+            // groupBox11
+            // 
+            this.groupBox11.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox11.Controls.Add(this.MikSUMB_overwrite);
+            this.groupBox11.Controls.Add(this.label39);
+            this.groupBox11.Controls.Add(this.label54);
+            this.groupBox11.Controls.Add(this.MikSUMB_StartDate);
+            this.groupBox11.Controls.Add(this.label56);
+            this.groupBox11.Controls.Add(this.MikSUMB_StartTime);
+            this.groupBox11.Controls.Add(this.MikSUMB_Interval);
+            this.groupBox11.Controls.Add(this.MikSUMB_Filename);
+            this.groupBox11.Controls.Add(this.MikSUMB_CanInterval);
+            this.groupBox11.Controls.Add(this.label57);
+            this.groupBox11.Controls.Add(this.BT_MikSUMBackUp);
+            this.groupBox11.Controls.Add(this.label58);
+            this.groupBox11.Controls.Add(this.label59);
+            this.groupBox11.Controls.Add(this.MikSUMB_Schname);
+            this.groupBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox11.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox11.Location = new System.Drawing.Point(1, 397);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox11.Size = new System.Drawing.Size(401, 211);
+            this.groupBox11.TabIndex = 36;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "UserManger Auto Backup";
+            // 
+            // MikSUMB_overwrite
+            // 
+            this.MikSUMB_overwrite.AutoSize = true;
+            this.MikSUMB_overwrite.BackColor = System.Drawing.Color.Transparent;
+            this.MikSUMB_overwrite.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.MikSUMB_overwrite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.MikSUMB_overwrite.Location = new System.Drawing.Point(2, 147);
+            this.MikSUMB_overwrite.Name = "MikSUMB_overwrite";
+            this.MikSUMB_overwrite.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.MikSUMB_overwrite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.MikSUMB_overwrite.Size = new System.Drawing.Size(397, 26);
+            this.MikSUMB_overwrite.TabIndex = 35;
+            this.MikSUMB_overwrite.Tag = "MikSUMBackUp";
+            this.MikSUMB_overwrite.Text = "إنشاء ملف لكل نسخة / فعل هذا الخيار إذا كان لديك ذاكرة خارجية فقط ";
+            this.MikSUMB_overwrite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MikSUMB_overwrite.UseVisualStyleBackColor = false;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(174, 123);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(29, 22);
+            this.label39.TabIndex = 32;
+            this.label39.Text = "يوم";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(108, 89);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(98, 22);
+            this.label54.TabIndex = 31;
+            this.label54.Text = "وقت بدء التشغيل";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MikSUMB_StartDate
+            // 
+            this.MikSUMB_StartDate.CustomFormat = "dd/MM/yyyyy";
+            this.MikSUMB_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.MikSUMB_StartDate.Location = new System.Drawing.Point(3, 54);
+            this.MikSUMB_StartDate.Name = "MikSUMB_StartDate";
+            this.MikSUMB_StartDate.ShowUpDown = true;
+            this.MikSUMB_StartDate.Size = new System.Drawing.Size(103, 30);
+            this.MikSUMB_StartDate.TabIndex = 23;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(108, 59);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(95, 22);
+            this.label56.TabIndex = 30;
+            this.label56.Text = "تاريخ بدء التشغيل";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MikSUMB_StartTime
+            // 
+            this.MikSUMB_StartTime.CustomFormat = "ss:mm:HH";
+            this.MikSUMB_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.MikSUMB_StartTime.Location = new System.Drawing.Point(3, 86);
+            this.MikSUMB_StartTime.Name = "MikSUMB_StartTime";
+            this.MikSUMB_StartTime.ShowUpDown = true;
+            this.MikSUMB_StartTime.Size = new System.Drawing.Size(103, 30);
+            this.MikSUMB_StartTime.TabIndex = 28;
+            this.MikSUMB_StartTime.Value = new System.DateTime(2022, 5, 17, 4, 5, 0, 0);
+            // 
+            // MikSUMB_Interval
+            // 
+            this.MikSUMB_Interval.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MikSUMB_Interval.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MikSUMB_Interval.Location = new System.Drawing.Point(207, 120);
+            this.MikSUMB_Interval.Maximum = new decimal(new int[] {
+            366,
+            0,
+            0,
+            0});
+            this.MikSUMB_Interval.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.MikSUMB_Interval.Name = "MikSUMB_Interval";
+            this.MikSUMB_Interval.Size = new System.Drawing.Size(56, 26);
+            this.MikSUMB_Interval.TabIndex = 29;
+            this.MikSUMB_Interval.Tag = "MikSUMBackUp";
+            this.MikSUMB_Interval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MikSUMB_Interval.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // MikSUMB_Filename
+            // 
+            this.MikSUMB_Filename.Location = new System.Drawing.Point(207, 86);
+            this.MikSUMB_Filename.MaxLength = 20;
+            this.MikSUMB_Filename.Name = "MikSUMB_Filename";
+            this.MikSUMB_Filename.Size = new System.Drawing.Size(115, 30);
+            this.MikSUMB_Filename.TabIndex = 27;
+            this.MikSUMB_Filename.Tag = "MikSUMBackUp";
+            this.MikSUMB_Filename.Text = "UMFile";
+            this.MikSUMB_Filename.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // MikSUMB_CanInterval
+            // 
+            this.MikSUMB_CanInterval.AutoSize = true;
+            this.MikSUMB_CanInterval.BackColor = System.Drawing.Color.Transparent;
+            this.MikSUMB_CanInterval.Checked = true;
+            this.MikSUMB_CanInterval.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.MikSUMB_CanInterval.Location = new System.Drawing.Point(262, 120);
+            this.MikSUMB_CanInterval.Name = "MikSUMB_CanInterval";
+            this.MikSUMB_CanInterval.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.MikSUMB_CanInterval.Size = new System.Drawing.Size(134, 26);
+            this.MikSUMB_CanInterval.TabIndex = 17;
+            this.MikSUMB_CanInterval.Tag = "MikSUMBackUp";
+            this.MikSUMB_CanInterval.Text = "تكرار هذه المهمة كل";
+            this.MikSUMB_CanInterval.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MikSUMB_CanInterval.UseVisualStyleBackColor = false;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(327, 89);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(66, 22);
+            this.label57.TabIndex = 26;
+            this.label57.Text = "إسم الملف";
+            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BT_MikSUMBackUp
+            // 
+            this.BT_MikSUMBackUp.BackColor = System.Drawing.Color.Goldenrod;
+            this.BT_MikSUMBackUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_MikSUMBackUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_MikSUMBackUp.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BT_MikSUMBackUp.FlatAppearance.BorderSize = 0;
+            this.BT_MikSUMBackUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_MikSUMBackUp.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_MikSUMBackUp.ForeColor = System.Drawing.Color.White;
+            this.BT_MikSUMBackUp.Location = new System.Drawing.Point(2, 173);
+            this.BT_MikSUMBackUp.Margin = new System.Windows.Forms.Padding(1);
+            this.BT_MikSUMBackUp.Name = "BT_MikSUMBackUp";
+            this.BT_MikSUMBackUp.Padding = new System.Windows.Forms.Padding(2);
+            this.BT_MikSUMBackUp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BT_MikSUMBackUp.Size = new System.Drawing.Size(397, 36);
+            this.BT_MikSUMBackUp.TabIndex = 19;
+            this.BT_MikSUMBackUp.Tag = "MikSUMBackUp";
+            this.BT_MikSUMBackUp.Text = "إنشاء الإسكربت";
+            this.BT_MikSUMBackUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_MikSUMBackUp.UseVisualStyleBackColor = false;
+            this.BT_MikSUMBackUp.Click += new System.EventHandler(this.BT_MikSUMBackUp_Click);
+            // 
+            // label58
+            // 
+            this.label58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label58.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label58.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(2, 25);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(397, 29);
+            this.label58.TabIndex = 16;
+            this.label58.Text = "إنشاء نسخة إحتياطية اوتوماتيك يوميا لليوزر مانجر";
+            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(327, 59);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(73, 22);
+            this.label59.TabIndex = 25;
+            this.label59.Text = "إسم المهمة";
+            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MikSUMB_Schname
+            // 
+            this.MikSUMB_Schname.Location = new System.Drawing.Point(207, 54);
+            this.MikSUMB_Schname.MaxLength = 20;
+            this.MikSUMB_Schname.Name = "MikSUMB_Schname";
+            this.MikSUMB_Schname.Size = new System.Drawing.Size(115, 30);
+            this.MikSUMB_Schname.TabIndex = 24;
+            this.MikSUMB_Schname.Tag = "MikSUMBackUp";
+            this.MikSUMB_Schname.Text = "UMBackup";
+            this.MikSUMB_Schname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox6.Controls.Add(this.label62);
+            this.groupBox6.Controls.Add(this.BT_MikSBlockPornSites);
+            this.groupBox6.Controls.Add(this.label55);
+            this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox6.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox6.Location = new System.Drawing.Point(395, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox6.Size = new System.Drawing.Size(188, 175);
+            this.groupBox6.TabIndex = 22;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Block Porn Sites";
+            // 
+            // BT_MikSBlockPornSites
+            // 
+            this.BT_MikSBlockPornSites.BackColor = System.Drawing.Color.Goldenrod;
+            this.BT_MikSBlockPornSites.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_MikSBlockPornSites.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_MikSBlockPornSites.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BT_MikSBlockPornSites.FlatAppearance.BorderSize = 0;
+            this.BT_MikSBlockPornSites.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_MikSBlockPornSites.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_MikSBlockPornSites.ForeColor = System.Drawing.Color.White;
+            this.BT_MikSBlockPornSites.Location = new System.Drawing.Point(2, 141);
+            this.BT_MikSBlockPornSites.Margin = new System.Windows.Forms.Padding(1);
+            this.BT_MikSBlockPornSites.Name = "BT_MikSBlockPornSites";
+            this.BT_MikSBlockPornSites.Padding = new System.Windows.Forms.Padding(2);
+            this.BT_MikSBlockPornSites.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BT_MikSBlockPornSites.Size = new System.Drawing.Size(184, 32);
+            this.BT_MikSBlockPornSites.TabIndex = 19;
+            this.BT_MikSBlockPornSites.Tag = "MikSBlockPornSites";
+            this.BT_MikSBlockPornSites.Text = "إنشاء الإسكربت";
+            this.BT_MikSBlockPornSites.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_MikSBlockPornSites.UseVisualStyleBackColor = false;
+            this.BT_MikSBlockPornSites.Click += new System.EventHandler(this.BT_MikSBlockPornSites_Click);
+            // 
+            // label55
+            // 
+            this.label55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label55.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label55.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label55.Location = new System.Drawing.Point(2, 25);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(184, 28);
+            this.label55.TabIndex = 16;
+            this.label55.Text = "حظر جميع المواقع الإباحية";
+            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox10.Controls.Add(this.CB_MikSB_overwrite);
+            this.groupBox10.Controls.Add(this.CB_MikSB_DontEncrypt);
+            this.groupBox10.Controls.Add(this.label37);
+            this.groupBox10.Controls.Add(this.label38);
+            this.groupBox10.Controls.Add(this.MikSB_StartDate);
+            this.groupBox10.Controls.Add(this.label46);
+            this.groupBox10.Controls.Add(this.MikSB_StartTime);
+            this.groupBox10.Controls.Add(this.MikSB_interval);
+            this.groupBox10.Controls.Add(this.MikSB_fileName);
+            this.groupBox10.Controls.Add(this.CB_MikSB_Caninterval);
+            this.groupBox10.Controls.Add(this.label47);
+            this.groupBox10.Controls.Add(this.BT_MikSB);
+            this.groupBox10.Controls.Add(this.label52);
+            this.groupBox10.Controls.Add(this.label53);
+            this.groupBox10.Controls.Add(this.MikSB_ScName);
+            this.groupBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox10.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox10.Location = new System.Drawing.Point(406, 182);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox10.Size = new System.Drawing.Size(401, 211);
+            this.groupBox10.TabIndex = 33;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Mikrotik Auto Backup";
+            // 
+            // CB_MikSB_overwrite
+            // 
+            this.CB_MikSB_overwrite.AutoSize = true;
+            this.CB_MikSB_overwrite.BackColor = System.Drawing.Color.Transparent;
+            this.CB_MikSB_overwrite.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.CB_MikSB_overwrite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.CB_MikSB_overwrite.Location = new System.Drawing.Point(2, 145);
+            this.CB_MikSB_overwrite.Name = "CB_MikSB_overwrite";
+            this.CB_MikSB_overwrite.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.CB_MikSB_overwrite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CB_MikSB_overwrite.Size = new System.Drawing.Size(397, 26);
+            this.CB_MikSB_overwrite.TabIndex = 34;
+            this.CB_MikSB_overwrite.Text = "إنشاء ملف لكل نسخة / فعل هذا الخيار إذا كان لديك ذاكرة خارجية فقط ";
+            this.CB_MikSB_overwrite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_MikSB_overwrite.UseVisualStyleBackColor = false;
+            // 
+            // CB_MikSB_DontEncrypt
+            // 
+            this.CB_MikSB_DontEncrypt.AutoSize = true;
+            this.CB_MikSB_DontEncrypt.BackColor = System.Drawing.Color.Transparent;
+            this.CB_MikSB_DontEncrypt.Location = new System.Drawing.Point(3, 119);
+            this.CB_MikSB_DontEncrypt.Name = "CB_MikSB_DontEncrypt";
+            this.CB_MikSB_DontEncrypt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CB_MikSB_DontEncrypt.Size = new System.Drawing.Size(148, 26);
+            this.CB_MikSB_DontEncrypt.TabIndex = 33;
+            this.CB_MikSB_DontEncrypt.Text = "عدم تشفير هذه النسخة";
+            this.CB_MikSB_DontEncrypt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_MikSB_DontEncrypt.UseVisualStyleBackColor = false;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(174, 122);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(29, 22);
+            this.label37.TabIndex = 32;
+            this.label37.Text = "يوم";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(108, 89);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(98, 22);
+            this.label38.TabIndex = 31;
+            this.label38.Text = "وقت بدء التشغيل";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MikSB_StartDate
+            // 
+            this.MikSB_StartDate.CustomFormat = "dd/MM/yyyyy";
+            this.MikSB_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.MikSB_StartDate.Location = new System.Drawing.Point(3, 54);
+            this.MikSB_StartDate.Name = "MikSB_StartDate";
+            this.MikSB_StartDate.ShowUpDown = true;
+            this.MikSB_StartDate.Size = new System.Drawing.Size(103, 30);
+            this.MikSB_StartDate.TabIndex = 23;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(108, 59);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(95, 22);
+            this.label46.TabIndex = 30;
+            this.label46.Text = "تاريخ بدء التشغيل";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MikSB_StartTime
+            // 
+            this.MikSB_StartTime.CustomFormat = "ss:mm:HH";
+            this.MikSB_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.MikSB_StartTime.Location = new System.Drawing.Point(3, 86);
+            this.MikSB_StartTime.Name = "MikSB_StartTime";
+            this.MikSB_StartTime.ShowUpDown = true;
+            this.MikSB_StartTime.Size = new System.Drawing.Size(103, 30);
+            this.MikSB_StartTime.TabIndex = 28;
+            this.MikSB_StartTime.Value = new System.DateTime(2022, 5, 17, 4, 0, 0, 0);
+            // 
+            // MikSB_interval
+            // 
+            this.MikSB_interval.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MikSB_interval.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MikSB_interval.Location = new System.Drawing.Point(207, 119);
+            this.MikSB_interval.Maximum = new decimal(new int[] {
+            366,
+            0,
+            0,
+            0});
+            this.MikSB_interval.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.MikSB_interval.Name = "MikSB_interval";
+            this.MikSB_interval.Size = new System.Drawing.Size(47, 26);
+            this.MikSB_interval.TabIndex = 29;
+            this.MikSB_interval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MikSB_interval.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // MikSB_fileName
+            // 
+            this.MikSB_fileName.Location = new System.Drawing.Point(207, 86);
+            this.MikSB_fileName.MaxLength = 20;
+            this.MikSB_fileName.Name = "MikSB_fileName";
+            this.MikSB_fileName.Size = new System.Drawing.Size(115, 30);
+            this.MikSB_fileName.TabIndex = 27;
+            this.MikSB_fileName.Text = "MikrotikBackup";
+            this.MikSB_fileName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CB_MikSB_Caninterval
+            // 
+            this.CB_MikSB_Caninterval.AutoSize = true;
+            this.CB_MikSB_Caninterval.BackColor = System.Drawing.Color.Transparent;
+            this.CB_MikSB_Caninterval.Checked = true;
+            this.CB_MikSB_Caninterval.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CB_MikSB_Caninterval.Location = new System.Drawing.Point(262, 119);
+            this.CB_MikSB_Caninterval.Name = "CB_MikSB_Caninterval";
+            this.CB_MikSB_Caninterval.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CB_MikSB_Caninterval.Size = new System.Drawing.Size(134, 26);
+            this.CB_MikSB_Caninterval.TabIndex = 17;
+            this.CB_MikSB_Caninterval.Text = "تكرار هذه المهمة كل";
+            this.CB_MikSB_Caninterval.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_MikSB_Caninterval.UseVisualStyleBackColor = false;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(327, 89);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(66, 22);
+            this.label47.TabIndex = 26;
+            this.label47.Text = "إسم الملف";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BT_MikSB
+            // 
+            this.BT_MikSB.BackColor = System.Drawing.Color.Goldenrod;
+            this.BT_MikSB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_MikSB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_MikSB.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BT_MikSB.FlatAppearance.BorderSize = 0;
+            this.BT_MikSB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_MikSB.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_MikSB.ForeColor = System.Drawing.Color.White;
+            this.BT_MikSB.Location = new System.Drawing.Point(2, 171);
+            this.BT_MikSB.Margin = new System.Windows.Forms.Padding(1);
+            this.BT_MikSB.Name = "BT_MikSB";
+            this.BT_MikSB.Padding = new System.Windows.Forms.Padding(2);
+            this.BT_MikSB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BT_MikSB.Size = new System.Drawing.Size(397, 38);
+            this.BT_MikSB.TabIndex = 19;
+            this.BT_MikSB.Text = "إنشاء الإسكربت";
+            this.BT_MikSB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_MikSB.UseVisualStyleBackColor = false;
+            this.BT_MikSB.Click += new System.EventHandler(this.BT_MikSB_Click);
+            // 
+            // label52
+            // 
+            this.label52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label52.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label52.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(2, 25);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(397, 29);
+            this.label52.TabIndex = 16;
+            this.label52.Text = "إنشاء نسخة إحتياطية اوتوماتك يوميا للميكروتك";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(327, 59);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(73, 22);
+            this.label53.TabIndex = 25;
+            this.label53.Text = "إسم المهمة";
+            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MikSB_ScName
+            // 
+            this.MikSB_ScName.Location = new System.Drawing.Point(207, 54);
+            this.MikSB_ScName.MaxLength = 20;
+            this.MikSB_ScName.Name = "MikSB_ScName";
+            this.MikSB_ScName.Size = new System.Drawing.Size(115, 30);
+            this.MikSB_ScName.TabIndex = 24;
+            this.MikSB_ScName.Text = "MikrotikBackup";
+            this.MikSB_ScName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.Transparent;
@@ -765,11 +1268,11 @@
             this.groupBox9.Controls.Add(this.label48);
             this.groupBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox9.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox9.Location = new System.Drawing.Point(4, 3);
+            this.groupBox9.Location = new System.Drawing.Point(584, 17);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox9.Size = new System.Drawing.Size(179, 114);
+            this.groupBox9.Size = new System.Drawing.Size(190, 160);
             this.groupBox9.TabIndex = 22;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Auto Remove UserManger Users With Section";
@@ -779,10 +1282,10 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.checkBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.checkBox4.Location = new System.Drawing.Point(2, 60);
+            this.checkBox4.Location = new System.Drawing.Point(2, 106);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox4.Size = new System.Drawing.Size(175, 26);
+            this.checkBox4.Size = new System.Drawing.Size(186, 26);
             this.checkBox4.TabIndex = 17;
             this.checkBox4.Text = "عدم تشفير هذه النسخة";
             this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -796,14 +1299,14 @@
             this.button6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button6.Location = new System.Drawing.Point(2, 86);
+            this.button6.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(2, 132);
             this.button6.Margin = new System.Windows.Forms.Padding(1);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(2);
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button6.Size = new System.Drawing.Size(175, 26);
+            this.button6.Size = new System.Drawing.Size(186, 26);
             this.button6.TabIndex = 19;
             this.button6.Text = "إنشاء الإسكربت";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -813,10 +1316,10 @@
             // 
             this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.label48.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label48.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label48.Font = new System.Drawing.Font("Janna LT", 9F);
             this.label48.Location = new System.Drawing.Point(2, 25);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(175, 33);
+            this.label48.Size = new System.Drawing.Size(186, 33);
             this.label48.TabIndex = 16;
             this.label48.Text = "حذف الكروت المنتهية مع الجلسات يوميا من اليوزر مانجر";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -840,7 +1343,7 @@
             this.groupBox8.Controls.Add(this.MikSBRSC_ScaName);
             this.groupBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox8.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox8.Location = new System.Drawing.Point(6, 338);
+            this.groupBox8.Location = new System.Drawing.Point(1, 182);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -848,6 +1351,22 @@
             this.groupBox8.TabIndex = 21;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Mikrotik Auto RSC Backup";
+            // 
+            // CB_MikSBRSC_overwrite
+            // 
+            this.CB_MikSBRSC_overwrite.AutoSize = true;
+            this.CB_MikSBRSC_overwrite.BackColor = System.Drawing.Color.Transparent;
+            this.CB_MikSBRSC_overwrite.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.CB_MikSBRSC_overwrite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.CB_MikSBRSC_overwrite.Location = new System.Drawing.Point(2, 147);
+            this.CB_MikSBRSC_overwrite.Name = "CB_MikSBRSC_overwrite";
+            this.CB_MikSBRSC_overwrite.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.CB_MikSBRSC_overwrite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CB_MikSBRSC_overwrite.Size = new System.Drawing.Size(397, 26);
+            this.CB_MikSBRSC_overwrite.TabIndex = 35;
+            this.CB_MikSBRSC_overwrite.Text = "إنشاء ملف لكل نسخة / فعل هذا الخيار إذا كان لديك ذاكرة خارجية فقط ";
+            this.CB_MikSBRSC_overwrite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_MikSBRSC_overwrite.UseVisualStyleBackColor = false;
             // 
             // label51
             // 
@@ -1016,243 +1535,19 @@
             this.MikSBRSC_ScaName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MikSBRSC_ScaName.Validated += new System.EventHandler(this.MikSBRSC_ScaName_Validated);
             // 
-            // groupBox7
-            // 
-            this.groupBox7.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox7.Controls.Add(this.checkBox2);
-            this.groupBox7.Controls.Add(this.button4);
-            this.groupBox7.Controls.Add(this.maskedTextBox3);
-            this.groupBox7.Controls.Add(this.label40);
-            this.groupBox7.Controls.Add(this.label41);
-            this.groupBox7.Controls.Add(this.numericUpDown4);
-            this.groupBox7.Controls.Add(this.label42);
-            this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox7.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox7.Location = new System.Drawing.Point(554, 162);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Size = new System.Drawing.Size(194, 155);
-            this.groupBox7.TabIndex = 21;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "UserManger Auto Backup";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.checkBox2.Location = new System.Drawing.Point(2, 101);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox2.Size = new System.Drawing.Size(148, 26);
-            this.checkBox2.TabIndex = 17;
-            this.checkBox2.Text = "عدم تشفير هذه النسخة";
-            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Goldenrod;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(2, 127);
-            this.button4.Margin = new System.Windows.Forms.Padding(1);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(2);
-            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button4.Size = new System.Drawing.Size(190, 26);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "إنشاء الإسكربت";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
-            this.maskedTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.maskedTextBox3.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBox3.Location = new System.Drawing.Point(97, 76);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.PromptChar = '0';
-            this.maskedTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.maskedTextBox3.Size = new System.Drawing.Size(95, 21);
-            this.maskedTextBox3.TabIndex = 14;
-            this.maskedTextBox3.Text = "10.0.0.1";
-            // 
-            // label40
-            // 
-            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label40.Location = new System.Drawing.Point(0, 76);
-            this.label40.Margin = new System.Windows.Forms.Padding(2);
-            this.label40.Name = "label40";
-            this.label40.Padding = new System.Windows.Forms.Padding(1);
-            this.label40.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label40.Size = new System.Drawing.Size(94, 21);
-            this.label40.TabIndex = 18;
-            this.label40.Text = "ip كرت الخروج";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label41
-            // 
-            this.label41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label41.Location = new System.Drawing.Point(0, 54);
-            this.label41.Margin = new System.Windows.Forms.Padding(2);
-            this.label41.Name = "label41";
-            this.label41.Padding = new System.Windows.Forms.Padding(1);
-            this.label41.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label41.Size = new System.Drawing.Size(93, 21);
-            this.label41.TabIndex = 15;
-            this.label41.Text = "سرعة الانترنت";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
-            this.numericUpDown4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.numericUpDown4.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown4.Location = new System.Drawing.Point(97, 54);
-            this.numericUpDown4.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown4.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericUpDown4.Size = new System.Drawing.Size(95, 21);
-            this.numericUpDown4.TabIndex = 14;
-            this.numericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown4.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // label42
-            // 
-            this.label42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label42.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label42.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label42.Location = new System.Drawing.Point(2, 25);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(190, 36);
-            this.label42.TabIndex = 16;
-            this.label42.Text = "إنشاء نسخة إحتياطية اوتوماتيك يوميا لليوزر مانجر";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.numericUpDown2);
-            this.groupBox5.Controls.Add(this.label36);
-            this.groupBox5.Controls.Add(this.button2);
-            this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox5.Location = new System.Drawing.Point(186, 3);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Size = new System.Drawing.Size(194, 115);
-            this.groupBox5.TabIndex = 18;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Simple Queue";
-            // 
-            // label33
-            // 
-            this.label33.Location = new System.Drawing.Point(2, 55);
-            this.label33.Margin = new System.Windows.Forms.Padding(2);
-            this.label33.Name = "label33";
-            this.label33.Padding = new System.Windows.Forms.Padding(1);
-            this.label33.Size = new System.Drawing.Size(92, 30);
-            this.label33.TabIndex = 15;
-            this.label33.Text = "سرعة الانترنت";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
-            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown2.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown2.Location = new System.Drawing.Point(94, 55);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericUpDown2.Size = new System.Drawing.Size(98, 30);
-            this.numericUpDown2.TabIndex = 14;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // label36
-            // 
-            this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label36.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label36.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label36.Location = new System.Drawing.Point(2, 25);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(190, 26);
-            this.label36.TabIndex = 17;
-            this.label36.Text = "تقسيم السرعة حسب الاكتف";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Goldenrod;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.button2.Location = new System.Drawing.Point(2, 87);
-            this.button2.Margin = new System.Windows.Forms.Padding(1);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(2);
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(190, 26);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "إنشاء الإسكربت";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // GB_SimpleQueue
             // 
+            this.GB_SimpleQueue.Controls.Add(this.label61);
             this.GB_SimpleQueue.Controls.Add(this.label7);
             this.GB_SimpleQueue.Controls.Add(this.NU_SpeedNet);
             this.GB_SimpleQueue.Controls.Add(this.label10);
             this.GB_SimpleQueue.Controls.Add(this.BT_MikSQDAS);
             this.GB_SimpleQueue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GB_SimpleQueue.Location = new System.Drawing.Point(383, 3);
+            this.GB_SimpleQueue.Location = new System.Drawing.Point(1, 4);
             this.GB_SimpleQueue.Margin = new System.Windows.Forms.Padding(2);
             this.GB_SimpleQueue.Name = "GB_SimpleQueue";
             this.GB_SimpleQueue.Padding = new System.Windows.Forms.Padding(2);
-            this.GB_SimpleQueue.Size = new System.Drawing.Size(194, 115);
+            this.GB_SimpleQueue.Size = new System.Drawing.Size(194, 175);
             this.GB_SimpleQueue.TabIndex = 3;
             this.GB_SimpleQueue.TabStop = false;
             this.GB_SimpleQueue.Text = "Simple Queue";
@@ -1300,10 +1595,10 @@
             // 
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.label10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label10.Font = new System.Drawing.Font("Janna LT", 9F);
             this.label10.Location = new System.Drawing.Point(2, 25);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(190, 26);
+            this.label10.Size = new System.Drawing.Size(190, 28);
             this.label10.TabIndex = 17;
             this.label10.Text = "تقسيم السرعة حسب الاكتف";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1316,13 +1611,14 @@
             this.BT_MikSQDAS.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BT_MikSQDAS.FlatAppearance.BorderSize = 0;
             this.BT_MikSQDAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_MikSQDAS.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.BT_MikSQDAS.Location = new System.Drawing.Point(2, 87);
+            this.BT_MikSQDAS.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_MikSQDAS.ForeColor = System.Drawing.Color.White;
+            this.BT_MikSQDAS.Location = new System.Drawing.Point(2, 139);
             this.BT_MikSQDAS.Margin = new System.Windows.Forms.Padding(1);
             this.BT_MikSQDAS.Name = "BT_MikSQDAS";
             this.BT_MikSQDAS.Padding = new System.Windows.Forms.Padding(2);
             this.BT_MikSQDAS.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BT_MikSQDAS.Size = new System.Drawing.Size(190, 26);
+            this.BT_MikSQDAS.Size = new System.Drawing.Size(190, 34);
             this.BT_MikSQDAS.TabIndex = 14;
             this.BT_MikSQDAS.Text = "إنشاء الإسكربت";
             this.BT_MikSQDAS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1341,11 +1637,11 @@
             this.GB_QueueTree.Controls.Add(this.label9);
             this.GB_QueueTree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GB_QueueTree.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.GB_QueueTree.Location = new System.Drawing.Point(580, 3);
+            this.GB_QueueTree.Location = new System.Drawing.Point(197, 4);
             this.GB_QueueTree.Margin = new System.Windows.Forms.Padding(2);
             this.GB_QueueTree.Name = "GB_QueueTree";
             this.GB_QueueTree.Padding = new System.Windows.Forms.Padding(2);
-            this.GB_QueueTree.Size = new System.Drawing.Size(194, 155);
+            this.GB_QueueTree.Size = new System.Drawing.Size(194, 175);
             this.GB_QueueTree.TabIndex = 14;
             this.GB_QueueTree.TabStop = false;
             this.GB_QueueTree.Text = "Queue Tree";
@@ -1356,7 +1652,7 @@
             this.CB_RBV.AutoSize = true;
             this.CB_RBV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.CB_RBV.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.CB_RBV.Location = new System.Drawing.Point(2, 101);
+            this.CB_RBV.Location = new System.Drawing.Point(2, 113);
             this.CB_RBV.Name = "CB_RBV";
             this.CB_RBV.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_RBV.Size = new System.Drawing.Size(190, 26);
@@ -1374,14 +1670,14 @@
             this.BT_MikSQTAS.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BT_MikSQTAS.FlatAppearance.BorderSize = 0;
             this.BT_MikSQTAS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_MikSQTAS.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.BT_MikSQTAS.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BT_MikSQTAS.Location = new System.Drawing.Point(2, 127);
+            this.BT_MikSQTAS.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_MikSQTAS.ForeColor = System.Drawing.Color.White;
+            this.BT_MikSQTAS.Location = new System.Drawing.Point(2, 139);
             this.BT_MikSQTAS.Margin = new System.Windows.Forms.Padding(1);
             this.BT_MikSQTAS.Name = "BT_MikSQTAS";
             this.BT_MikSQTAS.Padding = new System.Windows.Forms.Padding(2);
             this.BT_MikSQTAS.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BT_MikSQTAS.Size = new System.Drawing.Size(190, 26);
+            this.BT_MikSQTAS.Size = new System.Drawing.Size(190, 34);
             this.BT_MikSQTAS.TabIndex = 19;
             this.BT_MikSQTAS.Text = "إنشاء الإسكربت";
             this.BT_MikSQTAS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1392,21 +1688,21 @@
             // 
             this.MTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.MTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.MTB.Font = new System.Drawing.Font("Janna LT", 9F);
             this.MTB.ForeColor = System.Drawing.Color.White;
-            this.MTB.Location = new System.Drawing.Point(97, 76);
+            this.MTB.Location = new System.Drawing.Point(97, 84);
             this.MTB.Name = "MTB";
             this.MTB.PromptChar = '0';
             this.MTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.MTB.Size = new System.Drawing.Size(95, 21);
+            this.MTB.Size = new System.Drawing.Size(95, 30);
             this.MTB.TabIndex = 14;
             this.MTB.Text = "10.0.0.1";
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label11.Location = new System.Drawing.Point(0, 76);
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label11.Location = new System.Drawing.Point(0, 86);
             this.label11.Margin = new System.Windows.Forms.Padding(2);
             this.label11.Name = "label11";
             this.label11.Padding = new System.Windows.Forms.Padding(1);
@@ -1418,9 +1714,9 @@
             // 
             // label8
             // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label8.Location = new System.Drawing.Point(0, 54);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label8.Location = new System.Drawing.Point(0, 57);
             this.label8.Margin = new System.Windows.Forms.Padding(2);
             this.label8.Name = "label8";
             this.label8.Padding = new System.Windows.Forms.Padding(1);
@@ -1434,7 +1730,7 @@
             // 
             this.NU_SpeedNetQT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.NU_SpeedNetQT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NU_SpeedNetQT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.NU_SpeedNetQT.Font = new System.Drawing.Font("Janna LT", 9F);
             this.NU_SpeedNetQT.ForeColor = System.Drawing.Color.White;
             this.NU_SpeedNetQT.Location = new System.Drawing.Point(97, 54);
             this.NU_SpeedNetQT.Margin = new System.Windows.Forms.Padding(2);
@@ -1450,7 +1746,7 @@
             0});
             this.NU_SpeedNetQT.Name = "NU_SpeedNetQT";
             this.NU_SpeedNetQT.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.NU_SpeedNetQT.Size = new System.Drawing.Size(95, 21);
+            this.NU_SpeedNetQT.Size = new System.Drawing.Size(95, 30);
             this.NU_SpeedNetQT.TabIndex = 14;
             this.NU_SpeedNetQT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.NU_SpeedNetQT.Value = new decimal(new int[] {
@@ -1463,7 +1759,7 @@
             // 
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.label9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label9.Font = new System.Drawing.Font("Janna LT", 9F);
             this.label9.Location = new System.Drawing.Point(2, 25);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(190, 26);
@@ -1478,7 +1774,7 @@
             this.TP_SecScr.Controls.Add(this.groupBox2);
             this.TP_SecScr.Location = new System.Drawing.Point(4, 4);
             this.TP_SecScr.Name = "TP_SecScr";
-            this.TP_SecScr.Size = new System.Drawing.Size(675, 465);
+            this.TP_SecScr.Size = new System.Drawing.Size(775, 465);
             this.TP_SecScr.TabIndex = 2;
             this.TP_SecScr.Text = "إسكربتات حماية";
             this.TP_SecScr.UseVisualStyleBackColor = true;
@@ -1792,7 +2088,7 @@
             // 
             this.TP_MultiTask.Location = new System.Drawing.Point(4, 4);
             this.TP_MultiTask.Name = "TP_MultiTask";
-            this.TP_MultiTask.Size = new System.Drawing.Size(675, 465);
+            this.TP_MultiTask.Size = new System.Drawing.Size(775, 465);
             this.TP_MultiTask.TabIndex = 4;
             this.TP_MultiTask.Text = "المهام المتعددة";
             this.TP_MultiTask.UseVisualStyleBackColor = true;
@@ -1802,7 +2098,7 @@
             this.TP_Info.Controls.Add(this.PL_DeveloperInfo);
             this.TP_Info.Location = new System.Drawing.Point(4, 4);
             this.TP_Info.Name = "TP_Info";
-            this.TP_Info.Size = new System.Drawing.Size(675, 465);
+            this.TP_Info.Size = new System.Drawing.Size(775, 465);
             this.TP_Info.TabIndex = 3;
             this.TP_Info.Text = "معلومات";
             this.TP_Info.UseVisualStyleBackColor = true;
@@ -2055,6 +2351,7 @@
             this.Lin_Face.TabIndex = 23;
             this.Lin_Face.TabStop = true;
             this.Lin_Face.Text = "https://www.facebook.com/McSalehF/";
+            this.Lin_Face.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_Face_LinkClicked);
             // 
             // linkLabel4
             // 
@@ -2089,6 +2386,7 @@
             this.Lin_Tik.TabIndex = 24;
             this.Lin_Tik.TabStop = true;
             this.Lin_Tik.Text = "https://www.tiktok.com/@_mcsaleh";
+            this.Lin_Tik.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_Tik_LinkClicked);
             // 
             // Lin_Twi
             // 
@@ -2100,6 +2398,7 @@
             this.Lin_Twi.TabIndex = 25;
             this.Lin_Twi.TabStop = true;
             this.Lin_Twi.Text = "https://www.twitter.com/_McSaleh";
+            this.Lin_Twi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_Twi_LinkClicked);
             // 
             // Lin_You
             // 
@@ -2111,6 +2410,7 @@
             this.Lin_You.TabIndex = 28;
             this.Lin_You.TabStop = true;
             this.Lin_You.Text = "https://www.youtube.com/channel/UCeM9fzhUWI2k4b1pEkRGrfg";
+            this.Lin_You.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_You_LinkClicked);
             // 
             // pictureBox5
             // 
@@ -2483,295 +2783,221 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "المبرمج المحترف";
             // 
-            // groupBox10
+            // groupBox5
             // 
-            this.groupBox10.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox10.Controls.Add(this.CB_MikSB_overwrite);
-            this.groupBox10.Controls.Add(this.CB_MikSB_DontEncrypt);
-            this.groupBox10.Controls.Add(this.label37);
-            this.groupBox10.Controls.Add(this.label38);
-            this.groupBox10.Controls.Add(this.MikSB_StartDate);
-            this.groupBox10.Controls.Add(this.label46);
-            this.groupBox10.Controls.Add(this.MikSB_StartTime);
-            this.groupBox10.Controls.Add(this.MikSB_interval);
-            this.groupBox10.Controls.Add(this.MikSB_fileName);
-            this.groupBox10.Controls.Add(this.CB_MikSB_Caninterval);
-            this.groupBox10.Controls.Add(this.label47);
-            this.groupBox10.Controls.Add(this.BT_MikSB);
-            this.groupBox10.Controls.Add(this.label52);
-            this.groupBox10.Controls.Add(this.label53);
-            this.groupBox10.Controls.Add(this.MikSB_ScName);
-            this.groupBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox10.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox10.Location = new System.Drawing.Point(5, 122);
-            this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox10.Size = new System.Drawing.Size(401, 211);
-            this.groupBox10.TabIndex = 33;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Mikrotik Auto Backup";
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.Controls.Add(this.checkBox1);
+            this.groupBox5.Controls.Add(this.label33);
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.dateTimePicker1);
+            this.groupBox5.Controls.Add(this.label40);
+            this.groupBox5.Controls.Add(this.dateTimePicker2);
+            this.groupBox5.Controls.Add(this.numericUpDown2);
+            this.groupBox5.Controls.Add(this.checkBox2);
+            this.groupBox5.Controls.Add(this.button2);
+            this.groupBox5.Controls.Add(this.label42);
+            this.groupBox5.Controls.Add(this.label60);
+            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox5.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox5.Location = new System.Drawing.Point(406, 397);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Size = new System.Drawing.Size(401, 211);
+            this.groupBox5.TabIndex = 37;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Auto Remove UserManger Users With Section";
             // 
-            // label37
+            // checkBox1
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(174, 122);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(29, 22);
-            this.label37.TabIndex = 32;
-            this.label37.Text = "يوم";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.checkBox1.Location = new System.Drawing.Point(2, 147);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox1.Size = new System.Drawing.Size(397, 26);
+            this.checkBox1.TabIndex = 35;
+            this.checkBox1.Tag = "MikSUMBackUp";
+            this.checkBox1.Text = "إنشاء نسخة إحتياطية قبل بدء العملية";
+            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
-            // label38
+            // label33
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(108, 89);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(98, 22);
-            this.label38.TabIndex = 31;
-            this.label38.Text = "وقت بدء التشغيل";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(174, 123);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(29, 22);
+            this.label33.TabIndex = 32;
+            this.label33.Text = "يوم";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MikSB_StartDate
+            // label36
             // 
-            this.MikSB_StartDate.CustomFormat = "dd/MM/yyyyy";
-            this.MikSB_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.MikSB_StartDate.Location = new System.Drawing.Point(3, 54);
-            this.MikSB_StartDate.Name = "MikSB_StartDate";
-            this.MikSB_StartDate.ShowUpDown = true;
-            this.MikSB_StartDate.Size = new System.Drawing.Size(103, 30);
-            this.MikSB_StartDate.TabIndex = 23;
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(108, 89);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(98, 22);
+            this.label36.TabIndex = 31;
+            this.label36.Text = "وقت بدء التشغيل";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label46
+            // dateTimePicker1
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(108, 59);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(95, 22);
-            this.label46.TabIndex = 30;
-            this.label46.Text = "تاريخ بدء التشغيل";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 54);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowUpDown = true;
+            this.dateTimePicker1.Size = new System.Drawing.Size(103, 30);
+            this.dateTimePicker1.TabIndex = 23;
             // 
-            // MikSB_StartTime
+            // label40
             // 
-            this.MikSB_StartTime.CustomFormat = "ss:mm:HH";
-            this.MikSB_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.MikSB_StartTime.Location = new System.Drawing.Point(3, 86);
-            this.MikSB_StartTime.Name = "MikSB_StartTime";
-            this.MikSB_StartTime.ShowUpDown = true;
-            this.MikSB_StartTime.Size = new System.Drawing.Size(103, 30);
-            this.MikSB_StartTime.TabIndex = 28;
-            this.MikSB_StartTime.Value = new System.DateTime(2022, 5, 17, 4, 0, 0, 0);
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(108, 59);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(95, 22);
+            this.label40.TabIndex = 30;
+            this.label40.Text = "تاريخ بدء التشغيل";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MikSB_interval
+            // dateTimePicker2
             // 
-            this.MikSB_interval.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.MikSB_interval.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MikSB_interval.Location = new System.Drawing.Point(207, 119);
-            this.MikSB_interval.Maximum = new decimal(new int[] {
+            this.dateTimePicker2.CustomFormat = "ss:mm:HH";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(3, 86);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.ShowUpDown = true;
+            this.dateTimePicker2.Size = new System.Drawing.Size(103, 30);
+            this.dateTimePicker2.TabIndex = 28;
+            this.dateTimePicker2.Value = new System.DateTime(2022, 5, 17, 6, 0, 0, 0);
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown2.Location = new System.Drawing.Point(207, 120);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
             366,
             0,
             0,
             0});
-            this.MikSB_interval.Minimum = new decimal(new int[] {
+            this.numericUpDown2.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.MikSB_interval.Name = "MikSB_interval";
-            this.MikSB_interval.Size = new System.Drawing.Size(47, 26);
-            this.MikSB_interval.TabIndex = 29;
-            this.MikSB_interval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.MikSB_interval.Value = new decimal(new int[] {
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(56, 26);
+            this.numericUpDown2.TabIndex = 29;
+            this.numericUpDown2.Tag = "MikSUMBackUp";
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown2.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // MikSB_fileName
+            // checkBox2
             // 
-            this.MikSB_fileName.Location = new System.Drawing.Point(207, 86);
-            this.MikSB_fileName.MaxLength = 20;
-            this.MikSB_fileName.Name = "MikSB_fileName";
-            this.MikSB_fileName.Size = new System.Drawing.Size(115, 30);
-            this.MikSB_fileName.TabIndex = 27;
-            this.MikSB_fileName.Text = "MikrotikBackup";
-            this.MikSB_fileName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox2.Checked = true;
+            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox2.Location = new System.Drawing.Point(262, 120);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox2.Size = new System.Drawing.Size(134, 26);
+            this.checkBox2.TabIndex = 17;
+            this.checkBox2.Tag = "MikSUMBackUp";
+            this.checkBox2.Text = "تكرار هذه المهمة كل";
+            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox2.UseVisualStyleBackColor = false;
             // 
-            // CB_MikSB_Caninterval
+            // button2
             // 
-            this.CB_MikSB_Caninterval.AutoSize = true;
-            this.CB_MikSB_Caninterval.BackColor = System.Drawing.Color.Transparent;
-            this.CB_MikSB_Caninterval.Checked = true;
-            this.CB_MikSB_Caninterval.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CB_MikSB_Caninterval.Location = new System.Drawing.Point(262, 119);
-            this.CB_MikSB_Caninterval.Name = "CB_MikSB_Caninterval";
-            this.CB_MikSB_Caninterval.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CB_MikSB_Caninterval.Size = new System.Drawing.Size(134, 26);
-            this.CB_MikSB_Caninterval.TabIndex = 17;
-            this.CB_MikSB_Caninterval.Text = "تكرار هذه المهمة كل";
-            this.CB_MikSB_Caninterval.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_MikSB_Caninterval.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.Goldenrod;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(2, 173);
+            this.button2.Margin = new System.Windows.Forms.Padding(1);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(2);
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button2.Size = new System.Drawing.Size(397, 36);
+            this.button2.TabIndex = 19;
+            this.button2.Tag = "MikSUMBackUp";
+            this.button2.Text = "إنشاء الإسكربت";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // label47
+            // label42
             // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(327, 89);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(66, 22);
-            this.label47.TabIndex = 26;
-            this.label47.Text = "إسم الملف";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label42.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label42.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(2, 25);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(397, 29);
+            this.label42.TabIndex = 16;
+            this.label42.Text = "حذف الكروت المنتهية مع الجلسات يوميا من اليوزر مانجر";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BT_MikSB
+            // label60
             // 
-            this.BT_MikSB.BackColor = System.Drawing.Color.Goldenrod;
-            this.BT_MikSB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BT_MikSB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BT_MikSB.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BT_MikSB.FlatAppearance.BorderSize = 0;
-            this.BT_MikSB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_MikSB.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.BT_MikSB.ForeColor = System.Drawing.Color.White;
-            this.BT_MikSB.Location = new System.Drawing.Point(2, 171);
-            this.BT_MikSB.Margin = new System.Windows.Forms.Padding(1);
-            this.BT_MikSB.Name = "BT_MikSB";
-            this.BT_MikSB.Padding = new System.Windows.Forms.Padding(2);
-            this.BT_MikSB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BT_MikSB.Size = new System.Drawing.Size(397, 38);
-            this.BT_MikSB.TabIndex = 19;
-            this.BT_MikSB.Text = "إنشاء الإسكربت";
-            this.BT_MikSB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BT_MikSB.UseVisualStyleBackColor = false;
-            this.BT_MikSB.Click += new System.EventHandler(this.BT_MikSB_Click);
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(327, 59);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(73, 22);
+            this.label60.TabIndex = 25;
+            this.label60.Text = "إسم المهمة";
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label52
+            // textBox2
             // 
-            this.label52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label52.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label52.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(2, 25);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(397, 29);
-            this.label52.TabIndex = 16;
-            this.label52.Text = "إنشاء نسخة إحتياطية اوتوماتك يوميا للميكروتك";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBox2.Location = new System.Drawing.Point(207, 54);
+            this.textBox2.MaxLength = 20;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(115, 30);
+            this.textBox2.TabIndex = 24;
+            this.textBox2.Tag = "MikSUMBackUp";
+            this.textBox2.Text = "ReUWithSection";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label53
+            // label61
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(327, 59);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(73, 22);
-            this.label53.TabIndex = 25;
-            this.label53.Text = "إسم المهمة";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label61.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label61.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label61.Location = new System.Drawing.Point(2, 84);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(190, 55);
+            this.label61.TabIndex = 18;
+            this.label61.Text = "يستخدم هذا الإسكربت للأجهزة ذات المعالجات القوية";
+            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MikSB_ScName
+            // label62
             // 
-            this.MikSB_ScName.Location = new System.Drawing.Point(207, 54);
-            this.MikSB_ScName.MaxLength = 20;
-            this.MikSB_ScName.Name = "MikSB_ScName";
-            this.MikSB_ScName.Size = new System.Drawing.Size(115, 30);
-            this.MikSB_ScName.TabIndex = 24;
-            this.MikSB_ScName.Text = "MikrotikBackup";
-            this.MikSB_ScName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // CB_MikSB_DontEncrypt
-            // 
-            this.CB_MikSB_DontEncrypt.AutoSize = true;
-            this.CB_MikSB_DontEncrypt.BackColor = System.Drawing.Color.Transparent;
-            this.CB_MikSB_DontEncrypt.Location = new System.Drawing.Point(3, 119);
-            this.CB_MikSB_DontEncrypt.Name = "CB_MikSB_DontEncrypt";
-            this.CB_MikSB_DontEncrypt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CB_MikSB_DontEncrypt.Size = new System.Drawing.Size(148, 26);
-            this.CB_MikSB_DontEncrypt.TabIndex = 33;
-            this.CB_MikSB_DontEncrypt.Text = "عدم تشفير هذه النسخة";
-            this.CB_MikSB_DontEncrypt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_MikSB_DontEncrypt.UseVisualStyleBackColor = false;
-            // 
-            // CB_MikSB_overwrite
-            // 
-            this.CB_MikSB_overwrite.AutoSize = true;
-            this.CB_MikSB_overwrite.BackColor = System.Drawing.Color.Transparent;
-            this.CB_MikSB_overwrite.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.CB_MikSB_overwrite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
-            this.CB_MikSB_overwrite.Location = new System.Drawing.Point(2, 145);
-            this.CB_MikSB_overwrite.Name = "CB_MikSB_overwrite";
-            this.CB_MikSB_overwrite.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.CB_MikSB_overwrite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CB_MikSB_overwrite.Size = new System.Drawing.Size(397, 26);
-            this.CB_MikSB_overwrite.TabIndex = 34;
-            this.CB_MikSB_overwrite.Text = "إنشاء ملف لكل نسخة / فعل هذا الخيار إذا كان لديك ذاكرة خارجية فقط ";
-            this.CB_MikSB_overwrite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_MikSB_overwrite.UseVisualStyleBackColor = false;
-            // 
-            // CB_MikSBRSC_overwrite
-            // 
-            this.CB_MikSBRSC_overwrite.AutoSize = true;
-            this.CB_MikSBRSC_overwrite.BackColor = System.Drawing.Color.Transparent;
-            this.CB_MikSBRSC_overwrite.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.CB_MikSBRSC_overwrite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
-            this.CB_MikSBRSC_overwrite.Location = new System.Drawing.Point(2, 147);
-            this.CB_MikSBRSC_overwrite.Name = "CB_MikSBRSC_overwrite";
-            this.CB_MikSBRSC_overwrite.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.CB_MikSBRSC_overwrite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CB_MikSBRSC_overwrite.Size = new System.Drawing.Size(397, 26);
-            this.CB_MikSBRSC_overwrite.TabIndex = 35;
-            this.CB_MikSBRSC_overwrite.Text = "إنشاء ملف لكل نسخة / فعل هذا الخيار إذا كان لديك ذاكرة خارجية فقط ";
-            this.CB_MikSBRSC_overwrite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_MikSBRSC_overwrite.UseVisualStyleBackColor = false;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox6.Controls.Add(this.BT_MikSBlockPornSites);
-            this.groupBox6.Controls.Add(this.label55);
-            this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox6.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox6.Location = new System.Drawing.Point(440, 333);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(174, 97);
-            this.groupBox6.TabIndex = 22;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Block Porn Sites";
-            // 
-            // BT_MikSBlockPornSites
-            // 
-            this.BT_MikSBlockPornSites.BackColor = System.Drawing.Color.Goldenrod;
-            this.BT_MikSBlockPornSites.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BT_MikSBlockPornSites.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BT_MikSBlockPornSites.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BT_MikSBlockPornSites.FlatAppearance.BorderSize = 0;
-            this.BT_MikSBlockPornSites.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_MikSBlockPornSites.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.BT_MikSBlockPornSites.ForeColor = System.Drawing.Color.White;
-            this.BT_MikSBlockPornSites.Location = new System.Drawing.Point(2, 59);
-            this.BT_MikSBlockPornSites.Margin = new System.Windows.Forms.Padding(1);
-            this.BT_MikSBlockPornSites.Name = "BT_MikSBlockPornSites";
-            this.BT_MikSBlockPornSites.Padding = new System.Windows.Forms.Padding(2);
-            this.BT_MikSBlockPornSites.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BT_MikSBlockPornSites.Size = new System.Drawing.Size(170, 36);
-            this.BT_MikSBlockPornSites.TabIndex = 19;
-            this.BT_MikSBlockPornSites.Tag = "MikSBlockPornSites";
-            this.BT_MikSBlockPornSites.Text = "إنشاء الإسكربت";
-            this.BT_MikSBlockPornSites.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BT_MikSBlockPornSites.UseVisualStyleBackColor = false;
-            this.BT_MikSBlockPornSites.Click += new System.EventHandler(this.BT_MikSBlockPornSites_Click);
-            // 
-            // label55
-            // 
-            this.label55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label55.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label55.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.label55.Location = new System.Drawing.Point(2, 25);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(170, 36);
-            this.label55.TabIndex = 16;
-            this.label55.Text = "حظر جميع المواقع الإباحية";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label62.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label62.Font = new System.Drawing.Font("Janna LT", 8F);
+            this.label62.Location = new System.Drawing.Point(2, 53);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(184, 86);
+            this.label62.TabIndex = 20;
+            this.label62.Text = "رقابة صارمة على مستخدمين الانترنت تصل الى تنقيح وتصفية عمليات البحث وإخفاء اي نتا" +
+    "ئج حساسة";
+            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmMain
             // 
@@ -2798,16 +3024,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUP_NRQ)).EndInit();
             this.TP_MikScr.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MikSUMB_Interval)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MikSB_interval)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MikSBRSC_interval)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.GB_SimpleQueue.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.NU_SpeedNet)).EndInit();
             this.GB_QueueTree.ResumeLayout(false);
@@ -2839,10 +3067,9 @@
             this.PL_Down.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MikSB_interval)).EndInit();
-            this.groupBox6.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2969,19 +3196,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button BT_MultiTask;
         private System.Windows.Forms.TabPage TP_MultiTask;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.Label label42;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.CheckBox MikSBRSC_CanInterval;
         private System.Windows.Forms.Button BT_MikSBRSC;
@@ -3020,6 +3234,36 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button BT_MikSBlockPornSites;
         private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.CheckBox MikSUMB_overwrite;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.DateTimePicker MikSUMB_StartDate;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.DateTimePicker MikSUMB_StartTime;
+        private System.Windows.Forms.NumericUpDown MikSUMB_Interval;
+        private System.Windows.Forms.TextBox MikSUMB_Filename;
+        private System.Windows.Forms.CheckBox MikSUMB_CanInterval;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Button BT_MikSUMBackUp;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.TextBox MikSUMB_Schname;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
     }
 }
 

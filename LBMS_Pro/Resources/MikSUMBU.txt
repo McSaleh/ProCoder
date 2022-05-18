@@ -10,7 +10,7 @@ add interval=1d name=SNA on-event=":local fname \"FNA\";\r\
     \n:local mm (:\$months->\$month);\r\
     \n:local newdate \"\$fname-\$year-\$mm-\$day\";\r\
     \ndelay 5;\r\
-    \n/tool user-manager database save name=$newdate overwrite=yes\r\
+    \n/tool user-manager database save name=\$newdate overwrite=yes\r\
     \n\r\
     \n" policy=\
     ftp,reboot,read,write,test,password,sniff,sensitive,romon start-date=\
