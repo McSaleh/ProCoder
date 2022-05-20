@@ -28,12 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PL_Up = new System.Windows.Forms.Panel();
             this.BT_info = new System.Windows.Forms.Button();
             this.BT_Exit = new System.Windows.Forms.Button();
@@ -70,6 +77,19 @@
             this.TB_OUTSub = new System.Windows.Forms.TextBox();
             this.TP_MikScr = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.MikSRUWS_DoBU = new System.Windows.Forms.CheckBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.MikSRUWS_StartDate = new System.Windows.Forms.DateTimePicker();
+            this.label40 = new System.Windows.Forms.Label();
+            this.MikSRUWS_StartTime = new System.Windows.Forms.DateTimePicker();
+            this.MikSRUWS_Interval = new System.Windows.Forms.NumericUpDown();
+            this.MikSRUWS_CanInterval = new System.Windows.Forms.CheckBox();
+            this.BT_MikSRUWS = new System.Windows.Forms.Button();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.MikSRUWS_Schname = new System.Windows.Forms.TextBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.MikSUMB_overwrite = new System.Windows.Forms.CheckBox();
             this.label39 = new System.Windows.Forms.Label();
@@ -86,6 +106,7 @@
             this.label59 = new System.Windows.Forms.Label();
             this.MikSUMB_Schname = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label62 = new System.Windows.Forms.Label();
             this.BT_MikSBlockPornSites = new System.Windows.Forms.Button();
             this.label55 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
@@ -124,6 +145,7 @@
             this.label49 = new System.Windows.Forms.Label();
             this.MikSBRSC_ScaName = new System.Windows.Forms.TextBox();
             this.GB_SimpleQueue = new System.Windows.Forms.GroupBox();
+            this.label61 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.NU_SpeedNet = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
@@ -143,12 +165,8 @@
             this.label35 = new System.Windows.Forms.Label();
             this.BT_SecSLGDuobleMac = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label32 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BT_SecSDFC = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
             this.MTB_OUTinf = new System.Windows.Forms.MaskedTextBox();
@@ -207,21 +225,35 @@
             this.BT_BALANCE = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.MikSRUWS_DoBU = new System.Windows.Forms.CheckBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.MikSRUWS_StartDate = new System.Windows.Forms.DateTimePicker();
-            this.label40 = new System.Windows.Forms.Label();
-            this.MikSRUWS_StartTime = new System.Windows.Forms.DateTimePicker();
-            this.MikSRUWS_Interval = new System.Windows.Forms.NumericUpDown();
-            this.MikSRUWS_CanInterval = new System.Windows.Forms.CheckBox();
-            this.BT_MikSRUWS = new System.Windows.Forms.Button();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.MikSRUWS_Schname = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.BT_SecSNetCut = new System.Windows.Forms.Button();
+            this.DTP_LG_interval = new System.Windows.Forms.DateTimePicker();
+            this.label16 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.VLAN_Num = new System.Windows.Forms.NumericUpDown();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.BT_MTAddVlan = new System.Windows.Forms.Button();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.DGV_VLANRate = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IP3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IP4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MASK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VLIPRate = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PL_Up.SuspendLayout();
             this.PL_Main.SuspendLayout();
             this.TC_Main.SuspendLayout();
@@ -231,6 +263,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUP_NRQ)).BeginInit();
             this.TP_MikScr.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MikSRUWS_Interval)).BeginInit();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MikSUMB_Interval)).BeginInit();
             this.groupBox6.SuspendLayout();
@@ -246,9 +280,9 @@
             this.TP_SecScr.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TBlouk)).BeginInit();
+            this.TP_MultiTask.SuspendLayout();
             this.TP_Info.SuspendLayout();
             this.PL_DeveloperInfo.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -264,22 +298,31 @@
             this.PL_Down.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MikSRUWS_Interval)).BeginInit();
+            this.groupBox7.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VLAN_Num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_VLANRate)).BeginInit();
             this.SuspendLayout();
             // 
             // PL_Up
             // 
             this.PL_Up.BackColor = System.Drawing.Color.Goldenrod;
+            this.PL_Up.Controls.Add(this.label16);
             this.PL_Up.Controls.Add(this.BT_info);
             this.PL_Up.Controls.Add(this.BT_Exit);
             this.PL_Up.Controls.Add(this.BT_CS);
+            this.PL_Up.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.PL_Up.Dock = System.Windows.Forms.DockStyle.Top;
             this.PL_Up.Location = new System.Drawing.Point(0, 0);
             this.PL_Up.MinimumSize = new System.Drawing.Size(300, 50);
             this.PL_Up.Name = "PL_Up";
-            this.PL_Up.Size = new System.Drawing.Size(783, 50);
+            this.PL_Up.Size = new System.Drawing.Size(843, 50);
             this.PL_Up.TabIndex = 0;
+            this.PL_Up.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PL_Up_MouseDown);
+            this.PL_Up.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PL_Up_MouseMove);
+            this.PL_Up.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PL_Up_MouseUp);
             // 
             // BT_info
             // 
@@ -400,7 +443,7 @@
             this.PL_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PL_Main.Location = new System.Drawing.Point(0, 50);
             this.PL_Main.Name = "PL_Main";
-            this.PL_Main.Size = new System.Drawing.Size(783, 500);
+            this.PL_Main.Size = new System.Drawing.Size(843, 500);
             this.PL_Main.TabIndex = 1;
             // 
             // TC_Main
@@ -416,7 +459,7 @@
             this.TC_Main.Location = new System.Drawing.Point(0, 0);
             this.TC_Main.Name = "TC_Main";
             this.TC_Main.SelectedIndex = 0;
-            this.TC_Main.Size = new System.Drawing.Size(783, 500);
+            this.TC_Main.Size = new System.Drawing.Size(843, 500);
             this.TC_Main.TabIndex = 1;
             // 
             // TP_LBS
@@ -428,31 +471,31 @@
             this.TP_LBS.Location = new System.Drawing.Point(4, 4);
             this.TP_LBS.Name = "TP_LBS";
             this.TP_LBS.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_LBS.Size = new System.Drawing.Size(775, 465);
+            this.TP_LBS.Size = new System.Drawing.Size(835, 465);
             this.TP_LBS.TabIndex = 0;
             this.TP_LBS.Text = "دمج";
             // 
             // DGV_Main
             // 
             this.DGV_Main.AllowUserToAddRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DGV_Main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_Main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGV_Main.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
             this.DGV_Main.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGV_Main.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.YellowGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.YellowGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DGV_Main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Main.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.C_interface,
@@ -468,43 +511,43 @@
             this.C_WlanNetIP,
             this.C_WlanIPGetway,
             this.C_index});
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.BlueViolet;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Main.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.BlueViolet;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Main.DefaultCellStyle = dataGridViewCellStyle4;
             this.DGV_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Main.EnableHeadersVisualStyles = false;
             this.DGV_Main.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DGV_Main.Location = new System.Drawing.Point(3, 3);
             this.DGV_Main.Name = "DGV_Main";
             this.DGV_Main.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DGV_Main.RowHeadersWidth = 24;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DGV_Main.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_Main.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DGV_Main.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.DGV_Main.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DGV_Main.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.DGV_Main.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DGV_Main.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.DGV_Main.RowTemplate.ReadOnly = true;
-            this.DGV_Main.Size = new System.Drawing.Size(769, 365);
+            this.DGV_Main.Size = new System.Drawing.Size(829, 365);
             this.DGV_Main.TabIndex = 0;
             this.DGV_Main.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Main_CellContentClick);
             this.DGV_Main.CellValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Main_CellValidated);
@@ -611,8 +654,8 @@
             // 
             // C_index
             // 
-            dataGridViewCellStyle9.NullValue = "0";
-            this.C_index.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.NullValue = "0";
+            this.C_index.DefaultCellStyle = dataGridViewCellStyle3;
             this.C_index.HeaderText = "index";
             this.C_index.Name = "C_index";
             this.C_index.Visible = false;
@@ -637,7 +680,7 @@
             this.groupBox1.Location = new System.Drawing.Point(3, 368);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(769, 94);
+            this.groupBox1.Size = new System.Drawing.Size(829, 94);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "معاومات كرت الخروج";
@@ -747,7 +790,7 @@
             this.TP_MikScr.Location = new System.Drawing.Point(4, 4);
             this.TP_MikScr.Name = "TP_MikScr";
             this.TP_MikScr.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_MikScr.Size = new System.Drawing.Size(775, 465);
+            this.TP_MikScr.Size = new System.Drawing.Size(835, 465);
             this.TP_MikScr.TabIndex = 1;
             this.TP_MikScr.Text = "إسكربتات";
             this.TP_MikScr.UseVisualStyleBackColor = true;
@@ -766,9 +809,201 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(769, 459);
+            this.panel2.Size = new System.Drawing.Size(829, 459);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.Controls.Add(this.MikSRUWS_DoBU);
+            this.groupBox5.Controls.Add(this.label33);
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.MikSRUWS_StartDate);
+            this.groupBox5.Controls.Add(this.label40);
+            this.groupBox5.Controls.Add(this.MikSRUWS_StartTime);
+            this.groupBox5.Controls.Add(this.MikSRUWS_Interval);
+            this.groupBox5.Controls.Add(this.MikSRUWS_CanInterval);
+            this.groupBox5.Controls.Add(this.BT_MikSRUWS);
+            this.groupBox5.Controls.Add(this.label42);
+            this.groupBox5.Controls.Add(this.label60);
+            this.groupBox5.Controls.Add(this.MikSRUWS_Schname);
+            this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox5.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox5.Location = new System.Drawing.Point(406, 397);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Size = new System.Drawing.Size(401, 211);
+            this.groupBox5.TabIndex = 37;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Auto Remove UserManger Users With Section";
+            // 
+            // MikSRUWS_DoBU
+            // 
+            this.MikSRUWS_DoBU.AutoSize = true;
+            this.MikSRUWS_DoBU.BackColor = System.Drawing.Color.Transparent;
+            this.MikSRUWS_DoBU.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.MikSRUWS_DoBU.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.MikSRUWS_DoBU.Location = new System.Drawing.Point(2, 147);
+            this.MikSRUWS_DoBU.Name = "MikSRUWS_DoBU";
+            this.MikSRUWS_DoBU.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.MikSRUWS_DoBU.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.MikSRUWS_DoBU.Size = new System.Drawing.Size(397, 26);
+            this.MikSRUWS_DoBU.TabIndex = 35;
+            this.MikSRUWS_DoBU.Tag = "MikSUMBackUp";
+            this.MikSRUWS_DoBU.Text = "إنشاء نسخة إحتياطية قبل بدء العملية";
+            this.MikSRUWS_DoBU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MikSRUWS_DoBU.UseVisualStyleBackColor = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(174, 123);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(29, 22);
+            this.label33.TabIndex = 32;
+            this.label33.Text = "يوم";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(108, 89);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(98, 22);
+            this.label36.TabIndex = 31;
+            this.label36.Text = "وقت بدء التشغيل";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MikSRUWS_StartDate
+            // 
+            this.MikSRUWS_StartDate.CustomFormat = "dd/MM/yyyyy";
+            this.MikSRUWS_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.MikSRUWS_StartDate.Location = new System.Drawing.Point(3, 54);
+            this.MikSRUWS_StartDate.Name = "MikSRUWS_StartDate";
+            this.MikSRUWS_StartDate.ShowUpDown = true;
+            this.MikSRUWS_StartDate.Size = new System.Drawing.Size(103, 30);
+            this.MikSRUWS_StartDate.TabIndex = 23;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(108, 59);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(95, 22);
+            this.label40.TabIndex = 30;
+            this.label40.Text = "تاريخ بدء التشغيل";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MikSRUWS_StartTime
+            // 
+            this.MikSRUWS_StartTime.CustomFormat = "ss:mm:HH";
+            this.MikSRUWS_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.MikSRUWS_StartTime.Location = new System.Drawing.Point(3, 86);
+            this.MikSRUWS_StartTime.Name = "MikSRUWS_StartTime";
+            this.MikSRUWS_StartTime.ShowUpDown = true;
+            this.MikSRUWS_StartTime.Size = new System.Drawing.Size(103, 30);
+            this.MikSRUWS_StartTime.TabIndex = 28;
+            this.MikSRUWS_StartTime.Value = new System.DateTime(2022, 5, 17, 6, 0, 0, 0);
+            // 
+            // MikSRUWS_Interval
+            // 
+            this.MikSRUWS_Interval.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MikSRUWS_Interval.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MikSRUWS_Interval.Location = new System.Drawing.Point(207, 120);
+            this.MikSRUWS_Interval.Maximum = new decimal(new int[] {
+            366,
+            0,
+            0,
+            0});
+            this.MikSRUWS_Interval.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.MikSRUWS_Interval.Name = "MikSRUWS_Interval";
+            this.MikSRUWS_Interval.Size = new System.Drawing.Size(56, 26);
+            this.MikSRUWS_Interval.TabIndex = 29;
+            this.MikSRUWS_Interval.Tag = "MikSUMBackUp";
+            this.MikSRUWS_Interval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MikSRUWS_Interval.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // MikSRUWS_CanInterval
+            // 
+            this.MikSRUWS_CanInterval.AutoSize = true;
+            this.MikSRUWS_CanInterval.BackColor = System.Drawing.Color.Transparent;
+            this.MikSRUWS_CanInterval.Checked = true;
+            this.MikSRUWS_CanInterval.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.MikSRUWS_CanInterval.Location = new System.Drawing.Point(262, 120);
+            this.MikSRUWS_CanInterval.Name = "MikSRUWS_CanInterval";
+            this.MikSRUWS_CanInterval.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.MikSRUWS_CanInterval.Size = new System.Drawing.Size(134, 26);
+            this.MikSRUWS_CanInterval.TabIndex = 17;
+            this.MikSRUWS_CanInterval.Tag = "MikSUMBackUp";
+            this.MikSRUWS_CanInterval.Text = "تكرار هذه المهمة كل";
+            this.MikSRUWS_CanInterval.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MikSRUWS_CanInterval.UseVisualStyleBackColor = false;
+            // 
+            // BT_MikSRUWS
+            // 
+            this.BT_MikSRUWS.BackColor = System.Drawing.Color.Goldenrod;
+            this.BT_MikSRUWS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_MikSRUWS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_MikSRUWS.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BT_MikSRUWS.FlatAppearance.BorderSize = 0;
+            this.BT_MikSRUWS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_MikSRUWS.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_MikSRUWS.ForeColor = System.Drawing.Color.White;
+            this.BT_MikSRUWS.Location = new System.Drawing.Point(2, 173);
+            this.BT_MikSRUWS.Margin = new System.Windows.Forms.Padding(1);
+            this.BT_MikSRUWS.Name = "BT_MikSRUWS";
+            this.BT_MikSRUWS.Padding = new System.Windows.Forms.Padding(2);
+            this.BT_MikSRUWS.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BT_MikSRUWS.Size = new System.Drawing.Size(397, 36);
+            this.BT_MikSRUWS.TabIndex = 19;
+            this.BT_MikSRUWS.Tag = "MikSUMBackUp";
+            this.BT_MikSRUWS.Text = "إنشاء الإسكربت";
+            this.BT_MikSRUWS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_MikSRUWS.UseVisualStyleBackColor = false;
+            this.BT_MikSRUWS.Click += new System.EventHandler(this.BT_MikSRUWS_Click);
+            // 
+            // label42
+            // 
+            this.label42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label42.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label42.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(2, 25);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(397, 29);
+            this.label42.TabIndex = 16;
+            this.label42.Text = "حذف الكروت المنتهية مع الجلسات يوميا من اليوزر مانجر";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(327, 59);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(73, 22);
+            this.label60.TabIndex = 25;
+            this.label60.Text = "إسم المهمة";
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MikSRUWS_Schname
+            // 
+            this.MikSRUWS_Schname.Location = new System.Drawing.Point(207, 54);
+            this.MikSRUWS_Schname.MaxLength = 20;
+            this.MikSRUWS_Schname.Name = "MikSRUWS_Schname";
+            this.MikSRUWS_Schname.Size = new System.Drawing.Size(115, 30);
+            this.MikSRUWS_Schname.TabIndex = 24;
+            this.MikSRUWS_Schname.Tag = "MikSUMBackUp";
+            this.MikSRUWS_Schname.Text = "ReUWithSection";
+            this.MikSRUWS_Schname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox11
             // 
@@ -1001,6 +1236,19 @@
             this.groupBox6.TabIndex = 22;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Block Porn Sites";
+            // 
+            // label62
+            // 
+            this.label62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label62.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label62.Font = new System.Drawing.Font("Janna LT", 8F);
+            this.label62.Location = new System.Drawing.Point(2, 53);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(184, 86);
+            this.label62.TabIndex = 20;
+            this.label62.Text = "رقابة صارمة على مستخدمين الانترنت تصل الى تنقيح وتصفية عمليات البحث وإخفاء اي نتا" +
+    "ئج حساسة";
+            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BT_MikSBlockPornSites
             // 
@@ -1268,11 +1516,11 @@
             this.groupBox9.Controls.Add(this.label48);
             this.groupBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox9.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox9.Location = new System.Drawing.Point(584, 17);
+            this.groupBox9.Location = new System.Drawing.Point(584, 4);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox9.Size = new System.Drawing.Size(190, 160);
+            this.groupBox9.Size = new System.Drawing.Size(190, 175);
             this.groupBox9.TabIndex = 22;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Auto Remove UserManger Users With Section";
@@ -1282,7 +1530,7 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.checkBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.checkBox4.Location = new System.Drawing.Point(2, 106);
+            this.checkBox4.Location = new System.Drawing.Point(2, 113);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox4.Size = new System.Drawing.Size(186, 26);
@@ -1301,12 +1549,12 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Janna LT", 9F);
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(2, 132);
+            this.button6.Location = new System.Drawing.Point(2, 139);
             this.button6.Margin = new System.Windows.Forms.Padding(1);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(2);
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button6.Size = new System.Drawing.Size(186, 26);
+            this.button6.Size = new System.Drawing.Size(186, 34);
             this.button6.TabIndex = 19;
             this.button6.Text = "إنشاء الإسكربت";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1552,6 +1800,18 @@
             this.GB_SimpleQueue.TabStop = false;
             this.GB_SimpleQueue.Text = "Simple Queue";
             // 
+            // label61
+            // 
+            this.label61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label61.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label61.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label61.Location = new System.Drawing.Point(2, 84);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(190, 55);
+            this.label61.TabIndex = 18;
+            this.label61.Text = "يستخدم هذا الإسكربت للأجهزة ذات المعالجات القوية";
+            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label7
             // 
             this.label7.Location = new System.Drawing.Point(2, 55);
@@ -1769,24 +2029,27 @@
             // 
             // TP_SecScr
             // 
+            this.TP_SecScr.Controls.Add(this.DTP_LG);
+            this.TP_SecScr.Controls.Add(this.groupBox7);
             this.TP_SecScr.Controls.Add(this.groupBox4);
             this.TP_SecScr.Controls.Add(this.groupBox3);
             this.TP_SecScr.Controls.Add(this.groupBox2);
             this.TP_SecScr.Location = new System.Drawing.Point(4, 4);
             this.TP_SecScr.Name = "TP_SecScr";
-            this.TP_SecScr.Size = new System.Drawing.Size(775, 465);
+            this.TP_SecScr.Size = new System.Drawing.Size(835, 465);
             this.TP_SecScr.TabIndex = 2;
             this.TP_SecScr.Text = "إسكربتات حماية";
             this.TP_SecScr.UseVisualStyleBackColor = true;
+            this.TP_SecScr.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TP_SecScr_MouseMove);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.DTP_LG);
             this.groupBox4.Controls.Add(this.label34);
+            this.groupBox4.Controls.Add(this.DTP_LG_interval);
             this.groupBox4.Controls.Add(this.label35);
             this.groupBox4.Controls.Add(this.BT_SecSLGDuobleMac);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox4.Location = new System.Drawing.Point(282, 7);
+            this.groupBox4.Location = new System.Drawing.Point(7, 8);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
@@ -1797,7 +2060,8 @@
             // 
             // DTP_LG
             // 
-            this.DTP_LG.Location = new System.Drawing.Point(100, 64);
+            this.DTP_LG.Culture = new System.Globalization.CultureInfo("");
+            this.DTP_LG.Location = new System.Drawing.Point(305, 138);
             this.DTP_LG.Mask = "##:##:##";
             this.DTP_LG.Name = "DTP_LG";
             this.DTP_LG.Size = new System.Drawing.Size(87, 30);
@@ -1812,7 +2076,7 @@
             this.label34.Margin = new System.Windows.Forms.Padding(2);
             this.label34.Name = "label34";
             this.label34.Padding = new System.Windows.Forms.Padding(1);
-            this.label34.Size = new System.Drawing.Size(91, 30);
+            this.label34.Size = new System.Drawing.Size(80, 30);
             this.label34.TabIndex = 15;
             this.label34.Text = "التشغيل كل";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1821,7 +2085,7 @@
             // 
             this.label35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.label35.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label35.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label35.Font = new System.Drawing.Font("Janna LT", 9F);
             this.label35.Location = new System.Drawing.Point(2, 25);
             this.label35.Name = "label35";
             this.label35.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1838,13 +2102,14 @@
             this.BT_SecSLGDuobleMac.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BT_SecSLGDuobleMac.FlatAppearance.BorderSize = 0;
             this.BT_SecSLGDuobleMac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_SecSLGDuobleMac.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.BT_SecSLGDuobleMac.Location = new System.Drawing.Point(2, 98);
+            this.BT_SecSLGDuobleMac.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_SecSLGDuobleMac.ForeColor = System.Drawing.Color.White;
+            this.BT_SecSLGDuobleMac.Location = new System.Drawing.Point(2, 93);
             this.BT_SecSLGDuobleMac.Margin = new System.Windows.Forms.Padding(1);
             this.BT_SecSLGDuobleMac.Name = "BT_SecSLGDuobleMac";
             this.BT_SecSLGDuobleMac.Padding = new System.Windows.Forms.Padding(2);
             this.BT_SecSLGDuobleMac.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BT_SecSLGDuobleMac.Size = new System.Drawing.Size(188, 32);
+            this.BT_SecSLGDuobleMac.Size = new System.Drawing.Size(188, 37);
             this.BT_SecSLGDuobleMac.TabIndex = 14;
             this.BT_SecSLGDuobleMac.Text = "إنشاء الإسكربت";
             this.BT_SecSLGDuobleMac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1853,119 +2118,51 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.maskedTextBox1);
-            this.groupBox3.Controls.Add(this.label31);
-            this.groupBox3.Controls.Add(this.numericUpDown1);
             this.groupBox3.Controls.Add(this.label32);
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.BT_SecSDFC);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox3.Location = new System.Drawing.Point(473, 159);
+            this.groupBox3.Location = new System.Drawing.Point(611, 8);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(192, 148);
+            this.groupBox3.Size = new System.Drawing.Size(192, 160);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "BlockFreedomUsers";
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label16.Location = new System.Drawing.Point(2, 87);
-            this.label16.Margin = new System.Windows.Forms.Padding(2);
-            this.label16.Name = "label16";
-            this.label16.Padding = new System.Windows.Forms.Padding(1);
-            this.label16.Size = new System.Drawing.Size(110, 30);
-            this.label16.TabIndex = 18;
-            this.label16.Text = "إسم كرت الخروج";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBox1.Location = new System.Drawing.Point(112, 87);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = ' ';
-            this.maskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.maskedTextBox1.Size = new System.Drawing.Size(78, 30);
-            this.maskedTextBox1.TabIndex = 14;
-            this.maskedTextBox1.Text = "out";
-            this.maskedTextBox1.ValidatingType = typeof(System.Net.IPAddress);
-            // 
-            // label31
-            // 
-            this.label31.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label31.Location = new System.Drawing.Point(2, 55);
-            this.label31.Margin = new System.Windows.Forms.Padding(2);
-            this.label31.Name = "label31";
-            this.label31.Padding = new System.Windows.Forms.Padding(1);
-            this.label31.Size = new System.Drawing.Size(110, 30);
-            this.label31.TabIndex = 15;
-            this.label31.Text = "مدة الحظر بالدقيقة";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
-            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown1.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown1.Location = new System.Drawing.Point(112, 55);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericUpDown1.Size = new System.Drawing.Size(78, 30);
-            this.numericUpDown1.TabIndex = 14;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
+            this.groupBox3.Text = "Drop All Connection FreedomUsers";
             // 
             // label32
             // 
             this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.label32.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label32.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label32.Font = new System.Drawing.Font("Janna LT", 9F);
             this.label32.Location = new System.Drawing.Point(2, 25);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(188, 26);
+            this.label32.Size = new System.Drawing.Size(188, 35);
             this.label32.TabIndex = 17;
-            this.label32.Text = "حظر مستخدم برنامج الفريدوم";
+            this.label32.Text = "أبطال اي إتصال لبرنامج الفريدوم";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // BT_SecSDFC
             // 
-            this.button1.BackColor = System.Drawing.Color.Goldenrod;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.button1.Location = new System.Drawing.Point(2, 120);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(2);
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(188, 26);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "إنشاء الإسكربت";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.BT_SecSDFC.BackColor = System.Drawing.Color.Goldenrod;
+            this.BT_SecSDFC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_SecSDFC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_SecSDFC.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BT_SecSDFC.FlatAppearance.BorderSize = 0;
+            this.BT_SecSDFC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_SecSDFC.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_SecSDFC.ForeColor = System.Drawing.Color.White;
+            this.BT_SecSDFC.Location = new System.Drawing.Point(2, 120);
+            this.BT_SecSDFC.Margin = new System.Windows.Forms.Padding(1);
+            this.BT_SecSDFC.Name = "BT_SecSDFC";
+            this.BT_SecSDFC.Padding = new System.Windows.Forms.Padding(2);
+            this.BT_SecSDFC.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BT_SecSDFC.Size = new System.Drawing.Size(188, 38);
+            this.BT_SecSDFC.TabIndex = 14;
+            this.BT_SecSDFC.Text = "إنشاء الإسكربت";
+            this.BT_SecSDFC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_SecSDFC.UseVisualStyleBackColor = false;
+            this.BT_SecSDFC.Click += new System.EventHandler(this.BT_SecSDFC_Click);
             // 
             // groupBox2
             // 
@@ -1976,11 +2173,11 @@
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.BT_SecFBU);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Location = new System.Drawing.Point(475, 7);
+            this.groupBox2.Location = new System.Drawing.Point(398, 8);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(192, 148);
+            this.groupBox2.Size = new System.Drawing.Size(209, 160);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "BlockFreedomUsers";
@@ -1988,7 +2185,7 @@
             // label14
             // 
             this.label14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label14.Location = new System.Drawing.Point(2, 87);
+            this.label14.Location = new System.Drawing.Point(2, 88);
             this.label14.Margin = new System.Windows.Forms.Padding(2);
             this.label14.Name = "label14";
             this.label14.Padding = new System.Windows.Forms.Padding(1);
@@ -2002,11 +2199,11 @@
             this.MTB_OUTinf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.MTB_OUTinf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MTB_OUTinf.ForeColor = System.Drawing.Color.White;
-            this.MTB_OUTinf.Location = new System.Drawing.Point(112, 87);
+            this.MTB_OUTinf.Location = new System.Drawing.Point(117, 88);
             this.MTB_OUTinf.Name = "MTB_OUTinf";
             this.MTB_OUTinf.PromptChar = ' ';
             this.MTB_OUTinf.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.MTB_OUTinf.Size = new System.Drawing.Size(78, 30);
+            this.MTB_OUTinf.Size = new System.Drawing.Size(88, 30);
             this.MTB_OUTinf.TabIndex = 14;
             this.MTB_OUTinf.Text = "out";
             this.MTB_OUTinf.ValidatingType = typeof(System.Net.IPAddress);
@@ -2014,7 +2211,7 @@
             // label12
             // 
             this.label12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label12.Location = new System.Drawing.Point(2, 55);
+            this.label12.Location = new System.Drawing.Point(2, 56);
             this.label12.Margin = new System.Windows.Forms.Padding(2);
             this.label12.Name = "label12";
             this.label12.Padding = new System.Windows.Forms.Padding(1);
@@ -2028,7 +2225,7 @@
             this.TBlouk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.TBlouk.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TBlouk.ForeColor = System.Drawing.Color.White;
-            this.TBlouk.Location = new System.Drawing.Point(112, 55);
+            this.TBlouk.Location = new System.Drawing.Point(117, 56);
             this.TBlouk.Margin = new System.Windows.Forms.Padding(2);
             this.TBlouk.Maximum = new decimal(new int[] {
             10000,
@@ -2042,7 +2239,7 @@
             0});
             this.TBlouk.Name = "TBlouk";
             this.TBlouk.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TBlouk.Size = new System.Drawing.Size(78, 30);
+            this.TBlouk.Size = new System.Drawing.Size(88, 30);
             this.TBlouk.TabIndex = 14;
             this.TBlouk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TBlouk.Value = new decimal(new int[] {
@@ -2055,10 +2252,10 @@
             // 
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.label13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label13.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label13.Font = new System.Drawing.Font("Janna LT", 9F);
             this.label13.Location = new System.Drawing.Point(2, 25);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(188, 26);
+            this.label13.Size = new System.Drawing.Size(205, 35);
             this.label13.TabIndex = 17;
             this.label13.Text = "حظر مستخدم برنامج الفريدوم";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2071,13 +2268,14 @@
             this.BT_SecFBU.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BT_SecFBU.FlatAppearance.BorderSize = 0;
             this.BT_SecFBU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_SecFBU.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.BT_SecFBU.Location = new System.Drawing.Point(2, 120);
+            this.BT_SecFBU.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_SecFBU.ForeColor = System.Drawing.Color.White;
+            this.BT_SecFBU.Location = new System.Drawing.Point(2, 121);
             this.BT_SecFBU.Margin = new System.Windows.Forms.Padding(1);
             this.BT_SecFBU.Name = "BT_SecFBU";
             this.BT_SecFBU.Padding = new System.Windows.Forms.Padding(2);
             this.BT_SecFBU.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BT_SecFBU.Size = new System.Drawing.Size(188, 26);
+            this.BT_SecFBU.Size = new System.Drawing.Size(205, 37);
             this.BT_SecFBU.TabIndex = 14;
             this.BT_SecFBU.Text = "إنشاء الإسكربت";
             this.BT_SecFBU.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -2086,9 +2284,10 @@
             // 
             // TP_MultiTask
             // 
+            this.TP_MultiTask.Controls.Add(this.groupBox12);
             this.TP_MultiTask.Location = new System.Drawing.Point(4, 4);
             this.TP_MultiTask.Name = "TP_MultiTask";
-            this.TP_MultiTask.Size = new System.Drawing.Size(775, 465);
+            this.TP_MultiTask.Size = new System.Drawing.Size(835, 465);
             this.TP_MultiTask.TabIndex = 4;
             this.TP_MultiTask.Text = "المهام المتعددة";
             this.TP_MultiTask.UseVisualStyleBackColor = true;
@@ -2563,7 +2762,7 @@
             this.PL_Down.Location = new System.Drawing.Point(0, 550);
             this.PL_Down.MinimumSize = new System.Drawing.Size(300, 150);
             this.PL_Down.Name = "PL_Down";
-            this.PL_Down.Size = new System.Drawing.Size(783, 150);
+            this.PL_Down.Size = new System.Drawing.Size(843, 150);
             this.PL_Down.TabIndex = 0;
             // 
             // TB_Result
@@ -2577,7 +2776,7 @@
             this.TB_Result.Name = "TB_Result";
             this.TB_Result.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TB_Result.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TB_Result.Size = new System.Drawing.Size(783, 150);
+            this.TB_Result.Size = new System.Drawing.Size(843, 150);
             this.TB_Result.TabIndex = 2;
             this.TB_Result.WordWrap = false;
             // 
@@ -2598,7 +2797,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(783, 0);
+            this.panel1.Location = new System.Drawing.Point(843, 0);
             this.panel1.MinimumSize = new System.Drawing.Size(180, 500);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(217, 700);
@@ -2783,229 +2982,445 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "المبرمج المحترف";
             // 
-            // groupBox5
+            // groupBox7
             // 
-            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox5.Controls.Add(this.MikSRUWS_DoBU);
-            this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.label36);
-            this.groupBox5.Controls.Add(this.MikSRUWS_StartDate);
-            this.groupBox5.Controls.Add(this.label40);
-            this.groupBox5.Controls.Add(this.MikSRUWS_StartTime);
-            this.groupBox5.Controls.Add(this.MikSRUWS_Interval);
-            this.groupBox5.Controls.Add(this.MikSRUWS_CanInterval);
-            this.groupBox5.Controls.Add(this.BT_MikSRUWS);
-            this.groupBox5.Controls.Add(this.label42);
-            this.groupBox5.Controls.Add(this.label60);
-            this.groupBox5.Controls.Add(this.MikSRUWS_Schname);
-            this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox5.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox5.Location = new System.Drawing.Point(406, 397);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Size = new System.Drawing.Size(401, 211);
-            this.groupBox5.TabIndex = 37;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Auto Remove UserManger Users With Section";
+            this.groupBox7.Controls.Add(this.label63);
+            this.groupBox7.Controls.Add(this.BT_SecSNetCut);
+            this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox7.Location = new System.Drawing.Point(202, 8);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox7.Size = new System.Drawing.Size(192, 132);
+            this.groupBox7.TabIndex = 22;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Block NetCut Ports";
             // 
-            // MikSRUWS_DoBU
+            // label63
             // 
-            this.MikSRUWS_DoBU.AutoSize = true;
-            this.MikSRUWS_DoBU.BackColor = System.Drawing.Color.Transparent;
-            this.MikSRUWS_DoBU.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.MikSRUWS_DoBU.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
-            this.MikSRUWS_DoBU.Location = new System.Drawing.Point(2, 147);
-            this.MikSRUWS_DoBU.Name = "MikSRUWS_DoBU";
-            this.MikSRUWS_DoBU.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.MikSRUWS_DoBU.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.MikSRUWS_DoBU.Size = new System.Drawing.Size(397, 26);
-            this.MikSRUWS_DoBU.TabIndex = 35;
-            this.MikSRUWS_DoBU.Tag = "MikSUMBackUp";
-            this.MikSRUWS_DoBU.Text = "إنشاء نسخة إحتياطية قبل بدء العملية";
-            this.MikSRUWS_DoBU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MikSRUWS_DoBU.UseVisualStyleBackColor = false;
+            this.label63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label63.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label63.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label63.Location = new System.Drawing.Point(2, 25);
+            this.label63.Name = "label63";
+            this.label63.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label63.Size = new System.Drawing.Size(188, 35);
+            this.label63.TabIndex = 17;
+            this.label63.Text = "أغلاق بورتات برنامج نت كت NetCut";
+            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label33
+            // BT_SecSNetCut
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(174, 123);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(29, 22);
-            this.label33.TabIndex = 32;
-            this.label33.Text = "يوم";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BT_SecSNetCut.BackColor = System.Drawing.Color.Goldenrod;
+            this.BT_SecSNetCut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_SecSNetCut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_SecSNetCut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BT_SecSNetCut.FlatAppearance.BorderSize = 0;
+            this.BT_SecSNetCut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_SecSNetCut.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_SecSNetCut.ForeColor = System.Drawing.Color.White;
+            this.BT_SecSNetCut.Location = new System.Drawing.Point(2, 93);
+            this.BT_SecSNetCut.Margin = new System.Windows.Forms.Padding(1);
+            this.BT_SecSNetCut.Name = "BT_SecSNetCut";
+            this.BT_SecSNetCut.Padding = new System.Windows.Forms.Padding(2);
+            this.BT_SecSNetCut.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BT_SecSNetCut.Size = new System.Drawing.Size(188, 37);
+            this.BT_SecSNetCut.TabIndex = 14;
+            this.BT_SecSNetCut.Text = "إنشاء الإسكربت";
+            this.BT_SecSNetCut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_SecSNetCut.UseVisualStyleBackColor = false;
+            this.BT_SecSNetCut.Click += new System.EventHandler(this.BT_SecSNetCut_Click);
             // 
-            // label36
+            // DTP_LG_interval
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(108, 89);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(98, 22);
-            this.label36.TabIndex = 31;
-            this.label36.Text = "وقت بدء التشغيل";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DTP_LG_interval.CustomFormat = "ss:mm:HH";
+            this.DTP_LG_interval.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DTP_LG_interval.Location = new System.Drawing.Point(88, 61);
+            this.DTP_LG_interval.Name = "DTP_LG_interval";
+            this.DTP_LG_interval.ShowUpDown = true;
+            this.DTP_LG_interval.Size = new System.Drawing.Size(101, 30);
+            this.DTP_LG_interval.TabIndex = 29;
+            this.DTP_LG_interval.Value = new System.DateTime(2022, 5, 17, 0, 5, 0, 0);
             // 
-            // MikSRUWS_StartDate
+            // label16
             // 
-            this.MikSRUWS_StartDate.CustomFormat = "dd/MM/yyyyy";
-            this.MikSRUWS_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.MikSRUWS_StartDate.Location = new System.Drawing.Point(3, 54);
-            this.MikSRUWS_StartDate.Name = "MikSRUWS_StartDate";
-            this.MikSRUWS_StartDate.ShowUpDown = true;
-            this.MikSRUWS_StartDate.Size = new System.Drawing.Size(103, 30);
-            this.MikSRUWS_StartDate.TabIndex = 23;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label16.Location = new System.Drawing.Point(120, 19);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(35, 22);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "mos";
             // 
-            // label40
+            // groupBox12
             // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(108, 59);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(95, 22);
-            this.label40.TabIndex = 30;
-            this.label40.Text = "تاريخ بدء التشغيل";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.groupBox12.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox12.Controls.Add(this.DGV_VLANRate);
+            this.groupBox12.Controls.Add(this.panel8);
+            this.groupBox12.Controls.Add(this.numericUpDown2);
+            this.groupBox12.Controls.Add(this.checkBox3);
+            this.groupBox12.Controls.Add(this.textBox3);
+            this.groupBox12.Controls.Add(this.label68);
+            this.groupBox12.Controls.Add(this.checkBox1);
+            this.groupBox12.Controls.Add(this.label31);
+            this.groupBox12.Controls.Add(this.VLAN_Num);
+            this.groupBox12.Controls.Add(this.BT_MTAddVlan);
+            this.groupBox12.Controls.Add(this.label66);
+            this.groupBox12.Controls.Add(this.label67);
+            this.groupBox12.Controls.Add(this.textBox2);
+            this.groupBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox12.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox12.Location = new System.Drawing.Point(275, 2);
+            this.groupBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox12.Size = new System.Drawing.Size(558, 339);
+            this.groupBox12.TabIndex = 37;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Ultimte VLan Server";
             // 
-            // MikSRUWS_StartTime
+            // checkBox1
             // 
-            this.MikSRUWS_StartTime.CustomFormat = "ss:mm:HH";
-            this.MikSRUWS_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.MikSRUWS_StartTime.Location = new System.Drawing.Point(3, 86);
-            this.MikSRUWS_StartTime.Name = "MikSRUWS_StartTime";
-            this.MikSRUWS_StartTime.ShowUpDown = true;
-            this.MikSRUWS_StartTime.Size = new System.Drawing.Size(103, 30);
-            this.MikSRUWS_StartTime.TabIndex = 28;
-            this.MikSRUWS_StartTime.Value = new System.DateTime(2022, 5, 17, 6, 0, 0, 0);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.checkBox1.Location = new System.Drawing.Point(2, 275);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox1.Size = new System.Drawing.Size(554, 26);
+            this.checkBox1.TabIndex = 35;
+            this.checkBox1.Tag = "MikSUMBackUp";
+            this.checkBox1.Text = "إنشاء ملف لكل نسخة / فعل هذا الخيار إذا كان لديك ذاكرة خارجية فقط ";
+            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
-            // MikSRUWS_Interval
+            // label31
             // 
-            this.MikSRUWS_Interval.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.MikSRUWS_Interval.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MikSRUWS_Interval.Location = new System.Drawing.Point(207, 120);
-            this.MikSRUWS_Interval.Maximum = new decimal(new int[] {
-            366,
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(390, 62);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(162, 22);
+            this.label31.TabIndex = 32;
+            this.label31.Text = "عدد الفيلانات المطلوب إنشائها";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // VLAN_Num
+            // 
+            this.VLAN_Num.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.VLAN_Num.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.VLAN_Num.Location = new System.Drawing.Point(268, 60);
+            this.VLAN_Num.Maximum = new decimal(new int[] {
+            2540,
             0,
             0,
             0});
-            this.MikSRUWS_Interval.Minimum = new decimal(new int[] {
+            this.VLAN_Num.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.MikSRUWS_Interval.Name = "MikSRUWS_Interval";
-            this.MikSRUWS_Interval.Size = new System.Drawing.Size(56, 26);
-            this.MikSRUWS_Interval.TabIndex = 29;
-            this.MikSRUWS_Interval.Tag = "MikSUMBackUp";
-            this.MikSRUWS_Interval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.MikSRUWS_Interval.Value = new decimal(new int[] {
+            this.VLAN_Num.Name = "VLAN_Num";
+            this.VLAN_Num.Size = new System.Drawing.Size(116, 26);
+            this.VLAN_Num.TabIndex = 29;
+            this.VLAN_Num.Tag = "";
+            this.VLAN_Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.VLAN_Num.Value = new decimal(new int[] {
+            254,
+            0,
+            0,
+            0});
+            this.VLAN_Num.ValueChanged += new System.EventHandler(this.VLAN_Num_ValueChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(4, 3);
+            this.textBox1.MaxLength = 20;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(115, 30);
+            this.textBox1.TabIndex = 27;
+            this.textBox1.Tag = "MikSUMBackUp";
+            this.textBox1.Text = "hsprof1";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox2.Checked = true;
+            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox2.Location = new System.Drawing.Point(348, 3);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox2.Size = new System.Drawing.Size(202, 26);
+            this.checkBox2.TabIndex = 17;
+            this.checkBox2.Tag = "MikSUMBackUp";
+            this.checkBox2.Text = "إنشاء سرفر هوت سبوت لكل فيلان";
+            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox2.UseVisualStyleBackColor = false;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(118, 7);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(142, 22);
+            this.label65.TabIndex = 26;
+            this.label65.Text = "إسم بروفايل الهوت سبوت";
+            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BT_MTAddVlan
+            // 
+            this.BT_MTAddVlan.BackColor = System.Drawing.Color.Goldenrod;
+            this.BT_MTAddVlan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_MTAddVlan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_MTAddVlan.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BT_MTAddVlan.FlatAppearance.BorderSize = 0;
+            this.BT_MTAddVlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_MTAddVlan.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.BT_MTAddVlan.ForeColor = System.Drawing.Color.White;
+            this.BT_MTAddVlan.Location = new System.Drawing.Point(2, 301);
+            this.BT_MTAddVlan.Margin = new System.Windows.Forms.Padding(1);
+            this.BT_MTAddVlan.Name = "BT_MTAddVlan";
+            this.BT_MTAddVlan.Padding = new System.Windows.Forms.Padding(2);
+            this.BT_MTAddVlan.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BT_MTAddVlan.Size = new System.Drawing.Size(554, 36);
+            this.BT_MTAddVlan.TabIndex = 19;
+            this.BT_MTAddVlan.Tag = "MikSUMBackUp";
+            this.BT_MTAddVlan.Text = "إنشاء الإسكربت";
+            this.BT_MTAddVlan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_MTAddVlan.UseVisualStyleBackColor = false;
+            // 
+            // label66
+            // 
+            this.label66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label66.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label66.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(2, 25);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(554, 29);
+            this.label66.TabIndex = 16;
+            this.label66.Text = "إنشاء عدد لانهائي من الفيلانات";
+            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(143, 94);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(119, 22);
+            this.label67.TabIndex = 25;
+            this.label67.Text = "إسم الإيترنت / البريدج";
+            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(6, 90);
+            this.textBox2.MaxLength = 20;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(115, 30);
+            this.textBox2.TabIndex = 24;
+            this.textBox2.Tag = "MikSUMBackUp";
+            this.textBox2.Text = "OUT";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(6, 56);
+            this.textBox3.MaxLength = 20;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(115, 30);
+            this.textBox3.TabIndex = 37;
+            this.textBox3.Tag = "MikSUMBackUp";
+            this.textBox3.Text = "VLAN";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(165, 60);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(97, 22);
+            this.label68.TabIndex = 36;
+            this.label68.Text = "بادئة إسم الفيلان";
+            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox3.Checked = true;
+            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox3.Location = new System.Drawing.Point(407, 92);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox3.Size = new System.Drawing.Size(145, 26);
+            this.checkBox3.TabIndex = 38;
+            this.checkBox3.Tag = "MikSUMBackUp";
+            this.checkBox3.Text = "إستخدام ترقيم مخصص";
+            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox3.UseVisualStyleBackColor = false;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown2.Location = new System.Drawing.Point(268, 90);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            2540,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(116, 26);
+            this.numericUpDown2.TabIndex = 39;
+            this.numericUpDown2.Tag = "MikSUMBackUp";
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown2.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // MikSRUWS_CanInterval
+            // panel8
             // 
-            this.MikSRUWS_CanInterval.AutoSize = true;
-            this.MikSRUWS_CanInterval.BackColor = System.Drawing.Color.Transparent;
-            this.MikSRUWS_CanInterval.Checked = true;
-            this.MikSRUWS_CanInterval.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.MikSRUWS_CanInterval.Location = new System.Drawing.Point(262, 120);
-            this.MikSRUWS_CanInterval.Name = "MikSRUWS_CanInterval";
-            this.MikSRUWS_CanInterval.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.MikSRUWS_CanInterval.Size = new System.Drawing.Size(134, 26);
-            this.MikSRUWS_CanInterval.TabIndex = 17;
-            this.MikSRUWS_CanInterval.Tag = "MikSUMBackUp";
-            this.MikSRUWS_CanInterval.Text = "تكرار هذه المهمة كل";
-            this.MikSRUWS_CanInterval.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MikSRUWS_CanInterval.UseVisualStyleBackColor = false;
+            this.panel8.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.panel8.Controls.Add(this.textBox1);
+            this.panel8.Controls.Add(this.checkBox2);
+            this.panel8.Controls.Add(this.label65);
+            this.panel8.Location = new System.Drawing.Point(2, 124);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(554, 36);
+            this.panel8.TabIndex = 40;
             // 
-            // BT_MikSRUWS
+            // DGV_VLANRate
             // 
-            this.BT_MikSRUWS.BackColor = System.Drawing.Color.Goldenrod;
-            this.BT_MikSRUWS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BT_MikSRUWS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BT_MikSRUWS.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BT_MikSRUWS.FlatAppearance.BorderSize = 0;
-            this.BT_MikSRUWS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_MikSRUWS.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.BT_MikSRUWS.ForeColor = System.Drawing.Color.White;
-            this.BT_MikSRUWS.Location = new System.Drawing.Point(2, 173);
-            this.BT_MikSRUWS.Margin = new System.Windows.Forms.Padding(1);
-            this.BT_MikSRUWS.Name = "BT_MikSRUWS";
-            this.BT_MikSRUWS.Padding = new System.Windows.Forms.Padding(2);
-            this.BT_MikSRUWS.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BT_MikSRUWS.Size = new System.Drawing.Size(397, 36);
-            this.BT_MikSRUWS.TabIndex = 19;
-            this.BT_MikSRUWS.Tag = "MikSUMBackUp";
-            this.BT_MikSRUWS.Text = "إنشاء الإسكربت";
-            this.BT_MikSRUWS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BT_MikSRUWS.UseVisualStyleBackColor = false;
-            this.BT_MikSRUWS.Click += new System.EventHandler(this.BT_MikSRUWS_Click);
+            this.DGV_VLANRate.AllowUserToAddRows = false;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_VLANRate.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.DGV_VLANRate.BackgroundColor = System.Drawing.Color.White;
+            this.DGV_VLANRate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGV_VLANRate.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_VLANRate.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.DGV_VLANRate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_VLANRate.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8,
+            this.IP2,
+            this.IP3,
+            this.IP4,
+            this.MASK,
+            this.VLIPRate,
+            this.dataGridViewTextBoxColumn11});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.BlueViolet;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_VLANRate.DefaultCellStyle = dataGridViewCellStyle11;
+            this.DGV_VLANRate.EnableHeadersVisualStyles = false;
+            this.DGV_VLANRate.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DGV_VLANRate.Location = new System.Drawing.Point(2, 163);
+            this.DGV_VLANRate.Name = "DGV_VLANRate";
+            this.DGV_VLANRate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_VLANRate.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.DGV_VLANRate.RowHeadersWidth = 24;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_VLANRate.RowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.DGV_VLANRate.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.DGV_VLANRate.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGV_VLANRate.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_VLANRate.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DGV_VLANRate.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGV_VLANRate.RowTemplate.ReadOnly = true;
+            this.DGV_VLANRate.Size = new System.Drawing.Size(555, 106);
+            this.DGV_VLANRate.TabIndex = 38;
             // 
-            // label42
+            // dataGridViewTextBoxColumn8
             // 
-            this.label42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label42.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label42.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(2, 25);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(397, 29);
-            this.label42.TabIndex = 16;
-            this.label42.Text = "حذف الكروت المنتهية مع الجلسات يوميا من اليوزر مانجر";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.Format = "###";
+            dataGridViewCellStyle9.NullValue = null;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewTextBoxColumn8.HeaderText = "IP1";
+            this.dataGridViewTextBoxColumn8.MaxInputLength = 3;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
-            // label60
+            // IP2
             // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(327, 59);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(73, 22);
-            this.label60.TabIndex = 25;
-            this.label60.Text = "إسم المهمة";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.IP2.HeaderText = "IP2";
+            this.IP2.Name = "IP2";
             // 
-            // MikSRUWS_Schname
+            // IP3
             // 
-            this.MikSRUWS_Schname.Location = new System.Drawing.Point(207, 54);
-            this.MikSRUWS_Schname.MaxLength = 20;
-            this.MikSRUWS_Schname.Name = "MikSRUWS_Schname";
-            this.MikSRUWS_Schname.Size = new System.Drawing.Size(115, 30);
-            this.MikSRUWS_Schname.TabIndex = 24;
-            this.MikSRUWS_Schname.Tag = "MikSUMBackUp";
-            this.MikSRUWS_Schname.Text = "ReUWithSection";
-            this.MikSRUWS_Schname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.IP3.HeaderText = "IP3";
+            this.IP3.Name = "IP3";
             // 
-            // label61
+            // IP4
             // 
-            this.label61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label61.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label61.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.label61.Location = new System.Drawing.Point(2, 84);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(190, 55);
-            this.label61.TabIndex = 18;
-            this.label61.Text = "يستخدم هذا الإسكربت للأجهزة ذات المعالجات القوية";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.IP4.HeaderText = "IP4";
+            this.IP4.Name = "IP4";
             // 
-            // label62
+            // MASK
             // 
-            this.label62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label62.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label62.Font = new System.Drawing.Font("Janna LT", 8F);
-            this.label62.Location = new System.Drawing.Point(2, 53);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(184, 86);
-            this.label62.TabIndex = 20;
-            this.label62.Text = "رقابة صارمة على مستخدمين الانترنت تصل الى تنقيح وتصفية عمليات البحث وإخفاء اي نتا" +
-    "ئج حساسة";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MASK.HeaderText = "ماسك";
+            this.MASK.Name = "MASK";
+            // 
+            // VLIPRate
+            // 
+            this.VLIPRate.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.VLIPRate.FillWeight = 80F;
+            this.VLIPRate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VLIPRate.HeaderText = "مستويات العناوين";
+            this.VLIPRate.Name = "VLIPRate";
+            this.VLIPRate.ReadOnly = true;
+            this.VLIPRate.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            dataGridViewCellStyle10.NullValue = "0";
+            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewTextBoxColumn11.HeaderText = "index";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Visible = false;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.ClientSize = new System.Drawing.Size(1060, 700);
             this.Controls.Add(this.PL_Main);
             this.Controls.Add(this.PL_Up);
             this.Controls.Add(this.PL_Down);
@@ -3015,7 +3430,10 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LBMS_Pro";
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseMove);
+            this.Move += new System.EventHandler(this.FrmMain_Move);
             this.PL_Up.ResumeLayout(false);
+            this.PL_Up.PerformLayout();
             this.PL_Main.ResumeLayout(false);
             this.TC_Main.ResumeLayout(false);
             this.TP_LBS.ResumeLayout(false);
@@ -3025,6 +3443,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUP_NRQ)).EndInit();
             this.TP_MikScr.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MikSRUWS_Interval)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MikSUMB_Interval)).EndInit();
@@ -3043,14 +3464,13 @@
             this.GB_QueueTree.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NU_SpeedNetQT)).EndInit();
             this.TP_SecScr.ResumeLayout(false);
+            this.TP_SecScr.PerformLayout();
             this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TBlouk)).EndInit();
+            this.TP_MultiTask.ResumeLayout(false);
             this.TP_Info.ResumeLayout(false);
             this.PL_DeveloperInfo.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -3068,9 +3488,14 @@
             this.PL_Down.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MikSRUWS_Interval)).EndInit();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VLAN_Num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_VLANRate)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3187,12 +3612,8 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button BT_SecSLGDuobleMac;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BT_SecSDFC;
         private System.Windows.Forms.MaskedTextBox DTP_LG;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button BT_MultiTask;
@@ -3265,6 +3686,35 @@
         private System.Windows.Forms.TextBox MikSRUWS_Schname;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Button BT_SecSNetCut;
+        private System.Windows.Forms.DateTimePicker DTP_LG_interval;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.NumericUpDown VLAN_Num;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Button BT_MTAddVlan;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.DataGridView DGV_VLANRate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IP2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IP3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IP4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MASK;
+        private System.Windows.Forms.DataGridViewComboBoxColumn VLIPRate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }
 

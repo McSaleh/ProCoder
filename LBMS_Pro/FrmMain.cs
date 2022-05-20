@@ -8,13 +8,16 @@ using System.Text;
 using System.Windows.Forms;
 using System.Net;
 using System.Reflection;
-
+using System.IO;
+using System.Text.RegularExpressions;
 
 namespace LBMS_Pro
 {
     public partial class FrmMain : Form
     {
-
+        bool canMove;
+        bool canResize;
+        Point cpoint;
         private Mode mode;
         private int NUQ = 2;
         private string Pppoe;
@@ -40,6 +43,7 @@ namespace LBMS_Pro
             _cms = new C_MikrotikScripts();
             LA_Version.Text = ProductVersion;
             RendomLink();
+            cpoint = new Point(this.Location.X, this.Location.Y);
         }
         private void RendomLink()
         {
@@ -688,9 +692,63 @@ namespace LBMS_Pro
 
         private void BT_SecSLGDuobleMac_Click(object sender, EventArgs e)
         {
-            TB_Result.Text = _cms.SecSFreedomBU(MTB_OUTinf.Text, (TBlouk.Value.ToString()) + "m");
+            string interval =timespane(DTP_LG_interval.Value);
+            if (String.IsNullOrEmpty(interval))
+            {
+                MessageBox.Show("لا يمكن ان يكون الوقت فارغا");
+                DTP_LG_interval.Focus();
+            }
+            else
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.DefaultExt = "*.txt";
+                sfd.FileName = "duplicate-mac.txt";
+                sfd.Title = "إحفظ ملف الماكات المتكررة لأجهزة LG";
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    string s = Properties.Resources.duplicate_mac;
+                    String[] rows = Regex.Split(s, "\r\n");
+                    StreamWriter writer = new StreamWriter(sfd.OpenFile());
+                    for (int i = 0; i < rows.Length; i++)
+                    {
+                        writer.WriteLine(rows[i]);
+                    }
+                    writer.Dispose();
+                    writer.Close();
+                    TB_Result.Text = _cms.SecSLGDuobleMac(interval);
+                }
+            }
+            
         }
-
+        private string timespane(DateTime time)
+        {
+            String[] res = new string[3];
+            if (time.Hour != 0)
+            {
+                res[0] = time.Hour + "h";
+            }
+            else
+            {
+                res[0] = "";
+            }
+            if (time.Minute != 0)
+            {
+                res[1] = time.Minute + "m";
+            }
+            else
+            {
+                res[1] = "";
+            }
+            if (time.Second != 0)
+            {
+                res[2] = time.Second + "s";
+            }
+            else
+            {
+                res[2] = "";
+            }
+            return string.Concat(res);
+        }
         private void BT_MultiTask_Click(object sender, EventArgs e)
         {
             if (TC_Main.SelectedTab != TC_Main.TabPages["TP_MultiTask"])
@@ -850,6 +908,118 @@ namespace LBMS_Pro
             DateTime _date = MikSUMB_StartDate.Value;
             DateTime date = new DateTime(_date.Year, _date.Month, _date.Day);
             TB_Result.Text = _cms.MikSUMBackUp(MikSUMB_Schname.Text, MikSUMB_Filename.Text, date.ToString("MMM/dd/yyyy", System.Globalization.CultureInfo.InvariantCulture), MikSUMB_StartTime.Value.ToString("HH:mm:ss"), MikSUMB_Interval.Value.ToString() + "d", MikSUMB_CanInterval.Checked, MikSUMB_overwrite.Checked);
+        }
+
+        private void BT_SecSNetCut_Click(object sender, EventArgs e)
+        {
+            TB_Result.Text = _cms.SecSNetCut();
+        }
+
+        private void BT_SecSDFC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PL_Up_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+            if (e.Button == MouseButtons.Left)
+            {
+                canMove = true;
+                cpoint = new Point((MousePosition.X-this.Location.X),(MousePosition.Y-this.Location.Y));
+            }
+        }
+
+        private void PL_Up_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                canMove = false;
+            }
+        }
+
+        private void PL_Up_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (canMove)
+            {
+                int x;
+                int y;
+                x = MousePosition.X - cpoint.X;
+                y = MousePosition.Y - cpoint.Y;
+                //if (this.Location.X >= 0 && this.Location.X < (Screen.PrimaryScreen.WorkingArea.X) - 100)
+                //{
+                //    x = MousePosition.X - cpoint.X;
+                //}
+                //else
+                //{
+                //    x = this.Location.X;
+                //}
+                //if (this.Location.Y >= 0 && this.Location.Y < (Screen.PrimaryScreen.WorkingArea.Y) - 100)
+                //{
+                //    y = MousePosition.Y - cpoint.Y;
+                //}
+                //else
+                //{
+                //    y = this.Location.Y;
+                //}
+                if (y <= 0)
+                {
+                    y = this.Location.Y;
+                }
+                if (x <= 0)
+                {
+                    x = this.Location.X;
+                }
+                this.Location = new Point(x, y);
+            }
+        }
+
+        private void FrmMain_Move(object sender, EventArgs e)
+        {
+            //int x = 0;
+            //int y = 0;
+            //if (this.Location.X < 0)
+            //{
+            //    this.Location.X = 0;
+            //}
+        }
+
+        private void FrmMain_MouseMove(object sender, MouseEventArgs e)
+        {
+            label16.Text = "M=X: " + MousePosition.X + " X: " + MousePosition.Y;
+        }
+
+        private void TP_SecScr_MouseMove(object sender, MouseEventArgs e)
+        {
+            label16.Text = "M=X: " + MousePosition.X + " X: " + MousePosition.Y;
+        }
+
+        private void VLAN_Num_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown um=sender as NumericUpDown;
+            int vlannum = Convert.ToInt32(um.Value);
+           // double ipRate = (vlannum / 254);
+            //double s = Math.Round(ipRate);
+            DGV_VLANRate.Rows.Clear();
+            if (vlannum <= 254)
+            {
+                string ir = "IP_Rate 1";
+                VLIPRate.Items.Add(ir);
+                DGV_VLANRate.Rows.Add(("10"), ir, "0", "0", "/24", ir, 1);
+            }
+            else
+            {
+                int s = 1;
+                int io = vlannum;
+                while (io>0)
+                {
+                    string ir = "IP_Rate " + s;
+                    VLIPRate.Items.Add(ir);
+                    DGV_VLANRate.Rows.Add((s + "0"), ir, "0", "0", "/24", ir, s);
+                    s++;
+                    io = io - 254;
+                }
+            }     
         }
     }
     public enum Mode

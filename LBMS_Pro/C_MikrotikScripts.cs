@@ -573,6 +573,21 @@ namespace LBMS_Pro
             Script= string.Concat(res);
             return Script;
         }
+        public string SecSNetCut()
+        {
+            return string.Concat(
+                new string[]{
+                    @"/interface bridge filter"
+                    ,"\r\n"
+                    ,@"add action=drop chain=forward comment=Anti-NetCut dst-port=10001 ip-protocol=\"
+                    ,"\r\n"
+                    ,"udp mac-protocol=ip"
+                    ,"\r\n"
+                    ,@"add action=drop chain=input comment=Anti-NetCut dst-port=10001 ip-protocol=\"
+                    ,"\r\n"
+                    ,"udp mac-protocol=ip"
+                });
+        }
         #endregion
 
         private void replaceString(String filename, String search, String replace)
