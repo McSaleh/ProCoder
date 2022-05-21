@@ -589,7 +589,44 @@ namespace LBMS_Pro
                 });
         }
         #endregion
-
+        #region MultiTask
+        public string MultiVlan(string inter_face,string vlanID,string vlanname,string ip,string netmask,string hsServer,string hsProfile,string poolname,string dhpServer)
+        {   string ip0=ip+".0";
+            string ip1=ip+".1";
+            string ip2=ip+".2";
+            string ip3=ip+".254";
+            return string.Concat(
+              new string[]{
+                    @"/interface vlan add name=",vlanname," interface=",inter_face," vlan-id=",vlanID,";"
+                    ,"\r\n"
+                    ,@"/ip address add address=",ip1,netmask," interface=",vlanname,";"
+                    ,"\r\n"
+                    ,"/ip pool  add name=",poolname," range=",ip2,"-",ip3,";"
+                    ,"\r\n"
+                    ,@"/ip dhcp-server add address-pool=",poolname," disabled=no interface=",vlanname," lease-time=3h name=",dhpServer,";"
+                    ,"\r\n"
+                    ,"/ip dhcp-server network add address=",ip0,netmask,"  gateway=",ip1,";"
+                    ,"\r\n"
+                    ,"/ip hotspot add address-pool=",poolname," addresses-per-mac=1 disabled=no idle-timeout=4m interface=",vlanname," name=",hsServer," profile=",hsProfile,";"
+                    ,"\r\n"
+                    ,"/ip firewall nat add action=masquerade chain=srcnat  src-address=",ip0,netmask," to-addresses=0.0.0.0 ;"
+                     ,"\r\n"
+                    ,"/interface bridge port add auto-isolate=yes bridge=",inter_face," horizon=1 interface=",vlanname,";"
+              });
+        }
+        public string MultiVlanNoHS(string inter_face,string vlanID,string vlanname,string ip,string netmask)
+        {
+            string ip1=ip+".1";
+            return string.Concat(
+              new string[]{
+                    @"/interface vlan add name=",vlanname," interface=",inter_face," vlan-id=",vlanID,";"
+                    ,"\r\n"
+                    ,@"/ip address add address=",ip1,netmask," interface=",vlanname,";"
+                     ,"\r\n"
+                    ,"/interface bridge port add auto-isolate=yes bridge=",inter_face," horizon=1 interface=",vlanname,";"
+              });
+        }
+        #endregion
         private void replaceString(String filename, String search, String replace)
         {
             StreamReader sr = new StreamReader(filename);

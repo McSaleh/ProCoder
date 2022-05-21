@@ -16,7 +16,7 @@ namespace LBMS_Pro
     public partial class FrmMain : Form
     {
         bool canMove;
-        bool canResize;
+       //bool canResize;
         Point cpoint;
         private Mode mode;
         private int NUQ = 2;
@@ -42,7 +42,7 @@ namespace LBMS_Pro
             Routs = "";
             _cms = new C_MikrotikScripts();
             LA_Version.Text = ProductVersion;
-            RendomLink();
+           // RendomLink();
             cpoint = new Point(this.Location.X, this.Location.Y);
         }
         private void RendomLink()
@@ -996,30 +996,118 @@ namespace LBMS_Pro
 
         private void VLAN_Num_ValueChanged(object sender, EventArgs e)
         {
-            NumericUpDown um=sender as NumericUpDown;
+            CheckIP_Rate(sender);
+        }
+        private void CheckIP_Rate(object sender)
+        {
+            NumericUpDown um = sender as NumericUpDown;
             int vlannum = Convert.ToInt32(um.Value);
-           // double ipRate = (vlannum / 254);
-            //double s = Math.Round(ipRate);
             DGV_VLANRate.Rows.Clear();
             if (vlannum <= 254)
             {
                 string ir = "IP_Rate 1";
                 VLIPRate.Items.Add(ir);
-                DGV_VLANRate.Rows.Add(("10"), ir, "0", "0", "/24", ir, 1);
+                DGV_VLANRate.Rows.Add(("10"), ir, "0", "0", "/24", vlannum, ir, 1);
             }
             else
             {
                 int s = 1;
                 int io = vlannum;
-                while (io>0)
+                while (io > 0)
                 {
                     string ir = "IP_Rate " + s;
                     VLIPRate.Items.Add(ir);
-                    DGV_VLANRate.Rows.Add((s + "0"), ir, "0", "0", "/24", ir, s);
+                    if (io >= 254)
+                    {
+                        DGV_VLANRate.Rows.Add((s + "0"), ir, "0", "0", "/24", 254, ir, s);
+                    }
+                    else
+                    {
+                        DGV_VLANRate.Rows.Add((s + "0"), ir, "0", "0", "/24", io, ir, s);
+                    }
                     s++;
                     io = io - 254;
                 }
-            }     
+            }
+        }
+        private void BT_MTAddVlan_Click(object sender, EventArgs e)
+        {
+            int VLNUM = Convert.ToInt32(VLAN_Num.Value);
+            int VLID = Convert.ToInt32(NUD_VlanID.Value);
+            if ((VLNUM + VLID) <= 4095)
+            {
+                string intface = TB_BridgeInterFace.Text;
+                string hsProfile = TB_HSSprofile.Text;
+                string vlanNa = TB_VlanName.Text;
+                string res = "";
+                foreach (DataGridViewRow row in DGV_VLANRate.Rows)
+                {
+                    int ir = Convert.ToInt32(row.Cells["IPNUM"].Value);
+                    for (int i = 1; i <= ir; i++)
+                    {
+                        string ip = row.Cells["C_IP1"].Value.ToString() + "." + i + "."+ row.Cells["C_IP3"].Value.ToString();
+                        string netm = row.Cells["C_Mask"].Value.ToString();
+                        string vlann;
+                        if (i >= 100)
+                        {
+                            vlann = vlanNa + i;
+                        }
+                        else
+                        {
+                            if (i < 10)
+                            {
+                                vlann = vlanNa +"00"+ i;
+                            }
+                            else
+                            {
+                                vlann = vlanNa + "0" + i;
+                            }
+                        }
+                        if (CB_MUT_HSserverForVL.Checked)
+                        {
+                            string hsserver = "HS_" + vlann;
+                            string poolna = "pool_" + vlann;
+                            string dhpserver = "dhp_" + vlann;
+                            res = res + "\r\n" + _cms.MultiVlan(intface, VLID.ToString(), vlann, ip, netm, hsserver, hsProfile, poolna, dhpserver);
+                        }
+                        else
+                        {
+                            res = res + "\r\n" + _cms.MultiVlanNoHS(intface, VLID.ToString(), vlann, ip, netm);
+                        }                      
+                        VLID++;
+                    }
+                }
+                TB_Result.Text = res;
+            }
+            else
+            {
+                MessageBox.Show("يجب ان يكون VLanID اقل من 4095");
+                NUD_VlanID.Focus();
+            }
+           
+        }
+
+        private void CB_MultiUSECVLANID_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox cb = sender as CheckBox;
+            NUD_VlanID.ReadOnly = !cb.Checked;
+        }
+
+        private void CB_MUT_EditDGVlan_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox cb = sender as CheckBox;
+            DGV_VLANRate.ReadOnly = !cb.Checked;
+        }
+
+        private void BT_ChekIpRate_Click(object sender, EventArgs e)
+        {
+            CheckIP_Rate(VLAN_Num);
+        }
+
+        private void PictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+            Frm_Login _Login = new Frm_Login();
+            _Login.Show();
         }
     }
     public enum Mode
