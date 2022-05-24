@@ -8,10 +8,25 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>LBMS_Pro</RootNamespace>
     <AssemblyName>LBMS_Pro</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,19 +52,12 @@
   <PropertyGroup>
     <ApplicationIcon>processor.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>LBMS_Pro.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
-    </Reference>
-    <Reference Include="byMarc.Net2.WinControls.TimeSpanControl, Version=1.0.7653.1438, Culture=neutral, PublicKeyToken=b7f6e57c9c9ac1ee, processorArchitecture=MSIL">
-      <HintPath>..\packages\byMarc.Net2.WinControls.TimeSpanControl.2021.118.1\lib\net20\byMarc.Net2.WinControls.TimeSpanControl.dll</HintPath>
-    </Reference>
-    <Reference Include="DragControlProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DragControl.1.0.2\lib\DragControlProject.dll</HintPath>
-    </Reference>
-    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
-      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,12 +67,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="tik4net, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\tik4net.3.5.0\lib\net40\tik4net.dll</HintPath>
-    </Reference>
-    <Reference Include="tik4net.objects, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\tik4net.3.5.0\lib\net40\tik4net.objects.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="C_MikrotikScripts.cs" />
@@ -74,12 +76,6 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Login.Designer.cs">
-      <DependentUpon>Frm_Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmMain.en.resx">
@@ -88,25 +84,21 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Login.resx">
-      <DependentUpon>Frm_Login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="app.config" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -114,6 +106,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Janna LT Bold.ttf" />
+    <None Include="Resources\JannaLT-Regular.ttf" />
     <None Include="Resources\NicePng_balance-icon-png_4989014.png" />
   </ItemGroup>
   <ItemGroup>
@@ -150,7 +144,6 @@
     <None Include="Resources\tiktok.png" />
     <None Include="Resources\twitter.png" />
     <None Include="Resources\youtube.png" />
-    <None Include="Resources\vex0.png" />
     <None Include="Resources\CW_Logo%402x.png" />
     <None Include="Resources\Pro.png" />
     <None Include="Resources\SecSFrDoBU.txt" />
@@ -158,6 +151,13 @@
     <None Include="Resources\shield.png" />
     <None Include="Resources\hub.png" />
     <None Include="Resources\router.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

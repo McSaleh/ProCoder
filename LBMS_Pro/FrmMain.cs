@@ -28,6 +28,7 @@ namespace LBMS_Pro
         private string Routs;
         private string outinf="Local";
         private bool isProssess = false;
+        private string routsInSameServer;
         C_MikrotikScripts _cms;
         public FrmMain()
         {
@@ -42,7 +43,7 @@ namespace LBMS_Pro
             Routs = "";
             _cms = new C_MikrotikScripts();
             LA_Version.Text = ProductVersion;
-           // RendomLink();
+            RendomLink();
             cpoint = new Point(this.Location.X, this.Location.Y);
         }
         private void RendomLink()
@@ -136,39 +137,92 @@ namespace LBMS_Pro
             string m2 = "";
             string r1 = "";
             string r2 = "";
+            string routeLBISS = "";
+            routsInSameServer = "";
             switch (mode)
             {
                 case Mode.NTHBridge:
-                    foreach (DataGridViewRow row in DGV_Main.Rows)
+                    if (CB_ScrLB_insameServer.Checked)
                     {
-                        a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
-                        p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
-                        n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
-                        m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                        int le = 1;
+                        foreach (DataGridViewRow row in DGV_Main.Rows)
+                        {
+                            a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
+                            p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
+                            n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
+                            m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                            if (le == 1)
+                            {
+                                routeLBISS = row.Cells["C_pppoeClint"].Value.ToString();
+                            }
+                            else
+                            {
+                                routeLBISS = routeLBISS + "," + row.Cells["C_pppoeClint"].Value.ToString();
+                            }
+                            le++;  
+                        }
+                        routsInSameServer = AddRoutsLBISS(routeLBISS);
+                        Address = a1;
                     }
-
-                    Address = "\r\n" + "add address=" + TB_IPout.Text + " interface=" + outinf + " network=" + TB_OUTSub.Text + a1;
+                    else
+                    {
+                        foreach (DataGridViewRow row in DGV_Main.Rows)
+                        {
+                            a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
+                            p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
+                            n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
+                            m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                        }
+                        Address = "\r\n" + "add address=" + TB_IPout.Text + " interface=" + outinf + " network=" + TB_OUTSub.Text + a1;
+                    }
                     Pppoe = p1;
                     Nat = AddSingleNat(TB_OUTSub.Text + "/24") + n1;
                     Mangle = m2;
                     break;
                 case Mode.PCC:
-                    foreach (DataGridViewRow row in DGV_Main.Rows)
+                    if (CB_ScrLB_insameServer.Checked)
                     {
-                        a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
-                        n1 = n1 + "\r\n" + AddNatPCC(row.Cells["C_interface"].Value.ToString());
-                        ma = ma + "\r\n" + AddSingleManglePCCAcsept(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
-                        mio = mio + "\r\n" + AddSingleManglePCCInputOut(row.Cells["C_interface"].Value.ToString() , row.Cells["C_interface"].Value.ToString()+"_Con");
-                        m2 = m2 + "\r\n" + AddSingleManglePCC(outinf, row.Cells["C_interface"].Value.ToString() + "_Con");
-                        r1 = r1 + "\r\n" + AddRoutsPCCMr(row.Cells["C_WlanIPGetway"].Value.ToString() , row.Cells["C_interface"].Value.ToString() + "_Con");
-                        r2 = r2 + "\r\n" + AddRoutsPCCDis(row.Cells["C_WlanIPGetway"].Value.ToString() , (row.Index+1).ToString());
+                        int le1 = 1;
+                        foreach (DataGridViewRow row in DGV_Main.Rows)
+                        {
+                            a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
+                            n1 = n1 + "\r\n" + AddNatPCC(row.Cells["C_interface"].Value.ToString());
+                            ma = ma + "\r\n" + AddSingleManglePCCAcsept(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                            mio = mio + "\r\n" + AddSingleManglePCCInputOut(row.Cells["C_interface"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                            m2 = m2 + "\r\n" + AddSingleManglePCC(outinf, row.Cells["C_interface"].Value.ToString() + "_Con");
+                            r1 = r1 + "\r\n" + AddRoutsPCCMr(row.Cells["C_WlanIPGetway"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                            r2 = r2 + "\r\n" + AddRoutsPCCDis(row.Cells["C_WlanIPGetway"].Value.ToString(), (row.Index + 1).ToString());
+                            if (le1 == 1)
+                            {
+                                routeLBISS = row.Cells["C_WlanIPGetway"].Value.ToString();
+                            }
+                            else
+                            {
+                                routeLBISS = routeLBISS + "," + row.Cells["C_WlanIPGetway"].Value.ToString();
+                            }
+                            le1++;
+                        }
+                        routsInSameServer = AddRoutsLBISS(routeLBISS);
+                        Address = a1;
                     }
-
-                    Address = "\r\n" + "add address=" + TB_IPout.Text + " interface=" + outinf + " network=" + TB_OUTSub.Text + a1;
+                    else
+                    {
+                        foreach (DataGridViewRow row in DGV_Main.Rows)
+                        {
+                            a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
+                            n1 = n1 + "\r\n" + AddNatPCC(row.Cells["C_interface"].Value.ToString());
+                            ma = ma + "\r\n" + AddSingleManglePCCAcsept(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                            mio = mio + "\r\n" + AddSingleManglePCCInputOut(row.Cells["C_interface"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                            m2 = m2 + "\r\n" + AddSingleManglePCC(outinf, row.Cells["C_interface"].Value.ToString() + "_Con");
+                            r1 = r1 + "\r\n" + AddRoutsPCCMr(row.Cells["C_WlanIPGetway"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                            r2 = r2 + "\r\n" + AddRoutsPCCDis(row.Cells["C_WlanIPGetway"].Value.ToString(), (row.Index + 1).ToString());
+                        }
+                        Address = "\r\n" + "add address=" + TB_IPout.Text + " interface=" + outinf + " network=" + TB_OUTSub.Text + a1;
+                    }
                     Nat = AddSingleNat(TB_OUTSub.Text + "/24") + n1;
                     Mangle=ma+mio;
                     Mangle1 = m2;
-                    Routs = r1 + r2;
+                    Routs = r1 + r2 + "\r\n" + routsInSameServer;
                     break;
             }
 
@@ -207,7 +261,7 @@ namespace LBMS_Pro
                     Nat = n;
                     m = "/ip firewall mangle" + Mangle + m1;
                     Mangle = m;
-                    r = "/ip route" + r1;
+                    r = "/ip route" + r1 + "\r\n" + routsInSameServer;
                     Routs = r;
                     TB_Result.Text = "/ip address" + Address + "\r\n" + Pppoe + "\r\n" + Nat + "\r\n" + Mangle + "\r\n" + Routs;
                     break;
@@ -229,7 +283,7 @@ namespace LBMS_Pro
                     Nat = n;
                     m = "/ip firewall mangle" + Mangle + m1 + Mangle1;
                     Mangle = m;
-                    r = "/ip route" + Routs;
+                    r = "/ip route" + Routs + "\r\n" + routsInSameServer;
                     Routs = r;
                     TB_Result.Text = "/ip address"+ Address +"\r\n" + Nat + "\r\n" + Mangle + "\r\n" + Routs;
                     break;
@@ -284,6 +338,10 @@ namespace LBMS_Pro
                         view["C_WlanIPGetway", e.RowIndex].Value = "192.168." + Convert.ToString(e.RowIndex + 1) + ".1";
                         break;
                     case Mode.PCC:
+                        view["C_pppoeClint", e.RowIndex].Value = "pppoe-out" + Convert.ToString(e.RowIndex + 1);
+                        view["C_PPPOEUSER", e.RowIndex].Value = "";
+                        view["C_C_PPPOEPASS", e.RowIndex].Value = "";
+
                         view["C_WlanIPAddr", e.RowIndex].Value = "192.168." + Convert.ToString(e.RowIndex + 1) + ".10/24";
                         view["C_WlanNetIP", e.RowIndex].Value = "192.168." + Convert.ToString(e.RowIndex + 1) + ".0";
                         view["C_WlanIPGetway", e.RowIndex].Value = "192.168." + Convert.ToString(e.RowIndex + 1) + ".1";
@@ -295,39 +353,27 @@ namespace LBMS_Pro
                 view["C_DataSize", e.RowIndex].Value = "0";
                 view["C_NUMREQUSTE", e.RowIndex].Value = "1";
                 view["C_index", e.RowIndex].Value = "0";
+                view.EndEdit();
+                view.ReadOnly = false;
         }
         private int miniSize()
         {
             ///Solution1
             List<double> dsize = new List<double>();
-            //foreach (DataGridViewRow row in  DGV_Main.Rows)
-            //{
-            //    dsize.Add(Convert.ToDouble(row.Cells["C_DataSize"].Value));
-            //}
-            ///Solution2
             double m = 99999999;
             for (int i = 0; i < DGV_Main.Rows.Count; i++)
             {
                 m = Math.Min(m, Convert.ToDouble(DGV_Main["C_DataSize", i].Value));
             }
             return Convert.ToInt32(m);
-           // return Convert.ToInt32(dsize.Min());
         }
         private int Nth()
         {
-            ///Solution1
             List<int> dnth = new List<int>();
             foreach (DataGridViewRow row in DGV_Main.Rows)
             {
                 dnth.Add(Convert.ToInt32(row.Cells["C_index"].Value));
             }
-            ///Solution2
-            //double m = 99999999;
-            //for (int i = 0; i < DGV_Main.Rows.Count; i++)
-            //{
-            //    m = Math.Min(m, Convert.ToDouble(DGV_Main["C_DataSize", i].Value));
-            //}
-            //return Convert.ToInt32(m);
             return Convert.ToInt32(dnth.Sum());
         }
         private string AddPppoe(string in_Face,string pppoeName,string user ,string pass)
@@ -504,6 +550,16 @@ namespace LBMS_Pro
                    ,routMark 
                   }); ;
         }
+        private string AddRoutsBridgeLBISS(string in_Gateway)
+        {
+            return string.Concat(new string[]
+                   {
+                   "add dst-address=0.0.0.0/0 gateway="
+                   ,in_Gateway
+                   ," distance=1"
+                   ," check-gateway=ping"
+                   }); ;
+        }
         private string AddRoutsPCC(string in_Gateway,string routMark,string dist)
         {
             return string.Concat(new string[]
@@ -538,6 +594,16 @@ namespace LBMS_Pro
                    ,dist
                    ," check-gateway=ping"
                   }); ;
+        }
+        private string AddRoutsLBISS(string in_Gateway)
+        {
+            return string.Concat(new string[]
+                   {
+                   "add dst-address=0.0.0.0/0 gateway="
+                   ,in_Gateway
+                   ," distance=1"
+                   ," check-gateway=ping"
+                   }); ;
         }
         private void DGV_Main_CellValidated(object sender, DataGridViewCellEventArgs e)
         {
@@ -986,12 +1052,12 @@ namespace LBMS_Pro
 
         private void FrmMain_MouseMove(object sender, MouseEventArgs e)
         {
-            label16.Text = "M=X: " + MousePosition.X + " X: " + MousePosition.Y;
+            //label16.Text = "M=X: " + MousePosition.X + " X: " + MousePosition.Y;
         }
 
         private void TP_SecScr_MouseMove(object sender, MouseEventArgs e)
         {
-            label16.Text = "M=X: " + MousePosition.X + " X: " + MousePosition.Y;
+            //label16.Text = "M=X: " + MousePosition.X + " X: " + MousePosition.Y;
         }
 
         private void VLAN_Num_ValueChanged(object sender, EventArgs e)
@@ -1106,8 +1172,55 @@ namespace LBMS_Pro
 
         private void PictureBox1_DoubleClick(object sender, EventArgs e)
         {
-            Frm_Login _Login = new Frm_Login();
-            _Login.Show();
+           // Frm_Login _Login = new Frm_Login();
+           // _Login.Show();
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BT_WordWrap_Click(object sender, EventArgs e)
+        {
+            TB_Result.WordWrap = !TB_Result.WordWrap;
+        }
+
+        private void BT_SelectAll_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(TB_Result.Text);
+        }
+
+        private void BT_SaveScripts_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(TB_Result.Text))
+            {
+                try
+                {
+                    SaveFileDialog sfd = new SaveFileDialog();
+                    sfd.Filter = "ملف نصي| *.txt | MikrotikScript | *.rsc";
+                    sfd.FileName = "ProCoderSecript";
+                    sfd.Title = "إحفظ الإسكربت الى ملف";
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        string s = TB_Result.Text;
+                        String[] rows = Regex.Split(s, "\r\n");
+                        StreamWriter writer = new StreamWriter(sfd.OpenFile());
+                        for (int i = 0; i < rows.Length; i++)
+                        {
+                            writer.WriteLine(rows[i]);
+                        }
+                        writer.Dispose();
+                        writer.Close();
+                        MessageBox.Show("تم حفظ الملف بنجاح");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+            }
         }
     }
     public enum Mode

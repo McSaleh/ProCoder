@@ -63,16 +63,6 @@ namespace LBMS_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap add {
-            get {
-                object obj = ResourceManager.GetObject("add", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap automation {
             get {
                 object obj = ResourceManager.GetObject("automation", resourceCulture);
@@ -168,6 +158,26 @@ namespace LBMS_Pro.Properties {
             get {
                 object obj = ResourceManager.GetObject("instagram (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Janna_LT_Bold {
+            get {
+                object obj = ResourceManager.GetObject("Janna_LT_Bold", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] JannaLT_Regular {
+            get {
+                object obj = ResourceManager.GetObject("JannaLT_Regular", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -397,16 +407,6 @@ namespace LBMS_Pro.Properties {
         internal static System.Drawing.Bitmap twitter {
             get {
                 object obj = ResourceManager.GetObject("twitter", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap vex0 {
-            get {
-                object obj = ResourceManager.GetObject("vex0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
