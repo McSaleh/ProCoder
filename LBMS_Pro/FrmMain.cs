@@ -29,7 +29,9 @@ namespace LBMS_Pro
         private string outinf="Local";
         private bool isProssess = false;
         private string routsInSameServer;
+        char[] invalidFileChars;
         C_MikrotikScripts _cms;
+        bool CanCheck;
         public FrmMain()
         {
             InitializeComponent();
@@ -45,6 +47,7 @@ namespace LBMS_Pro
             LA_Version.Text = ProductVersion;
             RendomLink();
             cpoint = new Point(this.Location.X, this.Location.Y);
+            invalidFileChars = Path.GetInvalidFileNameChars();
         }
         private void RendomLink()
         {
@@ -151,6 +154,7 @@ namespace LBMS_Pro
                             p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
                             n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
                             m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                            r2 = r2 + "\r\n" + AddRoutsNTH(row.Cells["C_pppoeClint"].Value.ToString(), (row.Index + 2).ToString());
                             if (le == 1)
                             {
                                 routeLBISS = row.Cells["C_pppoeClint"].Value.ToString();
@@ -172,9 +176,11 @@ namespace LBMS_Pro
                             p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
                             n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
                             m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                            r2 = r2 + "\r\n" + AddRoutsNTH(row.Cells["C_pppoeClint"].Value.ToString(), (row.Index + 1).ToString());
                         }
                         Address = "\r\n" + "add address=" + TB_IPout.Text + " interface=" + outinf + " network=" + TB_OUTSub.Text + a1;
                     }
+                    routsInSameServer = routsInSameServer + r2;
                     Pppoe = p1;
                     Nat = AddSingleNat(TB_OUTSub.Text + "/24") + n1;
                     Mangle = m2;
@@ -323,15 +329,17 @@ namespace LBMS_Pro
 
         private void DGV_Main_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
+
                 DataGridView view = sender as DataGridView;
+                view.ReadOnly = false;
                 DataGridViewComboBoxColumn cbc = sender as DataGridViewComboBoxColumn;
                 view["C_interface", e.RowIndex].Value = "WLAN" + Convert.ToString(e.RowIndex + 1);
                 switch (mode)
                 {
                     case Mode.NTHBridge:
                         view["C_pppoeClint", e.RowIndex].Value = "pppoe-out" + Convert.ToString(e.RowIndex + 1);
-                        view["C_PPPOEUSER", e.RowIndex].Value = "";
-                        view["C_C_PPPOEPASS", e.RowIndex].Value = "";
+                        view["C_PPPOEUSER", e.RowIndex].Value = "6551133";
+                        view["C_C_PPPOEPASS", e.RowIndex].Value = "551133";
 
                         view["C_WlanIPAddr", e.RowIndex].Value = "192.168." + Convert.ToString(e.RowIndex + 1) + ".10/24";
                         view["C_WlanNetIP", e.RowIndex].Value = "192.168." + Convert.ToString(e.RowIndex + 1) + ".0";
@@ -339,8 +347,8 @@ namespace LBMS_Pro
                         break;
                     case Mode.PCC:
                         view["C_pppoeClint", e.RowIndex].Value = "pppoe-out" + Convert.ToString(e.RowIndex + 1);
-                        view["C_PPPOEUSER", e.RowIndex].Value = "";
-                        view["C_C_PPPOEPASS", e.RowIndex].Value = "";
+                        view["C_PPPOEUSER", e.RowIndex].Value = "6551133";
+                        view["C_C_PPPOEPASS", e.RowIndex].Value = "551133";
 
                         view["C_WlanIPAddr", e.RowIndex].Value = "192.168." + Convert.ToString(e.RowIndex + 1) + ".10/24";
                         view["C_WlanNetIP", e.RowIndex].Value = "192.168." + Convert.ToString(e.RowIndex + 1) + ".0";
@@ -354,7 +362,7 @@ namespace LBMS_Pro
                 view["C_NUMREQUSTE", e.RowIndex].Value = "1";
                 view["C_index", e.RowIndex].Value = "0";
                 view.EndEdit();
-                view.ReadOnly = false;
+              //  view.ReadOnly = false;
         }
         private int miniSize()
         {
@@ -478,8 +486,7 @@ namespace LBMS_Pro
         {
             return string.Concat(new string[]
                   {
-                   "add chain=prerouting dst-address-type=!"
-                   ,in_if
+                   "add chain=prerouting dst-address-type=!local"
                    ," in-interface="
                    ,in_if
                    ," per-connection-classifier=both-addresses:"
@@ -548,6 +555,16 @@ namespace LBMS_Pro
                    ,in_Gateway
                    ," routing-mark="
                    ,routMark 
+                  }); ;
+        }
+        private string AddRoutsNTH(string in_Gateway,string dist)
+        {
+            return string.Concat(new string[]
+                  {
+                   "add distance="
+                   ,dist
+                   ," gateway="
+                   ,in_Gateway
                   }); ;
         }
         private string AddRoutsBridgeLBISS(string in_Gateway)
@@ -660,9 +677,9 @@ namespace LBMS_Pro
 
         private void BT_Add_Click(object sender, EventArgs e)
         {
-            DGV_Main.ReadOnly = true;
+          DGV_Main.ReadOnly = true;
             DGV_Main.Rows.Add();
-            DGV_Main.ReadOnly = false;
+           DGV_Main.ReadOnly = false;
         }
 
         private void CB_BType_SelectedIndexChanged(object sender, EventArgs e)
@@ -1069,11 +1086,12 @@ namespace LBMS_Pro
             NumericUpDown um = sender as NumericUpDown;
             int vlannum = Convert.ToInt32(um.Value);
             DGV_VLANRate.Rows.Clear();
+           
             if (vlannum <= 254)
             {
-                string ir = "IP_Rate 1";
-                VLIPRate.Items.Add(ir);
-                DGV_VLANRate.Rows.Add(("10"), ir, "0", "0", "/24", vlannum, ir, 1);
+                //string ir = "IP_Rate 1";
+               // VLIPRate.Items.Add(ir);
+                DGV_VLANRate.Rows.Add(("IP1"), "0", "0", "0", "/24", vlannum, "IP1", 1);
             }
             else
             {
@@ -1081,15 +1099,90 @@ namespace LBMS_Pro
                 int io = vlannum;
                 while (io > 0)
                 {
-                    string ir = "IP_Rate " + s;
-                    VLIPRate.Items.Add(ir);
+                    //string ir = "IP1" + s;
+                    string ir = "IP1";
+                   // VLIPRate.Items.Add(ir);
                     if (io >= 254)
                     {
-                        DGV_VLANRate.Rows.Add((s + "0"), ir, "0", "0", "/24", 254, ir, s);
+                        switch (s)
+                        {
+                            case 1:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "0", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 2:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "1", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 3:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "2", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 4:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "3", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 5:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "4", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 6:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "5", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 7:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "6", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 8:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "7", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 9:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "8", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 10:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "9", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 11:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "10", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 12:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "11", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 13:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "12", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 14:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "13", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 15:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "14", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 16:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "15", "0", "0", "/24", 254, ir, s);
+                                break;
+                            case 17:
+                                ir = "IP1";
+                                DGV_VLANRate.Rows.Add(("IP1"), "16", "0", "0", "/24", 254, ir, s);
+                                break;
+                            default:
+                                DGV_VLANRate.Rows.Add("IP1", "0", "0", "0", "/24", 254, ir, s);
+                                break;
+                        }  
                     }
                     else
                     {
-                        DGV_VLANRate.Rows.Add((s + "0"), ir, "0", "0", "/24", io, ir, s);
+                        //DGV_VLANRate.Rows.Add((s + "0"), ir, "0", "0", "/24", io, ir, s);
+                        DGV_VLANRate.Rows.Add("IP1", (s-1), "0", "0", "/24", io, ir, s);
                     }
                     s++;
                     io = io - 254;
@@ -1109,38 +1202,237 @@ namespace LBMS_Pro
                 foreach (DataGridViewRow row in DGV_VLANRate.Rows)
                 {
                     int ir = Convert.ToInt32(row.Cells["IPNUM"].Value);
-                    for (int i = 1; i <= ir; i++)
+                    switch (row.Cells["VLIPRate"].Value.ToString())
                     {
-                        string ip = row.Cells["C_IP1"].Value.ToString() + "." + i + "."+ row.Cells["C_IP3"].Value.ToString();
-                        string netm = row.Cells["C_Mask"].Value.ToString();
-                        string vlann;
-                        if (i >= 100)
-                        {
-                            vlann = vlanNa + i;
-                        }
-                        else
-                        {
-                            if (i < 10)
+                        case "IP1":
+                            for (int i = 1; i <= ir; i++)
                             {
-                                vlann = vlanNa +"00"+ i;
+                                string ip = "";
+                                if (CB_MultiUSECVLANID.Checked)
+                                {
+                                    if (VLID<=254)
+                                    {
+                                        ip = VLID + "." + row.Cells["C_IP2"].Value.ToString() + "." + row.Cells["C_IP3"].Value.ToString();
+                                    }
+                                    else
+                                    {
+                                        ip = i + "." + row.Cells["C_IP2"].Value.ToString() + "." + row.Cells["C_IP3"].Value.ToString();
+                                    }
+                                }
+                                else
+                                {
+                                    ip = i + "." + row.Cells["C_IP2"].Value.ToString() + "." + row.Cells["C_IP3"].Value.ToString();
+                                }
+                                string netm = row.Cells["C_Mask"].Value.ToString();
+                                string vlann;
+                                if (CB_VLNameC.Checked)
+                                {
+                                    if (i >= 100)
+                                    {
+                                        vlann = vlanNa + i;
+                                    }
+                                    else
+                                    {
+                                        if (i < 10)
+                                        {
+                                            vlann = vlanNa + "00" + i;
+                                        }
+                                        else
+                                        {
+                                            vlann = vlanNa + "0" + i;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    vlann = vlanNa + i;
+                                }
+                                if (CB_MUT_HSserverForVL.Checked)
+                                {
+                                    string hsserver = "HS_" + vlann;
+                                    string poolna = "pool_" + vlann;
+                                    string dhpserver = "dhp_" + vlann;
+                                    res = res + "\r\n" + _cms.MultiVlan(intface, VLID.ToString(), vlann, ip, netm, hsserver, hsProfile, poolna, dhpserver);
+                                }
+                                else
+                                {
+                                    res = res + "\r\n" + _cms.MultiVlanNoHS(intface, VLID.ToString(), vlann, ip, netm);
+                                }
+                                VLID++;
                             }
-                            else
+                            break;
+                        case "IP2":
+                            for (int i = 1; i <= ir; i++)
                             {
-                                vlann = vlanNa + "0" + i;
+                                string ip = "";
+                                if (CB_MultiUSECVLANID.Checked)
+                                {
+                                    if (VLID <= 254)
+                                    {
+                                        ip = row.Cells["C_IP1"].Value.ToString() + "." + VLID + "." + row.Cells["C_IP3"].Value.ToString();
+                                    }
+                                    else
+                                    {
+                                        ip = row.Cells["C_IP1"].Value.ToString() + "." + i + "." + row.Cells["C_IP3"].Value.ToString();
+                                    }
+                                }
+                                else
+                                {
+                                    ip = row.Cells["C_IP1"].Value.ToString() + "." + i + "." + row.Cells["C_IP3"].Value.ToString();
+                                }
+                                string netm = row.Cells["C_Mask"].Value.ToString();
+                                string vlann;
+                                if (CB_VLNameC.Checked)
+                                {
+                                    if (i >= 100)
+                                    {
+                                        vlann = vlanNa + i;
+                                    }
+                                    else
+                                    {
+                                        if (i < 10)
+                                        {
+                                            vlann = vlanNa + "00" + i;
+                                        }
+                                        else
+                                        {
+                                            vlann = vlanNa + "0" + i;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    vlann = vlanNa + i;
+                                }
+                                if (CB_MUT_HSserverForVL.Checked)
+                                {
+                                    string hsserver = "HS_" + vlann;
+                                    string poolna = "pool_" + vlann;
+                                    string dhpserver = "dhp_" + vlann;
+                                    res = res + "\r\n" + _cms.MultiVlan(intface, VLID.ToString(), vlann, ip, netm, hsserver, hsProfile, poolna, dhpserver);
+                                }
+                                else
+                                {
+                                    res = res + "\r\n" + _cms.MultiVlanNoHS(intface, VLID.ToString(), vlann, ip, netm);
+                                }
+                                VLID++;
                             }
-                        }
-                        if (CB_MUT_HSserverForVL.Checked)
-                        {
-                            string hsserver = "HS_" + vlann;
-                            string poolna = "pool_" + vlann;
-                            string dhpserver = "dhp_" + vlann;
-                            res = res + "\r\n" + _cms.MultiVlan(intface, VLID.ToString(), vlann, ip, netm, hsserver, hsProfile, poolna, dhpserver);
-                        }
-                        else
-                        {
-                            res = res + "\r\n" + _cms.MultiVlanNoHS(intface, VLID.ToString(), vlann, ip, netm);
-                        }                      
-                        VLID++;
+                            break;
+                        case "IP3":
+                            for (int i = 1; i <= ir; i++)
+                            {
+                                string ip = "";
+                                if (CB_MultiUSECVLANID.Checked)
+                                {
+                                    if (VLID <= 254)
+                                    {
+                                        ip = row.Cells["C_IP1"].Value.ToString() + "." + row.Cells["C_IP2"].Value.ToString() + "." + VLID;
+                                    }
+                                    else
+                                    {
+                                        ip = row.Cells["C_IP1"].Value.ToString() + "." + row.Cells["C_IP2"].Value.ToString() + "." + i;
+                                    }
+                                }
+                                else
+                                {
+                                    ip = row.Cells["C_IP1"].Value.ToString() + "." + row.Cells["C_IP2"].Value.ToString() + "." + i;
+                                }
+                                string netm = row.Cells["C_Mask"].Value.ToString();
+                                string vlann;
+                                if (CB_VLNameC.Checked)
+                                {
+                                    if (i >= 100)
+                                    {
+                                        vlann = vlanNa + i;
+                                    }
+                                    else
+                                    {
+                                        if (i < 10)
+                                        {
+                                            vlann = vlanNa + "00" + i;
+                                        }
+                                        else
+                                        {
+                                            vlann = vlanNa + "0" + i;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    vlann = vlanNa + i;
+                                }
+                                if (CB_MUT_HSserverForVL.Checked)
+                                {
+                                    string hsserver = "HS_" + vlann;
+                                    string poolna = "pool_" + vlann;
+                                    string dhpserver = "dhp_" + vlann;
+                                    res = res + "\r\n" + _cms.MultiVlan(intface, VLID.ToString(), vlann, ip, netm, hsserver, hsProfile, poolna, dhpserver);
+                                }
+                                else
+                                {
+                                    res = res + "\r\n" + _cms.MultiVlanNoHS(intface, VLID.ToString(), vlann, ip, netm);
+                                }
+                                VLID++;
+                            }
+                            break;
+                        default:
+                            for (int i = 1; i <= ir; i++)
+                            {
+                                string ip = "";
+                                if (CB_MultiUSECVLANID.Checked)
+                                {
+                                    if (VLID <= 254)
+                                    {
+                                        ip = VLID + "." + row.Cells["C_IP2"].Value.ToString() + "." + row.Cells["C_IP3"].Value.ToString();
+                                    }
+                                    else
+                                    {
+                                        ip = i + "." + row.Cells["C_IP2"].Value.ToString() + "." + row.Cells["C_IP3"].Value.ToString();
+                                    }
+                                }
+                                else
+                                {
+                                    ip = i + "." + row.Cells["C_IP2"].Value.ToString() + "." + row.Cells["C_IP3"].Value.ToString();
+                                }
+                               // string ip = i + "." + row.Cells["C_IP2"].Value.ToString() + "." + row.Cells["C_IP3"].Value.ToString();
+                                string netm = row.Cells["C_Mask"].Value.ToString();
+                                string vlann;
+                                if (CB_VLNameC.Checked)
+                                {
+                                    if (i >= 100)
+                                    {
+                                        vlann = vlanNa + i;
+                                    }
+                                    else
+                                    {
+                                        if (i < 10)
+                                        {
+                                            vlann = vlanNa + "00" + i;
+                                        }
+                                        else
+                                        {
+                                            vlann = vlanNa + "0" + i;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    vlann = vlanNa + i;
+                                }
+                                if (CB_MUT_HSserverForVL.Checked)
+                                {
+                                    string hsserver = "HS_" + vlann;
+                                    string poolna = "pool_" + vlann;
+                                    string dhpserver = "dhp_" + vlann;
+                                    res = res + "\r\n" + _cms.MultiVlan(intface, VLID.ToString(), vlann, ip, netm, hsserver, hsProfile, poolna, dhpserver);
+                                }
+                                else
+                                {
+                                    res = res + "\r\n" + _cms.MultiVlanNoHS(intface, VLID.ToString(), vlann, ip, netm);
+                                }
+                                VLID++;
+                            }
+                            break;
                     }
                 }
                 TB_Result.Text = res;
@@ -1220,6 +1512,197 @@ namespace LBMS_Pro
                     MessageBox.Show(ex.Message);
                 }
                 
+            }
+        }
+
+        private void MikSBRSC_ScaName_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+        public string CorrectChars(char[] charArray,string txt)
+        {
+            List<string> res=new List<string>();
+            string s;
+            foreach (char item in txt)
+            {
+                if (Char.IsWhiteSpace(item))
+                {
+                   res.Add(string.Empty);
+                   break;
+                }
+                else
+                {
+                    foreach (char invaldChar in charArray)
+                    {
+                        if (item == invaldChar) 
+                        {
+                            goto ignor;
+                        }
+                    }
+                    res.Add(item.ToString());
+                    ignor:
+                    s = "";
+                }  
+            }
+            return string.Join("",res.ToArray());
+        }
+
+        private void MikSBRSC_FileName_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+
+        private void MikSB_ScName_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+
+        private void MikSB_fileName_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+
+        private void MikSUMB_Schname_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+
+        private void MikSUMB_Filename_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+
+        private void MikSRUWS_Schname_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+
+        private void OUT_Name_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+
+        private void TB_VlanName_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+
+        private void TB_BridgeInterFace_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }
+        }
+
+        private void TB_HSSprofile_TextChanged(object sender, EventArgs e)
+        {
+            if (CanCheck)
+            {
+                Control control = sender as Control;
+                string r = CorrectChars(invalidFileChars, control.Text);
+                CanCheck = false;
+                control.Text = r;
+            }   
+        }
+        private void TB_KeyDown(object sender, KeyEventArgs e)
+        {
+            CanCheck = true;
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            DGV_Main.ReadOnly = !CB_EditData.Checked;
+        }
+
+        private void CB_EditData_CheckedChanged(object sender, EventArgs e)
+        {
+            DGV_Main.ReadOnly = !CB_EditData.Checked;
+        }
+
+        private void DGV_VLANRate_CellValidated(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView view = sender as DataGridView;
+            if (view.CurrentRow.Cells[e.ColumnIndex] == view.CurrentRow.Cells["VLIPRate"] )
+            {
+                switch (view.CurrentRow.Cells[e.ColumnIndex].Value.ToString())
+                {
+                    case "IP1":
+                        view.CurrentRow.Cells["C_IP1"].Value = "IP1";
+                        view.CurrentRow.Cells["C_IP2"].Value = e.RowIndex;
+                        view.CurrentRow.Cells["C_IP3"].Value = "0";
+                        view.CurrentRow.Cells["C_IP4"].Value = "0";
+                        break;
+                    case "IP2":
+                        view.CurrentRow.Cells["C_IP1"].Value = (e.RowIndex+1);
+                        view.CurrentRow.Cells["C_IP2"].Value = "IP2";
+                        view.CurrentRow.Cells["C_IP3"].Value = "0";
+                        view.CurrentRow.Cells["C_IP4"].Value = "0";
+                        break;
+                    case "IP3":
+                        view.CurrentRow.Cells["C_IP1"].Value = (e.RowIndex + 1);
+                        view.CurrentRow.Cells["C_IP2"].Value = "0";
+                        view.CurrentRow.Cells["C_IP3"].Value = "IP3";
+                        view.CurrentRow.Cells["C_IP4"].Value = "0";
+                        break;
+                }
             }
         }
     }
