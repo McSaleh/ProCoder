@@ -50,7 +50,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>processor.ico</ApplicationIcon>
+    <ApplicationIcon>ProCoder.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="processor.ico" />
+    <Content Include="ProCoder.ico" />
     <None Include="Resources\MikSUMBU.txt" />
     <None Include="Resources\MikSBrsc.txt" />
     <None Include="Resources\MikSMBU.txt" />
