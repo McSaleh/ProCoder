@@ -136,7 +136,9 @@ namespace LBMS_Pro
             string p1 = "";
             string n1 = "";
             string ma = "";
-            string mio = "";
+            string mi = "";
+            string mo = "";
+            string m1 = "";
             string m2 = "";
             string r1 = "";
             string r2 = "";
@@ -150,20 +152,40 @@ namespace LBMS_Pro
                         int le = 1;
                         foreach (DataGridViewRow row in DGV_Main.Rows)
                         {
-                            a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
-                            p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
-                            n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
-                            m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
-                            r2 = r2 + "\r\n" + AddRoutsNTH(row.Cells["C_pppoeClint"].Value.ToString(), (row.Index + 2).ToString());
-                            if (le == 1)
+                            try
                             {
-                                routeLBISS = row.Cells["C_pppoeClint"].Value.ToString();
+                                if (row == null) return;
+                                a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
+                                p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
+                                n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
+                                m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                                r2 = r2 + "\r\n" + AddRoutsNTH(row.Cells["C_pppoeClint"].Value.ToString(), (row.Index + 2).ToString());
+                                if (le == 1)
+                                {
+                                    routeLBISS = row.Cells["C_pppoeClint"].Value.ToString();
+                                }
+                                else
+                                {
+                                    routeLBISS = routeLBISS + "," + row.Cells["C_pppoeClint"].Value.ToString();
+                                }
+                                le++;
+
                             }
-                            else
+                            catch (Exception ex)
                             {
-                                routeLBISS = routeLBISS + "," + row.Cells["C_pppoeClint"].Value.ToString();
+                                string res = string.Concat(new string[]
+                                   {
+                                   "رسالة الخطاء :"
+                                   ,ex.Message
+                                   ,"\r\n"
+                                   , "المصدر :"
+                                   ,ex.Source
+                                   ,"\r\n"
+                                    , "الهدف :"
+                                   ,ex.StackTrace
+                                   }); ;
+                                MessageBox.Show(res, "خطاء في البيانات المدخلة");
                             }
-                            le++;  
                         }
                         routsInSameServer = AddRoutsLBISS(routeLBISS);
                         Address = a1;
@@ -172,11 +194,32 @@ namespace LBMS_Pro
                     {
                         foreach (DataGridViewRow row in DGV_Main.Rows)
                         {
-                            a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
-                            p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
-                            n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
-                            m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
-                            r2 = r2 + "\r\n" + AddRoutsNTH(row.Cells["C_pppoeClint"].Value.ToString(), (row.Index + 1).ToString());
+                            
+                            try
+                            {
+                                if (row == null) return;
+                                a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
+                                p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
+                                n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
+                                m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                                r2 = r2 + "\r\n" + AddRoutsNTH(row.Cells["C_pppoeClint"].Value.ToString(), (row.Index + 1).ToString());
+
+                            }
+                            catch (Exception ex)
+                            {   
+                                string res= string.Concat(new string[]
+                                   {
+                                   "رسالة الخطاء :"
+                                   ,ex.Message
+                                   ,"\r\n"
+                                   , "المصدر :"
+                                   ,ex.Source
+                                   ,"\r\n"
+                                    , "الهدف :"
+                                   ,ex.StackTrace
+                                   }); ;
+                                MessageBox.Show(res, "خطاء في البيانات المدخلة");
+                            }
                         }
                         Address = "\r\n" + "add address=" + TB_IPout.Text + " interface=" + outinf + " network=" + TB_OUTSub.Text + a1;
                     }
@@ -191,22 +234,42 @@ namespace LBMS_Pro
                         int le1 = 1;
                         foreach (DataGridViewRow row in DGV_Main.Rows)
                         {
-                            a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
-                            n1 = n1 + "\r\n" + AddNatPCC(row.Cells["C_interface"].Value.ToString());
-                            ma = ma + "\r\n" + AddSingleManglePCCAcsept(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
-                            mio = mio + "\r\n" + AddSingleManglePCCInputOut(row.Cells["C_interface"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
-                            m2 = m2 + "\r\n" + AddSingleManglePCC(outinf, row.Cells["C_interface"].Value.ToString() + "_Con");
-                            r1 = r1 + "\r\n" + AddRoutsPCCMr(row.Cells["C_WlanIPGetway"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
-                            r2 = r2 + "\r\n" + AddRoutsPCCDis(row.Cells["C_WlanIPGetway"].Value.ToString(), (row.Index + 1).ToString());
-                            if (le1 == 1)
+                            try
                             {
-                                routeLBISS = row.Cells["C_WlanIPGetway"].Value.ToString();
+                                if (row == null) return;
+                                a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
+                                n1 = n1 + "\r\n" + AddNatPCC(row.Cells["C_interface"].Value.ToString());
+                                ma = ma + "\r\n" + AddSingleManglePCCAcsept(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                                mi = mi + "\r\n" + AddSingleManglePCCInput(row.Cells["C_interface"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                                mo = mo + "\r\n" + AddSingleManglePCCOut(row.Cells["C_interface"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                                m2 = m2 + "\r\n" + AddSingleManglePCC(outinf, row.Cells["C_interface"].Value.ToString() + "_Con");
+                                r1 = r1 + "\r\n" + AddRoutsPCCMr(row.Cells["C_WlanIPGetway"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                                r2 = r2 + "\r\n" + AddRoutsPCCDis(row.Cells["C_WlanIPGetway"].Value.ToString(), (row.Index + 1).ToString());
+                                if (le1 == 1)
+                                {
+                                    routeLBISS = row.Cells["C_WlanIPGetway"].Value.ToString();
+                                }
+                                else
+                                {
+                                    routeLBISS = routeLBISS + "," + row.Cells["C_WlanIPGetway"].Value.ToString();
+                                }
+                                le1++;
                             }
-                            else
+                            catch (Exception ex)
                             {
-                                routeLBISS = routeLBISS + "," + row.Cells["C_WlanIPGetway"].Value.ToString();
+                                string res = string.Concat(new string[]
+                                   {
+                                   "رسالة الخطاء :"
+                                   ,ex.Message
+                                   ,"\r\n"
+                                   , "المصدر :"
+                                   ,ex.Source
+                                   ,"\r\n"
+                                    , "الهدف :"
+                                   ,ex.StackTrace
+                                   }); ;
+                                MessageBox.Show(res, "خطاء في البيانات المدخلة");
                             }
-                            le1++;
                         }
                         routsInSameServer = AddRoutsLBISS(routeLBISS);
                         Address = a1;
@@ -215,18 +278,39 @@ namespace LBMS_Pro
                     {
                         foreach (DataGridViewRow row in DGV_Main.Rows)
                         {
-                            a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
-                            n1 = n1 + "\r\n" + AddNatPCC(row.Cells["C_interface"].Value.ToString());
-                            ma = ma + "\r\n" + AddSingleManglePCCAcsept(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
-                            mio = mio + "\r\n" + AddSingleManglePCCInputOut(row.Cells["C_interface"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
-                            m2 = m2 + "\r\n" + AddSingleManglePCC(outinf, row.Cells["C_interface"].Value.ToString() + "_Con");
-                            r1 = r1 + "\r\n" + AddRoutsPCCMr(row.Cells["C_WlanIPGetway"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
-                            r2 = r2 + "\r\n" + AddRoutsPCCDis(row.Cells["C_WlanIPGetway"].Value.ToString(), (row.Index + 1).ToString());
+                            try
+                            {
+                                if (row == null) return;
+                                a1 = a1 + "\r\n" + AddAddress(row.Cells["C_interface"].Value.ToString(), row.Cells["C_WlanIPAddr"].Value.ToString(), row.Cells["C_WlanNetIP"].Value.ToString());
+                                n1 = n1 + "\r\n" + AddNatPCC(row.Cells["C_interface"].Value.ToString());
+                                ma = ma + "\r\n" + AddSingleManglePCCAcsept(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
+                                mi = mi + "\r\n" + AddSingleManglePCCInput(row.Cells["C_interface"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                                mo = mo + "\r\n" + AddSingleManglePCCOut(row.Cells["C_interface"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                                m2 = m2 + "\r\n" + AddSingleManglePCC(outinf, row.Cells["C_interface"].Value.ToString() + "_Con");
+                                r1 = r1 + "\r\n" + AddRoutsPCCMr(row.Cells["C_WlanIPGetway"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
+                                r2 = r2 + "\r\n" + AddRoutsPCCDis(row.Cells["C_WlanIPGetway"].Value.ToString(), (row.Index + 1).ToString());
+
+                            }
+                            catch (Exception ex)
+                            {
+                                string res = string.Concat(new string[]
+                                   {
+                                   "رسالة الخطاء :"
+                                   ,ex.Message
+                                   ,"\r\n"
+                                   , "المصدر :"
+                                   ,ex.Source
+                                   ,"\r\n"
+                                    , "الهدف :"
+                                   ,ex.StackTrace
+                                   }); ;
+                                MessageBox.Show(res, "خطاء في البيانات المدخلة");
+                            }
                         }
                         Address = "\r\n" + "add address=" + TB_IPout.Text + " interface=" + outinf + " network=" + TB_OUTSub.Text + a1;
                     }
                     Nat = AddSingleNat(TB_OUTSub.Text + "/24") + n1;
-                    Mangle=ma+mio;
+                    Mangle=ma+mi+"\r\n"+mo;
                     Mangle1 = m2;
                     Routs = r1 + r2 + "\r\n" + routsInSameServer;
                     break;
@@ -239,6 +323,7 @@ namespace LBMS_Pro
             int ib = _nth;
             int il = 1;
             string m1 = "";
+            string m2 = "";
             string r1 = "";
             string p = "";
             string n = "";
@@ -251,21 +336,61 @@ namespace LBMS_Pro
                     {
                         foreach (DataGridViewRow row in DGV_Main.Rows)
                         {
-                            if (Convert.ToInt32(row.Cells["C_index"].Value) >= 1)
+                            try
                             {
-                                string mk = "W" + (row.Index + 1) + "C" + row.Cells["C_index"].Value.ToString();
-                                m1 = m1 + "\r\n" + AddMangle(mk, outinf, _nth, il);
-                                r1 = r1 + "\r\n" + AddRoutsBridge(row.Cells["C_pppoeClint"].Value.ToString(), mk, "1");
-                                row.Cells["C_index"].Value = (Convert.ToInt32(row.Cells["C_index"].Value) - 1);
-                                il++;
+                                if (row == null) return;
+                                int rang = Convert.ToInt32(row.Cells["C_index"].Value);
+                                if (rang > 1)
+                                {
+                                    int cnum = 1;
+                                    while (rang >= 1)
+                                    {
+                                        string mk = "W" + (row.Index + 1) + "C" + cnum;
+                                        m1 = m1 + "\r\n" + AddMangleNTH1(mk, outinf, _nth, il);
+                                        m2 = m2 + "\r\n" + AddMangleNTH2(mk, outinf, _nth, il);
+                                        r1 = r1 + "\r\n" + AddRoutsBridge(row.Cells["C_pppoeClint"].Value.ToString(), mk, "1");
+                                        row.Cells["C_index"].Value = (Convert.ToInt32(row.Cells["C_index"].Value) - 1);
+                                        cnum++;
+                                        il++;
+                                        rang--;
+                                    }
+                                }
+                                else
+                                {
+                                    if (Convert.ToInt32(row.Cells["C_index"].Value) >= 1)
+                                    {
+                                        string mk = "W" + (row.Index + 1) + "C" + row.Cells["C_index"].Value.ToString();
+                                        m1 = m1 + "\r\n" + AddMangleNTH1(mk, outinf, _nth, il);
+                                        m2 = m2 + "\r\n" + AddMangleNTH2(mk, outinf, _nth, il);
+                                        r1 = r1 + "\r\n" + AddRoutsBridge(row.Cells["C_pppoeClint"].Value.ToString(), mk, "1");
+                                        row.Cells["C_index"].Value = (Convert.ToInt32(row.Cells["C_index"].Value) - 1);
+                                        il++;
+                                    }
+                                }
+
                             }
+                            catch (Exception ex)
+                            {
+                                string res = string.Concat(new string[]
+                                   {
+                                   "رسالة الخطاء :"
+                                   ,ex.Message
+                                   ,"\r\n"
+                                   , "المصدر :"
+                                   ,ex.Source
+                                   ,"\r\n"
+                                    , "الهدف :"
+                                   ,ex.StackTrace
+                                   }); ;
+                                MessageBox.Show(res, "خطاء في البيانات المدخلة");
+                            }                       
                         }
                     }
                     p = "/interface pppoe-client"  + Pppoe;
                     Pppoe = p;
                     n = "/ip firewall nat" + "\r\n" + Nat;
                     Nat = n;
-                    m = "/ip firewall mangle" + Mangle + m1;
+                    m = "/ip firewall mangle" + Mangle + m1 + "\r\n" + m2;
                     Mangle = m;
                     r = "/ip route" + r1 + "\r\n" + routsInSameServer;
                     Routs = r;
@@ -276,12 +401,32 @@ namespace LBMS_Pro
                     {
                         foreach (DataGridViewRow row in DGV_Main.Rows)
                         {
-                            if (Convert.ToInt32(row.Cells["C_index"].Value) >= 1)
+                            try
                             {
-                                string mk = row.Cells["C_interface"].Value.ToString() + "_Con";
-                                m1 = m1 + "\r\n" + AddManglePCC1(mk, outinf, _nth, il-1);
-                                row.Cells["C_index"].Value = (Convert.ToInt32(row.Cells["C_index"].Value) - 1);
-                                il++;
+                                if (row == null) return;
+                                if (Convert.ToInt32(row.Cells["C_index"].Value) >= 1)
+                                {
+                                    string mk = row.Cells["C_interface"].Value.ToString() + "_Con";
+                                    m1 = m1 + "\r\n" + AddManglePCC1(mk, outinf, _nth, il - 1);
+                                    row.Cells["C_index"].Value = (Convert.ToInt32(row.Cells["C_index"].Value) - 1);
+                                    il++;
+                                }
+
+                            }
+                            catch (Exception ex)
+                            {
+                                string res = string.Concat(new string[]
+                                   {
+                                   "رسالة الخطاء :"
+                                   ,ex.Message
+                                   ,"\r\n"
+                                   , "المصدر :"
+                                   ,ex.Source
+                                   ,"\r\n"
+                                    , "الهدف :"
+                                   ,ex.StackTrace
+                                   }); ;
+                                MessageBox.Show(res, "خطاء في البيانات المدخلة");
                             }
                         }
                     }
@@ -331,7 +476,7 @@ namespace LBMS_Pro
         {
 
                 DataGridView view = sender as DataGridView;
-                view.ReadOnly = false;
+               // view.ReadOnly = false;
                 DataGridViewComboBoxColumn cbc = sender as DataGridViewComboBoxColumn;
                 view["C_interface", e.RowIndex].Value = "WLAN" + Convert.ToString(e.RowIndex + 1);
                 switch (mode)
@@ -458,6 +603,36 @@ namespace LBMS_Pro
                   ," passthrough=yes"
                   }); ;
         }
+        private string AddMangleNTH1(string conMark, string in_if, int nth, int cnth)
+        {
+            return string.Concat(new string[]
+                  {
+                   @"add action=mark-connection chain=prerouting connection-state=new \"
+                  ,"\r\nin-interface="
+                  ,in_if
+                  ," new-connection-mark="
+                  ,conMark
+                  ," nth="
+                  ,nth.ToString()
+                  ,","
+                  ,cnth.ToString()
+                  ," passthrough=yes"
+                  }); ;
+        }
+        private string AddMangleNTH2(string conMark, string in_if, int nth, int cnth)
+        {
+            return string.Concat(new string[]
+                  {
+                  "add action=mark-routing chain=prerouting connection-mark="
+                  ,conMark
+                  ,@" in-interface=\"
+                  ,"\r\n"
+                  ,in_if
+                  ," new-routing-mark="
+                  ,conMark
+                  ," passthrough=yes"
+                  }); ;
+        }
         private string AddManglePCC(string conMark, string in_if, int nth, int cnth)
         {
             return string.Concat(new string[]
@@ -530,6 +705,26 @@ namespace LBMS_Pro
                     ,"add chain=output connection-mark="
                     ,markcon
                     ," action=mark-routing new-routing-mark="
+                    ,markcon
+                  }); ;
+        }
+        private string AddSingleManglePCCOut(string in_if, string markcon)
+        {
+            return string.Concat(new string[]
+                  {
+                    "add chain=output connection-mark="
+                    ,markcon
+                    ," action=mark-routing new-routing-mark="
+                    ,markcon
+                  }); ;
+        }
+        private string AddSingleManglePCCInput(string in_if, string markcon)
+        {
+            return string.Concat(new string[]
+                  {
+                     "add chain=input in-interface="
+                    ,in_if
+                    ," action=mark-connection new-connection-mark="
                     ,markcon
                   }); ;
         }
@@ -677,9 +872,11 @@ namespace LBMS_Pro
 
         private void BT_Add_Click(object sender, EventArgs e)
         {
-          DGV_Main.ReadOnly = true;
+            DGV_Main.AllowUserToAddRows = true;
             DGV_Main.Rows.Add();
-           DGV_Main.ReadOnly = false;
+            DGV_Main.ReadOnly = true;
+            DGV_Main.AllowUserToAddRows = false;
+            DGV_Main.ReadOnly = false;
         }
 
         private void CB_BType_SelectedIndexChanged(object sender, EventArgs e)
@@ -1670,6 +1867,7 @@ namespace LBMS_Pro
         private void FrmMain_Load(object sender, EventArgs e)
         {
             DGV_Main.ReadOnly = !CB_EditData.Checked;
+            DGV_Main.AllowUserToAddRows = false;
         }
 
         private void CB_EditData_CheckedChanged(object sender, EventArgs e)

@@ -610,7 +610,7 @@ namespace LBMS_Pro
                     ,"/ip hotspot add address-pool=",poolname," addresses-per-mac=1 disabled=no idle-timeout=4m interface=",vlanname," name=",hsServer," profile=",hsProfile,";"
                     ,"\r\n"
                     ,"/ip firewall nat add action=masquerade chain=srcnat  src-address=",ip0,netmask," to-addresses=0.0.0.0 ;"
-                     ,"\r\n"
+                    ,"\r\n"
                     ,"/interface bridge port add auto-isolate=yes bridge=",inter_face," horizon=1 interface=",vlanname,";"
               });
         }
