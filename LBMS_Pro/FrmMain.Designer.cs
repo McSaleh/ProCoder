@@ -45,16 +45,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -65,6 +55,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PL_Up = new System.Windows.Forms.Panel();
             this.CB_EditData = new System.Windows.Forms.CheckBox();
             this.BT_info = new System.Windows.Forms.Button();
@@ -233,40 +233,70 @@
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.TB_BridgeInterFace = new System.Windows.Forms.TextBox();
-            this.TP_Info = new System.Windows.Forms.TabPage();
-            this.PL_DeveloperInfo = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
-            this.LA_Version = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.Lin_Face = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.Lin_Tik = new System.Windows.Forms.LinkLabel();
-            this.Lin_Twi = new System.Windows.Forms.LinkLabel();
-            this.Lin_You = new System.Windows.Forms.LinkLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.TP_NSCFiles = new System.Windows.Forms.TabPage();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.groupBox22 = new System.Windows.Forms.GroupBox();
+            this.label104 = new System.Windows.Forms.Label();
+            this.CB_CFTypes = new System.Windows.Forms.ComboBox();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.CB_Devices = new System.Windows.Forms.ComboBox();
+            this.UN_FileNum = new System.Windows.Forms.NumericUpDown();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.BT_StartNSConfig = new System.Windows.Forms.Button();
+            this.label101 = new System.Windows.Forms.Label();
+            this.CB_SpiscalFCName = new System.Windows.Forms.CheckBox();
+            this.TB_StartFileName = new System.Windows.Forms.TextBox();
+            this.TB_NSFileDir = new System.Windows.Forms.TextBox();
+            this.BT_NSCFDir = new System.Windows.Forms.Button();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewComboBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewComboBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label91 = new System.Windows.Forms.Label();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.UN_Nnum = new System.Windows.Forms.NumericUpDown();
+            this.CB_SpicalNum = new System.Windows.Forms.CheckBox();
+            this.label92 = new System.Windows.Forms.Label();
+            this.TB_SSIDReplace = new System.Windows.Forms.TextBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.CB_NNameType = new System.Windows.Forms.ComboBox();
+            this.CB_CustmNames = new System.Windows.Forms.CheckBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.TB_SIDName = new System.Windows.Forms.TextBox();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.UN_VLanID = new System.Windows.Forms.NumericUpDown();
+            this.label98 = new System.Windows.Forms.Label();
+            this.UN_GIP4 = new System.Windows.Forms.NumericUpDown();
+            this.UN_GIP3 = new System.Windows.Forms.NumericUpDown();
+            this.UN_GIP2 = new System.Windows.Forms.NumericUpDown();
+            this.UN_GIP1 = new System.Windows.Forms.NumericUpDown();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label96 = new System.Windows.Forms.Label();
+            this.CB_NetMask = new System.Windows.Forms.ComboBox();
+            this.UN_IP4 = new System.Windows.Forms.NumericUpDown();
+            this.UN_IP3 = new System.Windows.Forms.NumericUpDown();
+            this.UN_IP2 = new System.Windows.Forms.NumericUpDown();
+            this.UN_IP1 = new System.Windows.Forms.NumericUpDown();
+            this.TP_AutoMation = new System.Windows.Forms.TabPage();
             this.TP_TelegramScr = new System.Windows.Forms.TabPage();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.RTB_Down = new System.Windows.Forms.RichTextBox();
@@ -331,64 +361,40 @@
             this.label82 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.TP_NSCFiles = new System.Windows.Forms.TabPage();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.label102 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.BT_StartNSConfig = new System.Windows.Forms.Button();
-            this.label101 = new System.Windows.Forms.Label();
-            this.CB_SpiscalFCName = new System.Windows.Forms.CheckBox();
-            this.TB_StartFileName = new System.Windows.Forms.TextBox();
-            this.TB_NSFileDir = new System.Windows.Forms.TextBox();
-            this.BT_NSCFDir = new System.Windows.Forms.Button();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewComboBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewComboBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.label88 = new System.Windows.Forms.Label();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label91 = new System.Windows.Forms.Label();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.UN_Nnum = new System.Windows.Forms.NumericUpDown();
-            this.CB_SpicalNum = new System.Windows.Forms.CheckBox();
-            this.label92 = new System.Windows.Forms.Label();
-            this.TB_SSIDReplace = new System.Windows.Forms.TextBox();
-            this.label94 = new System.Windows.Forms.Label();
-            this.CB_NNameType = new System.Windows.Forms.ComboBox();
-            this.CB_CustmNames = new System.Windows.Forms.CheckBox();
-            this.label93 = new System.Windows.Forms.Label();
-            this.TB_SIDName = new System.Windows.Forms.TextBox();
-            this.label89 = new System.Windows.Forms.Label();
-            this.UN_FileNum = new System.Windows.Forms.NumericUpDown();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.UN_VLanID = new System.Windows.Forms.NumericUpDown();
-            this.label98 = new System.Windows.Forms.Label();
-            this.UN_GIP4 = new System.Windows.Forms.NumericUpDown();
-            this.UN_GIP3 = new System.Windows.Forms.NumericUpDown();
-            this.UN_GIP2 = new System.Windows.Forms.NumericUpDown();
-            this.UN_GIP1 = new System.Windows.Forms.NumericUpDown();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label96 = new System.Windows.Forms.Label();
-            this.CB_NetMask = new System.Windows.Forms.ComboBox();
-            this.UN_IP4 = new System.Windows.Forms.NumericUpDown();
-            this.UN_IP3 = new System.Windows.Forms.NumericUpDown();
-            this.UN_IP2 = new System.Windows.Forms.NumericUpDown();
-            this.UN_IP1 = new System.Windows.Forms.NumericUpDown();
+            this.TP_Info = new System.Windows.Forms.TabPage();
+            this.PL_DeveloperInfo = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.LA_Version = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.Lin_Face = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.Lin_Tik = new System.Windows.Forms.LinkLabel();
+            this.Lin_Twi = new System.Windows.Forms.LinkLabel();
+            this.Lin_You = new System.Windows.Forms.LinkLabel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.PL_Down = new System.Windows.Forms.Panel();
             this.TB_Result = new System.Windows.Forms.TextBox();
@@ -398,6 +404,8 @@
             this.BT_SaveScripts = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BT_InfoPage = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.BT_NSCFiles = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.BT_MultiTask = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -410,13 +418,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.label103 = new System.Windows.Forms.Label();
-            this.CB_Devices = new System.Windows.Forms.ComboBox();
-            this.label104 = new System.Windows.Forms.Label();
-            this.CB_CFTypes = new System.Windows.Forms.ComboBox();
-            this.BT_NSCFiles = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.frm_Automation1 = new LBMS_Pro.Frm_Automation();
             this.PL_Up.SuspendLayout();
             this.PL_Main.SuspendLayout();
             this.TC_Main.SuspendLayout();
@@ -453,6 +455,39 @@
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_VlanID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VLAN_Num)).BeginInit();
+            this.TP_NSCFiles.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            this.groupBox22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_FileNum)).BeginInit();
+            this.groupBox21.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            this.groupBox17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_Nnum)).BeginInit();
+            this.groupBox19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_VLanID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_IP4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_IP3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_IP2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_IP1)).BeginInit();
+            this.TP_AutoMation.SuspendLayout();
+            this.TP_TelegramScr.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.groupBox14.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             this.TP_Info.SuspendLayout();
             this.PL_DeveloperInfo.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -465,37 +500,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.TP_TelegramScr.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            this.groupBox14.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            this.TP_NSCFiles.SuspendLayout();
-            this.groupBox18.SuspendLayout();
-            this.groupBox21.SuspendLayout();
-            this.groupBox20.SuspendLayout();
-            this.groupBox16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            this.groupBox17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_Nnum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_FileNum)).BeginInit();
-            this.groupBox19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_VLanID)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_IP4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_IP3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_IP2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_IP1)).BeginInit();
             this.PL_Down.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -503,7 +507,6 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.groupBox22.SuspendLayout();
             this.SuspendLayout();
             // 
             // PL_Up
@@ -687,6 +690,7 @@
             this.TC_Main.Controls.Add(this.TP_SecScr);
             this.TC_Main.Controls.Add(this.TP_MultiTask);
             this.TC_Main.Controls.Add(this.TP_NSCFiles);
+            this.TC_Main.Controls.Add(this.TP_AutoMation);
             this.TC_Main.Controls.Add(this.TP_TelegramScr);
             this.TC_Main.Controls.Add(this.TP_Info);
             this.TC_Main.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3039,459 +3043,1162 @@
             this.TB_BridgeInterFace.TextChanged += new System.EventHandler(this.TB_BridgeInterFace_TextChanged);
             this.TB_BridgeInterFace.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_KeyDown);
             // 
-            // TP_Info
-            // 
-            this.TP_Info.Controls.Add(this.PL_DeveloperInfo);
-            this.TP_Info.Location = new System.Drawing.Point(4, 4);
-            this.TP_Info.Name = "TP_Info";
-            this.TP_Info.Size = new System.Drawing.Size(835, 442);
-            this.TP_Info.TabIndex = 3;
-            this.TP_Info.Text = "معلومات";
-            this.TP_Info.UseVisualStyleBackColor = true;
-            // 
-            // PL_DeveloperInfo
-            // 
-            this.PL_DeveloperInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.PL_DeveloperInfo.Controls.Add(this.label30);
-            this.PL_DeveloperInfo.Controls.Add(this.LA_Version);
-            this.PL_DeveloperInfo.Controls.Add(this.label29);
-            this.PL_DeveloperInfo.Controls.Add(this.label28);
-            this.PL_DeveloperInfo.Controls.Add(this.label27);
-            this.PL_DeveloperInfo.Controls.Add(this.label26);
-            this.PL_DeveloperInfo.Controls.Add(this.label25);
-            this.PL_DeveloperInfo.Controls.Add(this.label23);
-            this.PL_DeveloperInfo.Controls.Add(this.label22);
-            this.PL_DeveloperInfo.Controls.Add(this.label21);
-            this.PL_DeveloperInfo.Controls.Add(this.label20);
-            this.PL_DeveloperInfo.Controls.Add(this.panel3);
-            this.PL_DeveloperInfo.Controls.Add(this.pictureBox4);
-            this.PL_DeveloperInfo.Controls.Add(this.pictureBox3);
-            this.PL_DeveloperInfo.Controls.Add(this.pictureBox2);
-            this.PL_DeveloperInfo.Controls.Add(this.label19);
-            this.PL_DeveloperInfo.Controls.Add(this.label18);
-            this.PL_DeveloperInfo.Controls.Add(this.label17);
-            this.PL_DeveloperInfo.Controls.Add(this.label24);
-            this.PL_DeveloperInfo.Location = new System.Drawing.Point(3, 4);
-            this.PL_DeveloperInfo.Name = "PL_DeveloperInfo";
-            this.PL_DeveloperInfo.Size = new System.Drawing.Size(656, 431);
-            this.PL_DeveloperInfo.TabIndex = 5;
-            this.PL_DeveloperInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.PL_DeveloperInfo_Paint);
-            // 
-            // label30
-            // 
-            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label30.Font = new System.Drawing.Font("Janna LT", 10F);
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(130, 370);
-            this.label30.Margin = new System.Windows.Forms.Padding(2);
-            this.label30.Name = "label30";
-            this.label30.Padding = new System.Windows.Forms.Padding(1);
-            this.label30.Size = new System.Drawing.Size(526, 30);
-            this.label30.TabIndex = 53;
-            this.label30.Text = "هذا البرنامج مجاني بالكامل ينتفع به المبرمجين واصحاب الشبكات والصرافين والمؤسسات";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LA_Version
-            // 
-            this.LA_Version.BackColor = System.Drawing.Color.BurlyWood;
-            this.LA_Version.Font = new System.Drawing.Font("Janna LT", 8F);
-            this.LA_Version.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.LA_Version.Location = new System.Drawing.Point(478, 406);
-            this.LA_Version.Margin = new System.Windows.Forms.Padding(2);
-            this.LA_Version.Name = "LA_Version";
-            this.LA_Version.Padding = new System.Windows.Forms.Padding(1);
-            this.LA_Version.Size = new System.Drawing.Size(84, 22);
-            this.LA_Version.TabIndex = 52;
-            this.LA_Version.Text = "V 1.0.0";
-            this.LA_Version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label29
-            // 
-            this.label29.BackColor = System.Drawing.Color.BurlyWood;
-            this.label29.Font = new System.Drawing.Font("Janna LT", 8F);
-            this.label29.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label29.Location = new System.Drawing.Point(568, 406);
-            this.label29.Margin = new System.Windows.Forms.Padding(2);
-            this.label29.Name = "label29";
-            this.label29.Padding = new System.Windows.Forms.Padding(1);
-            this.label29.Size = new System.Drawing.Size(84, 22);
-            this.label29.TabIndex = 50;
-            this.label29.Text = "الإصدار الحالي";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.Color.BurlyWood;
-            this.label28.Font = new System.Drawing.Font("Janna LT", 8F);
-            this.label28.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label28.Location = new System.Drawing.Point(2, 406);
-            this.label28.Margin = new System.Windows.Forms.Padding(2);
-            this.label28.Name = "label28";
-            this.label28.Padding = new System.Windows.Forms.Padding(1);
-            this.label28.Size = new System.Drawing.Size(232, 22);
-            this.label28.TabIndex = 49;
-            this.label28.Text = "All Copyright © For AL-NaharySoft  2022";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            this.label27.BackColor = System.Drawing.Color.BurlyWood;
-            this.label27.Font = new System.Drawing.Font("Janna LT", 8F);
-            this.label27.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label27.Location = new System.Drawing.Point(240, 406);
-            this.label27.Margin = new System.Windows.Forms.Padding(2);
-            this.label27.Name = "label27";
-            this.label27.Padding = new System.Windows.Forms.Padding(1);
-            this.label27.Size = new System.Drawing.Size(232, 22);
-            this.label27.TabIndex = 48;
-            this.label27.Text = "كافة الحقوق محفوظة © ل النهاري سوفت 2022";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.label26.Font = new System.Drawing.Font("Janna LT", 12F);
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(492, 190);
-            this.label26.Margin = new System.Windows.Forms.Padding(2);
-            this.label26.Name = "label26";
-            this.label26.Padding = new System.Windows.Forms.Padding(1);
-            this.label26.Size = new System.Drawing.Size(163, 73);
-            this.label26.TabIndex = 47;
-            this.label26.Text = "للحلول التقنية وأنظمة الحمـــــــــــــــاية والشبكــــــــــــــات";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label25.Font = new System.Drawing.Font("Janna LT", 10F);
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(-1, 308);
-            this.label25.Margin = new System.Windows.Forms.Padding(2);
-            this.label25.Name = "label25";
-            this.label25.Padding = new System.Windows.Forms.Padding(1);
-            this.label25.Size = new System.Drawing.Size(529, 30);
-            this.label25.TabIndex = 46;
-            this.label25.Text = "إنشاء إسكربتات لكل ماتريد عملة بدرجة عالية من الكفائة على سرفر الميكروتك بضغطة زر" +
-    "";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label23
-            // 
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.label23.Font = new System.Drawing.Font("Janna LT", 8F);
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(2, 344);
-            this.label23.Margin = new System.Windows.Forms.Padding(2);
-            this.label23.Name = "label23";
-            this.label23.Padding = new System.Windows.Forms.Padding(1);
-            this.label23.Size = new System.Drawing.Size(652, 22);
-            this.label23.TabIndex = 44;
-            this.label23.Text = "إستخدم هذا البرنامج بعض الإسكربتات من إخواننا المهندسين على الإنترنت وعمل لها بعض" +
-    " التحسينات وسنقوم بذكر وشكر الجميع على حساباتنا";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.Color.Goldenrod;
-            this.label22.Font = new System.Drawing.Font("Janna LT", 12F);
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(528, 305);
-            this.label22.Margin = new System.Windows.Forms.Padding(2);
-            this.label22.Name = "label22";
-            this.label22.Padding = new System.Windows.Forms.Padding(1);
-            this.label22.Size = new System.Drawing.Size(126, 36);
-            this.label22.TabIndex = 43;
-            this.label22.Text = "المبرمج المحترف";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(190)))), ((int)(((byte)(120)))));
-            this.label21.Font = new System.Drawing.Font("Janna LT", 12F);
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(0, 265);
-            this.label21.Margin = new System.Windows.Forms.Padding(2);
-            this.label21.Name = "label21";
-            this.label21.Padding = new System.Windows.Forms.Padding(1);
-            this.label21.Size = new System.Drawing.Size(656, 36);
-            this.label21.TabIndex = 42;
-            this.label21.Text = "معلومات حول هذا البرنامج";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.label20.Font = new System.Drawing.Font("Janna LT", 10F);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(492, 40);
-            this.label20.Margin = new System.Windows.Forms.Padding(2);
-            this.label20.Name = "label20";
-            this.label20.Padding = new System.Windows.Forms.Padding(1);
-            this.label20.Size = new System.Drawing.Size(162, 30);
-            this.label20.TabIndex = 41;
-            this.label20.Text = "من خدماتنا خدماتنا";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.pictureBox10);
-            this.panel3.Controls.Add(this.linkLabel8);
-            this.panel3.Controls.Add(this.pictureBox9);
-            this.panel3.Controls.Add(this.Lin_Face);
-            this.panel3.Controls.Add(this.linkLabel4);
-            this.panel3.Controls.Add(this.linkLabel7);
-            this.panel3.Controls.Add(this.Lin_Tik);
-            this.panel3.Controls.Add(this.Lin_Twi);
-            this.panel3.Controls.Add(this.Lin_You);
-            this.panel3.Controls.Add(this.pictureBox5);
-            this.panel3.Controls.Add(this.pictureBox8);
-            this.panel3.Controls.Add(this.pictureBox6);
-            this.panel3.Controls.Add(this.pictureBox7);
-            this.panel3.Location = new System.Drawing.Point(197, 75);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(289, 223);
-            this.panel3.TabIndex = 40;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::LBMS_Pro.Properties.Resources.whatsapp__1_;
-            this.pictureBox10.InitialImage = null;
-            this.pictureBox10.Location = new System.Drawing.Point(8, 7);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 37;
-            this.pictureBox10.TabStop = false;
-            // 
-            // linkLabel8
-            // 
-            this.linkLabel8.AutoSize = true;
-            this.linkLabel8.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel8.Location = new System.Drawing.Point(157, 13);
-            this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(103, 14);
-            this.linkLabel8.TabIndex = 39;
-            this.linkLabel8.TabStop = true;
-            this.linkLabel8.Text = "+967 730460772";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::LBMS_Pro.Properties.Resources.instagram__1_;
-            this.pictureBox9.InitialImage = null;
-            this.pictureBox9.Location = new System.Drawing.Point(8, 186);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 36;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Visible = false;
-            // 
-            // Lin_Face
-            // 
-            this.Lin_Face.AutoSize = true;
-            this.Lin_Face.LinkColor = System.Drawing.Color.Gold;
-            this.Lin_Face.Location = new System.Drawing.Point(46, 49);
-            this.Lin_Face.Name = "Lin_Face";
-            this.Lin_Face.Size = new System.Drawing.Size(221, 14);
-            this.Lin_Face.TabIndex = 23;
-            this.Lin_Face.TabStop = true;
-            this.Lin_Face.Text = "https://www.facebook.com/McSalehF/";
-            this.Lin_Face.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_Face_LinkClicked);
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel4.Location = new System.Drawing.Point(46, 192);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(222, 14);
-            this.linkLabel4.TabIndex = 26;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "https://www.instagram.com/mcsalehx/";
-            this.linkLabel4.Visible = false;
-            // 
-            // linkLabel7
-            // 
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel7.Location = new System.Drawing.Point(46, 13);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(103, 14);
-            this.linkLabel7.TabIndex = 38;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "+967 779537981";
-            // 
-            // Lin_Tik
-            // 
-            this.Lin_Tik.AutoSize = true;
-            this.Lin_Tik.LinkColor = System.Drawing.Color.Gold;
-            this.Lin_Tik.Location = new System.Drawing.Point(46, 85);
-            this.Lin_Tik.Name = "Lin_Tik";
-            this.Lin_Tik.Size = new System.Drawing.Size(208, 14);
-            this.Lin_Tik.TabIndex = 24;
-            this.Lin_Tik.TabStop = true;
-            this.Lin_Tik.Text = "https://www.tiktok.com/@_mcsaleh";
-            this.Lin_Tik.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_Tik_LinkClicked);
-            // 
-            // Lin_Twi
-            // 
-            this.Lin_Twi.AutoSize = true;
-            this.Lin_Twi.LinkColor = System.Drawing.Color.Gold;
-            this.Lin_Twi.Location = new System.Drawing.Point(46, 121);
-            this.Lin_Twi.Name = "Lin_Twi";
-            this.Lin_Twi.Size = new System.Drawing.Size(205, 14);
-            this.Lin_Twi.TabIndex = 25;
-            this.Lin_Twi.TabStop = true;
-            this.Lin_Twi.Text = "https://www.twitter.com/_McSaleh";
-            this.Lin_Twi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_Twi_LinkClicked);
-            // 
-            // Lin_You
-            // 
-            this.Lin_You.AutoSize = true;
-            this.Lin_You.LinkColor = System.Drawing.Color.Gold;
-            this.Lin_You.Location = new System.Drawing.Point(46, 157);
-            this.Lin_You.Name = "Lin_You";
-            this.Lin_You.Size = new System.Drawing.Size(371, 14);
-            this.Lin_You.TabIndex = 28;
-            this.Lin_You.TabStop = true;
-            this.Lin_You.Text = "https://www.youtube.com/channel/UCeM9fzhUWI2k4b1pEkRGrfg";
-            this.Lin_You.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_You_LinkClicked);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::LBMS_Pro.Properties.Resources.facebook;
-            this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(8, 43);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 32;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::LBMS_Pro.Properties.Resources.youtube;
-            this.pictureBox8.InitialImage = null;
-            this.pictureBox8.Location = new System.Drawing.Point(8, 151);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 35;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::LBMS_Pro.Properties.Resources.tiktok;
-            this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(8, 79);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 33;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::LBMS_Pro.Properties.Resources.twitter;
-            this.pictureBox7.InitialImage = null;
-            this.pictureBox7.Location = new System.Drawing.Point(8, 115);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 34;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::LBMS_Pro.Properties.Resources.CW_Logo_2x;
-            this.pictureBox4.InitialImage = null;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 75);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(188, 188);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 31;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::LBMS_Pro.Properties.Resources.Pro;
-            this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(492, 75);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(162, 111);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 30;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Goldenrod;
-            this.pictureBox2.Image = global::LBMS_Pro.Properties.Resources.logo;
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(2, 367);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(126, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 29;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.label19.Font = new System.Drawing.Font("Janna LT", 10F);
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(197, 40);
-            this.label19.Margin = new System.Windows.Forms.Padding(2);
-            this.label19.Name = "label19";
-            this.label19.Padding = new System.Windows.Forms.Padding(1);
-            this.label19.Size = new System.Drawing.Size(289, 30);
-            this.label19.TabIndex = 22;
-            this.label19.Text = "للتواصل مع المطور";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.label18.Font = new System.Drawing.Font("Janna LT", 11F);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(3, 40);
-            this.label18.Margin = new System.Windows.Forms.Padding(2);
-            this.label18.Name = "label18";
-            this.label18.Padding = new System.Windows.Forms.Padding(1);
-            this.label18.Size = new System.Drawing.Size(188, 31);
-            this.label18.TabIndex = 21;
-            this.label18.Text = "محمد صالح النهاري";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label17
-            // 
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(190)))), ((int)(((byte)(120)))));
-            this.label17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label17.Font = new System.Drawing.Font("Janna LT", 12F);
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(0, 0);
-            this.label17.Margin = new System.Windows.Forms.Padding(2);
-            this.label17.Name = "label17";
-            this.label17.Padding = new System.Windows.Forms.Padding(1);
-            this.label17.Size = new System.Drawing.Size(656, 36);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "معلومات حول مطور البرنامج";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label24
-            // 
-            this.label24.BackColor = System.Drawing.Color.Goldenrod;
-            this.label24.Font = new System.Drawing.Font("Janna LT", 10F);
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(4, 367);
-            this.label24.Margin = new System.Windows.Forms.Padding(2);
-            this.label24.Name = "label24";
-            this.label24.Padding = new System.Windows.Forms.Padding(1);
-            this.label24.Size = new System.Drawing.Size(126, 36);
-            this.label24.TabIndex = 45;
-            this.label24.Text = "للتواصل مع المطور";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // TP_NSCFiles
+            // 
+            this.TP_NSCFiles.Controls.Add(this.groupBox18);
+            this.TP_NSCFiles.Location = new System.Drawing.Point(4, 4);
+            this.TP_NSCFiles.Name = "TP_NSCFiles";
+            this.TP_NSCFiles.Size = new System.Drawing.Size(835, 442);
+            this.TP_NSCFiles.TabIndex = 6;
+            this.TP_NSCFiles.Text = "برمجة الأنتينات";
+            this.TP_NSCFiles.UseVisualStyleBackColor = true;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox18.Controls.Add(this.groupBox22);
+            this.groupBox18.Controls.Add(this.groupBox21);
+            this.groupBox18.Controls.Add(this.label95);
+            this.groupBox18.Controls.Add(this.groupBox20);
+            this.groupBox18.Controls.Add(this.groupBox16);
+            this.groupBox18.Controls.Add(this.groupBox17);
+            this.groupBox18.Controls.Add(this.groupBox19);
+            this.groupBox18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox18.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox18.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.groupBox18.Location = new System.Drawing.Point(2, 5);
+            this.groupBox18.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox18.Size = new System.Drawing.Size(831, 435);
+            this.groupBox18.TabIndex = 46;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "إنشاء ملفات إعدادات للانتينات";
+            // 
+            // groupBox22
+            // 
+            this.groupBox22.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox22.Controls.Add(this.label104);
+            this.groupBox22.Controls.Add(this.CB_CFTypes);
+            this.groupBox22.Controls.Add(this.label103);
+            this.groupBox22.Controls.Add(this.label89);
+            this.groupBox22.Controls.Add(this.CB_Devices);
+            this.groupBox22.Controls.Add(this.UN_FileNum);
+            this.groupBox22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox22.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox22.Location = new System.Drawing.Point(161, 56);
+            this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox22.Name = "groupBox22";
+            this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox22.Size = new System.Drawing.Size(663, 65);
+            this.groupBox22.TabIndex = 49;
+            this.groupBox22.TabStop = false;
+            this.groupBox22.Text = "البيانات الرئيسية";
+            // 
+            // label104
+            // 
+            this.label104.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label104.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label104.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label104.Location = new System.Drawing.Point(114, 26);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(80, 24);
+            this.label104.TabIndex = 57;
+            this.label104.Text = "طريقة البرمجة";
+            this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_CFTypes
+            // 
+            this.CB_CFTypes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CB_CFTypes.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CB_CFTypes.DisplayMember = "NanoStation M2";
+            this.CB_CFTypes.DropDownHeight = 60;
+            this.CB_CFTypes.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.CB_CFTypes.ForeColor = System.Drawing.Color.DarkBlue;
+            this.CB_CFTypes.FormattingEnabled = true;
+            this.CB_CFTypes.IntegralHeight = false;
+            this.CB_CFTypes.Items.AddRange(new object[] {
+            "Station",
+            "AccessPoint"});
+            this.CB_CFTypes.Location = new System.Drawing.Point(5, 26);
+            this.CB_CFTypes.MaxDropDownItems = 4;
+            this.CB_CFTypes.Name = "CB_CFTypes";
+            this.CB_CFTypes.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CB_CFTypes.Size = new System.Drawing.Size(108, 24);
+            this.CB_CFTypes.TabIndex = 58;
+            this.CB_CFTypes.Text = "AccessPoint";
+            // 
+            // label103
+            // 
+            this.label103.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label103.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label103.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label103.Location = new System.Drawing.Point(334, 26);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(64, 24);
+            this.label103.TabIndex = 55;
+            this.label103.Text = "نوع الجهاز";
+            this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label89
+            // 
+            this.label89.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label89.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label89.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label89.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label89.Location = new System.Drawing.Point(405, 27);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(160, 24);
+            this.label89.TabIndex = 32;
+            this.label89.Text = "عدد الملفات المطلوب إنشائها";
+            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CB_Devices
+            // 
+            this.CB_Devices.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CB_Devices.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CB_Devices.DisplayMember = "NanoStation M2";
+            this.CB_Devices.DropDownHeight = 60;
+            this.CB_Devices.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.CB_Devices.ForeColor = System.Drawing.Color.DarkBlue;
+            this.CB_Devices.FormattingEnabled = true;
+            this.CB_Devices.IntegralHeight = false;
+            this.CB_Devices.Items.AddRange(new object[] {
+            "NanoStation M2",
+            "NanoStation M2 Loco",
+            "NanoStation Rocket M2",
+            "NanoStation M5",
+            "NanoStation M5 Loco",
+            "NanoStation Rocket M5",
+            "NanoStation powerbeem"});
+            this.CB_Devices.Location = new System.Drawing.Point(195, 26);
+            this.CB_Devices.MaxDropDownItems = 4;
+            this.CB_Devices.Name = "CB_Devices";
+            this.CB_Devices.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CB_Devices.Size = new System.Drawing.Size(138, 24);
+            this.CB_Devices.TabIndex = 56;
+            this.CB_Devices.Text = "NanoStation M2";
+            // 
+            // UN_FileNum
+            // 
+            this.UN_FileNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.UN_FileNum.BackColor = System.Drawing.Color.LightCyan;
+            this.UN_FileNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_FileNum.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_FileNum.ForeColor = System.Drawing.Color.DarkBlue;
+            this.UN_FileNum.Location = new System.Drawing.Point(566, 27);
+            this.UN_FileNum.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.UN_FileNum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.UN_FileNum.Name = "UN_FileNum";
+            this.UN_FileNum.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.UN_FileNum.Size = new System.Drawing.Size(88, 24);
+            this.UN_FileNum.TabIndex = 43;
+            this.UN_FileNum.Tag = "";
+            this.UN_FileNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_FileNum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // groupBox21
+            // 
+            this.groupBox21.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox21.Controls.Add(this.label102);
+            this.groupBox21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox21.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox21.Location = new System.Drawing.Point(4, 56);
+            this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox21.Size = new System.Drawing.Size(153, 339);
+            this.groupBox21.TabIndex = 48;
+            this.groupBox21.TabStop = false;
+            this.groupBox21.Text = "إعدادات إسم الشبكة";
+            // 
+            // label102
+            // 
+            this.label102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label102.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label102.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label102.Location = new System.Drawing.Point(2, 25);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(149, 29);
+            this.label102.TabIndex = 16;
+            this.label102.Text = "إنشاء ملفات إعدادات للانتينات";
+            this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label95
+            // 
+            this.label95.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label95.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label95.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label95.Location = new System.Drawing.Point(2, 25);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(827, 29);
+            this.label95.TabIndex = 16;
+            this.label95.Text = "إنشاء ملفات إعدادات للانتينات";
+            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox20.Controls.Add(this.BT_StartNSConfig);
+            this.groupBox20.Controls.Add(this.label101);
+            this.groupBox20.Controls.Add(this.CB_SpiscalFCName);
+            this.groupBox20.Controls.Add(this.TB_StartFileName);
+            this.groupBox20.Controls.Add(this.TB_NSFileDir);
+            this.groupBox20.Controls.Add(this.BT_NSCFDir);
+            this.groupBox20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox20.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox20.Location = new System.Drawing.Point(219, 307);
+            this.groupBox20.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox20.Size = new System.Drawing.Size(605, 88);
+            this.groupBox20.TabIndex = 47;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "بيانات ملفات الإعداد";
+            // 
+            // BT_StartNSConfig
+            // 
+            this.BT_StartNSConfig.BackColor = System.Drawing.Color.LimeGreen;
+            this.BT_StartNSConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_StartNSConfig.FlatAppearance.BorderSize = 0;
+            this.BT_StartNSConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_StartNSConfig.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold);
+            this.BT_StartNSConfig.ForeColor = System.Drawing.Color.White;
+            this.BT_StartNSConfig.Location = new System.Drawing.Point(14, 26);
+            this.BT_StartNSConfig.Margin = new System.Windows.Forms.Padding(0);
+            this.BT_StartNSConfig.Name = "BT_StartNSConfig";
+            this.BT_StartNSConfig.Size = new System.Drawing.Size(98, 52);
+            this.BT_StartNSConfig.TabIndex = 56;
+            this.BT_StartNSConfig.Text = "إنشاء ملفات الإعدادات";
+            this.BT_StartNSConfig.UseCompatibleTextRendering = true;
+            this.BT_StartNSConfig.UseVisualStyleBackColor = true;
+            this.BT_StartNSConfig.Click += new System.EventHandler(this.BT_StartNSConfig_Click);
+            // 
+            // label101
+            // 
+            this.label101.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label101.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label101.Location = new System.Drawing.Point(313, 26);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(126, 24);
+            this.label101.TabIndex = 55;
+            this.label101.Text = "بادئة إسم ملف الإعداد";
+            this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_SpiscalFCName
+            // 
+            this.CB_SpiscalFCName.AutoSize = true;
+            this.CB_SpiscalFCName.BackColor = System.Drawing.Color.Transparent;
+            this.CB_SpiscalFCName.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.CB_SpiscalFCName.Location = new System.Drawing.Point(445, 25);
+            this.CB_SpiscalFCName.Name = "CB_SpiscalFCName";
+            this.CB_SpiscalFCName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CB_SpiscalFCName.Size = new System.Drawing.Size(151, 26);
+            this.CB_SpiscalFCName.TabIndex = 55;
+            this.CB_SpiscalFCName.Tag = "MikSUMBackUp";
+            this.CB_SpiscalFCName.Text = "إستخدام تسمية مخصصة";
+            this.CB_SpiscalFCName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_SpiscalFCName.UseVisualStyleBackColor = false;
+            this.CB_SpiscalFCName.CheckedChanged += new System.EventHandler(this.CB_SpiscalFCName_CheckedChanged);
+            // 
+            // TB_StartFileName
+            // 
+            this.TB_StartFileName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TB_StartFileName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_StartFileName.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.TB_StartFileName.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TB_StartFileName.Location = new System.Drawing.Point(118, 26);
+            this.TB_StartFileName.MaxLength = 100;
+            this.TB_StartFileName.Name = "TB_StartFileName";
+            this.TB_StartFileName.ReadOnly = true;
+            this.TB_StartFileName.Size = new System.Drawing.Size(195, 24);
+            this.TB_StartFileName.TabIndex = 55;
+            this.TB_StartFileName.Tag = "MikSUMBackUp";
+            this.TB_StartFileName.Text = "ProTik_NS";
+            // 
+            // TB_NSFileDir
+            // 
+            this.TB_NSFileDir.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TB_NSFileDir.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_NSFileDir.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::LBMS_Pro.Properties.Settings.Default, "NSFileDir", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.TB_NSFileDir.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.TB_NSFileDir.ForeColor = System.Drawing.Color.Black;
+            this.TB_NSFileDir.Location = new System.Drawing.Point(245, 54);
+            this.TB_NSFileDir.MaxLength = 255;
+            this.TB_NSFileDir.Name = "TB_NSFileDir";
+            this.TB_NSFileDir.Size = new System.Drawing.Size(351, 24);
+            this.TB_NSFileDir.TabIndex = 55;
+            this.TB_NSFileDir.Tag = "MikSUMBackUp";
+            this.TB_NSFileDir.Text = global::LBMS_Pro.Properties.Settings.Default.NSFileDir;
+            // 
+            // BT_NSCFDir
+            // 
+            this.BT_NSCFDir.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BT_NSCFDir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_NSCFDir.FlatAppearance.BorderSize = 0;
+            this.BT_NSCFDir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_NSCFDir.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.BT_NSCFDir.ForeColor = System.Drawing.Color.White;
+            this.BT_NSCFDir.Location = new System.Drawing.Point(118, 54);
+            this.BT_NSCFDir.Name = "BT_NSCFDir";
+            this.BT_NSCFDir.Size = new System.Drawing.Size(121, 24);
+            this.BT_NSCFDir.TabIndex = 19;
+            this.BT_NSCFDir.Text = "موقع الحفظ";
+            this.BT_NSCFDir.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BT_NSCFDir.UseVisualStyleBackColor = false;
+            this.BT_NSCFDir.Click += new System.EventHandler(this.BT_NSCFDir_Click);
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox16.Controls.Add(this.button4);
+            this.groupBox16.Controls.Add(this.dataGridView2);
+            this.groupBox16.Controls.Add(this.numericUpDown5);
+            this.groupBox16.Controls.Add(this.checkBox12);
+            this.groupBox16.Controls.Add(this.label88);
+            this.groupBox16.Controls.Add(this.checkBox13);
+            this.groupBox16.Controls.Add(this.numericUpDown6);
+            this.groupBox16.Controls.Add(this.button5);
+            this.groupBox16.Controls.Add(this.label91);
+            this.groupBox16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox16.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox16.Location = new System.Drawing.Point(161, 125);
+            this.groupBox16.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox16.Size = new System.Drawing.Size(54, 270);
+            this.groupBox16.TabIndex = 44;
+            this.groupBox16.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(445, 163);
+            this.button4.Margin = new System.Windows.Forms.Padding(0);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button4.Size = new System.Drawing.Size(110, 31);
+            this.button4.TabIndex = 41;
+            this.button4.Tag = "MikSUMBackUp";
+            this.button4.Text = "تجهيز المستويات";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewComboBoxColumn3,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewComboBoxColumn4,
+            this.dataGridViewTextBoxColumn12});
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.BlueViolet;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle23;
+            this.dataGridView2.EnableHeadersVisualStyles = false;
+            this.dataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView2.Location = new System.Drawing.Point(2, 163);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            this.dataGridView2.RowHeadersWidth = 24;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            this.dataGridView2.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dataGridView2.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView2.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView2.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView2.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView2.RowTemplate.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(555, 140);
+            this.dataGridView2.TabIndex = 38;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            dataGridViewCellStyle18.Format = "###";
+            dataGridViewCellStyle18.NullValue = null;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridViewTextBoxColumn7.HeaderText = "IP1";
+            this.dataGridViewTextBoxColumn7.MaxInputLength = 3;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "IP2";
+            this.dataGridViewTextBoxColumn8.MaxInputLength = 3;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            dataGridViewCellStyle19.NullValue = "0";
+            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle19;
+            this.dataGridViewTextBoxColumn9.HeaderText = "IP3";
+            this.dataGridViewTextBoxColumn9.MaxInputLength = 3;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            dataGridViewCellStyle20.NullValue = "0";
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle20;
+            this.dataGridViewTextBoxColumn10.HeaderText = "IP4";
+            this.dataGridViewTextBoxColumn10.MaxInputLength = 3;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 50;
+            // 
+            // dataGridViewComboBoxColumn3
+            // 
+            dataGridViewCellStyle21.NullValue = "/24";
+            this.dataGridViewComboBoxColumn3.DefaultCellStyle = dataGridViewCellStyle21;
+            this.dataGridViewComboBoxColumn3.HeaderText = "ماسك";
+            this.dataGridViewComboBoxColumn3.Items.AddRange(new object[] {
+            "/8",
+            "/16",
+            "/24",
+            "/32"});
+            this.dataGridViewComboBoxColumn3.Name = "dataGridViewComboBoxColumn3";
+            this.dataGridViewComboBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewComboBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewComboBoxColumn3.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.FillWeight = 50F;
+            this.dataGridViewTextBoxColumn11.HeaderText = "عدد";
+            this.dataGridViewTextBoxColumn11.MaxInputLength = 3;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Width = 50;
+            // 
+            // dataGridViewComboBoxColumn4
+            // 
+            this.dataGridViewComboBoxColumn4.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.dataGridViewComboBoxColumn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataGridViewComboBoxColumn4.HeaderText = "مستويات العناوين";
+            this.dataGridViewComboBoxColumn4.Items.AddRange(new object[] {
+            "IP1",
+            "IP2",
+            "IP3"});
+            this.dataGridViewComboBoxColumn4.Name = "dataGridViewComboBoxColumn4";
+            this.dataGridViewComboBoxColumn4.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            dataGridViewCellStyle22.NullValue = "0";
+            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle22;
+            this.dataGridViewTextBoxColumn12.HeaderText = "index";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Visible = false;
+            // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.numericUpDown5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown5.Location = new System.Drawing.Point(268, 90);
+            this.numericUpDown5.Maximum = new decimal(new int[] {
+            4094,
+            0,
+            0,
+            0});
+            this.numericUpDown5.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.ReadOnly = true;
+            this.numericUpDown5.Size = new System.Drawing.Size(116, 26);
+            this.numericUpDown5.TabIndex = 39;
+            this.numericUpDown5.Tag = "";
+            this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown5.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox12.Location = new System.Drawing.Point(407, 92);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox12.Size = new System.Drawing.Size(145, 26);
+            this.checkBox12.TabIndex = 38;
+            this.checkBox12.Tag = "MikSUMBackUp";
+            this.checkBox12.Text = "إستخدام ترقيم مخصص";
+            this.checkBox12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox12.UseVisualStyleBackColor = false;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Location = new System.Drawing.Point(165, 60);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(97, 22);
+            this.label88.TabIndex = 36;
+            this.label88.Text = "بادئة إسم الفيلان";
+            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.checkBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
+            this.checkBox13.Location = new System.Drawing.Point(2, 206);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.checkBox13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox13.Size = new System.Drawing.Size(50, 26);
+            this.checkBox13.TabIndex = 35;
+            this.checkBox13.Tag = "MikSUMBackUp";
+            this.checkBox13.Text = "إنشاء ايبيات مخصصة لكل مستوى";
+            this.checkBox13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox13.UseVisualStyleBackColor = false;
+            // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.numericUpDown6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown6.Location = new System.Drawing.Point(268, 60);
+            this.numericUpDown6.Maximum = new decimal(new int[] {
+            4095,
+            0,
+            0,
+            0});
+            this.numericUpDown6.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(116, 26);
+            this.numericUpDown6.TabIndex = 29;
+            this.numericUpDown6.Tag = "";
+            this.numericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown6.Value = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Goldenrod;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Janna LT", 10F);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(2, 232);
+            this.button5.Margin = new System.Windows.Forms.Padding(1);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(2);
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button5.Size = new System.Drawing.Size(50, 36);
+            this.button5.TabIndex = 19;
+            this.button5.Tag = "MikSUMBackUp";
+            this.button5.Text = "إنشاء الإسكربت";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Location = new System.Drawing.Point(143, 94);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(119, 22);
+            this.label91.TabIndex = 25;
+            this.label91.Text = "إسم الإيترنت / البريدج";
+            this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox17.Controls.Add(this.UN_Nnum);
+            this.groupBox17.Controls.Add(this.CB_SpicalNum);
+            this.groupBox17.Controls.Add(this.label92);
+            this.groupBox17.Controls.Add(this.TB_SSIDReplace);
+            this.groupBox17.Controls.Add(this.label94);
+            this.groupBox17.Controls.Add(this.CB_NNameType);
+            this.groupBox17.Controls.Add(this.CB_CustmNames);
+            this.groupBox17.Controls.Add(this.label93);
+            this.groupBox17.Controls.Add(this.TB_SIDName);
+            this.groupBox17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox17.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox17.Location = new System.Drawing.Point(502, 125);
+            this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox17.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox17.Size = new System.Drawing.Size(322, 178);
+            this.groupBox17.TabIndex = 45;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "إعدادات إسم الشبكة";
+            // 
+            // UN_Nnum
+            // 
+            this.UN_Nnum.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UN_Nnum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_Nnum.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_Nnum.ForeColor = System.Drawing.Color.DarkMagenta;
+            this.UN_Nnum.Location = new System.Drawing.Point(10, 147);
+            this.UN_Nnum.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.UN_Nnum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.UN_Nnum.Name = "UN_Nnum";
+            this.UN_Nnum.Size = new System.Drawing.Size(87, 24);
+            this.UN_Nnum.TabIndex = 54;
+            this.UN_Nnum.Tag = "";
+            this.UN_Nnum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_Nnum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // CB_SpicalNum
+            // 
+            this.CB_SpicalNum.AutoSize = true;
+            this.CB_SpicalNum.BackColor = System.Drawing.Color.Transparent;
+            this.CB_SpicalNum.Checked = true;
+            this.CB_SpicalNum.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CB_SpicalNum.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.CB_SpicalNum.Location = new System.Drawing.Point(126, 146);
+            this.CB_SpicalNum.Name = "CB_SpicalNum";
+            this.CB_SpicalNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CB_SpicalNum.Size = new System.Drawing.Size(189, 26);
+            this.CB_SpicalNum.TabIndex = 53;
+            this.CB_SpicalNum.Tag = "MikSUMBackUp";
+            this.CB_SpicalNum.Text = "إستخدام ترقيم مخصص يبداء من";
+            this.CB_SpicalNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_SpicalNum.UseVisualStyleBackColor = false;
+            this.CB_SpicalNum.CheckedChanged += new System.EventHandler(this.CB_SpicalNum_CheckedChanged);
+            // 
+            // label92
+            // 
+            this.label92.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label92.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label92.Location = new System.Drawing.Point(227, 62);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(88, 24);
+            this.label92.TabIndex = 43;
+            this.label92.Text = "طريقة التسمية";
+            this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TB_SSIDReplace
+            // 
+            this.TB_SSIDReplace.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TB_SSIDReplace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_SSIDReplace.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.TB_SSIDReplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.TB_SSIDReplace.Location = new System.Drawing.Point(10, 118);
+            this.TB_SSIDReplace.MaxLength = 100;
+            this.TB_SSIDReplace.Name = "TB_SSIDReplace";
+            this.TB_SSIDReplace.Size = new System.Drawing.Size(87, 24);
+            this.TB_SSIDReplace.TabIndex = 51;
+            this.TB_SSIDReplace.Tag = "MikSUMBackUp";
+            this.TB_SSIDReplace.Text = "الرقم";
+            this.TB_SSIDReplace.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label94
+            // 
+            this.label94.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label94.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label94.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label94.Location = new System.Drawing.Point(185, 118);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(130, 24);
+            this.label94.TabIndex = 52;
+            this.label94.Text = "النص المستبدل بالرقم";
+            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_NNameType
+            // 
+            this.CB_NNameType.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CB_NNameType.DropDownHeight = 60;
+            this.CB_NNameType.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.CB_NNameType.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.CB_NNameType.ForeColor = System.Drawing.Color.DarkBlue;
+            this.CB_NNameType.FormattingEnabled = true;
+            this.CB_NNameType.IntegralHeight = false;
+            this.CB_NNameType.Items.AddRange(new object[] {
+            "  :: (الرقم) إسم الشبكة ::  ",
+            "  :: أسم الشبكة (الرقم) ::  "});
+            this.CB_NNameType.Location = new System.Drawing.Point(10, 61);
+            this.CB_NNameType.MaxDropDownItems = 4;
+            this.CB_NNameType.Name = "CB_NNameType";
+            this.CB_NNameType.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CB_NNameType.Size = new System.Drawing.Size(216, 24);
+            this.CB_NNameType.TabIndex = 49;
+            this.CB_NNameType.Text = "  :: (الرقم) إسم الشبكة ::  ";
+            // 
+            // CB_CustmNames
+            // 
+            this.CB_CustmNames.AutoSize = true;
+            this.CB_CustmNames.BackColor = System.Drawing.Color.Transparent;
+            this.CB_CustmNames.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.CB_CustmNames.Location = new System.Drawing.Point(164, 30);
+            this.CB_CustmNames.Name = "CB_CustmNames";
+            this.CB_CustmNames.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CB_CustmNames.Size = new System.Drawing.Size(151, 26);
+            this.CB_CustmNames.TabIndex = 43;
+            this.CB_CustmNames.Tag = "MikSUMBackUp";
+            this.CB_CustmNames.Text = "إستخدام تسمية مخصصة";
+            this.CB_CustmNames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_CustmNames.UseVisualStyleBackColor = false;
+            // 
+            // label93
+            // 
+            this.label93.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label93.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label93.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label93.Location = new System.Drawing.Point(227, 90);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(88, 24);
+            this.label93.TabIndex = 50;
+            this.label93.Text = "إسم الشبكة";
+            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TB_SIDName
+            // 
+            this.TB_SIDName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TB_SIDName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_SIDName.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.TB_SIDName.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.TB_SIDName.Location = new System.Drawing.Point(10, 89);
+            this.TB_SIDName.MaxLength = 100;
+            this.TB_SIDName.Name = "TB_SIDName";
+            this.TB_SIDName.Size = new System.Drawing.Size(216, 24);
+            this.TB_SIDName.TabIndex = 43;
+            this.TB_SIDName.Tag = "MikSUMBackUp";
+            this.TB_SIDName.Text = "  :: (الرقم) AL-SARIE-Net ::  ";
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox19.Controls.Add(this.label100);
+            this.groupBox19.Controls.Add(this.label99);
+            this.groupBox19.Controls.Add(this.UN_VLanID);
+            this.groupBox19.Controls.Add(this.label98);
+            this.groupBox19.Controls.Add(this.UN_GIP4);
+            this.groupBox19.Controls.Add(this.UN_GIP3);
+            this.groupBox19.Controls.Add(this.UN_GIP2);
+            this.groupBox19.Controls.Add(this.UN_GIP1);
+            this.groupBox19.Controls.Add(this.label97);
+            this.groupBox19.Controls.Add(this.label96);
+            this.groupBox19.Controls.Add(this.CB_NetMask);
+            this.groupBox19.Controls.Add(this.UN_IP4);
+            this.groupBox19.Controls.Add(this.UN_IP3);
+            this.groupBox19.Controls.Add(this.UN_IP2);
+            this.groupBox19.Controls.Add(this.UN_IP1);
+            this.groupBox19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox19.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.groupBox19.Location = new System.Drawing.Point(219, 125);
+            this.groupBox19.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox19.Size = new System.Drawing.Size(278, 178);
+            this.groupBox19.TabIndex = 46;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "إعدادات اي بي الشبكة";
+            // 
+            // label100
+            // 
+            this.label100.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label100.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label100.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label100.Location = new System.Drawing.Point(193, 119);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(77, 24);
+            this.label100.TabIndex = 63;
+            this.label100.Text = "VlanID";
+            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label99
+            // 
+            this.label99.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label99.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label99.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label99.Location = new System.Drawing.Point(10, 119);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(108, 24);
+            this.label99.TabIndex = 62;
+            this.label99.Text = "بداية ترقيم الفيلان";
+            this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // UN_VLanID
+            // 
+            this.UN_VLanID.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UN_VLanID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_VLanID.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_VLanID.ForeColor = System.Drawing.Color.Crimson;
+            this.UN_VLanID.Location = new System.Drawing.Point(119, 119);
+            this.UN_VLanID.Maximum = new decimal(new int[] {
+            4095,
+            0,
+            0,
+            0});
+            this.UN_VLanID.Name = "UN_VLanID";
+            this.UN_VLanID.Size = new System.Drawing.Size(71, 24);
+            this.UN_VLanID.TabIndex = 55;
+            this.UN_VLanID.Tag = "";
+            this.UN_VLanID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_VLanID.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // label98
+            // 
+            this.label98.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label98.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label98.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label98.Location = new System.Drawing.Point(193, 88);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(77, 24);
+            this.label98.TabIndex = 61;
+            this.label98.Text = "البوابة";
+            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // UN_GIP4
+            // 
+            this.UN_GIP4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UN_GIP4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_GIP4.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_GIP4.ForeColor = System.Drawing.Color.Crimson;
+            this.UN_GIP4.Location = new System.Drawing.Point(134, 88);
+            this.UN_GIP4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.UN_GIP4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.UN_GIP4.Name = "UN_GIP4";
+            this.UN_GIP4.Size = new System.Drawing.Size(56, 24);
+            this.UN_GIP4.TabIndex = 60;
+            this.UN_GIP4.Tag = "";
+            this.UN_GIP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_GIP4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // UN_GIP3
+            // 
+            this.UN_GIP3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UN_GIP3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_GIP3.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_GIP3.ForeColor = System.Drawing.Color.Crimson;
+            this.UN_GIP3.Location = new System.Drawing.Point(96, 88);
+            this.UN_GIP3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.UN_GIP3.Name = "UN_GIP3";
+            this.UN_GIP3.Size = new System.Drawing.Size(56, 24);
+            this.UN_GIP3.TabIndex = 59;
+            this.UN_GIP3.Tag = "";
+            this.UN_GIP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_GIP3.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // UN_GIP2
+            // 
+            this.UN_GIP2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UN_GIP2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_GIP2.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_GIP2.ForeColor = System.Drawing.Color.Crimson;
+            this.UN_GIP2.Location = new System.Drawing.Point(57, 88);
+            this.UN_GIP2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.UN_GIP2.Name = "UN_GIP2";
+            this.UN_GIP2.Size = new System.Drawing.Size(56, 24);
+            this.UN_GIP2.TabIndex = 58;
+            this.UN_GIP2.Tag = "";
+            this.UN_GIP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_GIP2.Value = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            // 
+            // UN_GIP1
+            // 
+            this.UN_GIP1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UN_GIP1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_GIP1.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_GIP1.ForeColor = System.Drawing.Color.Crimson;
+            this.UN_GIP1.Location = new System.Drawing.Point(18, 88);
+            this.UN_GIP1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.UN_GIP1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.UN_GIP1.Name = "UN_GIP1";
+            this.UN_GIP1.Size = new System.Drawing.Size(56, 24);
+            this.UN_GIP1.TabIndex = 57;
+            this.UN_GIP1.Tag = "";
+            this.UN_GIP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_GIP1.Value = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            // 
+            // label97
+            // 
+            this.label97.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label97.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label97.Location = new System.Drawing.Point(193, 58);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(77, 24);
+            this.label97.TabIndex = 55;
+            this.label97.Text = "النت ماسك";
+            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label96
+            // 
+            this.label96.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label96.Font = new System.Drawing.Font("Janna LT", 9F);
+            this.label96.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label96.Location = new System.Drawing.Point(193, 29);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(77, 24);
+            this.label96.TabIndex = 55;
+            this.label96.Text = "عنوان الأيبي";
+            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CB_NetMask
+            // 
+            this.CB_NetMask.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CB_NetMask.DropDownHeight = 60;
+            this.CB_NetMask.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.CB_NetMask.ForeColor = System.Drawing.Color.Crimson;
+            this.CB_NetMask.FormattingEnabled = true;
+            this.CB_NetMask.IntegralHeight = false;
+            this.CB_NetMask.ItemHeight = 16;
+            this.CB_NetMask.Items.AddRange(new object[] {
+            "255.255.255.0",
+            "255.255.0.0",
+            "255.0.0.0"});
+            this.CB_NetMask.Location = new System.Drawing.Point(18, 58);
+            this.CB_NetMask.MaxDropDownItems = 4;
+            this.CB_NetMask.Name = "CB_NetMask";
+            this.CB_NetMask.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CB_NetMask.Size = new System.Drawing.Size(172, 24);
+            this.CB_NetMask.TabIndex = 56;
+            this.CB_NetMask.Text = "255.0.0.0";
+            // 
+            // UN_IP4
+            // 
+            this.UN_IP4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.UN_IP4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_IP4.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_IP4.ForeColor = System.Drawing.Color.Crimson;
+            this.UN_IP4.Location = new System.Drawing.Point(134, 29);
+            this.UN_IP4.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.UN_IP4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.UN_IP4.Name = "UN_IP4";
+            this.UN_IP4.Size = new System.Drawing.Size(56, 24);
+            this.UN_IP4.TabIndex = 48;
+            this.UN_IP4.Tag = "";
+            this.UN_IP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_IP4.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // UN_IP3
+            // 
+            this.UN_IP3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UN_IP3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_IP3.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_IP3.ForeColor = System.Drawing.Color.Crimson;
+            this.UN_IP3.Location = new System.Drawing.Point(96, 29);
+            this.UN_IP3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.UN_IP3.Name = "UN_IP3";
+            this.UN_IP3.Size = new System.Drawing.Size(56, 24);
+            this.UN_IP3.TabIndex = 47;
+            this.UN_IP3.Tag = "";
+            this.UN_IP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_IP3.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // UN_IP2
+            // 
+            this.UN_IP2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UN_IP2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_IP2.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_IP2.ForeColor = System.Drawing.Color.Crimson;
+            this.UN_IP2.Location = new System.Drawing.Point(57, 29);
+            this.UN_IP2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.UN_IP2.Name = "UN_IP2";
+            this.UN_IP2.Size = new System.Drawing.Size(56, 24);
+            this.UN_IP2.TabIndex = 46;
+            this.UN_IP2.Tag = "";
+            this.UN_IP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_IP2.Value = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            // 
+            // UN_IP1
+            // 
+            this.UN_IP1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UN_IP1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UN_IP1.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.UN_IP1.ForeColor = System.Drawing.Color.Crimson;
+            this.UN_IP1.Location = new System.Drawing.Point(18, 29);
+            this.UN_IP1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.UN_IP1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.UN_IP1.Name = "UN_IP1";
+            this.UN_IP1.Size = new System.Drawing.Size(56, 24);
+            this.UN_IP1.TabIndex = 45;
+            this.UN_IP1.Tag = "";
+            this.UN_IP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.UN_IP1.Value = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            // 
+            // TP_AutoMation
+            // 
+            this.TP_AutoMation.Controls.Add(this.frm_Automation1);
+            this.TP_AutoMation.Location = new System.Drawing.Point(4, 4);
+            this.TP_AutoMation.Name = "TP_AutoMation";
+            this.TP_AutoMation.Padding = new System.Windows.Forms.Padding(3);
+            this.TP_AutoMation.Size = new System.Drawing.Size(835, 442);
+            this.TP_AutoMation.TabIndex = 7;
+            this.TP_AutoMation.Text = "المهام الألية";
+            this.TP_AutoMation.UseVisualStyleBackColor = true;
             // 
             // TP_TelegramScr
             // 
@@ -4435,1059 +5142,459 @@
             0,
             0});
             // 
-            // TP_NSCFiles
-            // 
-            this.TP_NSCFiles.Controls.Add(this.groupBox18);
-            this.TP_NSCFiles.Location = new System.Drawing.Point(4, 4);
-            this.TP_NSCFiles.Name = "TP_NSCFiles";
-            this.TP_NSCFiles.Size = new System.Drawing.Size(835, 442);
-            this.TP_NSCFiles.TabIndex = 6;
-            this.TP_NSCFiles.Text = "برمجة الأنتينات";
-            this.TP_NSCFiles.UseVisualStyleBackColor = true;
-            // 
-            // groupBox18
-            // 
-            this.groupBox18.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox18.Controls.Add(this.groupBox22);
-            this.groupBox18.Controls.Add(this.groupBox21);
-            this.groupBox18.Controls.Add(this.label95);
-            this.groupBox18.Controls.Add(this.groupBox20);
-            this.groupBox18.Controls.Add(this.groupBox16);
-            this.groupBox18.Controls.Add(this.groupBox17);
-            this.groupBox18.Controls.Add(this.groupBox19);
-            this.groupBox18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox18.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox18.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.groupBox18.Location = new System.Drawing.Point(2, 5);
-            this.groupBox18.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox18.Size = new System.Drawing.Size(831, 435);
-            this.groupBox18.TabIndex = 46;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "إنشاء ملفات إعدادات للانتينات";
-            // 
-            // groupBox21
-            // 
-            this.groupBox21.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox21.Controls.Add(this.label102);
-            this.groupBox21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox21.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox21.Location = new System.Drawing.Point(4, 56);
-            this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox21.Size = new System.Drawing.Size(153, 339);
-            this.groupBox21.TabIndex = 48;
-            this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "إعدادات إسم الشبكة";
-            // 
-            // label102
-            // 
-            this.label102.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label102.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label102.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label102.Location = new System.Drawing.Point(2, 25);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(149, 29);
-            this.label102.TabIndex = 16;
-            this.label102.Text = "إنشاء ملفات إعدادات للانتينات";
-            this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label95
-            // 
-            this.label95.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label95.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label95.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.Location = new System.Drawing.Point(2, 25);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(827, 29);
-            this.label95.TabIndex = 16;
-            this.label95.Text = "إنشاء ملفات إعدادات للانتينات";
-            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBox20
-            // 
-            this.groupBox20.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox20.Controls.Add(this.BT_StartNSConfig);
-            this.groupBox20.Controls.Add(this.label101);
-            this.groupBox20.Controls.Add(this.CB_SpiscalFCName);
-            this.groupBox20.Controls.Add(this.TB_StartFileName);
-            this.groupBox20.Controls.Add(this.TB_NSFileDir);
-            this.groupBox20.Controls.Add(this.BT_NSCFDir);
-            this.groupBox20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox20.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox20.Location = new System.Drawing.Point(219, 307);
-            this.groupBox20.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox20.Size = new System.Drawing.Size(605, 88);
-            this.groupBox20.TabIndex = 47;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "بيانات ملفات الإعداد";
-            // 
-            // BT_StartNSConfig
-            // 
-            this.BT_StartNSConfig.BackColor = System.Drawing.Color.LimeGreen;
-            this.BT_StartNSConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BT_StartNSConfig.FlatAppearance.BorderSize = 0;
-            this.BT_StartNSConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_StartNSConfig.Font = new System.Drawing.Font("Cairo", 9F, System.Drawing.FontStyle.Bold);
-            this.BT_StartNSConfig.ForeColor = System.Drawing.Color.White;
-            this.BT_StartNSConfig.Location = new System.Drawing.Point(14, 26);
-            this.BT_StartNSConfig.Margin = new System.Windows.Forms.Padding(0);
-            this.BT_StartNSConfig.Name = "BT_StartNSConfig";
-            this.BT_StartNSConfig.Size = new System.Drawing.Size(98, 52);
-            this.BT_StartNSConfig.TabIndex = 56;
-            this.BT_StartNSConfig.Text = "إنشاء ملفات الإعدادات";
-            this.BT_StartNSConfig.UseCompatibleTextRendering = true;
-            this.BT_StartNSConfig.UseVisualStyleBackColor = true;
-            this.BT_StartNSConfig.Click += new System.EventHandler(this.BT_StartNSConfig_Click);
-            // 
-            // label101
-            // 
-            this.label101.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label101.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label101.Location = new System.Drawing.Point(313, 26);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(126, 24);
-            this.label101.TabIndex = 55;
-            this.label101.Text = "بادئة إسم ملف الإعداد";
-            this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CB_SpiscalFCName
-            // 
-            this.CB_SpiscalFCName.AutoSize = true;
-            this.CB_SpiscalFCName.BackColor = System.Drawing.Color.Transparent;
-            this.CB_SpiscalFCName.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.CB_SpiscalFCName.Location = new System.Drawing.Point(445, 25);
-            this.CB_SpiscalFCName.Name = "CB_SpiscalFCName";
-            this.CB_SpiscalFCName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CB_SpiscalFCName.Size = new System.Drawing.Size(151, 26);
-            this.CB_SpiscalFCName.TabIndex = 55;
-            this.CB_SpiscalFCName.Tag = "MikSUMBackUp";
-            this.CB_SpiscalFCName.Text = "إستخدام تسمية مخصصة";
-            this.CB_SpiscalFCName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_SpiscalFCName.UseVisualStyleBackColor = false;
-            this.CB_SpiscalFCName.CheckedChanged += new System.EventHandler(this.CB_SpiscalFCName_CheckedChanged);
-            // 
-            // TB_StartFileName
-            // 
-            this.TB_StartFileName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TB_StartFileName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_StartFileName.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.TB_StartFileName.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TB_StartFileName.Location = new System.Drawing.Point(118, 26);
-            this.TB_StartFileName.MaxLength = 100;
-            this.TB_StartFileName.Name = "TB_StartFileName";
-            this.TB_StartFileName.ReadOnly = true;
-            this.TB_StartFileName.Size = new System.Drawing.Size(195, 24);
-            this.TB_StartFileName.TabIndex = 55;
-            this.TB_StartFileName.Tag = "MikSUMBackUp";
-            this.TB_StartFileName.Text = "ProTik_NS";
-            // 
-            // TB_NSFileDir
-            // 
-            this.TB_NSFileDir.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TB_NSFileDir.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_NSFileDir.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::LBMS_Pro.Properties.Settings.Default, "NSFileDir", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.TB_NSFileDir.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.TB_NSFileDir.ForeColor = System.Drawing.Color.Black;
-            this.TB_NSFileDir.Location = new System.Drawing.Point(245, 54);
-            this.TB_NSFileDir.MaxLength = 255;
-            this.TB_NSFileDir.Name = "TB_NSFileDir";
-            this.TB_NSFileDir.Size = new System.Drawing.Size(351, 24);
-            this.TB_NSFileDir.TabIndex = 55;
-            this.TB_NSFileDir.Tag = "MikSUMBackUp";
-            this.TB_NSFileDir.Text = global::LBMS_Pro.Properties.Settings.Default.NSFileDir;
-            // 
-            // BT_NSCFDir
-            // 
-            this.BT_NSCFDir.BackColor = System.Drawing.Color.MidnightBlue;
-            this.BT_NSCFDir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BT_NSCFDir.FlatAppearance.BorderSize = 0;
-            this.BT_NSCFDir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_NSCFDir.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.BT_NSCFDir.ForeColor = System.Drawing.Color.White;
-            this.BT_NSCFDir.Location = new System.Drawing.Point(118, 54);
-            this.BT_NSCFDir.Name = "BT_NSCFDir";
-            this.BT_NSCFDir.Size = new System.Drawing.Size(121, 24);
-            this.BT_NSCFDir.TabIndex = 19;
-            this.BT_NSCFDir.Text = "موقع الحفظ";
-            this.BT_NSCFDir.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BT_NSCFDir.UseVisualStyleBackColor = false;
-            this.BT_NSCFDir.Click += new System.EventHandler(this.BT_NSCFDir_Click);
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox16.Controls.Add(this.button4);
-            this.groupBox16.Controls.Add(this.dataGridView2);
-            this.groupBox16.Controls.Add(this.numericUpDown5);
-            this.groupBox16.Controls.Add(this.checkBox12);
-            this.groupBox16.Controls.Add(this.label88);
-            this.groupBox16.Controls.Add(this.checkBox13);
-            this.groupBox16.Controls.Add(this.numericUpDown6);
-            this.groupBox16.Controls.Add(this.button5);
-            this.groupBox16.Controls.Add(this.label91);
-            this.groupBox16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox16.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox16.Location = new System.Drawing.Point(161, 125);
-            this.groupBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox16.Size = new System.Drawing.Size(54, 270);
-            this.groupBox16.TabIndex = 44;
-            this.groupBox16.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(445, 163);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button4.Size = new System.Drawing.Size(110, 31);
-            this.button4.TabIndex = 41;
-            this.button4.Tag = "MikSUMBackUp";
-            this.button4.Text = "تجهيز المستويات";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewComboBoxColumn3,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewComboBoxColumn4,
-            this.dataGridViewTextBoxColumn12});
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.BlueViolet;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle23;
-            this.dataGridView2.EnableHeadersVisualStyles = false;
-            this.dataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView2.Location = new System.Drawing.Point(2, 163);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
-            this.dataGridView2.RowHeadersWidth = 24;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle25;
-            this.dataGridView2.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.dataGridView2.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView2.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridView2.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView2.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView2.RowTemplate.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(555, 140);
-            this.dataGridView2.TabIndex = 38;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            dataGridViewCellStyle18.Format = "###";
-            dataGridViewCellStyle18.NullValue = null;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle18;
-            this.dataGridViewTextBoxColumn7.HeaderText = "IP1";
-            this.dataGridViewTextBoxColumn7.MaxInputLength = 3;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "IP2";
-            this.dataGridViewTextBoxColumn8.MaxInputLength = 3;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            dataGridViewCellStyle19.NullValue = "0";
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle19;
-            this.dataGridViewTextBoxColumn9.HeaderText = "IP3";
-            this.dataGridViewTextBoxColumn9.MaxInputLength = 3;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            dataGridViewCellStyle20.NullValue = "0";
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle20;
-            this.dataGridViewTextBoxColumn10.HeaderText = "IP4";
-            this.dataGridViewTextBoxColumn10.MaxInputLength = 3;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 50;
-            // 
-            // dataGridViewComboBoxColumn3
-            // 
-            dataGridViewCellStyle21.NullValue = "/24";
-            this.dataGridViewComboBoxColumn3.DefaultCellStyle = dataGridViewCellStyle21;
-            this.dataGridViewComboBoxColumn3.HeaderText = "ماسك";
-            this.dataGridViewComboBoxColumn3.Items.AddRange(new object[] {
-            "/8",
-            "/16",
-            "/24",
-            "/32"});
-            this.dataGridViewComboBoxColumn3.Name = "dataGridViewComboBoxColumn3";
-            this.dataGridViewComboBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewComboBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewComboBoxColumn3.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.FillWeight = 50F;
-            this.dataGridViewTextBoxColumn11.HeaderText = "عدد";
-            this.dataGridViewTextBoxColumn11.MaxInputLength = 3;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            this.dataGridViewTextBoxColumn11.Width = 50;
-            // 
-            // dataGridViewComboBoxColumn4
-            // 
-            this.dataGridViewComboBoxColumn4.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.dataGridViewComboBoxColumn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dataGridViewComboBoxColumn4.HeaderText = "مستويات العناوين";
-            this.dataGridViewComboBoxColumn4.Items.AddRange(new object[] {
-            "IP1",
-            "IP2",
-            "IP3"});
-            this.dataGridViewComboBoxColumn4.Name = "dataGridViewComboBoxColumn4";
-            this.dataGridViewComboBoxColumn4.Width = 120;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            dataGridViewCellStyle22.NullValue = "0";
-            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle22;
-            this.dataGridViewTextBoxColumn12.HeaderText = "index";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Visible = false;
-            // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.numericUpDown5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDown5.Location = new System.Drawing.Point(268, 90);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
-            4094,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.ReadOnly = true;
-            this.numericUpDown5.Size = new System.Drawing.Size(116, 26);
-            this.numericUpDown5.TabIndex = 39;
-            this.numericUpDown5.Tag = "";
-            this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown5.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox12.Location = new System.Drawing.Point(407, 92);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox12.Size = new System.Drawing.Size(145, 26);
-            this.checkBox12.TabIndex = 38;
-            this.checkBox12.Tag = "MikSUMBackUp";
-            this.checkBox12.Text = "إستخدام ترقيم مخصص";
-            this.checkBox12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox12.UseVisualStyleBackColor = false;
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(165, 60);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(97, 22);
-            this.label88.TabIndex = 36;
-            this.label88.Text = "بادئة إسم الفيلان";
-            this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.checkBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
-            this.checkBox13.Location = new System.Drawing.Point(2, 206);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.checkBox13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkBox13.Size = new System.Drawing.Size(50, 26);
-            this.checkBox13.TabIndex = 35;
-            this.checkBox13.Tag = "MikSUMBackUp";
-            this.checkBox13.Text = "إنشاء ايبيات مخصصة لكل مستوى";
-            this.checkBox13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox13.UseVisualStyleBackColor = false;
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.numericUpDown6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDown6.Location = new System.Drawing.Point(268, 60);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
-            4095,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(116, 26);
-            this.numericUpDown6.TabIndex = 29;
-            this.numericUpDown6.Tag = "";
-            this.numericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown6.Value = new decimal(new int[] {
-            7,
-            0,
-            0,
-            0});
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Goldenrod;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Janna LT", 10F);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(2, 232);
-            this.button5.Margin = new System.Windows.Forms.Padding(1);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(2);
-            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button5.Size = new System.Drawing.Size(50, 36);
-            this.button5.TabIndex = 19;
-            this.button5.Tag = "MikSUMBackUp";
-            this.button5.Text = "إنشاء الإسكربت";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(143, 94);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(119, 22);
-            this.label91.TabIndex = 25;
-            this.label91.Text = "إسم الإيترنت / البريدج";
-            this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox17.Controls.Add(this.UN_Nnum);
-            this.groupBox17.Controls.Add(this.CB_SpicalNum);
-            this.groupBox17.Controls.Add(this.label92);
-            this.groupBox17.Controls.Add(this.TB_SSIDReplace);
-            this.groupBox17.Controls.Add(this.label94);
-            this.groupBox17.Controls.Add(this.CB_NNameType);
-            this.groupBox17.Controls.Add(this.CB_CustmNames);
-            this.groupBox17.Controls.Add(this.label93);
-            this.groupBox17.Controls.Add(this.TB_SIDName);
-            this.groupBox17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox17.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox17.Location = new System.Drawing.Point(502, 125);
-            this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox17.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox17.Size = new System.Drawing.Size(322, 178);
-            this.groupBox17.TabIndex = 45;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "إعدادات إسم الشبكة";
-            // 
-            // UN_Nnum
-            // 
-            this.UN_Nnum.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UN_Nnum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_Nnum.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_Nnum.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.UN_Nnum.Location = new System.Drawing.Point(10, 147);
-            this.UN_Nnum.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.UN_Nnum.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.UN_Nnum.Name = "UN_Nnum";
-            this.UN_Nnum.Size = new System.Drawing.Size(87, 24);
-            this.UN_Nnum.TabIndex = 54;
-            this.UN_Nnum.Tag = "";
-            this.UN_Nnum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_Nnum.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // CB_SpicalNum
-            // 
-            this.CB_SpicalNum.AutoSize = true;
-            this.CB_SpicalNum.BackColor = System.Drawing.Color.Transparent;
-            this.CB_SpicalNum.Checked = true;
-            this.CB_SpicalNum.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CB_SpicalNum.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.CB_SpicalNum.Location = new System.Drawing.Point(126, 146);
-            this.CB_SpicalNum.Name = "CB_SpicalNum";
-            this.CB_SpicalNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CB_SpicalNum.Size = new System.Drawing.Size(189, 26);
-            this.CB_SpicalNum.TabIndex = 53;
-            this.CB_SpicalNum.Tag = "MikSUMBackUp";
-            this.CB_SpicalNum.Text = "إستخدام ترقيم مخصص يبداء من";
-            this.CB_SpicalNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_SpicalNum.UseVisualStyleBackColor = false;
-            this.CB_SpicalNum.CheckedChanged += new System.EventHandler(this.CB_SpicalNum_CheckedChanged);
-            // 
-            // label92
-            // 
-            this.label92.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label92.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label92.Location = new System.Drawing.Point(227, 62);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(88, 24);
-            this.label92.TabIndex = 43;
-            this.label92.Text = "طريقة التسمية";
-            this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // TB_SSIDReplace
-            // 
-            this.TB_SSIDReplace.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TB_SSIDReplace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_SSIDReplace.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.TB_SSIDReplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.TB_SSIDReplace.Location = new System.Drawing.Point(10, 118);
-            this.TB_SSIDReplace.MaxLength = 100;
-            this.TB_SSIDReplace.Name = "TB_SSIDReplace";
-            this.TB_SSIDReplace.Size = new System.Drawing.Size(87, 24);
-            this.TB_SSIDReplace.TabIndex = 51;
-            this.TB_SSIDReplace.Tag = "MikSUMBackUp";
-            this.TB_SSIDReplace.Text = "الرقم";
-            this.TB_SSIDReplace.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label94
-            // 
-            this.label94.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label94.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.label94.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label94.Location = new System.Drawing.Point(185, 118);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(130, 24);
-            this.label94.TabIndex = 52;
-            this.label94.Text = "النص المستبدل بالرقم";
-            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CB_NNameType
-            // 
-            this.CB_NNameType.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CB_NNameType.DropDownHeight = 60;
-            this.CB_NNameType.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.CB_NNameType.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.CB_NNameType.ForeColor = System.Drawing.Color.DarkBlue;
-            this.CB_NNameType.FormattingEnabled = true;
-            this.CB_NNameType.IntegralHeight = false;
-            this.CB_NNameType.Items.AddRange(new object[] {
-            "  :: (الرقم) إسم الشبكة ::  ",
-            "  :: أسم الشبكة (الرقم) ::  "});
-            this.CB_NNameType.Location = new System.Drawing.Point(10, 61);
-            this.CB_NNameType.MaxDropDownItems = 4;
-            this.CB_NNameType.Name = "CB_NNameType";
-            this.CB_NNameType.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CB_NNameType.Size = new System.Drawing.Size(216, 24);
-            this.CB_NNameType.TabIndex = 49;
-            this.CB_NNameType.Text = "  :: (الرقم) إسم الشبكة ::  ";
-            // 
-            // CB_CustmNames
-            // 
-            this.CB_CustmNames.AutoSize = true;
-            this.CB_CustmNames.BackColor = System.Drawing.Color.Transparent;
-            this.CB_CustmNames.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.CB_CustmNames.Location = new System.Drawing.Point(164, 30);
-            this.CB_CustmNames.Name = "CB_CustmNames";
-            this.CB_CustmNames.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CB_CustmNames.Size = new System.Drawing.Size(151, 26);
-            this.CB_CustmNames.TabIndex = 43;
-            this.CB_CustmNames.Tag = "MikSUMBackUp";
-            this.CB_CustmNames.Text = "إستخدام تسمية مخصصة";
-            this.CB_CustmNames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_CustmNames.UseVisualStyleBackColor = false;
-            // 
-            // label93
-            // 
-            this.label93.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label93.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.label93.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label93.Location = new System.Drawing.Point(227, 90);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(88, 24);
-            this.label93.TabIndex = 50;
-            this.label93.Text = "إسم الشبكة";
-            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // TB_SIDName
-            // 
-            this.TB_SIDName.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.TB_SIDName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_SIDName.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.TB_SIDName.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.TB_SIDName.Location = new System.Drawing.Point(10, 89);
-            this.TB_SIDName.MaxLength = 100;
-            this.TB_SIDName.Name = "TB_SIDName";
-            this.TB_SIDName.Size = new System.Drawing.Size(216, 24);
-            this.TB_SIDName.TabIndex = 43;
-            this.TB_SIDName.Tag = "MikSUMBackUp";
-            this.TB_SIDName.Text = "  :: (الرقم) AL-SARIE-Net ::  ";
-            // 
-            // label89
-            // 
-            this.label89.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label89.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label89.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.label89.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label89.Location = new System.Drawing.Point(405, 27);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(160, 24);
-            this.label89.TabIndex = 32;
-            this.label89.Text = "عدد الملفات المطلوب إنشائها";
-            this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // UN_FileNum
-            // 
-            this.UN_FileNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.UN_FileNum.BackColor = System.Drawing.Color.LightCyan;
-            this.UN_FileNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_FileNum.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_FileNum.ForeColor = System.Drawing.Color.DarkBlue;
-            this.UN_FileNum.Location = new System.Drawing.Point(566, 27);
-            this.UN_FileNum.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UN_FileNum.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.UN_FileNum.Name = "UN_FileNum";
-            this.UN_FileNum.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.UN_FileNum.Size = new System.Drawing.Size(88, 24);
-            this.UN_FileNum.TabIndex = 43;
-            this.UN_FileNum.Tag = "";
-            this.UN_FileNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_FileNum.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox19.Controls.Add(this.label100);
-            this.groupBox19.Controls.Add(this.label99);
-            this.groupBox19.Controls.Add(this.UN_VLanID);
-            this.groupBox19.Controls.Add(this.label98);
-            this.groupBox19.Controls.Add(this.UN_GIP4);
-            this.groupBox19.Controls.Add(this.UN_GIP3);
-            this.groupBox19.Controls.Add(this.UN_GIP2);
-            this.groupBox19.Controls.Add(this.UN_GIP1);
-            this.groupBox19.Controls.Add(this.label97);
-            this.groupBox19.Controls.Add(this.label96);
-            this.groupBox19.Controls.Add(this.CB_NetMask);
-            this.groupBox19.Controls.Add(this.UN_IP4);
-            this.groupBox19.Controls.Add(this.UN_IP3);
-            this.groupBox19.Controls.Add(this.UN_IP2);
-            this.groupBox19.Controls.Add(this.UN_IP1);
-            this.groupBox19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox19.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox19.Location = new System.Drawing.Point(219, 125);
-            this.groupBox19.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox19.Size = new System.Drawing.Size(278, 178);
-            this.groupBox19.TabIndex = 46;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "إعدادات اي بي الشبكة";
-            // 
-            // label100
-            // 
-            this.label100.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label100.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.label100.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label100.Location = new System.Drawing.Point(193, 119);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(77, 24);
-            this.label100.TabIndex = 63;
-            this.label100.Text = "VlanID";
-            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label99
-            // 
-            this.label99.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label99.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.label99.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label99.Location = new System.Drawing.Point(10, 119);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(108, 24);
-            this.label99.TabIndex = 62;
-            this.label99.Text = "بداية ترقيم الفيلان";
-            this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // UN_VLanID
-            // 
-            this.UN_VLanID.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UN_VLanID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_VLanID.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_VLanID.ForeColor = System.Drawing.Color.Crimson;
-            this.UN_VLanID.Location = new System.Drawing.Point(119, 119);
-            this.UN_VLanID.Maximum = new decimal(new int[] {
-            4095,
-            0,
-            0,
-            0});
-            this.UN_VLanID.Name = "UN_VLanID";
-            this.UN_VLanID.Size = new System.Drawing.Size(71, 24);
-            this.UN_VLanID.TabIndex = 55;
-            this.UN_VLanID.Tag = "";
-            this.UN_VLanID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_VLanID.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // label98
-            // 
-            this.label98.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label98.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.label98.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label98.Location = new System.Drawing.Point(193, 88);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(77, 24);
-            this.label98.TabIndex = 61;
-            this.label98.Text = "البوابة";
-            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // UN_GIP4
-            // 
-            this.UN_GIP4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UN_GIP4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_GIP4.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_GIP4.ForeColor = System.Drawing.Color.Crimson;
-            this.UN_GIP4.Location = new System.Drawing.Point(134, 88);
-            this.UN_GIP4.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UN_GIP4.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.UN_GIP4.Name = "UN_GIP4";
-            this.UN_GIP4.Size = new System.Drawing.Size(56, 24);
-            this.UN_GIP4.TabIndex = 60;
-            this.UN_GIP4.Tag = "";
-            this.UN_GIP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_GIP4.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // UN_GIP3
-            // 
-            this.UN_GIP3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UN_GIP3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_GIP3.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_GIP3.ForeColor = System.Drawing.Color.Crimson;
-            this.UN_GIP3.Location = new System.Drawing.Point(96, 88);
-            this.UN_GIP3.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UN_GIP3.Name = "UN_GIP3";
-            this.UN_GIP3.Size = new System.Drawing.Size(56, 24);
-            this.UN_GIP3.TabIndex = 59;
-            this.UN_GIP3.Tag = "";
-            this.UN_GIP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_GIP3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // UN_GIP2
-            // 
-            this.UN_GIP2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UN_GIP2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_GIP2.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_GIP2.ForeColor = System.Drawing.Color.Crimson;
-            this.UN_GIP2.Location = new System.Drawing.Point(57, 88);
-            this.UN_GIP2.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UN_GIP2.Name = "UN_GIP2";
-            this.UN_GIP2.Size = new System.Drawing.Size(56, 24);
-            this.UN_GIP2.TabIndex = 58;
-            this.UN_GIP2.Tag = "";
-            this.UN_GIP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_GIP2.Value = new decimal(new int[] {
-            70,
-            0,
-            0,
-            0});
-            // 
-            // UN_GIP1
-            // 
-            this.UN_GIP1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UN_GIP1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_GIP1.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_GIP1.ForeColor = System.Drawing.Color.Crimson;
-            this.UN_GIP1.Location = new System.Drawing.Point(18, 88);
-            this.UN_GIP1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UN_GIP1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.UN_GIP1.Name = "UN_GIP1";
-            this.UN_GIP1.Size = new System.Drawing.Size(56, 24);
-            this.UN_GIP1.TabIndex = 57;
-            this.UN_GIP1.Tag = "";
-            this.UN_GIP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_GIP1.Value = new decimal(new int[] {
-            70,
-            0,
-            0,
-            0});
-            // 
-            // label97
-            // 
-            this.label97.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label97.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label97.Location = new System.Drawing.Point(193, 58);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(77, 24);
-            this.label97.TabIndex = 55;
-            this.label97.Text = "النت ماسك";
-            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label96
-            // 
-            this.label96.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label96.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.label96.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label96.Location = new System.Drawing.Point(193, 29);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(77, 24);
-            this.label96.TabIndex = 55;
-            this.label96.Text = "عنوان الأيبي";
-            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CB_NetMask
-            // 
-            this.CB_NetMask.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CB_NetMask.DropDownHeight = 60;
-            this.CB_NetMask.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.CB_NetMask.ForeColor = System.Drawing.Color.Crimson;
-            this.CB_NetMask.FormattingEnabled = true;
-            this.CB_NetMask.IntegralHeight = false;
-            this.CB_NetMask.ItemHeight = 16;
-            this.CB_NetMask.Items.AddRange(new object[] {
-            "255.255.255.0",
-            "255.255.0.0",
-            "255.0.0.0"});
-            this.CB_NetMask.Location = new System.Drawing.Point(18, 58);
-            this.CB_NetMask.MaxDropDownItems = 4;
-            this.CB_NetMask.Name = "CB_NetMask";
-            this.CB_NetMask.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CB_NetMask.Size = new System.Drawing.Size(172, 24);
-            this.CB_NetMask.TabIndex = 56;
-            this.CB_NetMask.Text = "255.0.0.0";
-            // 
-            // UN_IP4
-            // 
-            this.UN_IP4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.UN_IP4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_IP4.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_IP4.ForeColor = System.Drawing.Color.Crimson;
-            this.UN_IP4.Location = new System.Drawing.Point(134, 29);
-            this.UN_IP4.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UN_IP4.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.UN_IP4.Name = "UN_IP4";
-            this.UN_IP4.Size = new System.Drawing.Size(56, 24);
-            this.UN_IP4.TabIndex = 48;
-            this.UN_IP4.Tag = "";
-            this.UN_IP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_IP4.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // UN_IP3
-            // 
-            this.UN_IP3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UN_IP3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_IP3.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_IP3.ForeColor = System.Drawing.Color.Crimson;
-            this.UN_IP3.Location = new System.Drawing.Point(96, 29);
-            this.UN_IP3.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UN_IP3.Name = "UN_IP3";
-            this.UN_IP3.Size = new System.Drawing.Size(56, 24);
-            this.UN_IP3.TabIndex = 47;
-            this.UN_IP3.Tag = "";
-            this.UN_IP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_IP3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // UN_IP2
-            // 
-            this.UN_IP2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UN_IP2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_IP2.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_IP2.ForeColor = System.Drawing.Color.Crimson;
-            this.UN_IP2.Location = new System.Drawing.Point(57, 29);
-            this.UN_IP2.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UN_IP2.Name = "UN_IP2";
-            this.UN_IP2.Size = new System.Drawing.Size(56, 24);
-            this.UN_IP2.TabIndex = 46;
-            this.UN_IP2.Tag = "";
-            this.UN_IP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_IP2.Value = new decimal(new int[] {
-            70,
-            0,
-            0,
-            0});
-            // 
-            // UN_IP1
-            // 
-            this.UN_IP1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UN_IP1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UN_IP1.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.UN_IP1.ForeColor = System.Drawing.Color.Crimson;
-            this.UN_IP1.Location = new System.Drawing.Point(18, 29);
-            this.UN_IP1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.UN_IP1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.UN_IP1.Name = "UN_IP1";
-            this.UN_IP1.Size = new System.Drawing.Size(56, 24);
-            this.UN_IP1.TabIndex = 45;
-            this.UN_IP1.Tag = "";
-            this.UN_IP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.UN_IP1.Value = new decimal(new int[] {
-            70,
-            0,
-            0,
-            0});
+            // TP_Info
+            // 
+            this.TP_Info.Controls.Add(this.PL_DeveloperInfo);
+            this.TP_Info.Location = new System.Drawing.Point(4, 4);
+            this.TP_Info.Name = "TP_Info";
+            this.TP_Info.Size = new System.Drawing.Size(835, 442);
+            this.TP_Info.TabIndex = 3;
+            this.TP_Info.Text = "معلومات";
+            this.TP_Info.UseVisualStyleBackColor = true;
+            // 
+            // PL_DeveloperInfo
+            // 
+            this.PL_DeveloperInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
+            this.PL_DeveloperInfo.Controls.Add(this.label30);
+            this.PL_DeveloperInfo.Controls.Add(this.LA_Version);
+            this.PL_DeveloperInfo.Controls.Add(this.label29);
+            this.PL_DeveloperInfo.Controls.Add(this.label28);
+            this.PL_DeveloperInfo.Controls.Add(this.label27);
+            this.PL_DeveloperInfo.Controls.Add(this.label26);
+            this.PL_DeveloperInfo.Controls.Add(this.label25);
+            this.PL_DeveloperInfo.Controls.Add(this.label23);
+            this.PL_DeveloperInfo.Controls.Add(this.label22);
+            this.PL_DeveloperInfo.Controls.Add(this.label21);
+            this.PL_DeveloperInfo.Controls.Add(this.label20);
+            this.PL_DeveloperInfo.Controls.Add(this.panel3);
+            this.PL_DeveloperInfo.Controls.Add(this.pictureBox4);
+            this.PL_DeveloperInfo.Controls.Add(this.pictureBox3);
+            this.PL_DeveloperInfo.Controls.Add(this.pictureBox2);
+            this.PL_DeveloperInfo.Controls.Add(this.label19);
+            this.PL_DeveloperInfo.Controls.Add(this.label18);
+            this.PL_DeveloperInfo.Controls.Add(this.label17);
+            this.PL_DeveloperInfo.Controls.Add(this.label24);
+            this.PL_DeveloperInfo.Location = new System.Drawing.Point(3, 4);
+            this.PL_DeveloperInfo.Name = "PL_DeveloperInfo";
+            this.PL_DeveloperInfo.Size = new System.Drawing.Size(656, 431);
+            this.PL_DeveloperInfo.TabIndex = 5;
+            this.PL_DeveloperInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.PL_DeveloperInfo_Paint);
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label30.Font = new System.Drawing.Font("Janna LT", 10F);
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(130, 370);
+            this.label30.Margin = new System.Windows.Forms.Padding(2);
+            this.label30.Name = "label30";
+            this.label30.Padding = new System.Windows.Forms.Padding(1);
+            this.label30.Size = new System.Drawing.Size(526, 30);
+            this.label30.TabIndex = 53;
+            this.label30.Text = "هذا البرنامج مجاني بالكامل ينتفع به المبرمجين واصحاب الشبكات والصرافين والمؤسسات";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LA_Version
+            // 
+            this.LA_Version.BackColor = System.Drawing.Color.BurlyWood;
+            this.LA_Version.Font = new System.Drawing.Font("Janna LT", 8F);
+            this.LA_Version.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.LA_Version.Location = new System.Drawing.Point(478, 406);
+            this.LA_Version.Margin = new System.Windows.Forms.Padding(2);
+            this.LA_Version.Name = "LA_Version";
+            this.LA_Version.Padding = new System.Windows.Forms.Padding(1);
+            this.LA_Version.Size = new System.Drawing.Size(84, 22);
+            this.LA_Version.TabIndex = 52;
+            this.LA_Version.Text = "V 1.0.0";
+            this.LA_Version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.BurlyWood;
+            this.label29.Font = new System.Drawing.Font("Janna LT", 8F);
+            this.label29.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label29.Location = new System.Drawing.Point(568, 406);
+            this.label29.Margin = new System.Windows.Forms.Padding(2);
+            this.label29.Name = "label29";
+            this.label29.Padding = new System.Windows.Forms.Padding(1);
+            this.label29.Size = new System.Drawing.Size(84, 22);
+            this.label29.TabIndex = 50;
+            this.label29.Text = "الإصدار الحالي";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.BackColor = System.Drawing.Color.BurlyWood;
+            this.label28.Font = new System.Drawing.Font("Janna LT", 8F);
+            this.label28.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label28.Location = new System.Drawing.Point(2, 406);
+            this.label28.Margin = new System.Windows.Forms.Padding(2);
+            this.label28.Name = "label28";
+            this.label28.Padding = new System.Windows.Forms.Padding(1);
+            this.label28.Size = new System.Drawing.Size(232, 22);
+            this.label28.TabIndex = 49;
+            this.label28.Text = "All Copyright © For AL-NaharySoft  2022";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.BurlyWood;
+            this.label27.Font = new System.Drawing.Font("Janna LT", 8F);
+            this.label27.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label27.Location = new System.Drawing.Point(240, 406);
+            this.label27.Margin = new System.Windows.Forms.Padding(2);
+            this.label27.Name = "label27";
+            this.label27.Padding = new System.Windows.Forms.Padding(1);
+            this.label27.Size = new System.Drawing.Size(232, 22);
+            this.label27.TabIndex = 48;
+            this.label27.Text = "كافة الحقوق محفوظة © ل النهاري سوفت 2022";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
+            this.label26.Font = new System.Drawing.Font("Janna LT", 12F);
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(492, 190);
+            this.label26.Margin = new System.Windows.Forms.Padding(2);
+            this.label26.Name = "label26";
+            this.label26.Padding = new System.Windows.Forms.Padding(1);
+            this.label26.Size = new System.Drawing.Size(163, 73);
+            this.label26.TabIndex = 47;
+            this.label26.Text = "للحلول التقنية وأنظمة الحمـــــــــــــــاية والشبكــــــــــــــات";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label25.Font = new System.Drawing.Font("Janna LT", 10F);
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(-1, 308);
+            this.label25.Margin = new System.Windows.Forms.Padding(2);
+            this.label25.Name = "label25";
+            this.label25.Padding = new System.Windows.Forms.Padding(1);
+            this.label25.Size = new System.Drawing.Size(529, 30);
+            this.label25.TabIndex = 46;
+            this.label25.Text = "إنشاء إسكربتات لكل ماتريد عملة بدرجة عالية من الكفائة على سرفر الميكروتك بضغطة زر" +
+    "";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
+            this.label23.Font = new System.Drawing.Font("Janna LT", 8F);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(2, 344);
+            this.label23.Margin = new System.Windows.Forms.Padding(2);
+            this.label23.Name = "label23";
+            this.label23.Padding = new System.Windows.Forms.Padding(1);
+            this.label23.Size = new System.Drawing.Size(652, 22);
+            this.label23.TabIndex = 44;
+            this.label23.Text = "إستخدم هذا البرنامج بعض الإسكربتات من إخواننا المهندسين على الإنترنت وعمل لها بعض" +
+    " التحسينات وسنقوم بذكر وشكر الجميع على حساباتنا";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.Goldenrod;
+            this.label22.Font = new System.Drawing.Font("Janna LT", 12F);
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(528, 305);
+            this.label22.Margin = new System.Windows.Forms.Padding(2);
+            this.label22.Name = "label22";
+            this.label22.Padding = new System.Windows.Forms.Padding(1);
+            this.label22.Size = new System.Drawing.Size(126, 36);
+            this.label22.TabIndex = 43;
+            this.label22.Text = "المبرمج المحترف";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(190)))), ((int)(((byte)(120)))));
+            this.label21.Font = new System.Drawing.Font("Janna LT", 12F);
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(0, 265);
+            this.label21.Margin = new System.Windows.Forms.Padding(2);
+            this.label21.Name = "label21";
+            this.label21.Padding = new System.Windows.Forms.Padding(1);
+            this.label21.Size = new System.Drawing.Size(656, 36);
+            this.label21.TabIndex = 42;
+            this.label21.Text = "معلومات حول هذا البرنامج";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
+            this.label20.Font = new System.Drawing.Font("Janna LT", 10F);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(492, 40);
+            this.label20.Margin = new System.Windows.Forms.Padding(2);
+            this.label20.Name = "label20";
+            this.label20.Padding = new System.Windows.Forms.Padding(1);
+            this.label20.Size = new System.Drawing.Size(162, 30);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "من خدماتنا خدماتنا";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.pictureBox10);
+            this.panel3.Controls.Add(this.linkLabel8);
+            this.panel3.Controls.Add(this.pictureBox9);
+            this.panel3.Controls.Add(this.Lin_Face);
+            this.panel3.Controls.Add(this.linkLabel4);
+            this.panel3.Controls.Add(this.linkLabel7);
+            this.panel3.Controls.Add(this.Lin_Tik);
+            this.panel3.Controls.Add(this.Lin_Twi);
+            this.panel3.Controls.Add(this.Lin_You);
+            this.panel3.Controls.Add(this.pictureBox5);
+            this.panel3.Controls.Add(this.pictureBox8);
+            this.panel3.Controls.Add(this.pictureBox6);
+            this.panel3.Controls.Add(this.pictureBox7);
+            this.panel3.Location = new System.Drawing.Point(197, 75);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(289, 223);
+            this.panel3.TabIndex = 40;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::LBMS_Pro.Properties.Resources.whatsapp__1_;
+            this.pictureBox10.InitialImage = null;
+            this.pictureBox10.Location = new System.Drawing.Point(8, 7);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 37;
+            this.pictureBox10.TabStop = false;
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.LinkColor = System.Drawing.Color.Gold;
+            this.linkLabel8.Location = new System.Drawing.Point(157, 13);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(103, 14);
+            this.linkLabel8.TabIndex = 39;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "+967 730460772";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::LBMS_Pro.Properties.Resources.instagram__1_;
+            this.pictureBox9.InitialImage = null;
+            this.pictureBox9.Location = new System.Drawing.Point(8, 186);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 36;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Visible = false;
+            // 
+            // Lin_Face
+            // 
+            this.Lin_Face.AutoSize = true;
+            this.Lin_Face.LinkColor = System.Drawing.Color.Gold;
+            this.Lin_Face.Location = new System.Drawing.Point(46, 49);
+            this.Lin_Face.Name = "Lin_Face";
+            this.Lin_Face.Size = new System.Drawing.Size(221, 14);
+            this.Lin_Face.TabIndex = 23;
+            this.Lin_Face.TabStop = true;
+            this.Lin_Face.Text = "https://www.facebook.com/McSalehF/";
+            this.Lin_Face.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_Face_LinkClicked);
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.LinkColor = System.Drawing.Color.Gold;
+            this.linkLabel4.Location = new System.Drawing.Point(46, 192);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(222, 14);
+            this.linkLabel4.TabIndex = 26;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "https://www.instagram.com/mcsalehx/";
+            this.linkLabel4.Visible = false;
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.LinkColor = System.Drawing.Color.Gold;
+            this.linkLabel7.Location = new System.Drawing.Point(46, 13);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(103, 14);
+            this.linkLabel7.TabIndex = 38;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "+967 779537981";
+            // 
+            // Lin_Tik
+            // 
+            this.Lin_Tik.AutoSize = true;
+            this.Lin_Tik.LinkColor = System.Drawing.Color.Gold;
+            this.Lin_Tik.Location = new System.Drawing.Point(46, 85);
+            this.Lin_Tik.Name = "Lin_Tik";
+            this.Lin_Tik.Size = new System.Drawing.Size(208, 14);
+            this.Lin_Tik.TabIndex = 24;
+            this.Lin_Tik.TabStop = true;
+            this.Lin_Tik.Text = "https://www.tiktok.com/@_mcsaleh";
+            this.Lin_Tik.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_Tik_LinkClicked);
+            // 
+            // Lin_Twi
+            // 
+            this.Lin_Twi.AutoSize = true;
+            this.Lin_Twi.LinkColor = System.Drawing.Color.Gold;
+            this.Lin_Twi.Location = new System.Drawing.Point(46, 121);
+            this.Lin_Twi.Name = "Lin_Twi";
+            this.Lin_Twi.Size = new System.Drawing.Size(205, 14);
+            this.Lin_Twi.TabIndex = 25;
+            this.Lin_Twi.TabStop = true;
+            this.Lin_Twi.Text = "https://www.twitter.com/_McSaleh";
+            this.Lin_Twi.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_Twi_LinkClicked);
+            // 
+            // Lin_You
+            // 
+            this.Lin_You.AutoSize = true;
+            this.Lin_You.LinkColor = System.Drawing.Color.Gold;
+            this.Lin_You.Location = new System.Drawing.Point(46, 157);
+            this.Lin_You.Name = "Lin_You";
+            this.Lin_You.Size = new System.Drawing.Size(371, 14);
+            this.Lin_You.TabIndex = 28;
+            this.Lin_You.TabStop = true;
+            this.Lin_You.Text = "https://www.youtube.com/channel/UCeM9fzhUWI2k4b1pEkRGrfg";
+            this.Lin_You.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Lin_You_LinkClicked);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::LBMS_Pro.Properties.Resources.facebook;
+            this.pictureBox5.InitialImage = null;
+            this.pictureBox5.Location = new System.Drawing.Point(8, 43);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 32;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::LBMS_Pro.Properties.Resources.youtube;
+            this.pictureBox8.InitialImage = null;
+            this.pictureBox8.Location = new System.Drawing.Point(8, 151);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 35;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::LBMS_Pro.Properties.Resources.tiktok;
+            this.pictureBox6.InitialImage = null;
+            this.pictureBox6.Location = new System.Drawing.Point(8, 79);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 33;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::LBMS_Pro.Properties.Resources.twitter;
+            this.pictureBox7.InitialImage = null;
+            this.pictureBox7.Location = new System.Drawing.Point(8, 115);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 34;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::LBMS_Pro.Properties.Resources.CW_Logo_2x;
+            this.pictureBox4.InitialImage = null;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 75);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(188, 188);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 31;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::LBMS_Pro.Properties.Resources.Pro;
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(492, 75);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(162, 111);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 30;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Goldenrod;
+            this.pictureBox2.Image = global::LBMS_Pro.Properties.Resources.logo;
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(2, 367);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(126, 36);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 29;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
+            this.label19.Font = new System.Drawing.Font("Janna LT", 10F);
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(197, 40);
+            this.label19.Margin = new System.Windows.Forms.Padding(2);
+            this.label19.Name = "label19";
+            this.label19.Padding = new System.Windows.Forms.Padding(1);
+            this.label19.Size = new System.Drawing.Size(289, 30);
+            this.label19.TabIndex = 22;
+            this.label19.Text = "للتواصل مع المطور";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
+            this.label18.Font = new System.Drawing.Font("Janna LT", 11F);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(3, 40);
+            this.label18.Margin = new System.Windows.Forms.Padding(2);
+            this.label18.Name = "label18";
+            this.label18.Padding = new System.Windows.Forms.Padding(1);
+            this.label18.Size = new System.Drawing.Size(188, 31);
+            this.label18.TabIndex = 21;
+            this.label18.Text = "محمد صالح النهاري";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(190)))), ((int)(((byte)(120)))));
+            this.label17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label17.Font = new System.Drawing.Font("Janna LT", 12F);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(0, 0);
+            this.label17.Margin = new System.Windows.Forms.Padding(2);
+            this.label17.Name = "label17";
+            this.label17.Padding = new System.Windows.Forms.Padding(1);
+            this.label17.Size = new System.Drawing.Size(656, 36);
+            this.label17.TabIndex = 20;
+            this.label17.Text = "معلومات حول مطور البرنامج";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.Goldenrod;
+            this.label24.Font = new System.Drawing.Font("Janna LT", 10F);
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(4, 367);
+            this.label24.Margin = new System.Windows.Forms.Padding(2);
+            this.label24.Name = "label24";
+            this.label24.Padding = new System.Windows.Forms.Padding(1);
+            this.label24.Size = new System.Drawing.Size(126, 36);
+            this.label24.TabIndex = 45;
+            this.label24.Text = "للتواصل مع المطور";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // progressBar1
             // 
@@ -5634,6 +5741,37 @@
             this.BT_InfoPage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BT_InfoPage.UseVisualStyleBackColor = false;
             this.BT_InfoPage.Click += new System.EventHandler(this.BT_InfoPage_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 470);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(217, 5);
+            this.panel12.TabIndex = 22;
+            // 
+            // BT_NSCFiles
+            // 
+            this.BT_NSCFiles.BackColor = System.Drawing.Color.YellowGreen;
+            this.BT_NSCFiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BT_NSCFiles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BT_NSCFiles.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BT_NSCFiles.FlatAppearance.BorderSize = 0;
+            this.BT_NSCFiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_NSCFiles.Font = new System.Drawing.Font("Janna LT", 14F, System.Drawing.FontStyle.Bold);
+            this.BT_NSCFiles.ForeColor = System.Drawing.Color.White;
+            this.BT_NSCFiles.Image = global::LBMS_Pro.Properties.Resources.pngegg__5_;
+            this.BT_NSCFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_NSCFiles.Location = new System.Drawing.Point(0, 400);
+            this.BT_NSCFiles.Name = "BT_NSCFiles";
+            this.BT_NSCFiles.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.BT_NSCFiles.Size = new System.Drawing.Size(217, 70);
+            this.BT_NSCFiles.TabIndex = 22;
+            this.BT_NSCFiles.Text = "ملفات برمجة الأنتينات";
+            this.BT_NSCFiles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BT_NSCFiles.UseCompatibleTextRendering = true;
+            this.BT_NSCFiles.UseVisualStyleBackColor = false;
+            this.BT_NSCFiles.Click += new System.EventHandler(this.BT_NSCFiles_Click);
             // 
             // panel7
             // 
@@ -5819,128 +5957,16 @@
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 3;
             // 
-            // groupBox22
+            // frm_Automation1
             // 
-            this.groupBox22.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox22.Controls.Add(this.label104);
-            this.groupBox22.Controls.Add(this.CB_CFTypes);
-            this.groupBox22.Controls.Add(this.label103);
-            this.groupBox22.Controls.Add(this.label89);
-            this.groupBox22.Controls.Add(this.CB_Devices);
-            this.groupBox22.Controls.Add(this.UN_FileNum);
-            this.groupBox22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox22.Font = new System.Drawing.Font("Janna LT", 9F);
-            this.groupBox22.Location = new System.Drawing.Point(161, 56);
-            this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox22.Size = new System.Drawing.Size(663, 65);
-            this.groupBox22.TabIndex = 49;
-            this.groupBox22.TabStop = false;
-            this.groupBox22.Text = "البيانات الرئيسية";
-            // 
-            // label103
-            // 
-            this.label103.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label103.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label103.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label103.Location = new System.Drawing.Point(334, 26);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(64, 24);
-            this.label103.TabIndex = 55;
-            this.label103.Text = "نوع الجهاز";
-            this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CB_Devices
-            // 
-            this.CB_Devices.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CB_Devices.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CB_Devices.DisplayMember = "NanoStation M2";
-            this.CB_Devices.DropDownHeight = 60;
-            this.CB_Devices.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.CB_Devices.ForeColor = System.Drawing.Color.DarkBlue;
-            this.CB_Devices.FormattingEnabled = true;
-            this.CB_Devices.IntegralHeight = false;
-            this.CB_Devices.Items.AddRange(new object[] {
-            "NanoStation M2",
-            "NanoStation M2 Loco",
-            "NanoStation Rocket M2",
-            "NanoStation M5",
-            "NanoStation M5 Loco",
-            "NanoStation Rocket M5",
-            "NanoStation powerbeem"});
-            this.CB_Devices.Location = new System.Drawing.Point(195, 26);
-            this.CB_Devices.MaxDropDownItems = 4;
-            this.CB_Devices.Name = "CB_Devices";
-            this.CB_Devices.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CB_Devices.Size = new System.Drawing.Size(138, 24);
-            this.CB_Devices.TabIndex = 56;
-            this.CB_Devices.Text = "NanoStation M2";
-            // 
-            // label104
-            // 
-            this.label104.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label104.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label104.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label104.Location = new System.Drawing.Point(114, 26);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(80, 24);
-            this.label104.TabIndex = 57;
-            this.label104.Text = "طريقة البرمجة";
-            this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CB_CFTypes
-            // 
-            this.CB_CFTypes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CB_CFTypes.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CB_CFTypes.DisplayMember = "NanoStation M2";
-            this.CB_CFTypes.DropDownHeight = 60;
-            this.CB_CFTypes.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.CB_CFTypes.ForeColor = System.Drawing.Color.DarkBlue;
-            this.CB_CFTypes.FormattingEnabled = true;
-            this.CB_CFTypes.IntegralHeight = false;
-            this.CB_CFTypes.Items.AddRange(new object[] {
-            "Station",
-            "AccessPoint"});
-            this.CB_CFTypes.Location = new System.Drawing.Point(5, 26);
-            this.CB_CFTypes.MaxDropDownItems = 4;
-            this.CB_CFTypes.Name = "CB_CFTypes";
-            this.CB_CFTypes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CB_CFTypes.Size = new System.Drawing.Size(108, 24);
-            this.CB_CFTypes.TabIndex = 58;
-            this.CB_CFTypes.Text = "AccessPoint";
-            // 
-            // BT_NSCFiles
-            // 
-            this.BT_NSCFiles.BackColor = System.Drawing.Color.YellowGreen;
-            this.BT_NSCFiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BT_NSCFiles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BT_NSCFiles.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BT_NSCFiles.FlatAppearance.BorderSize = 0;
-            this.BT_NSCFiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_NSCFiles.Font = new System.Drawing.Font("Janna LT", 14F, System.Drawing.FontStyle.Bold);
-            this.BT_NSCFiles.ForeColor = System.Drawing.Color.White;
-            this.BT_NSCFiles.Image = global::LBMS_Pro.Properties.Resources.pngegg__5_;
-            this.BT_NSCFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BT_NSCFiles.Location = new System.Drawing.Point(0, 400);
-            this.BT_NSCFiles.Name = "BT_NSCFiles";
-            this.BT_NSCFiles.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.BT_NSCFiles.Size = new System.Drawing.Size(217, 70);
-            this.BT_NSCFiles.TabIndex = 22;
-            this.BT_NSCFiles.Text = "ملفات برمجة الأنتينات";
-            this.BT_NSCFiles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BT_NSCFiles.UseCompatibleTextRendering = true;
-            this.BT_NSCFiles.UseVisualStyleBackColor = false;
-            this.BT_NSCFiles.Click += new System.EventHandler(this.BT_NSCFiles_Click);
-            // 
-            // panel12
-            // 
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 470);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(217, 5);
-            this.panel12.TabIndex = 22;
+            this.frm_Automation1.AutoScroll = true;
+            this.frm_Automation1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.frm_Automation1.Font = new System.Drawing.Font("Cairo", 10F);
+            this.frm_Automation1.Location = new System.Drawing.Point(3, 3);
+            this.frm_Automation1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.frm_Automation1.Name = "frm_Automation1";
+            this.frm_Automation1.Size = new System.Drawing.Size(829, 436);
+            this.frm_Automation1.TabIndex = 0;
             // 
             // FrmMain
             // 
@@ -6007,19 +6033,32 @@
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_VlanID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VLAN_Num)).EndInit();
-            this.TP_Info.ResumeLayout(false);
-            this.PL_DeveloperInfo.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.TP_NSCFiles.ResumeLayout(false);
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox22.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UN_FileNum)).EndInit();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_Nnum)).EndInit();
+            this.groupBox19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UN_VLanID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_IP4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_IP3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_IP2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UN_IP1)).EndInit();
+            this.TP_AutoMation.ResumeLayout(false);
             this.TP_TelegramScr.ResumeLayout(false);
             this.TP_TelegramScr.PerformLayout();
             this.groupBox15.ResumeLayout(false);
@@ -6035,30 +6074,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            this.TP_NSCFiles.ResumeLayout(false);
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox21.ResumeLayout(false);
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_Nnum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_FileNum)).EndInit();
-            this.groupBox19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.UN_VLanID)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_GIP1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_IP4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_IP3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_IP2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UN_IP1)).EndInit();
+            this.TP_Info.ResumeLayout(false);
+            this.PL_DeveloperInfo.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.PL_Down.ResumeLayout(false);
             this.PL_Down.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -6067,7 +6095,6 @@
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.ResumeLayout(false);
-            this.groupBox22.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -6426,6 +6453,8 @@
         private System.Windows.Forms.ComboBox CB_CFTypes;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button BT_NSCFiles;
+        private System.Windows.Forms.TabPage TP_AutoMation;
+        private Frm_Automation frm_Automation1;
     }
 }
 
