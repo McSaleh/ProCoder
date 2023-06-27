@@ -22,5 +22,17 @@ namespace LBMS_Pro.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\ProTik\\NanoStationConfigFile")]
+        public string NSFileDir {
+            get {
+                return ((string)(this["NSFileDir"]));
+            }
+            set {
+                this["NSFileDir"] = value;
+            }
+        }
     }
 }

@@ -627,7 +627,7 @@ namespace LBMS_Pro
               });
         }
         #endregion
-        private void replaceString(String filename, String search, String replace)
+        public void replaceString(String filename, String search, String replace)
         {
             StreamReader sr = new StreamReader(filename);
             String[] rows = Regex.Split(sr.ReadToEnd(), "\r\n");

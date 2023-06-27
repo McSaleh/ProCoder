@@ -90,6 +90,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="CFile\NSCF\‏‏NSM2_AP_VL2.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CFile\NSCF\‏‏NSM2_AP_VL2N.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Font\Janna LT Bold.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -129,6 +135,12 @@
     <None Include="Resources\Icon1.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CFile\NSCF\‏‏‏‏NSM2_AP_VL2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CFile\NSCF\‏‏‏‏NSM2_AP_VL2N.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="قم بتثبيت الخطوط داخل مجلد Font للحصول على المضهر الاصلي.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

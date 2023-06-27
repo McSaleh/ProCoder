@@ -192,6 +192,7 @@ namespace LBMS_Pro
                     }
                     else
                     {
+                        int le = 1;
                         foreach (DataGridViewRow row in DGV_Main.Rows)
                         {
                             
@@ -202,8 +203,16 @@ namespace LBMS_Pro
                                 p1 = p1 + "\r\n" + AddPppoe(row.Cells["C_interface"].Value.ToString(), row.Cells["C_pppoeClint"].Value.ToString(), row.Cells["C_PPPOEUSER"].Value.ToString(), row.Cells["C_C_PPPOEPASS"].Value.ToString());
                                 n1 = n1 + "\r\n" + AddNatBridge(row.Cells["C_pppoeClint"].Value.ToString());
                                 m2 = m2 + "\r\n" + AddSingleMangle(row.Cells["C_WlanNetIP"].Value.ToString() + "/24", outinf);
-                                r2 = r2 + "\r\n" + AddRoutsNTH(row.Cells["C_pppoeClint"].Value.ToString(), (row.Index + 1).ToString());
-
+                                r2 = r2 + "\r\n" + AddRoutsNTH(row.Cells["C_pppoeClint"].Value.ToString(), (row.Index + 2).ToString());
+                                if (le == 1)
+                                {
+                                    routeLBISS = row.Cells["C_pppoeClint"].Value.ToString();
+                                }
+                                else
+                                {
+                                    routeLBISS = routeLBISS + "," + row.Cells["C_pppoeClint"].Value.ToString();
+                                }
+                                le++;
                             }
                             catch (Exception ex)
                             {   
@@ -221,9 +230,10 @@ namespace LBMS_Pro
                                 MessageBox.Show(res, "خطاء في البيانات المدخلة");
                             }
                         }
+                        routsInSameServer = AddRoutsLBISS(routeLBISS);
                         Address = "\r\n" + "add address=" + TB_IPout.Text + " interface=" + outinf + " network=" + TB_OUTSub.Text + a1;
                     }
-                    routsInSameServer = routsInSameServer + r2;
+                    routsInSameServer = routsInSameServer +"\r\n" + r2;
                     Pppoe = p1;
                     Nat = AddSingleNat(TB_OUTSub.Text + "/24") + n1;
                     Mangle = m2;
@@ -276,6 +286,7 @@ namespace LBMS_Pro
                     }
                     else
                     {
+                        int le1 = 1;
                         foreach (DataGridViewRow row in DGV_Main.Rows)
                         {
                             try
@@ -288,8 +299,16 @@ namespace LBMS_Pro
                                 mo = mo + "\r\n" + AddSingleManglePCCOut(row.Cells["C_interface"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
                                 m2 = m2 + "\r\n" + AddSingleManglePCC(outinf, row.Cells["C_interface"].Value.ToString() + "_Con");
                                 r1 = r1 + "\r\n" + AddRoutsPCCMr(row.Cells["C_WlanIPGetway"].Value.ToString(), row.Cells["C_interface"].Value.ToString() + "_Con");
-                                r2 = r2 + "\r\n" + AddRoutsPCCDis(row.Cells["C_WlanIPGetway"].Value.ToString(), (row.Index + 1).ToString());
-
+                                r2 = r2 + "\r\n" + AddRoutsPCCDis(row.Cells["C_WlanIPGetway"].Value.ToString(), (row.Index + 2).ToString());
+                                if (le1 == 1)
+                                {
+                                    routeLBISS = row.Cells["C_WlanIPGetway"].Value.ToString();
+                                }
+                                else
+                                {
+                                    routeLBISS = routeLBISS + "," + row.Cells["C_WlanIPGetway"].Value.ToString();
+                                }
+                                le1++;
                             }
                             catch (Exception ex)
                             {
@@ -307,6 +326,7 @@ namespace LBMS_Pro
                                 MessageBox.Show(res, "خطاء في البيانات المدخلة");
                             }
                         }
+                        routsInSameServer = AddRoutsLBISS(routeLBISS);
                         Address = "\r\n" + "add address=" + TB_IPout.Text + " interface=" + outinf + " network=" + TB_OUTSub.Text + a1;
                     }
                     Nat = AddSingleNat(TB_OUTSub.Text + "/24") + n1;
@@ -959,7 +979,7 @@ namespace LBMS_Pro
             if (TC_Main.SelectedTab != TC_Main.TabPages["TP_Info"])
             {
                 TC_Main.SelectedTab = TC_Main.TabPages["TP_Info"];
-            }  
+            }
         }
 
         private void BT_info_Click(object sender, EventArgs e)
@@ -1901,6 +1921,255 @@ namespace LBMS_Pro
                         view.CurrentRow.Cells["C_IP4"].Value = "0";
                         break;
                 }
+            }
+        }
+
+        private void CB_SpiscalFCName_CheckedChanged(object sender, EventArgs e)
+        {
+            TB_StartFileName.ReadOnly = !CB_SpiscalFCName.Checked;
+        }
+
+        private void BT_StartNSConfig_Click(object sender, EventArgs e)
+        {
+            StartNSConfigFile();
+        }
+        private string getNSConfigFile(string dir)
+        {
+            string res = "";
+            try
+            {
+                res  = File.ReadAllText(dir);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            return res;
+        }
+        private void saveNSConfigFile(string dir,string cont)
+        {
+            try
+            {
+                string path = dir + "\\CFile\\NSCF\\";
+                string file = path + "\\NSM2_AP_VL2N.txt";
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+                FileStream stream = new FileStream(file, FileMode.Append, FileAccess.Write, FileShare.Write);
+                StreamWriter streamWriter = new StreamWriter(stream);
+                streamWriter.WriteLine("=========End Log========");
+                streamWriter.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+        private void StartNSConfigFile()
+        {
+            if (nSConfigInfo() && nSConfigInfoFile())
+            {
+                try
+                {
+                    string dir = new FileInfo(Application.ExecutablePath).Directory.ToString();
+                    string path = dir + "\\CFile\\NSCF\\";
+                    string file = path + "‏‏‏‏NSM2_AP_VL2N.txt";
+                    if (File.Exists(file))
+                    {
+                        string NSConfigFile = getNSConfigFile(file);
+                        int SSIDNum = 0;
+                        if (NSConfigFile != "")
+                        {
+                            int FNum = Convert.ToInt32(UN_FileNum.Value);
+                            if (CB_SpicalNum.Checked)
+                            {
+                                SSIDNum = Convert.ToInt32(UN_Nnum.Value) - 1;
+                            }                  
+                            int SIPAd = Convert.ToInt32(UN_IP4.Value);
+                            int VlanID = Convert.ToInt32(UN_VLanID.Value);
+                            string SSIDN = TB_SIDName.Text;
+                            string SSIDR = TB_SSIDReplace.Text;
+                            string FileName = TB_StartFileName.Text;
+                            string DirSave = TB_NSFileDir.Text;
+                            string StartIP = UN_IP1.Value.ToString() + "." + UN_IP2.Value.ToString() + "." + UN_IP3.Value.ToString() + ".";
+                            string GetWay = UN_GIP1.Value.ToString() + "." + UN_GIP2.Value.ToString() + "." + UN_GIP3.Value.ToString() + "." + UN_GIP4.Value.ToString();
+                            string NetMask = CB_NetMask.SelectedItem.ToString();
+                            for (int i = 1; i <= FNum; i++)
+                            {
+                                int nname = (SSIDNum + i);
+                                int nvlan = (VlanID + i);
+                                int nip = (SIPAd + i);
+                                string _SSIDN = (SSIDN.Replace(SSIDR, nname.ToString()));
+                                string _IP = (StartIP + nip.ToString());
+                                string _VLAN = nvlan.ToString();
+                                string _Host = nname.ToString();
+                                string fs = NSConfigFile;
+                                String[] rows = Regex.Split(fs, "\r\n");
+                                for (int f = 0; f < rows.Length; f++)
+                                {
+                                    if (rows[f].Contains("SSNAME"))
+                                    {
+                                        rows[f] = rows[f].Replace("SSNAME", _SSIDN);
+                                        break;
+                                    }
+                                }
+                                ////ip
+                                for (int f = 0; f < rows.Length; f++)
+                                {
+                                    if (rows[f].Contains("IIPP"))
+                                    {
+                                        rows[f] = rows[f].Replace("IIPP", _IP);
+                                        break;
+                                    }
+                                }
+                                ///Getway
+                                for (int f = 0; f < rows.Length; f++)
+                                {
+                                    if (rows[f].Contains("GGGTWAY"))
+                                    {
+                                        rows[f] = rows[f].Replace("GGGTWAY", GetWay);
+                                        break;
+                                    }
+                                }
+                                ///netmask
+                                for (int f = 0; f < rows.Length; f++)
+                                {
+                                    if (rows[f].Contains("NNMASK"))
+                                    {
+                                        rows[f] = rows[f].Replace("NNMASK", NetMask);
+                                        break;
+                                    }
+                                }
+                                ///hostname
+                                for (int f = 0; f < rows.Length; f++)
+                                {
+                                    if (rows[f].Contains("HHHNAME"))
+                                    {
+                                        rows[f] = rows[f].Replace("HHHNAME", nname.ToString());
+                                        break;
+                                    }
+                                }
+                                for (int f = 0; f < rows.Length; f++)
+                                {
+                                    if (rows[f].Contains("VLLA1"))
+                                    {
+                                        rows[f] = rows[f].Replace("VLLA1", _VLAN);
+                                    }
+                                    if (rows[f].Contains("VLLA2"))
+                                    {
+                                        rows[f] = rows[f].Replace("VLLA2", _VLAN);
+                                    }
+                                    if (rows[f].Contains("VLCCOM"))
+                                    {
+                                        rows[f] = rows[f].Replace("VLCCOM", "730460772");
+                                    }
+                                    if (rows[f].Contains("GGGTWAY"))
+                                    {
+                                        rows[f] = rows[f].Replace("GGGTWAY", "779537981");
+                                    }
+                                }
+                                String[] res = new string[rows.Length];
+                                for (int r = 0; r < rows.Length; r++)
+                                {
+                                    res[r] = rows[r] + "\r\n";
+                                }
+                                string finalFile = string.Concat(res);
+                                string fnam = FileName + "_" + nname.ToString() + ".cfg";
+                                string fulldir = DirSave + "\\" + fnam;
+                                File.WriteAllText(fulldir, finalFile);  
+                            }
+                            MessageBox.Show("تم إنشاء ملفات الإعدادات بنجاح");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("تعذر الحصول على ملف الإعداد");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+        }
+        bool nSConfigInfoFile()
+        {
+            bool res = false;
+            try
+            {
+                string dir = TB_NSFileDir.Text;
+                if (!Directory.Exists(dir))
+                {
+                    Directory.CreateDirectory(dir);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                TB_NSFileDir.Focus();
+                return res;
+            }
+        }
+        bool nSConfigInfo()
+        {
+            bool res = false;
+            ///
+            if (TB_SIDName.Text.Length <= 0)
+            {
+                MessageBox.Show("يجب يكون إسم الشبكة غير فارغ");
+                TB_SIDName.Focus();
+                return res;
+            }
+            if (TB_SSIDReplace.Text.Length <= 0)
+            {
+                MessageBox.Show("يجب يكون نص الإستبدال غير فارغ");
+                TB_SSIDReplace.Focus();
+                return res;
+            }
+            if (TB_StartFileName.Text.Length <= 0)
+            {
+                MessageBox.Show("يجب يكون إسم الملف غير فارغ");
+                TB_StartFileName.Focus();
+                return res;
+            }
+            ///
+            string sn = TB_SIDName.Text;
+            string snr = TB_SSIDReplace.Text;
+            if (sn.Contains(snr) == true)
+            {
+                res = true;
+            }
+            else
+            {
+                MessageBox.Show("يجب ان يحتوي إسم الشبكة على نفس هذا النص لإستبداله برقم الشبكة ");
+                TB_SSIDReplace.Focus();
+            }
+            ///
+            return res;
+        }
+
+        private void BT_NSCFDir_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fb = new FolderBrowserDialog();
+            if (fb.ShowDialog() == DialogResult.OK)
+            {
+                TB_NSFileDir.Text = fb.SelectedPath;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void CB_SpicalNum_CheckedChanged(object sender, EventArgs e)
+        {
+            UN_Nnum.ReadOnly = !CB_SpicalNum.Checked;
+        }
+
+        private void BT_NSCFiles_Click(object sender, EventArgs e)
+        {
+            if (TC_Main.SelectedTab != TC_Main.TabPages["TP_NSCFiles"])
+            {
+                TC_Main.SelectedTab = TC_Main.TabPages["TP_NSCFiles"];
             }
         }
     }
