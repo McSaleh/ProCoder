@@ -297,6 +297,7 @@
             this.UN_IP2 = new System.Windows.Forms.NumericUpDown();
             this.UN_IP1 = new System.Windows.Forms.NumericUpDown();
             this.TP_AutoMation = new System.Windows.Forms.TabPage();
+            this.frm_Automation1 = new LBMS_Pro.Frm_Automation();
             this.TP_TelegramScr = new System.Windows.Forms.TabPage();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.RTB_Down = new System.Windows.Forms.RichTextBox();
@@ -418,7 +419,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.frm_Automation1 = new LBMS_Pro.Frm_Automation();
+            this.CB_TypeSc = new System.Windows.Forms.ComboBox();
+            this.label87 = new System.Windows.Forms.Label();
             this.PL_Up.SuspendLayout();
             this.PL_Main.SuspendLayout();
             this.TC_Main.SuspendLayout();
@@ -521,7 +523,7 @@
             this.PL_Up.Location = new System.Drawing.Point(0, 0);
             this.PL_Up.MinimumSize = new System.Drawing.Size(300, 50);
             this.PL_Up.Name = "PL_Up";
-            this.PL_Up.Size = new System.Drawing.Size(843, 50);
+            this.PL_Up.Size = new System.Drawing.Size(862, 50);
             this.PL_Up.TabIndex = 0;
             this.PL_Up.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PL_Up_MouseDown);
             this.PL_Up.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PL_Up_MouseMove);
@@ -618,24 +620,25 @@
             this.CBO_AddNat.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CBO_AddNat.Font = new System.Drawing.Font("Tahoma", 9F);
             this.CBO_AddNat.ForeColor = System.Drawing.Color.White;
-            this.CBO_AddNat.Location = new System.Drawing.Point(117, 10);
+            this.CBO_AddNat.Location = new System.Drawing.Point(9, 52);
             this.CBO_AddNat.Name = "CBO_AddNat";
             this.CBO_AddNat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CBO_AddNat.Size = new System.Drawing.Size(178, 18);
             this.CBO_AddNat.TabIndex = 14;
             this.CBO_AddNat.Text = "الدخور على الراوترات بعد الدمج";
             this.CBO_AddNat.UseVisualStyleBackColor = true;
+            this.CBO_AddNat.CheckedChanged += new System.EventHandler(this.CBO_AddNat_CheckedChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(765, 12);
+            this.label5.Location = new System.Drawing.Point(774, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 14);
+            this.label5.Size = new System.Drawing.Size(67, 14);
             this.label5.TabIndex = 12;
-            this.label5.Text = "نوع الدمج";
+            this.label5.Text = "طريقة الدمج";
             // 
             // BT_Add
             // 
@@ -655,7 +658,7 @@
             // 
             // CB_BType
             // 
-            this.CB_BType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(187)))), ((int)(((byte)(209)))));
+            this.CB_BType.BackColor = System.Drawing.Color.Chocolate;
             this.CB_BType.DropDownHeight = 60;
             this.CB_BType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_BType.Font = new System.Drawing.Font("Tahoma", 9F);
@@ -664,8 +667,9 @@
             this.CB_BType.IntegralHeight = false;
             this.CB_BType.Items.AddRange(new object[] {
             "NTH",
+            "NTH Auto",
             "PCC"});
-            this.CB_BType.Location = new System.Drawing.Point(642, 8);
+            this.CB_BType.Location = new System.Drawing.Point(651, 9);
             this.CB_BType.MaxDropDownItems = 4;
             this.CB_BType.Name = "CB_BType";
             this.CB_BType.Size = new System.Drawing.Size(121, 22);
@@ -679,7 +683,7 @@
             this.PL_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PL_Main.Location = new System.Drawing.Point(0, 0);
             this.PL_Main.Name = "PL_Main";
-            this.PL_Main.Size = new System.Drawing.Size(843, 469);
+            this.PL_Main.Size = new System.Drawing.Size(862, 469);
             this.PL_Main.TabIndex = 1;
             // 
             // TC_Main
@@ -698,19 +702,19 @@
             this.TC_Main.Location = new System.Drawing.Point(0, 0);
             this.TC_Main.Name = "TC_Main";
             this.TC_Main.SelectedIndex = 0;
-            this.TC_Main.Size = new System.Drawing.Size(843, 469);
+            this.TC_Main.Size = new System.Drawing.Size(862, 469);
             this.TC_Main.TabIndex = 1;
             // 
             // TP_LBS
             // 
             this.TP_LBS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
             this.TP_LBS.Controls.Add(this.DGV_Main);
-            this.TP_LBS.Controls.Add(this.panel9);
             this.TP_LBS.Controls.Add(this.groupBox1);
+            this.TP_LBS.Controls.Add(this.panel9);
             this.TP_LBS.Font = new System.Drawing.Font("Janna LT", 9F);
             this.TP_LBS.Location = new System.Drawing.Point(4, 4);
             this.TP_LBS.Name = "TP_LBS";
-            this.TP_LBS.Size = new System.Drawing.Size(835, 442);
+            this.TP_LBS.Size = new System.Drawing.Size(854, 442);
             this.TP_LBS.TabIndex = 0;
             this.TP_LBS.Text = "دمج";
             // 
@@ -751,7 +755,7 @@
             this.DGV_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Main.EnableHeadersVisualStyles = false;
             this.DGV_Main.GridColor = System.Drawing.Color.Gray;
-            this.DGV_Main.Location = new System.Drawing.Point(0, 0);
+            this.DGV_Main.Location = new System.Drawing.Point(0, 44);
             this.DGV_Main.Name = "DGV_Main";
             this.DGV_Main.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DGV_Main.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -770,7 +774,7 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Goldenrod;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             this.DGV_Main.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.DGV_Main.Size = new System.Drawing.Size(835, 334);
+            this.DGV_Main.Size = new System.Drawing.Size(854, 321);
             this.DGV_Main.TabIndex = 0;
             this.DGV_Main.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Main_CellContentClick);
             this.DGV_Main.CellValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Main_CellValidated);
@@ -873,15 +877,15 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.CB_ScrLB_insameServer);
+            this.panel9.Controls.Add(this.label87);
+            this.panel9.Controls.Add(this.CB_TypeSc);
             this.panel9.Controls.Add(this.label5);
-            this.panel9.Controls.Add(this.CBO_AddNat);
             this.panel9.Controls.Add(this.BT_Add);
             this.panel9.Controls.Add(this.CB_BType);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 334);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(835, 44);
+            this.panel9.Size = new System.Drawing.Size(854, 44);
             this.panel9.TabIndex = 8;
             // 
             // CB_ScrLB_insameServer
@@ -889,17 +893,21 @@
             this.CB_ScrLB_insameServer.AutoSize = true;
             this.CB_ScrLB_insameServer.Font = new System.Drawing.Font("Tahoma", 9F);
             this.CB_ScrLB_insameServer.ForeColor = System.Drawing.Color.White;
-            this.CB_ScrLB_insameServer.Location = new System.Drawing.Point(301, 10);
+            this.CB_ScrLB_insameServer.Location = new System.Drawing.Point(193, 52);
             this.CB_ScrLB_insameServer.Name = "CB_ScrLB_insameServer";
             this.CB_ScrLB_insameServer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_ScrLB_insameServer.Size = new System.Drawing.Size(335, 18);
             this.CB_ScrLB_insameServer.TabIndex = 15;
             this.CB_ScrLB_insameServer.Text = "الدمج والتوزيع على نفس جهاز سيرفر الهوت سبوت او البرودباند";
             this.CB_ScrLB_insameServer.UseVisualStyleBackColor = true;
+            this.CB_ScrLB_insameServer.CheckedChanged += new System.EventHandler(this.CB_ScrLB_insameServer_CheckedChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.groupBox1.Controls.Add(this.CB_ScrLB_insameServer);
             this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.CBO_AddNat);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -911,12 +919,12 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9F);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(0, 378);
+            this.groupBox1.Location = new System.Drawing.Point(0, 365);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(1);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(835, 64);
+            this.groupBox1.Size = new System.Drawing.Size(854, 77);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "معاومات كرت الخروج";
@@ -926,7 +934,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(741, 31);
+            this.label4.Location = new System.Drawing.Point(742, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 14);
             this.label4.TabIndex = 11;
@@ -937,7 +945,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(523, 31);
+            this.label3.Location = new System.Drawing.Point(524, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 14);
             this.label3.TabIndex = 10;
@@ -948,7 +956,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(314, 31);
+            this.label2.Location = new System.Drawing.Point(315, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 14);
             this.label2.TabIndex = 9;
@@ -958,7 +966,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(80, 26);
+            this.label1.Location = new System.Drawing.Point(81, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 22);
             this.label1.TabIndex = 8;
@@ -971,7 +979,7 @@
             this.NUP_NRQ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NUP_NRQ.Font = new System.Drawing.Font("Tahoma", 9F);
             this.NUP_NRQ.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.NUP_NRQ.Location = new System.Drawing.Point(8, 26);
+            this.NUP_NRQ.Location = new System.Drawing.Point(9, 22);
             this.NUP_NRQ.Name = "NUP_NRQ";
             this.NUP_NRQ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.NUP_NRQ.Size = new System.Drawing.Size(67, 22);
@@ -989,7 +997,7 @@
             this.TB_IPout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_IPout.Font = new System.Drawing.Font("Tahoma", 9F);
             this.TB_IPout.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.TB_IPout.Location = new System.Drawing.Point(399, 28);
+            this.TB_IPout.Location = new System.Drawing.Point(400, 24);
             this.TB_IPout.Name = "TB_IPout";
             this.TB_IPout.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TB_IPout.Size = new System.Drawing.Size(119, 22);
@@ -1002,7 +1010,7 @@
             this.OUT_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.OUT_Name.Font = new System.Drawing.Font("Tahoma", 9F);
             this.OUT_Name.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.OUT_Name.Location = new System.Drawing.Point(626, 28);
+            this.OUT_Name.Location = new System.Drawing.Point(627, 24);
             this.OUT_Name.Name = "OUT_Name";
             this.OUT_Name.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.OUT_Name.Size = new System.Drawing.Size(110, 22);
@@ -1018,7 +1026,7 @@
             this.TB_OUTSub.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_OUTSub.Font = new System.Drawing.Font("Tahoma", 9F);
             this.TB_OUTSub.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.TB_OUTSub.Location = new System.Drawing.Point(212, 28);
+            this.TB_OUTSub.Location = new System.Drawing.Point(213, 24);
             this.TB_OUTSub.Name = "TB_OUTSub";
             this.TB_OUTSub.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TB_OUTSub.Size = new System.Drawing.Size(97, 22);
@@ -1031,7 +1039,7 @@
             this.TP_MikScr.Location = new System.Drawing.Point(4, 4);
             this.TP_MikScr.Name = "TP_MikScr";
             this.TP_MikScr.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_MikScr.Size = new System.Drawing.Size(835, 442);
+            this.TP_MikScr.Size = new System.Drawing.Size(854, 442);
             this.TP_MikScr.TabIndex = 1;
             this.TP_MikScr.Text = "إسكربتات";
             this.TP_MikScr.UseVisualStyleBackColor = true;
@@ -1050,7 +1058,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(829, 436);
+            this.panel2.Size = new System.Drawing.Size(848, 436);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
@@ -2290,7 +2298,7 @@
             this.TP_SecScr.Controls.Add(this.groupBox2);
             this.TP_SecScr.Location = new System.Drawing.Point(4, 4);
             this.TP_SecScr.Name = "TP_SecScr";
-            this.TP_SecScr.Size = new System.Drawing.Size(835, 442);
+            this.TP_SecScr.Size = new System.Drawing.Size(854, 442);
             this.TP_SecScr.TabIndex = 2;
             this.TP_SecScr.Text = "إسكربتات حماية";
             this.TP_SecScr.UseVisualStyleBackColor = true;
@@ -2590,7 +2598,7 @@
             this.TP_MultiTask.Controls.Add(this.groupBox12);
             this.TP_MultiTask.Location = new System.Drawing.Point(4, 4);
             this.TP_MultiTask.Name = "TP_MultiTask";
-            this.TP_MultiTask.Size = new System.Drawing.Size(835, 442);
+            this.TP_MultiTask.Size = new System.Drawing.Size(854, 442);
             this.TP_MultiTask.TabIndex = 4;
             this.TP_MultiTask.Text = "المهام المتعددة";
             this.TP_MultiTask.UseVisualStyleBackColor = true;
@@ -3048,7 +3056,7 @@
             this.TP_NSCFiles.Controls.Add(this.groupBox18);
             this.TP_NSCFiles.Location = new System.Drawing.Point(4, 4);
             this.TP_NSCFiles.Name = "TP_NSCFiles";
-            this.TP_NSCFiles.Size = new System.Drawing.Size(835, 442);
+            this.TP_NSCFiles.Size = new System.Drawing.Size(854, 442);
             this.TP_NSCFiles.TabIndex = 6;
             this.TP_NSCFiles.Text = "برمجة الأنتينات";
             this.TP_NSCFiles.UseVisualStyleBackColor = true;
@@ -4195,10 +4203,21 @@
             this.TP_AutoMation.Location = new System.Drawing.Point(4, 4);
             this.TP_AutoMation.Name = "TP_AutoMation";
             this.TP_AutoMation.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_AutoMation.Size = new System.Drawing.Size(835, 442);
+            this.TP_AutoMation.Size = new System.Drawing.Size(854, 442);
             this.TP_AutoMation.TabIndex = 7;
             this.TP_AutoMation.Text = "المهام الألية";
             this.TP_AutoMation.UseVisualStyleBackColor = true;
+            // 
+            // frm_Automation1
+            // 
+            this.frm_Automation1.AutoScroll = true;
+            this.frm_Automation1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.frm_Automation1.Font = new System.Drawing.Font("Cairo", 10F);
+            this.frm_Automation1.Location = new System.Drawing.Point(3, 3);
+            this.frm_Automation1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.frm_Automation1.Name = "frm_Automation1";
+            this.frm_Automation1.Size = new System.Drawing.Size(848, 436);
+            this.frm_Automation1.TabIndex = 0;
             // 
             // TP_TelegramScr
             // 
@@ -4212,7 +4231,7 @@
             this.TP_TelegramScr.Location = new System.Drawing.Point(4, 4);
             this.TP_TelegramScr.Name = "TP_TelegramScr";
             this.TP_TelegramScr.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_TelegramScr.Size = new System.Drawing.Size(835, 442);
+            this.TP_TelegramScr.Size = new System.Drawing.Size(854, 442);
             this.TP_TelegramScr.TabIndex = 5;
             this.TP_TelegramScr.Text = "إسكربتات التليجرام";
             this.TP_TelegramScr.UseVisualStyleBackColor = true;
@@ -5147,7 +5166,7 @@
             this.TP_Info.Controls.Add(this.PL_DeveloperInfo);
             this.TP_Info.Location = new System.Drawing.Point(4, 4);
             this.TP_Info.Name = "TP_Info";
-            this.TP_Info.Size = new System.Drawing.Size(835, 442);
+            this.TP_Info.Size = new System.Drawing.Size(854, 442);
             this.TP_Info.TabIndex = 3;
             this.TP_Info.Text = "معلومات";
             this.TP_Info.UseVisualStyleBackColor = true;
@@ -5613,7 +5632,7 @@
             this.PL_Down.Location = new System.Drawing.Point(0, 0);
             this.PL_Down.MinimumSize = new System.Drawing.Size(300, 150);
             this.PL_Down.Name = "PL_Down";
-            this.PL_Down.Size = new System.Drawing.Size(843, 176);
+            this.PL_Down.Size = new System.Drawing.Size(862, 176);
             this.PL_Down.TabIndex = 0;
             // 
             // TB_Result
@@ -5629,7 +5648,7 @@
             this.TB_Result.Name = "TB_Result";
             this.TB_Result.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TB_Result.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TB_Result.Size = new System.Drawing.Size(843, 152);
+            this.TB_Result.Size = new System.Drawing.Size(862, 152);
             this.TB_Result.TabIndex = 2;
             // 
             // panel10
@@ -5641,7 +5660,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(843, 24);
+            this.panel10.Size = new System.Drawing.Size(862, 24);
             this.panel10.TabIndex = 17;
             // 
             // BT_SelectAll
@@ -5714,7 +5733,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(843, 0);
+            this.panel1.Location = new System.Drawing.Point(862, 0);
             this.panel1.MinimumSize = new System.Drawing.Size(180, 500);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(217, 700);
@@ -5952,28 +5971,47 @@
             this.splitContainer1.Panel2.Controls.Add(this.PL_Down);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer1.Panel2MinSize = 100;
-            this.splitContainer1.Size = new System.Drawing.Size(843, 650);
+            this.splitContainer1.Size = new System.Drawing.Size(862, 650);
             this.splitContainer1.SplitterDistance = 469;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 3;
             // 
-            // frm_Automation1
+            // CB_TypeSc
             // 
-            this.frm_Automation1.AutoScroll = true;
-            this.frm_Automation1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.frm_Automation1.Font = new System.Drawing.Font("Cairo", 10F);
-            this.frm_Automation1.Location = new System.Drawing.Point(3, 3);
-            this.frm_Automation1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.frm_Automation1.Name = "frm_Automation1";
-            this.frm_Automation1.Size = new System.Drawing.Size(829, 436);
-            this.frm_Automation1.TabIndex = 0;
+            this.CB_TypeSc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(187)))), ((int)(((byte)(209)))));
+            this.CB_TypeSc.DropDownHeight = 60;
+            this.CB_TypeSc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_TypeSc.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.CB_TypeSc.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.CB_TypeSc.FormattingEnabled = true;
+            this.CB_TypeSc.IntegralHeight = false;
+            this.CB_TypeSc.Items.AddRange(new object[] {
+            "الطريقة 1",
+            "الطريقة 2",
+            "آلي"});
+            this.CB_TypeSc.Location = new System.Drawing.Point(491, 9);
+            this.CB_TypeSc.MaxDropDownItems = 4;
+            this.CB_TypeSc.Name = "CB_TypeSc";
+            this.CB_TypeSc.Size = new System.Drawing.Size(121, 22);
+            this.CB_TypeSc.TabIndex = 13;
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label87.ForeColor = System.Drawing.Color.White;
+            this.label87.Location = new System.Drawing.Point(616, 13);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(29, 14);
+            this.label87.TabIndex = 14;
+            this.label87.Text = "النوع";
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(31)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(1060, 700);
+            this.ClientSize = new System.Drawing.Size(1079, 700);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.PL_Up);
             this.Controls.Add(this.panel1);
@@ -6455,6 +6493,8 @@
         private System.Windows.Forms.Button BT_NSCFiles;
         private System.Windows.Forms.TabPage TP_AutoMation;
         private Frm_Automation frm_Automation1;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.ComboBox CB_TypeSc;
     }
 }
 
