@@ -10,6 +10,104 @@ namespace LBMS_Pro
 {
     class C_MikrotikScripts
     {
+        public string PCCINP_MANGEL_MarkConnection_Input(string in_interface, string new_connection_mark, string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                    "add action=mark-connection chain=input in-interface=\""+in_interface+"\" new-connection-mark=\""+new_connection_mark+"\" passthrough=yes comment=\""+comment+"\""
+                   }); ;
+        }
+        public string PCCINP_MANGEL_MarkRouting_Output(string connection_mark, string new_routing_mark, string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                    "add action=mark-routing chain=output connection-mark=\""+connection_mark+"\" new-routing-mark=\""+new_routing_mark+"\" passthrough=yes comment=\""+comment+"\""
+                   }); ;
+        }
+        public string PCCINP_MANGEL_MarkConnection_prerouting(string new_connection_mark, int PerConA, int PerConB, string locallist, string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                    "add action=mark-connection chain=prerouting dst-address-list=!",locallist
+                    ," dst-address-type=!local new-connection-mark=\""+new_connection_mark+"\" passthrough=yes"
+                    ," per-connection-classifier=both-addresses-and-ports:",""+PerConA+"/"+PerConB+" src-address-list=",locallist
+                    ," comment=\""+comment+"\""
+                   }); ;
+        }
+        public string PCCINP_MANGEL_MarkRouting_prerouting(string connection_mark, string new_routing_mark, string locallist, string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                       "add action=mark-routing chain=prerouting connection-mark=\""+connection_mark+"\" dst-address-list=!",locallist
+                       ," new-routing-mark=\""+new_routing_mark+"\" passthrough=yes src-address-list=",locallist
+                       ," comment=\""+comment+"\""
+                   }); ;
+        }
+
+        public string PCCINP_Routes(string gateway, string routing_mark, string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                       "add check-gateway=ping distance=1 gateway=\""+gateway+"\" routing-mark=\""+routing_mark+"\" comment=\""+comment+"\""
+                   }); ;
+        }
+        public string PCCINP_Route(string gateway,string distance, string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                       "add check-gateway=ping distance=",distance," gateway=\""+gateway+"\" comment=\""+comment+"\""
+                   }); ;
+        }
+        public string PCCINP_NAT_Masquerade(string out_interface, string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                       "add chain=srcnat out-interface=\""+out_interface+"\" action=masquerade comment=\""+comment+"\""
+                   }); ;
+        }
+        public string PCCINP_FIRWALL_AdressesList(string List_Name, string List_Ip, string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                       "/ip firewall address-list add address=",List_Ip
+                       ," list=",List_Name," comment=\""+comment+"\""
+                   }); ;
+        }
+        //public string DELETE_FIRWALL_AdressesList(string List_Name, string List_Ip, string comment)
+        //{
+        //    return string.Concat(new string[]
+        //           {
+        //              "/ip firewall address-list remove [find comment=\""+comment+"\"]"
+        //           }); ;
+        //}
+        public string DELETE_FIRWALL_AdressesList(string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                      "/ip firewall address-list remove [find comment=\""+comment+"\"]"
+                   }); ;
+        }
+        public string DELETE_Mangle(string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                      "/ip firewall mangle remove [find comment=\""+comment+"\"]"
+                   }); ;
+        }
+        public string DELETE_Route(string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                      "/ip route remove [find comment=\""+comment+"\"]"
+                   }); ;
+        }
+        public string DELETE_Nat(string comment)
+        {
+            return string.Concat(new string[]
+                   {
+                      "/ip firewall nat remove [find comment=\""+comment+"\"]"
+                   }); ;
+        }
         #region MikS
         public string QDAutoSpeed(string netspeed)
         {
@@ -603,11 +701,11 @@ namespace LBMS_Pro
                     ,"\r\n"
                     ,"/ip pool  add name=",poolname," range=",ip2,"-",ip3,";"
                     ,"\r\n"
-                    ,@"/ip dhcp-server add address-pool=",poolname," disabled=no interface=",vlanname," lease-time=3h name=",dhpServer,";"
+                    ,@"/ip dhcp-server add address-pool=",poolname," disabled=no interface=",vlanname," lease-time=1h name=",dhpServer,";"
                     ,"\r\n"
                     ,"/ip dhcp-server network add address=",ip0,netmask,"  gateway=",ip1,";"
                     ,"\r\n"
-                    ,"/ip hotspot add address-pool=",poolname," addresses-per-mac=1 disabled=no idle-timeout=4m interface=",vlanname," name=",hsServer," profile=",hsProfile,";"
+                    ,"/ip hotspot add address-pool=",poolname," addresses-per-mac=1 disabled=no idle-timeout=2m interface=",vlanname," name=",hsServer," profile=",hsProfile,";"
                     ,"\r\n"
                     ,"/ip firewall nat add action=masquerade chain=srcnat  src-address=",ip0,netmask," to-addresses=0.0.0.0 ;"
                     ,"\r\n"
