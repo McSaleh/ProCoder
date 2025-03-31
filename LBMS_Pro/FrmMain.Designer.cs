@@ -30,41 +30,41 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle106 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle107 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle109 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle110 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle108 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle111 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle112 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle118 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle119 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle120 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle113 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle114 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle115 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle116 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle117 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle121 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle124 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle125 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle126 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle138 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle139 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle140 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle136 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle137 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PL_Up = new System.Windows.Forms.Panel();
             this.CB_EditData = new System.Windows.Forms.CheckBox();
             this.BT_info = new System.Windows.Forms.Button();
@@ -103,7 +103,11 @@
             this.OUT_Name = new System.Windows.Forms.TextBox();
             this.TB_OUTSub = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label105 = new System.Windows.Forms.Label();
+            this.TB_AdressList = new System.Windows.Forms.TextBox();
+            this.label90 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
+            this.TB_Comment = new System.Windows.Forms.TextBox();
             this.CB_TypeSc = new System.Windows.Forms.ComboBox();
             this.TP_MikScr = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -423,10 +427,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.label90 = new System.Windows.Forms.Label();
-            this.TB_Comment = new System.Windows.Forms.TextBox();
-            this.label105 = new System.Windows.Forms.Label();
-            this.TB_AdressList = new System.Windows.Forms.TextBox();
             this.PL_Up.SuspendLayout();
             this.PL_Main.SuspendLayout();
             this.TC_Main.SuspendLayout();
@@ -528,7 +528,7 @@
             this.PL_Up.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.PL_Up.Dock = System.Windows.Forms.DockStyle.Top;
             this.PL_Up.Location = new System.Drawing.Point(0, 0);
-            this.PL_Up.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PL_Up.Margin = new System.Windows.Forms.Padding(4);
             this.PL_Up.MinimumSize = new System.Drawing.Size(350, 62);
             this.PL_Up.Name = "PL_Up";
             this.PL_Up.Size = new System.Drawing.Size(1006, 62);
@@ -544,8 +544,8 @@
             this.CB_EditData.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CB_EditData.Font = new System.Drawing.Font("Tahoma", 12F);
             this.CB_EditData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.CB_EditData.Location = new System.Drawing.Point(523, 15);
-            this.CB_EditData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_EditData.Location = new System.Drawing.Point(515, 15);
+            this.CB_EditData.Margin = new System.Windows.Forms.Padding(4);
             this.CB_EditData.Name = "CB_EditData";
             this.CB_EditData.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_EditData.Size = new System.Drawing.Size(166, 28);
@@ -564,7 +564,7 @@
             this.BT_info.Font = new System.Drawing.Font("Janna LT", 9F);
             this.BT_info.ForeColor = System.Drawing.SystemColors.WindowText;
             this.BT_info.Location = new System.Drawing.Point(68, 7);
-            this.BT_info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_info.Margin = new System.Windows.Forms.Padding(4);
             this.BT_info.Name = "BT_info";
             this.BT_info.Size = new System.Drawing.Size(46, 47);
             this.BT_info.TabIndex = 2;
@@ -581,7 +581,7 @@
             this.BT_Exit.Font = new System.Drawing.Font("Janna LT", 9F);
             this.BT_Exit.ForeColor = System.Drawing.SystemColors.Window;
             this.BT_Exit.Location = new System.Drawing.Point(8, 7);
-            this.BT_Exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.BT_Exit.Name = "BT_Exit";
             this.BT_Exit.Size = new System.Drawing.Size(52, 47);
             this.BT_Exit.TabIndex = 1;
@@ -600,7 +600,7 @@
             this.BT_CS.ImageIndex = 2;
             this.BT_CS.ImageList = this.imageList1;
             this.BT_CS.Location = new System.Drawing.Point(688, 4);
-            this.BT_CS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_CS.Margin = new System.Windows.Forms.Padding(4);
             this.BT_CS.Name = "BT_CS";
             this.BT_CS.Size = new System.Drawing.Size(222, 47);
             this.BT_CS.TabIndex = 0;
@@ -628,12 +628,10 @@
             // CBO_AddNat
             // 
             this.CBO_AddNat.AutoSize = true;
-            this.CBO_AddNat.Checked = true;
-            this.CBO_AddNat.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CBO_AddNat.Font = new System.Drawing.Font("Tahoma", 9F);
             this.CBO_AddNat.ForeColor = System.Drawing.Color.White;
             this.CBO_AddNat.Location = new System.Drawing.Point(10, 64);
-            this.CBO_AddNat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CBO_AddNat.Margin = new System.Windows.Forms.Padding(4);
             this.CBO_AddNat.Name = "CBO_AddNat";
             this.CBO_AddNat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CBO_AddNat.Size = new System.Drawing.Size(221, 22);
@@ -663,7 +661,7 @@
             this.BT_Add.Font = new System.Drawing.Font("Tahoma", 9F);
             this.BT_Add.ForeColor = System.Drawing.SystemColors.Window;
             this.BT_Add.Location = new System.Drawing.Point(4, 9);
-            this.BT_Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_Add.Margin = new System.Windows.Forms.Padding(4);
             this.BT_Add.Name = "BT_Add";
             this.BT_Add.Size = new System.Drawing.Size(126, 28);
             this.BT_Add.TabIndex = 1;
@@ -681,13 +679,13 @@
             this.CB_BType.FormattingEnabled = true;
             this.CB_BType.IntegralHeight = false;
             this.CB_BType.Items.AddRange(new object[] {
-            "NTH",
-            "NTH Auto",
-            "PCC",
-            "PCC_INP",
-            "PCC_LIST"});
+            "دمج نوع NTH",
+            "دمج نوع NTH Auto",
+            "دمج نوع PCC",
+            "دمج نوع PCC Input Output",
+            "دمج نوع PCC_LIST"});
             this.CB_BType.Location = new System.Drawing.Point(760, 11);
-            this.CB_BType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_BType.Margin = new System.Windows.Forms.Padding(4);
             this.CB_BType.MaxDropDownItems = 4;
             this.CB_BType.Name = "CB_BType";
             this.CB_BType.Size = new System.Drawing.Size(140, 26);
@@ -700,7 +698,7 @@
             this.PL_Main.Controls.Add(this.TC_Main);
             this.PL_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PL_Main.Location = new System.Drawing.Point(0, 0);
-            this.PL_Main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PL_Main.Margin = new System.Windows.Forms.Padding(4);
             this.PL_Main.Name = "PL_Main";
             this.PL_Main.Size = new System.Drawing.Size(1006, 577);
             this.PL_Main.TabIndex = 1;
@@ -719,7 +717,7 @@
             this.TC_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TC_Main.Font = new System.Drawing.Font("Tahoma", 9F);
             this.TC_Main.Location = new System.Drawing.Point(0, 0);
-            this.TC_Main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TC_Main.Margin = new System.Windows.Forms.Padding(4);
             this.TC_Main.Name = "TC_Main";
             this.TC_Main.SelectedIndex = 0;
             this.TC_Main.Size = new System.Drawing.Size(1006, 577);
@@ -733,7 +731,7 @@
             this.TP_LBS.Controls.Add(this.panel9);
             this.TP_LBS.Font = new System.Drawing.Font("Janna LT", 9F);
             this.TP_LBS.Location = new System.Drawing.Point(4, 4);
-            this.TP_LBS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_LBS.Margin = new System.Windows.Forms.Padding(4);
             this.TP_LBS.Name = "TP_LBS";
             this.TP_LBS.Size = new System.Drawing.Size(998, 546);
             this.TP_LBS.TabIndex = 0;
@@ -741,23 +739,23 @@
             // 
             // DGV_Main
             // 
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(187)))), ((int)(((byte)(209)))));
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Tahoma", 9F);
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.Black;
-            this.DGV_Main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle106.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(187)))), ((int)(((byte)(209)))));
+            dataGridViewCellStyle106.Font = new System.Drawing.Font("Tahoma", 9F);
+            dataGridViewCellStyle106.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle106.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle106.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGV_Main.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle106;
             this.DGV_Main.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.DGV_Main.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGV_Main.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.Firebrick;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle107.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle107.BackColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle107.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle107.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle107.SelectionBackColor = System.Drawing.Color.Firebrick;
+            dataGridViewCellStyle107.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle107.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Main.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle107;
             this.DGV_Main.ColumnHeadersHeight = 30;
             this.DGV_Main.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.C_interface,
@@ -777,25 +775,25 @@
             this.DGV_Main.EnableHeadersVisualStyles = false;
             this.DGV_Main.GridColor = System.Drawing.Color.Gray;
             this.DGV_Main.Location = new System.Drawing.Point(0, 54);
-            this.DGV_Main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DGV_Main.Margin = new System.Windows.Forms.Padding(4);
             this.DGV_Main.Name = "DGV_Main";
             this.DGV_Main.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DGV_Main.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(106)))), ((int)(((byte)(173)))));
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle109.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle109.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(106)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle109.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle109.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle109.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle109.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle109.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Main.RowHeadersDefaultCellStyle = dataGridViewCellStyle109;
             this.DGV_Main.RowHeadersWidth = 24;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Tahoma", 9F);
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Black;
-            this.DGV_Main.RowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle110.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle110.Font = new System.Drawing.Font("Tahoma", 9F);
+            dataGridViewCellStyle110.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle110.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle110.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGV_Main.RowsDefaultCellStyle = dataGridViewCellStyle110;
             this.DGV_Main.Size = new System.Drawing.Size(998, 397);
             this.DGV_Main.TabIndex = 0;
             this.DGV_Main.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Main_CellContentClick);
@@ -913,8 +911,8 @@
             // 
             // C_index
             // 
-            dataGridViewCellStyle38.NullValue = "0";
-            this.C_index.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle108.NullValue = "0";
+            this.C_index.DefaultCellStyle = dataGridViewCellStyle108;
             this.C_index.HeaderText = "index";
             this.C_index.MinimumWidth = 6;
             this.C_index.Name = "C_index";
@@ -953,8 +951,8 @@
             this.CB_ScrLB_insameServer.AutoSize = true;
             this.CB_ScrLB_insameServer.Font = new System.Drawing.Font("Tahoma", 9F);
             this.CB_ScrLB_insameServer.ForeColor = System.Drawing.Color.White;
-            this.CB_ScrLB_insameServer.Location = new System.Drawing.Point(225, 64);
-            this.CB_ScrLB_insameServer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_ScrLB_insameServer.Location = new System.Drawing.Point(232, 64);
+            this.CB_ScrLB_insameServer.Margin = new System.Windows.Forms.Padding(4);
             this.CB_ScrLB_insameServer.Name = "CB_ScrLB_insameServer";
             this.CB_ScrLB_insameServer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_ScrLB_insameServer.Size = new System.Drawing.Size(415, 22);
@@ -1018,7 +1016,7 @@
             this.NUP_NRQ.Font = new System.Drawing.Font("Tahoma", 9F);
             this.NUP_NRQ.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.NUP_NRQ.Location = new System.Drawing.Point(10, 27);
-            this.NUP_NRQ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUP_NRQ.Margin = new System.Windows.Forms.Padding(4);
             this.NUP_NRQ.Name = "NUP_NRQ";
             this.NUP_NRQ.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.NUP_NRQ.Size = new System.Drawing.Size(78, 26);
@@ -1037,7 +1035,7 @@
             this.TB_IPout.Font = new System.Drawing.Font("Tahoma", 9F);
             this.TB_IPout.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.TB_IPout.Location = new System.Drawing.Point(467, 30);
-            this.TB_IPout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_IPout.Margin = new System.Windows.Forms.Padding(4);
             this.TB_IPout.Name = "TB_IPout";
             this.TB_IPout.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TB_IPout.Size = new System.Drawing.Size(138, 26);
@@ -1051,7 +1049,7 @@
             this.OUT_Name.Font = new System.Drawing.Font("Tahoma", 9F);
             this.OUT_Name.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.OUT_Name.Location = new System.Drawing.Point(732, 30);
-            this.OUT_Name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OUT_Name.Margin = new System.Windows.Forms.Padding(4);
             this.OUT_Name.Name = "OUT_Name";
             this.OUT_Name.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.OUT_Name.Size = new System.Drawing.Size(128, 26);
@@ -1068,7 +1066,7 @@
             this.TB_OUTSub.Font = new System.Drawing.Font("Tahoma", 9F);
             this.TB_OUTSub.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.TB_OUTSub.Location = new System.Drawing.Point(248, 30);
-            this.TB_OUTSub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_OUTSub.Margin = new System.Windows.Forms.Padding(4);
             this.TB_OUTSub.Name = "TB_OUTSub";
             this.TB_OUTSub.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TB_OUTSub.Size = new System.Drawing.Size(113, 26);
@@ -1088,10 +1086,49 @@
             this.panel9.Controls.Add(this.CB_BType);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(998, 54);
             this.panel9.TabIndex = 8;
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label105.ForeColor = System.Drawing.Color.White;
+            this.label105.Location = new System.Drawing.Point(295, 14);
+            this.label105.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(81, 18);
+            this.label105.TabIndex = 19;
+            this.label105.Text = "AddressList";
+            // 
+            // TB_AdressList
+            // 
+            this.TB_AdressList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(187)))), ((int)(((byte)(209)))));
+            this.TB_AdressList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_AdressList.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.TB_AdressList.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.TB_AdressList.Location = new System.Drawing.Point(138, 11);
+            this.TB_AdressList.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_AdressList.Name = "TB_AdressList";
+            this.TB_AdressList.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TB_AdressList.Size = new System.Drawing.Size(157, 26);
+            this.TB_AdressList.TabIndex = 18;
+            this.TB_AdressList.Text = "LOCAL-IP";
+            this.TB_AdressList.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label90.ForeColor = System.Drawing.Color.White;
+            this.label90.Location = new System.Drawing.Point(525, 14);
+            this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(51, 18);
+            this.label90.TabIndex = 17;
+            this.label90.Text = "التعليق";
             // 
             // label87
             // 
@@ -1104,6 +1141,21 @@
             this.label87.Size = new System.Drawing.Size(37, 18);
             this.label87.TabIndex = 14;
             this.label87.Text = "النوع";
+            // 
+            // TB_Comment
+            // 
+            this.TB_Comment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(187)))), ((int)(((byte)(209)))));
+            this.TB_Comment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Comment.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.TB_Comment.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.TB_Comment.Location = new System.Drawing.Point(377, 11);
+            this.TB_Comment.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_Comment.Name = "TB_Comment";
+            this.TB_Comment.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TB_Comment.Size = new System.Drawing.Size(148, 26);
+            this.TB_Comment.TabIndex = 16;
+            this.TB_Comment.Text = "LB_PCC_BYPRO";
+            this.TB_Comment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CB_TypeSc
             // 
@@ -1119,19 +1171,20 @@
             "الطريقة 2",
             "آلي"});
             this.CB_TypeSc.Location = new System.Drawing.Point(581, 11);
-            this.CB_TypeSc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_TypeSc.Margin = new System.Windows.Forms.Padding(4);
             this.CB_TypeSc.MaxDropDownItems = 4;
             this.CB_TypeSc.Name = "CB_TypeSc";
             this.CB_TypeSc.Size = new System.Drawing.Size(132, 26);
             this.CB_TypeSc.TabIndex = 13;
+            this.CB_TypeSc.SelectedIndexChanged += new System.EventHandler(this.CB_TypeSc_SelectedIndexChanged);
             // 
             // TP_MikScr
             // 
             this.TP_MikScr.Controls.Add(this.panel2);
             this.TP_MikScr.Location = new System.Drawing.Point(4, 4);
-            this.TP_MikScr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_MikScr.Margin = new System.Windows.Forms.Padding(4);
             this.TP_MikScr.Name = "TP_MikScr";
-            this.TP_MikScr.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_MikScr.Padding = new System.Windows.Forms.Padding(4);
             this.TP_MikScr.Size = new System.Drawing.Size(998, 546);
             this.TP_MikScr.TabIndex = 1;
             this.TP_MikScr.Text = "إسكربتات";
@@ -1150,7 +1203,7 @@
             this.panel2.Controls.Add(this.GB_QueueTree);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(990, 538);
             this.panel2.TabIndex = 1;
@@ -1189,7 +1242,7 @@
             this.MikSRUWS_DoBU.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.MikSRUWS_DoBU.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.MikSRUWS_DoBU.Location = new System.Drawing.Point(2, 181);
-            this.MikSRUWS_DoBU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSRUWS_DoBU.Margin = new System.Windows.Forms.Padding(4);
             this.MikSRUWS_DoBU.Name = "MikSRUWS_DoBU";
             this.MikSRUWS_DoBU.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.MikSRUWS_DoBU.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1227,7 +1280,7 @@
             this.MikSRUWS_StartDate.CustomFormat = "dd/MM/yyyyy";
             this.MikSRUWS_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.MikSRUWS_StartDate.Location = new System.Drawing.Point(4, 66);
-            this.MikSRUWS_StartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSRUWS_StartDate.Margin = new System.Windows.Forms.Padding(4);
             this.MikSRUWS_StartDate.Name = "MikSRUWS_StartDate";
             this.MikSRUWS_StartDate.ShowUpDown = true;
             this.MikSRUWS_StartDate.Size = new System.Drawing.Size(119, 35);
@@ -1249,7 +1302,7 @@
             this.MikSRUWS_StartTime.CustomFormat = "ss:mm:HH";
             this.MikSRUWS_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.MikSRUWS_StartTime.Location = new System.Drawing.Point(4, 106);
-            this.MikSRUWS_StartTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSRUWS_StartTime.Margin = new System.Windows.Forms.Padding(4);
             this.MikSRUWS_StartTime.Name = "MikSRUWS_StartTime";
             this.MikSRUWS_StartTime.ShowUpDown = true;
             this.MikSRUWS_StartTime.Size = new System.Drawing.Size(119, 35);
@@ -1261,7 +1314,7 @@
             this.MikSRUWS_Interval.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MikSRUWS_Interval.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MikSRUWS_Interval.Location = new System.Drawing.Point(241, 148);
-            this.MikSRUWS_Interval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSRUWS_Interval.Margin = new System.Windows.Forms.Padding(4);
             this.MikSRUWS_Interval.Maximum = new decimal(new int[] {
             366,
             0,
@@ -1290,7 +1343,7 @@
             this.MikSRUWS_CanInterval.Checked = true;
             this.MikSRUWS_CanInterval.CheckState = System.Windows.Forms.CheckState.Checked;
             this.MikSRUWS_CanInterval.Location = new System.Drawing.Point(306, 148);
-            this.MikSRUWS_CanInterval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSRUWS_CanInterval.Margin = new System.Windows.Forms.Padding(4);
             this.MikSRUWS_CanInterval.Name = "MikSRUWS_CanInterval";
             this.MikSRUWS_CanInterval.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.MikSRUWS_CanInterval.Size = new System.Drawing.Size(160, 33);
@@ -1350,7 +1403,7 @@
             // MikSRUWS_Schname
             // 
             this.MikSRUWS_Schname.Location = new System.Drawing.Point(241, 66);
-            this.MikSRUWS_Schname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSRUWS_Schname.Margin = new System.Windows.Forms.Padding(4);
             this.MikSRUWS_Schname.MaxLength = 20;
             this.MikSRUWS_Schname.Name = "MikSRUWS_Schname";
             this.MikSRUWS_Schname.Size = new System.Drawing.Size(134, 35);
@@ -1396,7 +1449,7 @@
             this.MikSUMB_overwrite.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.MikSUMB_overwrite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.MikSUMB_overwrite.Location = new System.Drawing.Point(2, 181);
-            this.MikSUMB_overwrite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSUMB_overwrite.Margin = new System.Windows.Forms.Padding(4);
             this.MikSUMB_overwrite.Name = "MikSUMB_overwrite";
             this.MikSUMB_overwrite.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.MikSUMB_overwrite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1434,7 +1487,7 @@
             this.MikSUMB_StartDate.CustomFormat = "dd/MM/yyyyy";
             this.MikSUMB_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.MikSUMB_StartDate.Location = new System.Drawing.Point(4, 66);
-            this.MikSUMB_StartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSUMB_StartDate.Margin = new System.Windows.Forms.Padding(4);
             this.MikSUMB_StartDate.Name = "MikSUMB_StartDate";
             this.MikSUMB_StartDate.ShowUpDown = true;
             this.MikSUMB_StartDate.Size = new System.Drawing.Size(119, 35);
@@ -1456,7 +1509,7 @@
             this.MikSUMB_StartTime.CustomFormat = "ss:mm:HH";
             this.MikSUMB_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.MikSUMB_StartTime.Location = new System.Drawing.Point(4, 106);
-            this.MikSUMB_StartTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSUMB_StartTime.Margin = new System.Windows.Forms.Padding(4);
             this.MikSUMB_StartTime.Name = "MikSUMB_StartTime";
             this.MikSUMB_StartTime.ShowUpDown = true;
             this.MikSUMB_StartTime.Size = new System.Drawing.Size(119, 35);
@@ -1468,7 +1521,7 @@
             this.MikSUMB_Interval.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MikSUMB_Interval.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MikSUMB_Interval.Location = new System.Drawing.Point(241, 148);
-            this.MikSUMB_Interval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSUMB_Interval.Margin = new System.Windows.Forms.Padding(4);
             this.MikSUMB_Interval.Maximum = new decimal(new int[] {
             366,
             0,
@@ -1493,7 +1546,7 @@
             // MikSUMB_Filename
             // 
             this.MikSUMB_Filename.Location = new System.Drawing.Point(241, 106);
-            this.MikSUMB_Filename.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSUMB_Filename.Margin = new System.Windows.Forms.Padding(4);
             this.MikSUMB_Filename.MaxLength = 20;
             this.MikSUMB_Filename.Name = "MikSUMB_Filename";
             this.MikSUMB_Filename.Size = new System.Drawing.Size(134, 35);
@@ -1511,7 +1564,7 @@
             this.MikSUMB_CanInterval.Checked = true;
             this.MikSUMB_CanInterval.CheckState = System.Windows.Forms.CheckState.Checked;
             this.MikSUMB_CanInterval.Location = new System.Drawing.Point(306, 148);
-            this.MikSUMB_CanInterval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSUMB_CanInterval.Margin = new System.Windows.Forms.Padding(4);
             this.MikSUMB_CanInterval.Name = "MikSUMB_CanInterval";
             this.MikSUMB_CanInterval.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.MikSUMB_CanInterval.Size = new System.Drawing.Size(160, 33);
@@ -1582,7 +1635,7 @@
             // MikSUMB_Schname
             // 
             this.MikSUMB_Schname.Location = new System.Drawing.Point(241, 66);
-            this.MikSUMB_Schname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSUMB_Schname.Margin = new System.Windows.Forms.Padding(4);
             this.MikSUMB_Schname.MaxLength = 20;
             this.MikSUMB_Schname.Name = "MikSUMB_Schname";
             this.MikSUMB_Schname.Size = new System.Drawing.Size(134, 35);
@@ -1696,7 +1749,7 @@
             this.CB_MikSB_overwrite.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CB_MikSB_overwrite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.CB_MikSB_overwrite.Location = new System.Drawing.Point(2, 178);
-            this.CB_MikSB_overwrite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_MikSB_overwrite.Margin = new System.Windows.Forms.Padding(4);
             this.CB_MikSB_overwrite.Name = "CB_MikSB_overwrite";
             this.CB_MikSB_overwrite.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.CB_MikSB_overwrite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1711,7 +1764,7 @@
             this.CB_MikSB_DontEncrypt.AutoSize = true;
             this.CB_MikSB_DontEncrypt.BackColor = System.Drawing.Color.Transparent;
             this.CB_MikSB_DontEncrypt.Location = new System.Drawing.Point(4, 146);
-            this.CB_MikSB_DontEncrypt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_MikSB_DontEncrypt.Margin = new System.Windows.Forms.Padding(4);
             this.CB_MikSB_DontEncrypt.Name = "CB_MikSB_DontEncrypt";
             this.CB_MikSB_DontEncrypt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_MikSB_DontEncrypt.Size = new System.Drawing.Size(180, 33);
@@ -1747,7 +1800,7 @@
             this.MikSB_StartDate.CustomFormat = "dd/MM/yyyyy";
             this.MikSB_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.MikSB_StartDate.Location = new System.Drawing.Point(4, 66);
-            this.MikSB_StartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSB_StartDate.Margin = new System.Windows.Forms.Padding(4);
             this.MikSB_StartDate.Name = "MikSB_StartDate";
             this.MikSB_StartDate.ShowUpDown = true;
             this.MikSB_StartDate.Size = new System.Drawing.Size(119, 35);
@@ -1769,7 +1822,7 @@
             this.MikSB_StartTime.CustomFormat = "ss:mm:HH";
             this.MikSB_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.MikSB_StartTime.Location = new System.Drawing.Point(4, 106);
-            this.MikSB_StartTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSB_StartTime.Margin = new System.Windows.Forms.Padding(4);
             this.MikSB_StartTime.Name = "MikSB_StartTime";
             this.MikSB_StartTime.ShowUpDown = true;
             this.MikSB_StartTime.Size = new System.Drawing.Size(119, 35);
@@ -1781,7 +1834,7 @@
             this.MikSB_interval.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MikSB_interval.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MikSB_interval.Location = new System.Drawing.Point(241, 146);
-            this.MikSB_interval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSB_interval.Margin = new System.Windows.Forms.Padding(4);
             this.MikSB_interval.Maximum = new decimal(new int[] {
             366,
             0,
@@ -1805,7 +1858,7 @@
             // MikSB_fileName
             // 
             this.MikSB_fileName.Location = new System.Drawing.Point(241, 106);
-            this.MikSB_fileName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSB_fileName.Margin = new System.Windows.Forms.Padding(4);
             this.MikSB_fileName.MaxLength = 20;
             this.MikSB_fileName.Name = "MikSB_fileName";
             this.MikSB_fileName.Size = new System.Drawing.Size(134, 35);
@@ -1822,7 +1875,7 @@
             this.CB_MikSB_Caninterval.Checked = true;
             this.CB_MikSB_Caninterval.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CB_MikSB_Caninterval.Location = new System.Drawing.Point(306, 146);
-            this.CB_MikSB_Caninterval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_MikSB_Caninterval.Margin = new System.Windows.Forms.Padding(4);
             this.CB_MikSB_Caninterval.Name = "CB_MikSB_Caninterval";
             this.CB_MikSB_Caninterval.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_MikSB_Caninterval.Size = new System.Drawing.Size(160, 33);
@@ -1891,7 +1944,7 @@
             // MikSB_ScName
             // 
             this.MikSB_ScName.Location = new System.Drawing.Point(241, 66);
-            this.MikSB_ScName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSB_ScName.Margin = new System.Windows.Forms.Padding(4);
             this.MikSB_ScName.MaxLength = 20;
             this.MikSB_ScName.Name = "MikSB_ScName";
             this.MikSB_ScName.Size = new System.Drawing.Size(134, 35);
@@ -1924,7 +1977,7 @@
             this.checkBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.checkBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.checkBox4.Location = new System.Drawing.Point(2, 138);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox4.Size = new System.Drawing.Size(256, 33);
@@ -2002,7 +2055,7 @@
             this.CB_MikSBRSC_overwrite.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CB_MikSBRSC_overwrite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.CB_MikSBRSC_overwrite.Location = new System.Drawing.Point(2, 181);
-            this.CB_MikSBRSC_overwrite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_MikSBRSC_overwrite.Margin = new System.Windows.Forms.Padding(4);
             this.CB_MikSBRSC_overwrite.Name = "CB_MikSBRSC_overwrite";
             this.CB_MikSBRSC_overwrite.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.CB_MikSBRSC_overwrite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -2039,7 +2092,7 @@
             this.MikSBRSC_StartDate.CustomFormat = "dd/MM/yyyyy";
             this.MikSBRSC_StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.MikSBRSC_StartDate.Location = new System.Drawing.Point(4, 66);
-            this.MikSBRSC_StartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSBRSC_StartDate.Margin = new System.Windows.Forms.Padding(4);
             this.MikSBRSC_StartDate.Name = "MikSBRSC_StartDate";
             this.MikSBRSC_StartDate.ShowUpDown = true;
             this.MikSBRSC_StartDate.Size = new System.Drawing.Size(119, 35);
@@ -2061,7 +2114,7 @@
             this.MikSBRSC_StartTime.CustomFormat = "ss:mm:HH";
             this.MikSBRSC_StartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.MikSBRSC_StartTime.Location = new System.Drawing.Point(4, 106);
-            this.MikSBRSC_StartTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSBRSC_StartTime.Margin = new System.Windows.Forms.Padding(4);
             this.MikSBRSC_StartTime.Name = "MikSBRSC_StartTime";
             this.MikSBRSC_StartTime.ShowUpDown = true;
             this.MikSBRSC_StartTime.Size = new System.Drawing.Size(119, 35);
@@ -2073,7 +2126,7 @@
             this.MikSBRSC_interval.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MikSBRSC_interval.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MikSBRSC_interval.Location = new System.Drawing.Point(241, 148);
-            this.MikSBRSC_interval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSBRSC_interval.Margin = new System.Windows.Forms.Padding(4);
             this.MikSBRSC_interval.Maximum = new decimal(new int[] {
             366,
             0,
@@ -2097,7 +2150,7 @@
             // MikSBRSC_FileName
             // 
             this.MikSBRSC_FileName.Location = new System.Drawing.Point(241, 106);
-            this.MikSBRSC_FileName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSBRSC_FileName.Margin = new System.Windows.Forms.Padding(4);
             this.MikSBRSC_FileName.MaxLength = 20;
             this.MikSBRSC_FileName.Name = "MikSBRSC_FileName";
             this.MikSBRSC_FileName.Size = new System.Drawing.Size(134, 35);
@@ -2115,7 +2168,7 @@
             this.MikSBRSC_CanInterval.Checked = true;
             this.MikSBRSC_CanInterval.CheckState = System.Windows.Forms.CheckState.Checked;
             this.MikSBRSC_CanInterval.Location = new System.Drawing.Point(306, 148);
-            this.MikSBRSC_CanInterval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSBRSC_CanInterval.Margin = new System.Windows.Forms.Padding(4);
             this.MikSBRSC_CanInterval.Name = "MikSBRSC_CanInterval";
             this.MikSBRSC_CanInterval.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.MikSBRSC_CanInterval.Size = new System.Drawing.Size(160, 33);
@@ -2184,7 +2237,7 @@
             // MikSBRSC_ScaName
             // 
             this.MikSBRSC_ScaName.Location = new System.Drawing.Point(241, 66);
-            this.MikSBRSC_ScaName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MikSBRSC_ScaName.Margin = new System.Windows.Forms.Padding(4);
             this.MikSBRSC_ScaName.MaxLength = 20;
             this.MikSBRSC_ScaName.Name = "MikSBRSC_ScaName";
             this.MikSBRSC_ScaName.Size = new System.Drawing.Size(134, 35);
@@ -2327,7 +2380,7 @@
             this.CB_RBV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.CB_RBV.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CB_RBV.Location = new System.Drawing.Point(2, 138);
-            this.CB_RBV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_RBV.Margin = new System.Windows.Forms.Padding(4);
             this.CB_RBV.Name = "CB_RBV";
             this.CB_RBV.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_RBV.Size = new System.Drawing.Size(222, 33);
@@ -2366,7 +2419,7 @@
             this.MTB.Font = new System.Drawing.Font("Janna LT", 9F);
             this.MTB.ForeColor = System.Drawing.Color.White;
             this.MTB.Location = new System.Drawing.Point(113, 103);
-            this.MTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MTB.Margin = new System.Windows.Forms.Padding(4);
             this.MTB.Name = "MTB";
             this.MTB.PromptChar = '0';
             this.MTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2451,7 +2504,7 @@
             this.TP_SecScr.Controls.Add(this.groupBox3);
             this.TP_SecScr.Controls.Add(this.groupBox2);
             this.TP_SecScr.Location = new System.Drawing.Point(4, 4);
-            this.TP_SecScr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_SecScr.Margin = new System.Windows.Forms.Padding(4);
             this.TP_SecScr.Name = "TP_SecScr";
             this.TP_SecScr.Size = new System.Drawing.Size(998, 546);
             this.TP_SecScr.TabIndex = 2;
@@ -2542,7 +2595,7 @@
             this.DTP_LG_interval.CustomFormat = "ss:mm:HH";
             this.DTP_LG_interval.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DTP_LG_interval.Location = new System.Drawing.Point(103, 75);
-            this.DTP_LG_interval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DTP_LG_interval.Margin = new System.Windows.Forms.Padding(4);
             this.DTP_LG_interval.Name = "DTP_LG_interval";
             this.DTP_LG_interval.ShowUpDown = true;
             this.DTP_LG_interval.Size = new System.Drawing.Size(117, 26);
@@ -2670,7 +2723,7 @@
             this.MTB_OUTinf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MTB_OUTinf.ForeColor = System.Drawing.Color.White;
             this.MTB_OUTinf.Location = new System.Drawing.Point(136, 108);
-            this.MTB_OUTinf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MTB_OUTinf.Margin = new System.Windows.Forms.Padding(4);
             this.MTB_OUTinf.Name = "MTB_OUTinf";
             this.MTB_OUTinf.PromptChar = ' ';
             this.MTB_OUTinf.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2758,7 +2811,7 @@
             // 
             this.TP_MultiTask.Controls.Add(this.groupBox12);
             this.TP_MultiTask.Location = new System.Drawing.Point(4, 4);
-            this.TP_MultiTask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_MultiTask.Margin = new System.Windows.Forms.Padding(4);
             this.TP_MultiTask.Name = "TP_MultiTask";
             this.TP_MultiTask.Size = new System.Drawing.Size(998, 546);
             this.TP_MultiTask.TabIndex = 4;
@@ -2801,7 +2854,7 @@
             this.UN_VlanDiv.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.UN_VlanDiv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UN_VlanDiv.Location = new System.Drawing.Point(533, 33);
-            this.UN_VlanDiv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_VlanDiv.Margin = new System.Windows.Forms.Padding(4);
             this.UN_VlanDiv.Maximum = new decimal(new int[] {
             254,
             0,
@@ -2828,7 +2881,7 @@
             this.CB_AdvanceVlan.AutoSize = true;
             this.CB_AdvanceVlan.BackColor = System.Drawing.Color.Transparent;
             this.CB_AdvanceVlan.Location = new System.Drawing.Point(624, 41);
-            this.CB_AdvanceVlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_AdvanceVlan.Margin = new System.Windows.Forms.Padding(4);
             this.CB_AdvanceVlan.Name = "CB_AdvanceVlan";
             this.CB_AdvanceVlan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_AdvanceVlan.Size = new System.Drawing.Size(18, 17);
@@ -2842,7 +2895,7 @@
             this.CB_VLNameC.AutoSize = true;
             this.CB_VLNameC.BackColor = System.Drawing.Color.Transparent;
             this.CB_VLNameC.Location = new System.Drawing.Point(7, 33);
-            this.CB_VLNameC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_VLNameC.Margin = new System.Windows.Forms.Padding(4);
             this.CB_VLNameC.Name = "CB_VLNameC";
             this.CB_VLNameC.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_VLNameC.Size = new System.Drawing.Size(146, 33);
@@ -2876,24 +2929,24 @@
             // DGV_VLANRate
             // 
             this.DGV_VLANRate.AllowUserToAddRows = false;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DGV_VLANRate.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle111.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle111.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle111.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle111.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle111.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle111.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_VLANRate.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle111;
             this.DGV_VLANRate.BackgroundColor = System.Drawing.Color.White;
             this.DGV_VLANRate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGV_VLANRate.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_VLANRate.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle112.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle112.BackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle112.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle112.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle112.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle112.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle112.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_VLANRate.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle112;
             this.DGV_VLANRate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_VLANRate.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.C_IP1,
@@ -2904,36 +2957,36 @@
             this.IPNUM,
             this.VLIPRate,
             this.VL_Index});
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.BlueViolet;
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_VLANRate.DefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle118.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle118.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle118.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle118.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle118.SelectionBackColor = System.Drawing.Color.BlueViolet;
+            dataGridViewCellStyle118.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle118.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_VLANRate.DefaultCellStyle = dataGridViewCellStyle118;
             this.DGV_VLANRate.EnableHeadersVisualStyles = false;
             this.DGV_VLANRate.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DGV_VLANRate.Location = new System.Drawing.Point(2, 201);
-            this.DGV_VLANRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DGV_VLANRate.Margin = new System.Windows.Forms.Padding(4);
             this.DGV_VLANRate.Name = "DGV_VLANRate";
             this.DGV_VLANRate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle49.BackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle49.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle49.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_VLANRate.RowHeadersDefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle119.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle119.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle119.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle119.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle119.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle119.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle119.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_VLANRate.RowHeadersDefaultCellStyle = dataGridViewCellStyle119;
             this.DGV_VLANRate.RowHeadersWidth = 24;
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle50.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DGV_VLANRate.RowsDefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle120.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle120.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle120.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle120.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle120.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle120.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DGV_VLANRate.RowsDefaultCellStyle = dataGridViewCellStyle120;
             this.DGV_VLANRate.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.DGV_VLANRate.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DGV_VLANRate.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -2946,9 +2999,9 @@
             // 
             // C_IP1
             // 
-            dataGridViewCellStyle43.Format = "###";
-            dataGridViewCellStyle43.NullValue = null;
-            this.C_IP1.DefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle113.Format = "###";
+            dataGridViewCellStyle113.NullValue = null;
+            this.C_IP1.DefaultCellStyle = dataGridViewCellStyle113;
             this.C_IP1.HeaderText = "IP1";
             this.C_IP1.MaxInputLength = 3;
             this.C_IP1.MinimumWidth = 6;
@@ -2966,8 +3019,8 @@
             // 
             // C_IP3
             // 
-            dataGridViewCellStyle44.NullValue = "0";
-            this.C_IP3.DefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle114.NullValue = "0";
+            this.C_IP3.DefaultCellStyle = dataGridViewCellStyle114;
             this.C_IP3.HeaderText = "IP3";
             this.C_IP3.MaxInputLength = 3;
             this.C_IP3.MinimumWidth = 6;
@@ -2976,8 +3029,8 @@
             // 
             // C_IP4
             // 
-            dataGridViewCellStyle45.NullValue = "0";
-            this.C_IP4.DefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle115.NullValue = "0";
+            this.C_IP4.DefaultCellStyle = dataGridViewCellStyle115;
             this.C_IP4.HeaderText = "IP4";
             this.C_IP4.MaxInputLength = 3;
             this.C_IP4.MinimumWidth = 6;
@@ -2987,8 +3040,8 @@
             // 
             // C_Mask
             // 
-            dataGridViewCellStyle46.NullValue = "/24";
-            this.C_Mask.DefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle116.NullValue = "/24";
+            this.C_Mask.DefaultCellStyle = dataGridViewCellStyle116;
             this.C_Mask.HeaderText = "ماسك";
             this.C_Mask.Items.AddRange(new object[] {
             "/8",
@@ -3026,8 +3079,8 @@
             // 
             // VL_Index
             // 
-            dataGridViewCellStyle47.NullValue = "0";
-            this.VL_Index.DefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle117.NullValue = "0";
+            this.VL_Index.DefaultCellStyle = dataGridViewCellStyle117;
             this.VL_Index.HeaderText = "index";
             this.VL_Index.MinimumWidth = 6;
             this.VL_Index.Name = "VL_Index";
@@ -3041,7 +3094,7 @@
             this.panel8.Controls.Add(this.CB_MUT_HSserverForVL);
             this.panel8.Controls.Add(this.label65);
             this.panel8.Location = new System.Drawing.Point(2, 153);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(646, 44);
             this.panel8.TabIndex = 40;
@@ -3050,7 +3103,7 @@
             // 
             this.TB_HSSprofile.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.TB_HSSprofile.Location = new System.Drawing.Point(5, 4);
-            this.TB_HSSprofile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_HSSprofile.Margin = new System.Windows.Forms.Padding(4);
             this.TB_HSSprofile.MaxLength = 40;
             this.TB_HSSprofile.Name = "TB_HSSprofile";
             this.TB_HSSprofile.Size = new System.Drawing.Size(134, 35);
@@ -3068,7 +3121,7 @@
             this.CB_MUT_HSserverForVL.Checked = true;
             this.CB_MUT_HSserverForVL.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CB_MUT_HSserverForVL.Location = new System.Drawing.Point(406, 4);
-            this.CB_MUT_HSserverForVL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_MUT_HSserverForVL.Margin = new System.Windows.Forms.Padding(4);
             this.CB_MUT_HSserverForVL.Name = "CB_MUT_HSserverForVL";
             this.CB_MUT_HSserverForVL.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_MUT_HSserverForVL.Size = new System.Drawing.Size(249, 33);
@@ -3094,7 +3147,7 @@
             this.NUD_VlanID.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.NUD_VlanID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NUD_VlanID.Location = new System.Drawing.Point(313, 111);
-            this.NUD_VlanID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NUD_VlanID.Margin = new System.Windows.Forms.Padding(4);
             this.NUD_VlanID.Maximum = new decimal(new int[] {
             4094,
             0,
@@ -3122,7 +3175,7 @@
             this.CB_MultiUSECVLANID.AutoSize = true;
             this.CB_MultiUSECVLANID.BackColor = System.Drawing.Color.Transparent;
             this.CB_MultiUSECVLANID.Location = new System.Drawing.Point(475, 113);
-            this.CB_MultiUSECVLANID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_MultiUSECVLANID.Margin = new System.Windows.Forms.Padding(4);
             this.CB_MultiUSECVLANID.Name = "CB_MultiUSECVLANID";
             this.CB_MultiUSECVLANID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_MultiUSECVLANID.Size = new System.Drawing.Size(175, 33);
@@ -3138,7 +3191,7 @@
             this.TB_VlanName.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.TB_VlanName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TB_VlanName.Location = new System.Drawing.Point(7, 69);
-            this.TB_VlanName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_VlanName.Margin = new System.Windows.Forms.Padding(4);
             this.TB_VlanName.MaxLength = 40;
             this.TB_VlanName.Name = "TB_VlanName";
             this.TB_VlanName.Size = new System.Drawing.Size(134, 28);
@@ -3167,7 +3220,7 @@
             this.CB_MUT_EditDGVlan.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CB_MUT_EditDGVlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.CB_MUT_EditDGVlan.Location = new System.Drawing.Point(2, 380);
-            this.CB_MUT_EditDGVlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_MUT_EditDGVlan.Margin = new System.Windows.Forms.Padding(4);
             this.CB_MUT_EditDGVlan.Name = "CB_MUT_EditDGVlan";
             this.CB_MUT_EditDGVlan.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.CB_MUT_EditDGVlan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -3195,7 +3248,7 @@
             this.VLAN_Num.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.VLAN_Num.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.VLAN_Num.Location = new System.Drawing.Point(313, 74);
-            this.VLAN_Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.VLAN_Num.Margin = new System.Windows.Forms.Padding(4);
             this.VLAN_Num.Maximum = new decimal(new int[] {
             4095,
             0,
@@ -3270,7 +3323,7 @@
             this.TB_BridgeInterFace.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.TB_BridgeInterFace.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TB_BridgeInterFace.Location = new System.Drawing.Point(7, 111);
-            this.TB_BridgeInterFace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_BridgeInterFace.Margin = new System.Windows.Forms.Padding(4);
             this.TB_BridgeInterFace.MaxLength = 40;
             this.TB_BridgeInterFace.Name = "TB_BridgeInterFace";
             this.TB_BridgeInterFace.Size = new System.Drawing.Size(134, 28);
@@ -3285,7 +3338,7 @@
             // 
             this.TP_NSCFiles.Controls.Add(this.groupBox18);
             this.TP_NSCFiles.Location = new System.Drawing.Point(4, 4);
-            this.TP_NSCFiles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_NSCFiles.Margin = new System.Windows.Forms.Padding(4);
             this.TP_NSCFiles.Name = "TP_NSCFiles";
             this.TP_NSCFiles.Size = new System.Drawing.Size(998, 546);
             this.TP_NSCFiles.TabIndex = 6;
@@ -3363,7 +3416,7 @@
             "Station",
             "AccessPoint"});
             this.CB_CFTypes.Location = new System.Drawing.Point(6, 32);
-            this.CB_CFTypes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_CFTypes.Margin = new System.Windows.Forms.Padding(4);
             this.CB_CFTypes.MaxDropDownItems = 4;
             this.CB_CFTypes.Name = "CB_CFTypes";
             this.CB_CFTypes.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -3417,7 +3470,7 @@
             "NanoStation Rocket M5",
             "NanoStation powerbeem"});
             this.CB_Devices.Location = new System.Drawing.Point(227, 32);
-            this.CB_Devices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_Devices.Margin = new System.Windows.Forms.Padding(4);
             this.CB_Devices.MaxDropDownItems = 4;
             this.CB_Devices.Name = "CB_Devices";
             this.CB_Devices.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -3433,7 +3486,7 @@
             this.UN_FileNum.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_FileNum.ForeColor = System.Drawing.Color.DarkBlue;
             this.UN_FileNum.Location = new System.Drawing.Point(660, 33);
-            this.UN_FileNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_FileNum.Margin = new System.Windows.Forms.Padding(4);
             this.UN_FileNum.Maximum = new decimal(new int[] {
             255,
             0,
@@ -3555,7 +3608,7 @@
             this.CB_SpiscalFCName.BackColor = System.Drawing.Color.Transparent;
             this.CB_SpiscalFCName.Font = new System.Drawing.Font("Janna LT", 9F);
             this.CB_SpiscalFCName.Location = new System.Drawing.Point(519, 31);
-            this.CB_SpiscalFCName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_SpiscalFCName.Margin = new System.Windows.Forms.Padding(4);
             this.CB_SpiscalFCName.Name = "CB_SpiscalFCName";
             this.CB_SpiscalFCName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_SpiscalFCName.Size = new System.Drawing.Size(182, 33);
@@ -3573,7 +3626,7 @@
             this.TB_StartFileName.Font = new System.Drawing.Font("Tahoma", 10F);
             this.TB_StartFileName.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.TB_StartFileName.Location = new System.Drawing.Point(138, 32);
-            this.TB_StartFileName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_StartFileName.Margin = new System.Windows.Forms.Padding(4);
             this.TB_StartFileName.MaxLength = 100;
             this.TB_StartFileName.Name = "TB_StartFileName";
             this.TB_StartFileName.ReadOnly = true;
@@ -3590,7 +3643,7 @@
             this.TB_NSFileDir.Font = new System.Drawing.Font("Tahoma", 10F);
             this.TB_NSFileDir.ForeColor = System.Drawing.Color.Black;
             this.TB_NSFileDir.Location = new System.Drawing.Point(286, 66);
-            this.TB_NSFileDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_NSFileDir.Margin = new System.Windows.Forms.Padding(4);
             this.TB_NSFileDir.MaxLength = 255;
             this.TB_NSFileDir.Name = "TB_NSFileDir";
             this.TB_NSFileDir.Size = new System.Drawing.Size(409, 28);
@@ -3607,7 +3660,7 @@
             this.BT_NSCFDir.Font = new System.Drawing.Font("Tahoma", 9F);
             this.BT_NSCFDir.ForeColor = System.Drawing.Color.White;
             this.BT_NSCFDir.Location = new System.Drawing.Point(138, 66);
-            this.BT_NSCFDir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_NSCFDir.Margin = new System.Windows.Forms.Padding(4);
             this.BT_NSCFDir.Name = "BT_NSCFDir";
             this.BT_NSCFDir.Size = new System.Drawing.Size(141, 30);
             this.BT_NSCFDir.TabIndex = 19;
@@ -3662,24 +3715,24 @@
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
-            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle51.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle121.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle121.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle121.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle121.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle121.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle121.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle121;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle52.BackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle52.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle122.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle122.BackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle122.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle122.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle122.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle122.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle122.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle122;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn7,
@@ -3690,36 +3743,36 @@
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewComboBoxColumn4,
             this.dataGridViewTextBoxColumn12});
-            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.Color.BlueViolet;
-            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle128.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle128.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle128.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle128.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle128.SelectionBackColor = System.Drawing.Color.BlueViolet;
+            dataGridViewCellStyle128.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle128.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle128;
             this.dataGridView2.EnableHeadersVisualStyles = false;
             this.dataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView2.Location = new System.Drawing.Point(2, 201);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle59.BackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle59.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle129.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle129.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle129.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle129.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle129.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle129.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle129.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle129;
             this.dataGridView2.RowHeadersWidth = 24;
-            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle130.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle130.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle130.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle130.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle130.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle130.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle130;
             this.dataGridView2.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dataGridView2.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView2.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -3731,9 +3784,9 @@
             // 
             // dataGridViewTextBoxColumn7
             // 
-            dataGridViewCellStyle53.Format = "###";
-            dataGridViewCellStyle53.NullValue = null;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle123.Format = "###";
+            dataGridViewCellStyle123.NullValue = null;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle123;
             this.dataGridViewTextBoxColumn7.HeaderText = "IP1";
             this.dataGridViewTextBoxColumn7.MaxInputLength = 3;
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
@@ -3751,8 +3804,8 @@
             // 
             // dataGridViewTextBoxColumn9
             // 
-            dataGridViewCellStyle54.NullValue = "0";
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle124.NullValue = "0";
+            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle124;
             this.dataGridViewTextBoxColumn9.HeaderText = "IP3";
             this.dataGridViewTextBoxColumn9.MaxInputLength = 3;
             this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
@@ -3761,8 +3814,8 @@
             // 
             // dataGridViewTextBoxColumn10
             // 
-            dataGridViewCellStyle55.NullValue = "0";
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle125.NullValue = "0";
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle125;
             this.dataGridViewTextBoxColumn10.HeaderText = "IP4";
             this.dataGridViewTextBoxColumn10.MaxInputLength = 3;
             this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
@@ -3772,8 +3825,8 @@
             // 
             // dataGridViewComboBoxColumn3
             // 
-            dataGridViewCellStyle56.NullValue = "/24";
-            this.dataGridViewComboBoxColumn3.DefaultCellStyle = dataGridViewCellStyle56;
+            dataGridViewCellStyle126.NullValue = "/24";
+            this.dataGridViewComboBoxColumn3.DefaultCellStyle = dataGridViewCellStyle126;
             this.dataGridViewComboBoxColumn3.HeaderText = "ماسك";
             this.dataGridViewComboBoxColumn3.Items.AddRange(new object[] {
             "/8",
@@ -3811,8 +3864,8 @@
             // 
             // dataGridViewTextBoxColumn12
             // 
-            dataGridViewCellStyle57.NullValue = "0";
-            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle127.NullValue = "0";
+            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle127;
             this.dataGridViewTextBoxColumn12.HeaderText = "index";
             this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
@@ -3824,7 +3877,7 @@
             this.numericUpDown5.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.numericUpDown5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numericUpDown5.Location = new System.Drawing.Point(313, 111);
-            this.numericUpDown5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown5.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown5.Maximum = new decimal(new int[] {
             4094,
             0,
@@ -3852,7 +3905,7 @@
             this.checkBox12.AutoSize = true;
             this.checkBox12.BackColor = System.Drawing.Color.Transparent;
             this.checkBox12.Location = new System.Drawing.Point(475, 113);
-            this.checkBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox12.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox12.Size = new System.Drawing.Size(175, 33);
@@ -3880,7 +3933,7 @@
             this.checkBox13.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.checkBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.checkBox13.Location = new System.Drawing.Point(2, 253);
-            this.checkBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox13.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox13.Name = "checkBox13";
             this.checkBox13.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.checkBox13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -3896,7 +3949,7 @@
             this.numericUpDown6.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.numericUpDown6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numericUpDown6.Location = new System.Drawing.Point(313, 74);
-            this.numericUpDown6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown6.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown6.Maximum = new decimal(new int[] {
             4095,
             0,
@@ -3982,7 +4035,7 @@
             this.UN_Nnum.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_Nnum.ForeColor = System.Drawing.Color.DarkMagenta;
             this.UN_Nnum.Location = new System.Drawing.Point(12, 181);
-            this.UN_Nnum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_Nnum.Margin = new System.Windows.Forms.Padding(4);
             this.UN_Nnum.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -4012,7 +4065,7 @@
             this.CB_SpicalNum.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CB_SpicalNum.Font = new System.Drawing.Font("Janna LT", 9F);
             this.CB_SpicalNum.Location = new System.Drawing.Point(147, 180);
-            this.CB_SpicalNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_SpicalNum.Margin = new System.Windows.Forms.Padding(4);
             this.CB_SpicalNum.Name = "CB_SpicalNum";
             this.CB_SpicalNum.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_SpicalNum.Size = new System.Drawing.Size(229, 33);
@@ -4042,7 +4095,7 @@
             this.TB_SSIDReplace.Font = new System.Drawing.Font("Tahoma", 10F);
             this.TB_SSIDReplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.TB_SSIDReplace.Location = new System.Drawing.Point(12, 145);
-            this.TB_SSIDReplace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_SSIDReplace.Margin = new System.Windows.Forms.Padding(4);
             this.TB_SSIDReplace.MaxLength = 100;
             this.TB_SSIDReplace.Name = "TB_SSIDReplace";
             this.TB_SSIDReplace.Size = new System.Drawing.Size(101, 28);
@@ -4077,7 +4130,7 @@
             "  :: (الرقم) إسم الشبكة ::  ",
             "  :: أسم الشبكة (الرقم) ::  "});
             this.CB_NNameType.Location = new System.Drawing.Point(12, 75);
-            this.CB_NNameType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_NNameType.Margin = new System.Windows.Forms.Padding(4);
             this.CB_NNameType.MaxDropDownItems = 4;
             this.CB_NNameType.Name = "CB_NNameType";
             this.CB_NNameType.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -4091,7 +4144,7 @@
             this.CB_CustmNames.BackColor = System.Drawing.Color.Transparent;
             this.CB_CustmNames.Font = new System.Drawing.Font("Janna LT", 9F);
             this.CB_CustmNames.Location = new System.Drawing.Point(191, 37);
-            this.CB_CustmNames.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_CustmNames.Margin = new System.Windows.Forms.Padding(4);
             this.CB_CustmNames.Name = "CB_CustmNames";
             this.CB_CustmNames.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CB_CustmNames.Size = new System.Drawing.Size(182, 33);
@@ -4121,7 +4174,7 @@
             this.TB_SIDName.Font = new System.Drawing.Font("Tahoma", 10F);
             this.TB_SIDName.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.TB_SIDName.Location = new System.Drawing.Point(12, 110);
-            this.TB_SIDName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_SIDName.Margin = new System.Windows.Forms.Padding(4);
             this.TB_SIDName.MaxLength = 100;
             this.TB_SIDName.Name = "TB_SIDName";
             this.TB_SIDName.Size = new System.Drawing.Size(252, 28);
@@ -4192,7 +4245,7 @@
             this.UN_VLanID.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_VLanID.ForeColor = System.Drawing.Color.Crimson;
             this.UN_VLanID.Location = new System.Drawing.Point(139, 146);
-            this.UN_VLanID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_VLanID.Margin = new System.Windows.Forms.Padding(4);
             this.UN_VLanID.Maximum = new decimal(new int[] {
             4095,
             0,
@@ -4229,7 +4282,7 @@
             this.UN_GIP4.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_GIP4.ForeColor = System.Drawing.Color.Crimson;
             this.UN_GIP4.Location = new System.Drawing.Point(156, 108);
-            this.UN_GIP4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_GIP4.Margin = new System.Windows.Forms.Padding(4);
             this.UN_GIP4.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4258,7 +4311,7 @@
             this.UN_GIP3.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_GIP3.ForeColor = System.Drawing.Color.Crimson;
             this.UN_GIP3.Location = new System.Drawing.Point(112, 108);
-            this.UN_GIP3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_GIP3.Margin = new System.Windows.Forms.Padding(4);
             this.UN_GIP3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4282,7 +4335,7 @@
             this.UN_GIP2.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_GIP2.ForeColor = System.Drawing.Color.Crimson;
             this.UN_GIP2.Location = new System.Drawing.Point(66, 108);
-            this.UN_GIP2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_GIP2.Margin = new System.Windows.Forms.Padding(4);
             this.UN_GIP2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4306,7 +4359,7 @@
             this.UN_GIP1.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_GIP1.ForeColor = System.Drawing.Color.Crimson;
             this.UN_GIP1.Location = new System.Drawing.Point(21, 108);
-            this.UN_GIP1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_GIP1.Margin = new System.Windows.Forms.Padding(4);
             this.UN_GIP1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4367,7 +4420,7 @@
             "255.255.0.0",
             "255.0.0.0"});
             this.CB_NetMask.Location = new System.Drawing.Point(21, 71);
-            this.CB_NetMask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_NetMask.Margin = new System.Windows.Forms.Padding(4);
             this.CB_NetMask.MaxDropDownItems = 4;
             this.CB_NetMask.Name = "CB_NetMask";
             this.CB_NetMask.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -4382,7 +4435,7 @@
             this.UN_IP4.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_IP4.ForeColor = System.Drawing.Color.Crimson;
             this.UN_IP4.Location = new System.Drawing.Point(156, 36);
-            this.UN_IP4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_IP4.Margin = new System.Windows.Forms.Padding(4);
             this.UN_IP4.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4411,7 +4464,7 @@
             this.UN_IP3.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_IP3.ForeColor = System.Drawing.Color.Crimson;
             this.UN_IP3.Location = new System.Drawing.Point(112, 36);
-            this.UN_IP3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_IP3.Margin = new System.Windows.Forms.Padding(4);
             this.UN_IP3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4435,7 +4488,7 @@
             this.UN_IP2.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_IP2.ForeColor = System.Drawing.Color.Crimson;
             this.UN_IP2.Location = new System.Drawing.Point(66, 36);
-            this.UN_IP2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_IP2.Margin = new System.Windows.Forms.Padding(4);
             this.UN_IP2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4459,7 +4512,7 @@
             this.UN_IP1.Font = new System.Drawing.Font("Tahoma", 10F);
             this.UN_IP1.ForeColor = System.Drawing.Color.Crimson;
             this.UN_IP1.Location = new System.Drawing.Point(21, 36);
-            this.UN_IP1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UN_IP1.Margin = new System.Windows.Forms.Padding(4);
             this.UN_IP1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4485,9 +4538,9 @@
             // 
             this.TP_AutoMation.Controls.Add(this.frm_Automation1);
             this.TP_AutoMation.Location = new System.Drawing.Point(4, 4);
-            this.TP_AutoMation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_AutoMation.Margin = new System.Windows.Forms.Padding(4);
             this.TP_AutoMation.Name = "TP_AutoMation";
-            this.TP_AutoMation.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_AutoMation.Padding = new System.Windows.Forms.Padding(4);
             this.TP_AutoMation.Size = new System.Drawing.Size(998, 546);
             this.TP_AutoMation.TabIndex = 7;
             this.TP_AutoMation.Text = "المهام الألية";
@@ -4501,6 +4554,7 @@
             this.frm_Automation1.Location = new System.Drawing.Point(4, 4);
             this.frm_Automation1.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
             this.frm_Automation1.Name = "frm_Automation1";
+            this.frm_Automation1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.frm_Automation1.Size = new System.Drawing.Size(990, 538);
             this.frm_Automation1.TabIndex = 0;
             // 
@@ -4514,9 +4568,9 @@
             this.TP_TelegramScr.Controls.Add(this.richTextBox1);
             this.TP_TelegramScr.Controls.Add(this.numericUpDown4);
             this.TP_TelegramScr.Location = new System.Drawing.Point(4, 4);
-            this.TP_TelegramScr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_TelegramScr.Margin = new System.Windows.Forms.Padding(4);
             this.TP_TelegramScr.Name = "TP_TelegramScr";
-            this.TP_TelegramScr.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_TelegramScr.Padding = new System.Windows.Forms.Padding(4);
             this.TP_TelegramScr.Size = new System.Drawing.Size(998, 546);
             this.TP_TelegramScr.TabIndex = 5;
             this.TP_TelegramScr.Text = "إسكربتات التليجرام";
@@ -4556,7 +4610,7 @@
             this.RTB_Down.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.RTB_Down.DetectUrls = false;
             this.RTB_Down.Location = new System.Drawing.Point(7, 286);
-            this.RTB_Down.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RTB_Down.Margin = new System.Windows.Forms.Padding(4);
             this.RTB_Down.MaxLength = 5000;
             this.RTB_Down.Name = "RTB_Down";
             this.RTB_Down.Size = new System.Drawing.Size(468, 84);
@@ -4580,7 +4634,7 @@
             this.RTB_UP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.RTB_UP.DetectUrls = false;
             this.RTB_UP.Location = new System.Drawing.Point(7, 197);
-            this.RTB_UP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RTB_UP.Margin = new System.Windows.Forms.Padding(4);
             this.RTB_UP.MaxLength = 5000;
             this.RTB_UP.Name = "RTB_UP";
             this.RTB_UP.Size = new System.Drawing.Size(468, 84);
@@ -4601,7 +4655,7 @@
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(288, 155);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.MaxLength = 20;
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(186, 35);
@@ -4612,7 +4666,7 @@
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(7, 113);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.MaxLength = 250;
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(467, 35);
@@ -4665,7 +4719,7 @@
             0,
             0});
             this.numericUpDown2.Location = new System.Drawing.Point(236, 70);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             254,
             0,
@@ -4692,7 +4746,7 @@
             this.dateTimePicker4.CustomFormat = "ss:mm:HH";
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker4.Location = new System.Drawing.Point(7, 69);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.ShowUpDown = true;
             this.dateTimePicker4.Size = new System.Drawing.Size(136, 35);
@@ -4726,7 +4780,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(341, 71);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.MaxLength = 20;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(134, 35);
@@ -4780,7 +4834,7 @@
             this.checkBox6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.checkBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.checkBox6.Location = new System.Drawing.Point(2, 181);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.checkBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -4818,7 +4872,7 @@
             this.dateTimePicker1.CustomFormat = "dd/MM/yyyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(4, 66);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(119, 35);
@@ -4861,7 +4915,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.Location = new System.Drawing.Point(7, 33);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox1.Size = new System.Drawing.Size(146, 33);
@@ -4894,24 +4948,24 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle61.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle61.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle131.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle131.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle131.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle131.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle131.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle131;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle62.BackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle62.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle132.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle132.BackColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle132.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle132.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle132.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle132.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle132.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle132;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -4922,36 +4976,36 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewComboBoxColumn2,
             this.dataGridViewTextBoxColumn6});
-            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle68.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle68.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle68.SelectionBackColor = System.Drawing.Color.BlueViolet;
-            dataGridViewCellStyle68.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle68.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle68;
+            dataGridViewCellStyle138.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle138.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle138.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle138.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle138.SelectionBackColor = System.Drawing.Color.BlueViolet;
+            dataGridViewCellStyle138.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle138.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle138;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView1.Location = new System.Drawing.Point(2, 201);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle69.BackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle69.Font = new System.Drawing.Font("Janna LT", 9F);
-            dataGridViewCellStyle69.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle69.SelectionBackColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle69.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle69.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle69;
+            dataGridViewCellStyle139.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle139.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle139.Font = new System.Drawing.Font("Janna LT", 9F);
+            dataGridViewCellStyle139.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle139.SelectionBackColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle139.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle139.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle139;
             this.dataGridView1.RowHeadersWidth = 24;
-            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle70.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle70.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle70.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle70;
+            dataGridViewCellStyle140.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle140.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle140.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle140.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle140.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle140.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle140;
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Janna LT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -4963,9 +5017,9 @@
             // 
             // dataGridViewTextBoxColumn1
             // 
-            dataGridViewCellStyle63.Format = "###";
-            dataGridViewCellStyle63.NullValue = null;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle133.Format = "###";
+            dataGridViewCellStyle133.NullValue = null;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle133;
             this.dataGridViewTextBoxColumn1.HeaderText = "IP1";
             this.dataGridViewTextBoxColumn1.MaxInputLength = 3;
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
@@ -4983,8 +5037,8 @@
             // 
             // dataGridViewTextBoxColumn3
             // 
-            dataGridViewCellStyle64.NullValue = "0";
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle134.NullValue = "0";
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle134;
             this.dataGridViewTextBoxColumn3.HeaderText = "IP3";
             this.dataGridViewTextBoxColumn3.MaxInputLength = 3;
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
@@ -4993,8 +5047,8 @@
             // 
             // dataGridViewTextBoxColumn4
             // 
-            dataGridViewCellStyle65.NullValue = "0";
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle135.NullValue = "0";
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle135;
             this.dataGridViewTextBoxColumn4.HeaderText = "IP4";
             this.dataGridViewTextBoxColumn4.MaxInputLength = 3;
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
@@ -5004,8 +5058,8 @@
             // 
             // dataGridViewComboBoxColumn1
             // 
-            dataGridViewCellStyle66.NullValue = "/24";
-            this.dataGridViewComboBoxColumn1.DefaultCellStyle = dataGridViewCellStyle66;
+            dataGridViewCellStyle136.NullValue = "/24";
+            this.dataGridViewComboBoxColumn1.DefaultCellStyle = dataGridViewCellStyle136;
             this.dataGridViewComboBoxColumn1.HeaderText = "ماسك";
             this.dataGridViewComboBoxColumn1.Items.AddRange(new object[] {
             "/8",
@@ -5043,8 +5097,8 @@
             // 
             // dataGridViewTextBoxColumn6
             // 
-            dataGridViewCellStyle67.NullValue = "0";
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle67;
+            dataGridViewCellStyle137.NullValue = "0";
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle137;
             this.dataGridViewTextBoxColumn6.HeaderText = "index";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
@@ -5058,7 +5112,7 @@
             this.panel11.Controls.Add(this.checkBox2);
             this.panel11.Controls.Add(this.label16);
             this.panel11.Location = new System.Drawing.Point(2, 153);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(646, 44);
             this.panel11.TabIndex = 40;
@@ -5067,7 +5121,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.textBox1.Location = new System.Drawing.Point(5, 4);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.MaxLength = 40;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(134, 35);
@@ -5083,7 +5137,7 @@
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(406, 4);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox2.Size = new System.Drawing.Size(249, 33);
@@ -5118,7 +5172,7 @@
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(222, 282);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.MaxLength = 20;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(134, 35);
@@ -5133,7 +5187,7 @@
             this.checkBox8.BackColor = System.Drawing.Color.Transparent;
             this.checkBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.checkBox8.Location = new System.Drawing.Point(250, 373);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.checkBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -5149,7 +5203,7 @@
             this.numericUpDown1.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numericUpDown1.Location = new System.Drawing.Point(313, 111);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             4094,
             0,
@@ -5177,7 +5231,7 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.BackColor = System.Drawing.Color.Transparent;
             this.checkBox3.Location = new System.Drawing.Point(475, 113);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox3.Size = new System.Drawing.Size(175, 33);
@@ -5192,7 +5246,7 @@
             this.textBox2.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Location = new System.Drawing.Point(7, 69);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.MaxLength = 40;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(134, 28);
@@ -5219,7 +5273,7 @@
             this.checkBox5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.checkBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(14)))), ((int)(((byte)(131)))));
             this.checkBox5.Location = new System.Drawing.Point(2, 380);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.checkBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -5248,7 +5302,7 @@
             this.checkBox9.Checked = true;
             this.checkBox9.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox9.Location = new System.Drawing.Point(-80, 318);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox9.Size = new System.Drawing.Size(160, 33);
@@ -5309,7 +5363,7 @@
             this.textBox3.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Location = new System.Drawing.Point(7, 111);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.MaxLength = 40;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(134, 28);
@@ -5334,7 +5388,7 @@
             this.dateTimePicker2.CustomFormat = "ss:mm:HH";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(4, 106);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.ShowUpDown = true;
             this.dateTimePicker2.Size = new System.Drawing.Size(119, 35);
@@ -5346,7 +5400,7 @@
             this.numericUpDown3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.numericUpDown3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numericUpDown3.Location = new System.Drawing.Point(241, 148);
-            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             366,
             0,
@@ -5375,7 +5429,7 @@
             this.checkBox7.Checked = true;
             this.checkBox7.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox7.Location = new System.Drawing.Point(306, 148);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBox7.Size = new System.Drawing.Size(160, 33);
@@ -5434,7 +5488,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(241, 66);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.MaxLength = 20;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(134, 35);
@@ -5471,7 +5525,7 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.DetectUrls = false;
             this.richTextBox1.Location = new System.Drawing.Point(391, 430);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.MaxLength = 5000;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(468, 118);
@@ -5483,7 +5537,7 @@
             this.numericUpDown4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.numericUpDown4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numericUpDown4.Location = new System.Drawing.Point(765, 485);
-            this.numericUpDown4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown4.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             50000,
             0,
@@ -5509,7 +5563,7 @@
             // 
             this.TP_Info.Controls.Add(this.PL_DeveloperInfo);
             this.TP_Info.Location = new System.Drawing.Point(4, 4);
-            this.TP_Info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TP_Info.Margin = new System.Windows.Forms.Padding(4);
             this.TP_Info.Name = "TP_Info";
             this.TP_Info.Size = new System.Drawing.Size(998, 546);
             this.TP_Info.TabIndex = 3;
@@ -5539,7 +5593,7 @@
             this.PL_DeveloperInfo.Controls.Add(this.label17);
             this.PL_DeveloperInfo.Controls.Add(this.label24);
             this.PL_DeveloperInfo.Location = new System.Drawing.Point(4, 5);
-            this.PL_DeveloperInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PL_DeveloperInfo.Margin = new System.Windows.Forms.Padding(4);
             this.PL_DeveloperInfo.Name = "PL_DeveloperInfo";
             this.PL_DeveloperInfo.Size = new System.Drawing.Size(765, 530);
             this.PL_DeveloperInfo.TabIndex = 5;
@@ -5717,7 +5771,7 @@
             this.panel3.Controls.Add(this.pictureBox6);
             this.panel3.Controls.Add(this.pictureBox7);
             this.panel3.Location = new System.Drawing.Point(230, 92);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(337, 274);
             this.panel3.TabIndex = 40;
@@ -5727,7 +5781,7 @@
             this.pictureBox10.Image = global::LBMS_Pro.Properties.Resources.whatsapp__1_;
             this.pictureBox10.InitialImage = null;
             this.pictureBox10.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(37, 39);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5751,7 +5805,7 @@
             this.pictureBox9.Image = global::LBMS_Pro.Properties.Resources.instagram__1_;
             this.pictureBox9.InitialImage = null;
             this.pictureBox9.Location = new System.Drawing.Point(9, 229);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(37, 39);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5841,7 +5895,7 @@
             this.pictureBox5.Image = global::LBMS_Pro.Properties.Resources.facebook;
             this.pictureBox5.InitialImage = null;
             this.pictureBox5.Location = new System.Drawing.Point(9, 53);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(37, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5853,7 +5907,7 @@
             this.pictureBox8.Image = global::LBMS_Pro.Properties.Resources.youtube;
             this.pictureBox8.InitialImage = null;
             this.pictureBox8.Location = new System.Drawing.Point(9, 186);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(37, 39);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5865,7 +5919,7 @@
             this.pictureBox6.Image = global::LBMS_Pro.Properties.Resources.tiktok;
             this.pictureBox6.InitialImage = null;
             this.pictureBox6.Location = new System.Drawing.Point(9, 97);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(37, 39);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5877,7 +5931,7 @@
             this.pictureBox7.Image = global::LBMS_Pro.Properties.Resources.twitter;
             this.pictureBox7.InitialImage = null;
             this.pictureBox7.Location = new System.Drawing.Point(9, 142);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(37, 39);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5889,7 +5943,7 @@
             this.pictureBox4.Image = global::LBMS_Pro.Properties.Resources.CW_Logo_2x;
             this.pictureBox4.InitialImage = null;
             this.pictureBox4.Location = new System.Drawing.Point(4, 92);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(219, 231);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5901,7 +5955,7 @@
             this.pictureBox3.Image = global::LBMS_Pro.Properties.Resources.Pro;
             this.pictureBox3.InitialImage = null;
             this.pictureBox3.Location = new System.Drawing.Point(574, 92);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(189, 137);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5914,7 +5968,7 @@
             this.pictureBox2.Image = global::LBMS_Pro.Properties.Resources.logo;
             this.pictureBox2.InitialImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(2, 452);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(147, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -5982,7 +6036,7 @@
             // 
             this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.progressBar1.Location = new System.Drawing.Point(0, 841);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(253, 21);
             this.progressBar1.TabIndex = 0;
@@ -5994,7 +6048,7 @@
             this.PL_Down.Controls.Add(this.panel10);
             this.PL_Down.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PL_Down.Location = new System.Drawing.Point(0, 0);
-            this.PL_Down.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PL_Down.Margin = new System.Windows.Forms.Padding(4);
             this.PL_Down.MinimumSize = new System.Drawing.Size(350, 185);
             this.PL_Down.Name = "PL_Down";
             this.PL_Down.Size = new System.Drawing.Size(1006, 217);
@@ -6008,7 +6062,7 @@
             this.TB_Result.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_Result.ForeColor = System.Drawing.Color.Orchid;
             this.TB_Result.Location = new System.Drawing.Point(0, 30);
-            this.TB_Result.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_Result.Margin = new System.Windows.Forms.Padding(4);
             this.TB_Result.MaxLength = 9999999;
             this.TB_Result.Multiline = true;
             this.TB_Result.Name = "TB_Result";
@@ -6025,7 +6079,7 @@
             this.panel10.Controls.Add(this.BT_SaveScripts);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1006, 30);
             this.panel10.TabIndex = 17;
@@ -6039,7 +6093,7 @@
             this.BT_SelectAll.Font = new System.Drawing.Font("Tahoma", 9F);
             this.BT_SelectAll.ForeColor = System.Drawing.Color.White;
             this.BT_SelectAll.Location = new System.Drawing.Point(818, 0);
-            this.BT_SelectAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_SelectAll.Margin = new System.Windows.Forms.Padding(4);
             this.BT_SelectAll.Name = "BT_SelectAll";
             this.BT_SelectAll.Size = new System.Drawing.Size(76, 30);
             this.BT_SelectAll.TabIndex = 18;
@@ -6057,7 +6111,7 @@
             this.BT_WordWrap.Font = new System.Drawing.Font("Tahoma", 9F);
             this.BT_WordWrap.ForeColor = System.Drawing.Color.White;
             this.BT_WordWrap.Location = new System.Drawing.Point(688, 0);
-            this.BT_WordWrap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_WordWrap.Margin = new System.Windows.Forms.Padding(4);
             this.BT_WordWrap.Name = "BT_WordWrap";
             this.BT_WordWrap.Size = new System.Drawing.Size(122, 30);
             this.BT_WordWrap.TabIndex = 17;
@@ -6075,7 +6129,7 @@
             this.BT_SaveScripts.Font = new System.Drawing.Font("Tahoma", 9F);
             this.BT_SaveScripts.ForeColor = System.Drawing.Color.White;
             this.BT_SaveScripts.Location = new System.Drawing.Point(901, 0);
-            this.BT_SaveScripts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_SaveScripts.Margin = new System.Windows.Forms.Padding(4);
             this.BT_SaveScripts.Name = "BT_SaveScripts";
             this.BT_SaveScripts.Size = new System.Drawing.Size(76, 30);
             this.BT_SaveScripts.TabIndex = 16;
@@ -6104,7 +6158,7 @@
             this.panel1.Controls.Add(this.label15);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1006, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.MinimumSize = new System.Drawing.Size(210, 615);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(253, 862);
@@ -6123,7 +6177,7 @@
             this.BT_InfoPage.Image = global::LBMS_Pro.Properties.Resources.info;
             this.BT_InfoPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_InfoPage.Location = new System.Drawing.Point(0, 584);
-            this.BT_InfoPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_InfoPage.Margin = new System.Windows.Forms.Padding(4);
             this.BT_InfoPage.Name = "BT_InfoPage";
             this.BT_InfoPage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BT_InfoPage.Size = new System.Drawing.Size(253, 86);
@@ -6137,7 +6191,7 @@
             // 
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 578);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(253, 6);
             this.panel12.TabIndex = 22;
@@ -6155,7 +6209,7 @@
             this.BT_NSCFiles.Image = global::LBMS_Pro.Properties.Resources.pngegg__5_;
             this.BT_NSCFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_NSCFiles.Location = new System.Drawing.Point(0, 492);
-            this.BT_NSCFiles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_NSCFiles.Margin = new System.Windows.Forms.Padding(4);
             this.BT_NSCFiles.Name = "BT_NSCFiles";
             this.BT_NSCFiles.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BT_NSCFiles.Size = new System.Drawing.Size(253, 86);
@@ -6170,7 +6224,7 @@
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 486);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(253, 6);
             this.panel7.TabIndex = 21;
@@ -6188,7 +6242,7 @@
             this.BT_MultiTask.Image = global::LBMS_Pro.Properties.Resources.multitask;
             this.BT_MultiTask.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_MultiTask.Location = new System.Drawing.Point(0, 400);
-            this.BT_MultiTask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_MultiTask.Margin = new System.Windows.Forms.Padding(4);
             this.BT_MultiTask.Name = "BT_MultiTask";
             this.BT_MultiTask.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BT_MultiTask.Size = new System.Drawing.Size(253, 86);
@@ -6204,7 +6258,7 @@
             this.pictureBox1.Image = global::LBMS_Pro.Properties.Resources.small_logo;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(0, 779);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(253, 62);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -6217,7 +6271,7 @@
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 394);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(253, 6);
             this.panel6.TabIndex = 19;
@@ -6235,7 +6289,7 @@
             this.BT_SecScr.Image = global::LBMS_Pro.Properties.Resources.shield;
             this.BT_SecScr.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_SecScr.Location = new System.Drawing.Point(0, 308);
-            this.BT_SecScr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_SecScr.Margin = new System.Windows.Forms.Padding(4);
             this.BT_SecScr.Name = "BT_SecScr";
             this.BT_SecScr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BT_SecScr.Size = new System.Drawing.Size(253, 86);
@@ -6249,7 +6303,7 @@
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 302);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(253, 6);
             this.panel4.TabIndex = 18;
@@ -6267,7 +6321,7 @@
             this.BT_MikScr.Image = global::LBMS_Pro.Properties.Resources.hub;
             this.BT_MikScr.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_MikScr.Location = new System.Drawing.Point(0, 216);
-            this.BT_MikScr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_MikScr.Margin = new System.Windows.Forms.Padding(4);
             this.BT_MikScr.Name = "BT_MikScr";
             this.BT_MikScr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BT_MikScr.Size = new System.Drawing.Size(253, 86);
@@ -6281,7 +6335,7 @@
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 210);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(253, 6);
             this.panel5.TabIndex = 17;
@@ -6299,7 +6353,7 @@
             this.BT_BALANCE.Image = global::LBMS_Pro.Properties.Resources.router;
             this.BT_BALANCE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_BALANCE.Location = new System.Drawing.Point(0, 124);
-            this.BT_BALANCE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_BALANCE.Margin = new System.Windows.Forms.Padding(4);
             this.BT_BALANCE.Name = "BT_BALANCE";
             this.BT_BALANCE.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BT_BALANCE.Size = new System.Drawing.Size(253, 86);
@@ -6341,7 +6395,7 @@
             this.splitContainer1.BackColor = System.Drawing.Color.SlateGray;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 62);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -6362,60 +6416,6 @@
             this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 3;
             // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label90.ForeColor = System.Drawing.Color.White;
-            this.label90.Location = new System.Drawing.Point(525, 14);
-            this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(51, 18);
-            this.label90.TabIndex = 17;
-            this.label90.Text = "التعليق";
-            // 
-            // TB_Comment
-            // 
-            this.TB_Comment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(187)))), ((int)(((byte)(209)))));
-            this.TB_Comment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Comment.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.TB_Comment.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.TB_Comment.Location = new System.Drawing.Point(377, 11);
-            this.TB_Comment.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_Comment.Name = "TB_Comment";
-            this.TB_Comment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TB_Comment.Size = new System.Drawing.Size(148, 26);
-            this.TB_Comment.TabIndex = 16;
-            this.TB_Comment.Text = "LB_PCC_BYPRO";
-            this.TB_Comment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label105
-            // 
-            this.label105.AutoSize = true;
-            this.label105.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label105.ForeColor = System.Drawing.Color.White;
-            this.label105.Location = new System.Drawing.Point(295, 14);
-            this.label105.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(81, 18);
-            this.label105.TabIndex = 19;
-            this.label105.Text = "AddressList";
-            // 
-            // TB_AdressList
-            // 
-            this.TB_AdressList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(187)))), ((int)(((byte)(209)))));
-            this.TB_AdressList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_AdressList.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.TB_AdressList.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.TB_AdressList.Location = new System.Drawing.Point(138, 11);
-            this.TB_AdressList.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_AdressList.Name = "TB_AdressList";
-            this.TB_AdressList.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TB_AdressList.Size = new System.Drawing.Size(157, 26);
-            this.TB_AdressList.TabIndex = 18;
-            this.TB_AdressList.Text = "LOCAL-IP";
-            this.TB_AdressList.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -6426,7 +6426,7 @@
             this.Controls.Add(this.PL_Up);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

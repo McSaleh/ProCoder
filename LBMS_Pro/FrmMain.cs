@@ -2547,6 +2547,11 @@ namespace LBMS_Pro
         {
 
         }
+
+        private void CB_TypeSc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     public enum Mode
     {
